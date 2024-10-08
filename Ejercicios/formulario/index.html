@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <metan name="author" content="Juan Galisteo">
-
-  <meta name="description" content="Formulario de contacto básico">
-
-  <title>Formulario de Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <metan name="author" content="Juan Galisteo">
+        
+    <title>Formularios</title>
 </head>
-<body style="width:1000px; margin: auto;"> 
-  
-  <!-- Título principal que describe el propósito de la página, en este caso, un formulario de contacto -->
-  <h1>Formulario de Contacto</h1>
-  
-  <!-- Insertamos una imagen para darle una imagen corporativa -->
-  <img src="../formulario/imagenes/educacionmola.jpg" alt="Educacionmola" width="600"><br><br>
-  
-  <!-- Inicia el formulario que envía los datos al archivo 'proceso.php'.
-   El método POST para darle una mayor seguridad -->
-  <form action="proceso.php" method="post">
-    
-    <!-- Campo de texto para que el usuario ingrese su nombre: obligatorio -->
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+<body style="width:1000px ; margin: auto;"> 
+<div>
+    <h1>Bienvenidos a formularios</h1>
+<p>Pulse en nuestros enlaces:</p>
 
-    <!-- Campo de entrada para el correo electrónicoo como un formato de e-mail: obligatorio -->
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <!-- Área de texto para que el usuario ingrese un mensaje: obligatorio -->
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-
-    <!-- Botón que permite enviar el formulario con la información proporcionada -->
-    <input type="submit" value="Enviar"></form><br>
-  <!-- Línea horizontal que sirve como separador visual en la página -->
-<hr>
+    <img src="../miniweb/imagenes/miniweb.png" alt="miniweb" width="600"><br>
+<ul>
+    <li><a href="contenido/formulario1.html">Formulario | Tipo 1</a></li><br>
+    <li><a href="contenido/formulario2.html">Formulario | Tipo 2</a></li><br>
+</ul>
+</div>
 </body>
 </html>
