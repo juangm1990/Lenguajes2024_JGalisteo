@@ -6,37 +6,135 @@
 
   <meta name="description" content="Formulario de contacto básico">
 
-  <title>Formulario de Contacto</title>
+<title>Formulario de Contacto</title>
 </head>
 <body style="width:1000px; margin: auto;"> 
-  
-  <!-- Título principal que describe el propósito de la página, en este caso, un formulario de contacto -->
-  <h1>Formulario de Contacto</h1>
-  
-  <!-- Insertamos una imagen para darle una imagen corporativa -->
-  <img src="../imagenes/educacionmola.jpg" alt="Educacionmola" width="600"><br><br>
-  
-  <!-- Inicia el formulario que envía los datos al archivo 'proceso.php'.
-   El método POST para darle una mayor seguridad -->
-  <form action="proceso.php" method="post">
-    
-    <!-- Campo de texto para que el usuario ingrese su nombre: obligatorio -->
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-
-    <!-- Campo de entrada para el correo electrónicoo como un formato de e-mail: obligatorio -->
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <!-- Área de texto para que el usuario ingrese un mensaje: obligatorio -->
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-
-    <!-- Botón que permite enviar el formulario con la información proporcionada -->
-    <input type="submit" value="Enviar"></form><br>
-  <!-- Línea horizontal que sirve como separador visual en la página -->
-  <h1>Volver al inicio</h1>   
-  <a href="../index.html">Índice</a>
-<hr>
+<!-- Título del formulario -->
+<div>
+  <h1>Formulario | Tipo 2</h1><br>
+</div>
+<div> 
+  <style>
+    /* Configuración global para la tabla completa del formulario */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
+    }
+    /* Configuración de la tabla exterior */
+    .tabla1 {
+        width: 500px;
+        padding: 10px;
+        background-color: #c153d9; /* Color morado */
+        border-radius: 10px;
+    }
+    /* Configuración de la tabla interior */
+    .tabla2 {
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+    }
+    /* Color para la tipografía  */
+    h1 {
+        color: #000000;
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+    }
+    p {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+    }
+    label {
+        color: #000000;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #c153d9;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    textarea {
+        height: 80px;
+        resize: none;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #c153d9;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .submit-btn:hover {
+        background-color: #a441b0; /* Color más oscuro al pasar el cursor */
+    }
+    .note {
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body> 
+  <table class="tabla1">
+    <tr>
+      <td>
+        <table class="tabla2">
+          <tr>
+            <td>
+<!-- Título del formulario -->
+              <h1>Formulario de contacto</h1>
+              <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+<!-- Inicio del formulario que envía datos a "proceso.php" usando el método POST -->
+              <form action="proceso.php" method="post">
+<!-- Campo para ingresar el nombre -->
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+<!-- Campo para ingresar el email -->
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+<!-- Campo para ingresar el telefono -->
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+<!-- Campo para ingresar la web -->
+                <label for="sitio_web">Sitio web</label>
+                <input type="text" id="sitio_web" name="sitio_web" placeholder="Escribe la URL de tu web">
+<!-- Campo para ingresar el asunto -->
+                <label for="asunto">Asunto *</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
+<!-- Campo para ingresar el mensaje -->
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
+<!-- Campo para el boton de envíar -->
+                <input type="submit" value="ENVIAR" class="submit-btn">
+              </form>
+              <p class="note">* Los campos son obligatorios.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<!-- Enlace para volver al inicio -->   
+  <div><br>
+  <a href="../index.html">VOLVER AL INICIO</a>
+  </div>
 </body>
 </html>

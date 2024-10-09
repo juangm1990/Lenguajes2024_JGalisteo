@@ -6,37 +6,125 @@
 
   <meta name="description" content="Formulario de contacto básico">
 
-  <title>Formulario de Contacto</title>
+<title>Formulario de Contacto</title>
 </head>
 <body style="width:1000px; margin: auto;"> 
-  
-  <!-- Título principal que describe el propósito de la página, en este caso, un formulario de contacto -->
-  <h1>Formulario de Contacto</h1>
-  
-  <!-- Insertamos una imagen para darle una imagen corporativa -->
-  <img src="../imagenes/educacionmola.jpg" alt="Educacionmola" width="600"><br><br>
-  
-  <!-- Inicia el formulario que envía los datos al archivo 'proceso.php'.
-   El método POST para darle una mayor seguridad -->
-  <form action="proceso.php" method="post">
-    
-    <!-- Campo de texto para que el usuario ingrese su nombre: obligatorio -->
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-
-    <!-- Campo de entrada para el correo electrónicoo como un formato de e-mail: obligatorio -->
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <!-- Área de texto para que el usuario ingrese un mensaje: obligatorio -->
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-
-    <!-- Botón que permite enviar el formulario con la información proporcionada -->
-    <input type="submit" value="Enviar"></form><br>
-  <!-- Línea horizontal que sirve como separador visual en la página -->
-  <h1>Volver al inicio</h1>   
-  <a href="../index.html">Índice</a>
-<hr>
+<!-- Título del formulario -->
+  <div>
+    <h1>Formulario | Tipo 1</h1><br>
+  </div>
+<div>  
+  <style>
+    /* Configuración para la tabla y para centrar el formulario */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
+    }
+    table {
+        border: 1px solid #ccc;
+        padding: 20px;
+        background-color: white;
+        border-collapse: collapse;
+    /* Color para la tipografía  */
+    }
+    td {
+        padding: 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+  <div>
+  <table>
+<!-- Imagen para el formulario "AJUSTARLA CON EL WIDTH (MARGEN)" -->
+    <tr>
+        <td style="width: 0px;">
+        <img src="../imagenes/icono.png" alt="Icono de formulario" style="width: 75px; height: 75px;">
+        </td>
+<!-- Título para el formulario -->
+        <td>
+            <h1>Formulario de Inscripción</h1>
+            <p style="text-align: center; color: red;">(Todos los campos son obligatorios)</p>
+        </td>
+<!-- Campo para el nombre -->
+    </tr>
+    <form action="tabla.php" method="tabla">
+        <tr>
+            <td><label for="nombre">Nombre:</label></td>
+            <td><input type="texto" id="nombres" name="nombres" required></td>
+        </tr>
+<!-- Campo para los apellidos -->
+        <tr>
+            <td><label for="apellidos">Apellidos:</label></td>
+            <td><input type="texto" id="apellidos" name="apellidos" required></td>
+        </tr>
+<!-- Campo para la empresa -->
+        <tr>
+            <td><label for="empresa">Empresa:</label></td>
+            <td><input type="texto" id="empresa" name="empresa" required></td>
+        </tr>
+<!-- Campo para el botón que da acceso a la empresa para poder seleccionarla -->
+        <tr>
+            <td><label for="infoempresa">Ámbito de la empresa:</label></td>
+            <td>
+                <select id="infoempresa" name="infoempresa" required>
+                    <option value="Educación">Educación</option>
+                    <option value="Salud">Salud</option>
+                    <option value="Tecnología">Tecnología</option>
+                    <option value="Finanzas">Finanzas</option>
+                </select>
+            </td>
+        </tr>
+<!-- Campo para ingresar el cargo -->
+        <tr>
+            <td><label for="cargo">Cargo:</label></td>
+            <td><input type="texto" id="cargo" name="cargo" required></td>
+        </tr>
+<!-- Campo para ingresar el nombre de usuario -->
+        <tr>
+            <td><label for="usuario">Nombre de usuario:</label></td>
+            <td><input type="texto" id="usuario" name="usuario" required></td>
+        </tr>
+<!-- Campo para ingresar la contraseña -->
+        <tr>
+            <td><label for="contrasena">Contraseña:</label></td>
+            <td><input type="password" id="contrasena" name="contrasena" required></td>
+        </tr>
+<!-- Campo para ingresar la contraseña -->
+        <tr>
+            <td><label for="repetir_contrasena">Repitir contraseña:</label></td>
+            <td><input type="password" id="repetir_contrasena" name="repetir_contrasena" required></td>
+        </tr>
+<!-- Campo para ingresar el correo electronico -->
+        <tr>
+            <td><label for="email">Correo electrónico:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+<!-- Campo para el boton de aceptar los terminos "CLICK" -->
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="checkbox" id="aceptarterminos" name="aceptarterminos" required>
+                <label for="terminos">He leído y acepto los términos del sistema</label>
+            </td>
+        </tr>
+  <!-- Campo para el boton de envíar formulario -->
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Enviar formulario">
+            </td>
+        </tr>
+    </form>
+  </table>
+  </div><br>
+<!-- Enlace para volver al inicio -->   
+  <div>
+    <a href="../index.html">VOLVER AL INICIO</a>
+  </div>
 </body>
 </html>
