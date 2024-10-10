@@ -1,140 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <metan name="author" content="Juan Galisteo">
 
-  <meta name="description" content="Formulario de contacto básico">
+    <meta name="description" content="Formulario de contacto básico">
 
-<title>Formulario de Contacto</title>
+    <title>Formulario de Contacto</title>
 </head>
-<body style="width:1000px; margin: auto;"> 
-<!-- Título del formulario -->
-<div>
-  <h1>Formulario | Tipo 2</h1><br>
-</div>
-<div> 
-  <style>
-    /* Configuración global para la tabla completa del formulario */
-    body {
-        display: flex; /* Para centrar el formulario a la pág web */
+
+<body style="width:1000px; margin: auto;">
+  <!-- Título del formulario -->
+  <div>
+    <h1>Formulario | Tipo 2</h1><br>
+  </div>
+  <div>
+    <style>
+      /* Configuración global para la tabla completa del formulario */
+      body {
+        display: flex;
+        /* Para centrar el formulario a la pág web */
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
         background-color: #f5f5f5;
-    }
-    /* Configuración de la tabla exterior */
-    .tabla1 {
-        width: 500px; /* Margen */
-        padding: 10px; /* Relleno */
-        background-color: #c153d9; 
-        border-radius: 10px; /* Bordes */
-    }
-    /* Configuración de la tabla interior */
-    .tabla2 {
+      }
+
+      /* Configuración de la tabla exterior */
+      .tabla1 {
+        width: 500px;
+        /* Margen */
+        padding: 10px;
+        /* Relleno */
+        background-color: #c153d9;
+        border-radius: 10px;
+        /* Bordes */
+      }
+
+      /* Configuración de la tabla interior */
+      .tabla2 {
         width: 100%;
         padding: 20px;
         background-color: white;
         border-radius: 8px;
-    }
-    /* Color para el index del formulario */
-    h1 {
+      }
+
+      /* Color para el index del formulario */
+      h1 {
         color: #000000;
         text-align: center;
         font-size: 24px;
         margin: 0;
-    /* Color para la información de los elementos del formulario */
-    }
-    p {
+        /* Color para la información de los elementos del formulario */
+      }
+
+      p {
         text-align: center;
         color: #666;
         font-size: 14px;
-    /* Color para la tipografía de los nombres de los elementos del formulario */
-    }
-    label {
+        /* Color para la tipografía de los nombres de los elementos del formulario */
+      }
+
+      label {
         color: #000000;
-        font-weight: bold; /* Negrita */
+        font-weight: bold;
+        /* Negrita */
         margin-top: 10px;
-    /* Marco de los elementos y nombres de los elementos del formulario */   
-    }
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 90%; /* Tamaño ancho de las barras */   
+        /* Marco de los elementos y nombres de los elementos del formulario */
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 90%;
+        /* Tamaño ancho de las barras */
         padding: 10px;
         border: 1px solid #000000;
         border-radius: 4px;
-        font-size: 14px; /* Tamaño letra */
+        font-size: 14px;
+        /* Tamaño letra */
         margin-bottom: 10px;
-    }
-    textarea {
-        height: 80px; /* Altura de los cuadros */
-        resize: none; /* Para que el cajón de enviar no me se pueda el usuario redimensionarlo y quede fijo */
-    }
-    .submit-btn {
+      }
+
+      textarea {
+        height: 80px;
+        /* Altura de los cuadros */
+        resize: none;
+        /* Para que el cajón de enviar no me se pueda el usuario redimensionarlo y quede fijo */
+      }
+
+      .submit-btn {
         width: 100%;
         padding: 10px;
         background-color: #494949;
         color: white;
         font-size: 16px;
-        cursor: pointer; /* Cambiar el color del botón cuando lo ponga encima de enviar*/
+        cursor: pointer;
+        /* Cambiar el color del botón cuando lo ponga encima de enviar*/
         margin-top: 15px;
-    }
-    .submit-btn:hover {
-        background-color: #000000; /* Color más oscuro al pasar el cursor por el botón de enviar*/
-    }
-    .note {
+      }
+
+      .submit-btn:hover {
+        background-color: #000000;
+        /* Color más oscuro al pasar el cursor por el botón de enviar*/
+      }
+
+      .note {
         font-size: 12px;
         color: #666;
         text-align: center;
-        margin-top: 10px;  /* Margen del cuadro después de enviar */
-    }
-  </style>
-</head>
-<body> 
-  <table class="tabla1">
-    <tr>
-      <td>
-        <table class="tabla2">
-          <tr>
-            <td>
-<!-- Título del formulario -->
-              <h1>Formulario de contacto</h1>
-              <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
-<!-- Inicio del formulario que envía datos a "proceso.php" usando el método POST -->
-              <form action="proceso.php" method="post">
-<!-- Campo para ingresar el nombre -->
-                <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
-<!-- Campo para ingresar el email -->
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
-<!-- Campo para ingresar el telefono -->
-                <label for="telefono">Teléfono</label>
-                <input type="text" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
-<!-- Campo para ingresar la web -->
-                <label for="sitio_web">Sitio web</label>
-                <input type="text" id="sitio_web" name="sitio_web" placeholder="Escribe la URL de tu web" >
-<!-- Campo para ingresar el asunto -->
-                <label for="asunto">Asunto *</label>
-                <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
-<!-- Campo para ingresar el mensaje -->
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
-<!-- Campo para el boton de envíar -->
-                <input type="submit" value="ENVIAR" class="submit-btn">
-              </form>
-              <p class="note">* Los campos son obligatorios.</p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-<!-- Enlace para volver al inicio -->   
-  <div><br>
-  <a href="../index.html">VOLVER AL INICIO</a>
-  </div>
-</body>
+        margin-top: 10px;
+        /* Margen del cuadro después de enviar */
+      }
+    </style>
+    </head>
+
+    <body>
+      <table class="tabla1">
+        <tr>
+          <td>
+            <table class="tabla2">
+              <tr>
+                <td>
+                  <!-- Título del formulario -->
+                  <h1>Formulario de contacto</h1>
+                  <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+                  <!-- Inicio del formulario que envía datos a "proceso.php" usando el método POST -->
+                  <form action="proceso.php" method="post">
+                    <!-- Campo para ingresar el nombre -->
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    <!-- Campo para ingresar el email -->
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu Email" required>
+                    <!-- Campo para ingresar el telefono -->
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+                    <!-- Campo para ingresar la web -->
+                    <label for="sitio_web">Sitio web</label>
+                    <input type="text" id="sitio_web" name="sitio_web" placeholder="Escribe la URL de tu web">
+                    <!-- Campo para ingresar el asunto -->
+                    <label for="asunto">Asunto *</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Escribe un asunto" required>
+                    <!-- Campo para ingresar el mensaje -->
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Deja aquí tu comentario..." required></textarea>
+                    <!-- Campo para el boton de envíar -->
+                    <input type="submit" value="ENVIAR" class="submit-btn">
+                  </form>
+                  <p class="note">* Los campos son obligatorios.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- Enlace para volver al inicio -->
+      <div><br>
+        <a href="../index.html">VOLVER AL INICIO</a>
+      </div>
+    </body>
+
 </html>
