@@ -17,7 +17,7 @@
   <style>
     /* Configuración global para la tabla completa del formulario */
     body {
-        display: flex;
+        display: flex; /* Para centrar el formulario a la pág web */
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -26,10 +26,10 @@
     }
     /* Configuración de la tabla exterior */
     .tabla1 {
-        width: 500px;
-        padding: 10px;
-        background-color: #c153d9; /* Color morado */
-        border-radius: 10px;
+        width: 500px; /* Margen */
+        padding: 10px; /* Relleno */
+        background-color: #c153d9; 
+        border-radius: 10px; /* Bordes */
     }
     /* Configuración de la tabla interior */
     .tabla2 {
@@ -38,23 +38,25 @@
         background-color: white;
         border-radius: 8px;
     }
-    /* Color para la tipografía  */
+    /* Color para el index del formulario */
     h1 {
         color: #000000;
         text-align: center;
         font-size: 24px;
         margin: 0;
+    /* Color para la información de los elementos del formulario */
     }
     p {
         text-align: center;
         color: #666;
         font-size: 14px;
+    /* Color para la tipografía de los nombres de los elementos del formulario */
     }
     label {
         color: #000000;
-        font-weight: bold;
-        display: block;
+        font-weight: bold; /* Negrita */
         margin-top: 10px;
+    /* Marco de los elementos y nombres de los elementos del formulario */   
     }
     input[type="text"],
     input[type="email"],
@@ -63,12 +65,12 @@
         padding: 10px;
         border: 1px solid #000000;
         border-radius: 4px;
-        font-size: 14px;
+        font-size: 14px; /* Tamaño letra */
         margin-bottom: 10px;
     }
     textarea {
-        height: 80px;
-        resize: none;
+        height: 80px; /* Altura de los cuadros */
+        resize: none; /* Para que el cajón de enviar no me se pueda el usuario redimensionarlo y quede fijo */
     }
     .submit-btn {
         width: 100%;
@@ -76,19 +78,17 @@
         background-color: #494949;
         color: white;
         font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+        cursor: pointer; /* Cambiar el color del botón cuando lo ponga encima de enviar*/
         margin-top: 15px;
     }
     .submit-btn:hover {
-        background-color: #000000; /* Color más oscuro al pasar el cursor */
+        background-color: #000000; /* Color más oscuro al pasar el cursor por el botón de enviar*/
     }
     .note {
         font-size: 12px;
         color: #666;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 10px;  /* Margen del cuadro después de enviar */
     }
   </style>
 </head>
