@@ -49,99 +49,97 @@
             }
         </style>
         </head>
-
-
-            <div>
-                <table>
-                    <!-- Imagen para el formulario "AJUSTARLA CON EL WIDTH (MARGEN)" -->
+        <div>
+            <table>
+                <!-- Imagen para el formulario "AJUSTARLA CON EL WIDTH (MARGEN)" -->
+                <tr>
+                    <td style="width: 0px;">
+                        <img src="../imagenes/icono.png" alt="Icono de formulario" style="width: 75px; height: 90px;">
+                    </td>
+                    <!-- Título para el formulario -->
+                    <td>
+                        <h1>Formulario de Inscripción</h1>
+                        <p style="text-align: center; color: red;">(Todos los campos son obligatorios)</p>
+                    </td>
+                    <!-- Campo para el nombre -->
+                </tr>
+                <form action="tabla.php" method="tabla">
                     <tr>
-                        <td style="width: 0px;">
-                            <img src="../imagenes/icono.png" alt="Icono de formulario"
-                                style="width: 75px; height: 90px;">
-                        </td>
-                        <!-- Título para el formulario -->
-                        <td>
-                            <h1>Formulario de Inscripción</h1>
-                            <p style="text-align: center; color: red;">(Todos los campos son obligatorios)</p>
-                        </td>
-                        <!-- Campo para el nombre -->
+                        <td><label for="nombre">Nombre:</label></td>
+                        <td><input type="texto" id="nombres" name="nombres" required style="width: 90%;"></td>
+                        <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
                     </tr>
-                    <form action="tabla.php" method="tabla">
-                        <tr>
-                            <td><label for="nombre">Nombre:</label></td>
-                            <td><input type="texto" id="nombres" name="nombres" required style="width: 90%;"></td>
-                            <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
-                        </tr>
-                        <!-- Campo para los apellidos -->
-                        <tr>
-                            <td><label for="apellidos">Apellidos:</label></td>
-                            <td><input type="texto" id="apellidos" name="apellidos" required style="width: 90%;"></td>
-                            <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
-                        </tr>
-                        <!-- Campo para la empresa -->
-                        <tr>
-                            <td><label for="empresa">Empresa:</label> </td>
-                            <td><input type="texto" id="empresa" name="empresa" required style="width: 90%;"></td>
-                            <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
-                        </tr>
-                        <!-- Campo para el botón que da acceso a la empresa para poder seleccionarla -->
-                        <tr>
-                            <td><label for="infoempresa">Ámbito de la empresa:</label></td>
-                            <td>
-                                <select id="infoempresa" name="infoempresa" required>
-                                    <option value="Educación">Educación</option>
-                                    <option value="Salud">Salud</option>
-                                    <option value="Tecnología">Tecnología</option>
-                                    <option value="Finanzas">Finanzas</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <!-- Campo para ingresar el cargo -->
-                        <tr>
-                            <td><label for="cargo">Cargo:</label></td>
-                            <td><input type="texto" id="cargo" name="cargo" required style="width: 90%;"></td>
-                            <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
-                        </tr>
-                        <!-- Campo para ingresar el nombre de usuario -->
-                        <tr>
-                            <td><label for="usuario">Nombre de usuario:</label></td>
-                            <td><input type="texto" id="usuario" name="usuario" required></td>
-                        </tr>
-                        <!-- Campo para ingresar la contraseña -->
-                        <tr>
-                            <td><label for="contrasena">Contraseña:</label></td>
-                            <td><input type="password" id="contrasena" name="contrasena" required></td>
-                        </tr>
-                        <!-- Campo para ingresar la contraseña -->
-                        <tr>
-                            <td><label for="repetir_contrasena">Repetir contraseña:</label></td>
-                            <td><input type="password" id="repetir_contrasena" name="repetir_contrasena" required></td>
-                        </tr>
-                        <!-- Campo para ingresar el correo electronico -->
-                        <tr>
-                            <td><label for="email">Correo electrónico:</label></td>
-                            <td><input type="email" id="email" name="email" required></td>
-                        </tr>
-                        <!-- Campo para el boton de aceptar los terminos "CLICK" -->
-                        <tr>
-                            <td colspan="2" style="text-align: center;">
-                                <input type="checkbox" id="aceptarterminos" name="aceptarterminos" required>
-                                <label for="terminos">He leído y acepto los términos del sistema</label>
-                            </td>
-                        </tr>
-                        <!-- Campo para el boton de envíar formulario -->
-                        <tr>
-                            <td colspan="2" style="text-align: center;">
-                                <input type="submit" value="Enviar formulario">
-                            </td>
-                        </tr>
-                    </form>
-                </table>
-            </div><br>
-            <!-- Enlace para volver al inicio -->
-            <div>
-                <a href="../index.html">VOLVER AL INICIO</a>
-            </div>
-        </body>
+                    <!-- Campo para los apellidos -->
+                    <tr>
+                        <td><label for="apellidos">Apellidos:</label></td>
+                        <td><input type="texto" id="apellidos" name="apellidos" required style="width: 90%;"></td>
+                        <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
+                    </tr>
+                    <!-- Campo para la empresa -->
+                    <tr>
+                        <td><label for="empresa">Empresa:</label> </td>
+                        <td><input type="texto" id="empresa" name="empresa" required style="width: 90%;"></td>
+                        <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
+                    </tr>
+                    <!-- Campo para el botón que da acceso a la empresa para poder seleccionarla -->
+                    <tr>
+                        <td><label for="infoempresa">Ámbito de la empresa:</label></td>
+                        <td>
+                            <select id="infoempresa" name="infoempresa" required>
+                                <option value="Educación">Educación</option>
+                                <option value="Salud">Salud</option>
+                                <option value="Tecnología">Tecnología</option>
+                                <option value="Finanzas">Finanzas</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- Campo para ingresar el cargo -->
+                    <tr>
+                        <td><label for="cargo">Cargo:</label></td>
+                        <td><input type="texto" id="cargo" name="cargo" required style="width: 90%;"></td>
+                        <!-- MANERA ALEX PARA INTEGRAR TODO EN UNA LINEA DE CÓDIGO -->
+                    </tr>
+                    <!-- Campo para ingresar el nombre de usuario -->
+                    <tr>
+                        <td><label for="usuario">Nombre de usuario:</label></td>
+                        <td><input type="texto" id="usuario" name="usuario" required></td>
+                    </tr>
+                    <!-- Campo para ingresar la contraseña -->
+                    <tr>
+                        <td><label for="contrasena">Contraseña:</label></td>
+                        <td><input type="password" id="contrasena" name="contrasena" required></td>
+                    </tr>
+                    <!-- Campo para ingresar la contraseña -->
+                    <tr>
+                        <td><label for="repetir_contrasena">Repetir contraseña:</label></td>
+                        <td><input type="password" id="repetir_contrasena" name="repetir_contrasena" required></td>
+                    </tr>
+                    <!-- Campo para ingresar el correo electronico -->
+                    <tr>
+                        <td><label for="email">Correo electrónico:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <!-- Campo para el boton de aceptar los terminos "CLICK" -->
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="checkbox" id="aceptarterminos" name="aceptarterminos" required>
+                            <label for="terminos">He leído y acepto los términos del sistema</label>
+                        </td>
+                    </tr>
+                    <!-- Campo para el boton de envíar formulario -->
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Enviar formulario">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div><br>
+        <!-- Enlace para volver al inicio -->
+        <div>
+            <a href="../index.html">VOLVER AL INICIO</a>
+        </div>
+    </div>
+</body>
 
 </html>
