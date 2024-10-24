@@ -44,6 +44,14 @@ nav a {
     color: rgb(255, 255, 255); /* Color de los enlaces */
     margin: 0 10px; /* Espaciado horizontal entre enlaces */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px; /* Espaciado alrededor del texto del enlace */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+}
+
+nav a:hover {
+    background-color: #ffffff; /* Color de fondo al pasar el ratón */
+    color: #002c54; /* Color del texto al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados opcionales */
 }
 
 /* ESTILO DE CONTENIDO PRINCIPAL */
@@ -92,24 +100,23 @@ img {
 /* ESTILOS Y CONFIGURACIÓN PARA LAS FIGURAS Y PIE DE PÁGINA */
 
 figure {
-    text-align: center;
+    text-align: center; /* Centra el contenido del elemento dentro de su contenedor */
 }
 
 figcaption {
-    font-style: italic;
-    color: #555;
+    font-style: italic; /* Aplica un estilo en cursiva al texto del pie de figura */
+    color: #555; /* Establece el color */
 }
 
 footer p {
-    margin: 0;
-    text-align: center;
-    
+    margin: 0; /* Elimina el margen por defecto de los párrafos dentro del pie de página */
+    text-align: center; /* Centra el texto dentro del párrafo del pie de página */
 }
 
 section footer, footer {
-    font-family: Arial, sans-serif;
-    background-color: #002c54;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    background-color: #002c54; /* Define un color */
+    color: white; /* Establece el color del texto  */
+    padding: 10px; /* Espaciado interno en el contenedor principal */
+    text-align: center; /* Centra el texto dentro del pie de página */
 }
