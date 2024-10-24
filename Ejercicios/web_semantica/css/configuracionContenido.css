@@ -7,23 +7,30 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-header, section header {
-    font-family: Arial, sans-serif;
+
+/* CONFIGURACIÓN DE LA CABECERA PRINCIPAL Y EL LOGOTIPO */
+
+header {
+    display: flex;
+    align-items: center; /* Para alinear verticalmente la imagen y el texto */
+    justify-content: center; /* Para centrar el contenido horizontalmente */
     background-color: #002c54;
-    color: white;
     padding: 10px;
-    text-align: center;
+    position: relative; /* Para posicionar la imagen de forma absoluta */
 }
 
-section footer, footer {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
 header img {
-    width: 100px;
+    position: absolute; /* Alinea la imagen en una posición fija dentro del encabezado */
+    left: 250px; /* Para mover la imagen hacia el borde izquierdo */
+    width: 50px; /* Para ajustar el tamaño de la imagen */
+    height: auto;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    width: 100%; /* Para asegurar que el título ocupe todo el ancho del encabezado */
+    text-align: center; /* Para centrar el título dentro del espacio disponible */
 }
 nav {
     font-family: Arial, Helvetica, sans-serif;
@@ -36,43 +43,26 @@ nav a {
     color: rgb(255, 255, 255);
     margin: 0 10px;
     text-decoration: none;
+
+/* Final configuración de la cabecera principal y el logotipo */
+
+/* TODA LA INFORMACIÓN Y ESTRUCTURA DE LA PÁGINA */
+
 }
 main {
     padding: 20px;
 }
-/* CONFIGURACION DE LA CABECERA PRINCIPAL Y EL LOGOTIPO */
-header {
-    display: flex;
-    align-items: center; /* Para alinear verticalmente la imagen y el texto */
-    justify-content: center; /* Para centrar el contenido horizontalmente */
-    background-color: #002c54;
-    padding: 10px;
-    position: relative; /* Para posicionar la imagen de forma absoluta */
-}
-
-header img {
-    position: absolute; /* Alinea la imagen en una posición fija dentro del encabezado */
-    left: 350px; /* Para mover la imagen hacia el borde izquierdo */
-    width: 50px; /* Para ajustar el tamaño de la imagen */
-    height: auto;
-}
-
-header h1 {
-    color: white;
-    margin: 0;
-    width: 100%; /* Para asegurar que el título ocupe todo el ancho del encabezado */
-    text-align: center; /* Para centrar el título dentro del espacio disponible */
-}
-/* CONFIGURACION DE LA CABECERA PRINCIPAL Y EL LOGOTIPO */
-article {
-    margin-bottom: 30px;
-}
 h2{
-    color: #000000;
+    color: #ffffff;
 }
 h3 {
     color: #000000;
 }
+
+article {
+    margin-bottom: 30px;
+}
+
 video, audio {
     width: 100%;
     max-width: 600px;
@@ -93,13 +83,23 @@ img {
     display: block;
     margin: 10px auto;
 }
-footer p {
-    margin: 0;
-}
+
 figure {
     text-align: center;
 }
 figcaption {
     font-style: italic;
     color: #555;
+}
+
+/* Final toda información y estructura de la página */
+footer p {
+    margin: 0;
+}
+section footer, footer {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
