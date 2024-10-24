@@ -1,104 +1,114 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: Arial, sans-serif; /* Define la fuente principal del documento */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    padding: 0; /* Elimina el relleno por defecto del navegador */
+    line-height: 1.6; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+    max-width: 1200px; /* Establece un ancho máximo para el contenido */
+    margin-left: auto; /* Centra el contenido horizontalmente */
+    margin-right: auto; /* Centra el contenido horizontalmente */
 }
 
-/* CONFIGURACIÓN DE LA CABECERA PRINCIPAL Y EL LOGOTIPO */
-
 header {
-    display: flex;
-    align-items: center; /* Para alinear verticalmente la imagen y el texto */
-    justify-content: center; /* Para centrar el contenido horizontalmente */
-    background-color: #002c54;
-    padding: 10px;
-    position: relative; /* Para posicionar la imagen de forma absoluta */
+    display: flex; /* Activa el modelo de caja flexible (flexbox) en el encabezado */
+    align-items: center; /* Alinea verticalmente los elementos dentro del encabezado al centro */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del encabezado */
+    background-color: #002c54; /* Establece el color de fondo del encabezado (un tono oscuro) */
+    padding: 10px; /* Agrega un espaciado interno de 10 píxeles alrededor del contenido del encabezado */
+    position: relative; /* Permite que los elementos hijos con posición absoluta se posicionen relativamente al encabezado */
 }
 
 header img {
     position: absolute; /* Alinea la imagen en una posición fija dentro del encabezado */
-    left: 250px; /* Para mover la imagen hacia el borde izquierdo */
-    width: 50px; /* Para ajustar el tamaño de la imagen */
-    height: auto;
+    left: 250px; /* Mueve la imagen desde el borde izquierdo del encabezado */
+    width: 50px; /* Establece el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen, ajustando la altura automáticamente */
 }
 
 header h1 {
-    color: white;
-    margin: 0;
-    width: 100%; /* Para asegurar que el título ocupe todo el ancho del encabezado */
-    text-align: center; /* Para centrar el título dentro del espacio disponible */
+    color: white; /* Establece el color del texto del encabezado h1 a blanco */
+    margin: 0; /* Elimina el margen por defecto del encabezado h1 */
+    width: 100%; /* Asegura que el título ocupe todo el ancho del encabezado */
+    text-align: center; /* Centra el título dentro del espacio disponible */
 }
+
+/* ESTILO DE NAVEGACIÓN */
+
 nav {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #00a89e;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente de la barra de navegación */
+    background-color: #00a89e; /* Color de fondo de la barra de navegación */
+    color: white; /* Color del texto de los enlaces */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra los enlaces en la barra de navegación */
 }
 nav a {
-    color: rgb(255, 255, 255);
-    margin: 0 10px;
-    text-decoration: none;
-
-/* Final configuración de la cabecera principal y el logotipo */
-
-/* TODA LA INFORMACIÓN Y ESTRUCTURA DE LA PÁGINA */
-
+    color: rgb(255, 255, 255); /* Color de los enlaces */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
+
+/* ESTILO DE CONTENIDO PRINCIPAL */
+
 main {
-    padding: 20px;
+    padding: 20px; /* Espaciado interno en el contenedor principal */
 }
 h2{
-    color: #ffffff;
+    color: #ffffff; /* Color del texto de los encabezados h2 */
 }
 h3 {
-    color: #000000;
+    color: #000000; /* Color del texto de los encabezados h3 */
+}
+p {
+    text-align: justify; /* Justifica el texto en los párrafos */
+}
+article {
+    margin-bottom: 30px; /* Espaciado inferior para separar artículos */
 }
 
-article {
-    margin-bottom: 30px;
-}
+/* ESTILO Y CONFIGURACIÓN PARA PARA MEDIOS AUDIVISUALES */
 
 video, audio {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 10px auto;
+    width: 100%; /* Asegura que los elementos de video y audio ocupen todo el ancho disponible del contenedor */
+    max-width: 600px; /* Establece un ancho máximo para los elementos multimedia para mantener un tamaño razonable */
+    display: block; /* Hace que los elementos de video y audio se comporten como bloques, ocupando toda la línea */
+    margin: 10px auto; /* Centra los elementos con un margen superior e inferior de 10 píxeles */
 }
+
 iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 340px;
-    display: block;
-    margin: 10px auto;
+    width: 100%; /* Asegura que el iframe ocupe todo el ancho disponible del contenedor */
+    max-width: 600px; /* Establece un ancho máximo para el iframe */
+    height: 340px; /* Establece una altura fija para el iframe */
+    display: block; /* Hace que el iframe se comporte como un bloque, ocupando toda la línea */
+    margin: 10px auto; /* Centra el iframe con un margen superior e inferior de 10 píxeles */
 }
+
 img {
-    width: 500%;
-    max-width: 600px;
-    height: 400px;
-    display: block;
-    margin: 10px auto;
+    width: auto; /* Ajusta el ancho de la imagen */
+    max-width: 600px; /* Establece un ancho máximo para las imágenes para evitar que se agranden demasiado */
+    height: 400px; /* Establece una altura fija para las imágenes */
+    display: block; /* Hace que la imagen se comporte como un bloque, ocupando toda la línea */
+    margin: 10px auto; /* Centra la imagen con un margen superior e inferior */
 }
+
+/* ESTILOS Y CONFIGURACIÓN PARA LAS FIGURAS Y PIE DE PÁGINA */
 
 figure {
     text-align: center;
 }
+
 figcaption {
     font-style: italic;
     color: #555;
 }
 
-/* Final toda información y estructura de la página */
 footer p {
     margin: 0;
+    text-align: center;
+    
 }
+
 section footer, footer {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #002c54;
     color: white;
     padding: 10px;
     text-align: center;
