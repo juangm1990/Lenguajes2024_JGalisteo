@@ -35,7 +35,7 @@ header h1 {
 
 nav {
     font-family: Arial, Helvetica, sans-serif; /* Define la fuente de la barra de navegación */
-    background-color: #00a89e; /* Color de fondo de la barra de navegación */
+    background-color: #a5a5a5; /* Color de fondo de la barra de navegación */
     color: white; /* Color del texto de los enlaces */
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Centra los enlaces en la barra de navegación */
