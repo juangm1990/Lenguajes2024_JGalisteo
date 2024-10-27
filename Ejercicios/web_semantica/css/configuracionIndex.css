@@ -3,9 +3,6 @@ body {
     margin: 0; /* Elimina el margen por defecto del navegador */
     padding: 0; /* Elimina el relleno por defecto del navegador */
     line-height: 1.6; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
-    max-width: 1200px; /* Establece un ancho máximo para el contenido */
-    margin-left: auto; /* Centra el contenido horizontalmente */
-    margin-right: auto; /* Centra el contenido horizontalmente */
 }
 
 header {
@@ -17,9 +14,11 @@ header {
     position: relative; /* Permite que los elementos hijos con posición absoluta se posicionen relativamente al encabezado */
 }
 
+/* MOVER LOGOTIPO */
+
 header img {
     position: absolute; /* Alinea la imagen en una posición fija dentro del encabezado */
-    left: 250px; /* Mueve la imagen desde el borde izquierdo del encabezado */
+    left: 50px; /* Mueve la imagen desde el borde izquierdo del encabezado */
     width: 50px; /* Establece el ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen, ajustando la altura automáticamente */
 }
@@ -34,7 +33,7 @@ header h1 {
 /* ESTILO DE NAVEGACIÓN */
 
 nav {
-    font-family: Arial, Helvetica, sans-serif; /* Define la fuente de la barra de navegación */
+     /* Define la fuente de la barra de navegación */
     background-color: #a5a5a5; /* Color de fondo de la barra de navegación */
     color: white; /* Color del texto de los enlaces */
     padding: 10px; /* Espaciado interno */
@@ -43,7 +42,7 @@ nav {
 
 nav a {
     color: rgb(255, 255, 255); /* Color de los enlaces */
-    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    margin: 10px; /* Espaciado horizontal entre enlaces */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     padding: 10px; /* Espaciado alrededor del texto del enlace */
     transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
@@ -71,10 +70,6 @@ h3 {
 
 p {
     text-align: justify; /* Justifica el texto en los párrafos */
-}
-
-article {
-    margin-bottom: 30px; /* Espaciado inferior para separar artículos */
 }
 
 /* ESTILO Y CONFIGURACIÓN PARA MEDIOS AUDIOVISUALES */
@@ -125,3 +120,4 @@ section footer, footer {
     padding: 10px; /* Espaciado interno en el contenedor del pie de página */
     text-align: center; /* Centra el texto dentro del pie de página */
 }
+
