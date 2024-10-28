@@ -121,3 +121,12 @@ section footer, footer {
     text-align: center; /* Centra el texto dentro del pie de página */
 }
 
+.documento-pdf {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.documento-pdf:hover {
+    text-decoration: underline;
+}
