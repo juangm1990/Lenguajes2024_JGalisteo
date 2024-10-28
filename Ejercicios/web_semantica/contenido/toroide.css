@@ -3,8 +3,9 @@ body {
     margin: 0; /* Elimina el margen por defecto del navegador */
     padding: 0; /* Elimina el relleno por defecto del navegador */
     line-height: 1.6; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+    width: 1000px; /* Define el ancho del cuerpo */
+    margin: auto; /* Centra el contenido del body */
 }
-
 header {
     display: flex; /* Activa el modelo de caja flexible (flexbox) en el encabezado */
     align-items: center; /* Alinea verticalmente los elementos dentro del encabezado al centro */
@@ -121,3 +122,20 @@ section footer, footer {
     text-align: center; /* Centra el texto dentro del pie de página */
 }
 
+.documento-pdf { /* Archivos PDF */
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.documento-pdf:hover { /* Abrir archivos PDF */
+    text-decoration: underline;
+}
+
+.youtube-video {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    display: block;
+    margin: 10px auto;
+}
