@@ -48,7 +48,6 @@ header h1 {
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
-
 /* ////////////////////////////////////////// */
 
 /* Navegación principal*/
@@ -130,8 +129,6 @@ p {
     /* Centra horizontalmente */
 }
 
-
-
 /* ////////////////////////////////////////// */
 
 /* Maquetado de la página */
@@ -140,18 +137,27 @@ p {
     display: flex;
     gap: 20px;
     align-items: flex-start;
+
+
+    justify-content: center;
+    padding: 10px;
+    position: relative; 
+    
 }
 
+/* TEXTO */
 .diseño article {
     flex: 1;
-    max-width: 600px;
+    max-width: 1000px;
 }
 
+/* IMAGEN */
 .diseño figure {
     flex: 1;
-    max-width: 560px;
+    max-width: 500px;
 }
 
+/* VIDEO */
 .diseño aside {
     flex: 1;
     max-width: 560px;
@@ -161,23 +167,14 @@ p {
 
 .imagen-centro {
     width: 100%;
-    max-width: 1200px;
     height: auto;
-    margin: 0 auto;
-
 }
 
 .imagen {
     width: 100%;
     /* Ajusta el ancho al 100% del contenedor */
-    max-width: 800px;
-    /* Define un tamaño máximo, puedes cambiar este valor */
-    height: auto;
-    /* Mantiene la proporción de la imagen o video */
-    transition: transform 0.3s ease;
-    /* Suaviza el cambio de tamaño */
     text-align: center;
-    margin-top: 0;
+    height: auto;
 }
 
 /* ////////////////////////////////////////// */
@@ -185,14 +182,9 @@ p {
 .video {
     width: 100%;
     /* Ajusta el ancho al 100% del contenedor */
-    max-width: 800px;
-    /* Define un tamaño máximo, puedes cambiar este valor */
     height: auto;
     /* Mantiene la proporción de la imagen o video */
-    transition: transform 0.3s ease;
-    /* Suaviza el cambio de tamaño */
     text-align: center;
-    margin-top: 0;
 }
 
 /* ////////////////////////////////////////// */
@@ -201,26 +193,14 @@ p {
     display: flex;
     flex-direction: column;
     /* Alinea el audio y el texto uno encima del otro */
-    align-items: center;
-    /* Centra horizontalmente */
-    justify-content: center;
-    /* Centra verticalmente */
     text-align: center;
-    margin: 20px 0;
+    margin: 20px;
     /* Ajusta el margen para separar del contenido superior e inferior */
 }
 
 audio {
     display: flex;
-    flex-direction: column;
-    /* Alinea el audio y el texto uno encima del otro */
-    align-items: center;
-    /* Centra horizontalmente */
-    justify-content: center;
-    /* Centra verticalmente */
     text-align: center;
-    margin: 20px 0;
-    /* Ajusta el margen para separar del contenido superior e inferior */
 }
 
 /* ////////////////////////////////////////// */
