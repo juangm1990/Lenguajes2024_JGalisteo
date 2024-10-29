@@ -55,41 +55,29 @@ header h1 {
 }
 
 /* Navegación */
-nav ul {
-    display: flex;
-    /* Usa flexbox para organizar los elementos en una fila */
-    justify-content: center;
-    /* Centra los enlaces de la lista horizontalmente */
+nav {
+    /* Define la fuente de la barra de navegación */
     background-color: #a5a5a5;
-    /* Establece un fondo gris para la barra de navegación */
-    padding: 10px;
-    /* Agrega espaciado interno para mejorar el diseño */
-    list-style: none;
-    /* Elimina los puntos de lista predeterminados */
-}
-
-nav ul li {
-    margin: 0 15px;
-    /* Agrega espacio entre cada enlace de navegación */
-}
-
-/* Estilo de los enlaces de navegación */
-nav ul li a {
+    /* Color de fondo de la barra de navegación */
     color: white;
-    /* Define el color del texto de los enlaces como blanco */
+    /* Color del texto de los enlaces */
+    padding: 10px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centra los enlaces en la barra de navegación */
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    /* Color de los enlaces */
+    margin: 10px;
+    /* Espaciado horizontal entre enlaces */
     text-decoration: none;
     /* Elimina el subrayado de los enlaces */
-    padding: 5px 10px;
-    /* Agrega espacio alrededor del texto del enlace */
-    transition: background-color 0.3s;
-    /* Suaviza el cambio de color de fondo al pasar el cursor */
-}
-
-nav ul li a:hover {
-    background-color: #666;
-    /* Cambia el color de fondo al pasar el cursor */
-    border-radius: 5px;
-    /* Redondea ligeramente las esquinas del enlace */
+    padding: 10px;
+    /* Espaciado alrededor del texto del enlace */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave para cambios de color */
 }
 
 /* Contenido principal */
@@ -105,7 +93,7 @@ main {
 }
 
 /* Estilo de los post-its */
-.post-it {
+.cuadrados {
     width: 200px;
     /* Define el ancho de cada post-it */
     height: 200px;
@@ -139,14 +127,14 @@ main {
 }
 
 /* Estilo de los enlaces dentro de los post-its */
-.post-it a {
+.cuadrados a {
     text-decoration: none;
     /* Elimina el subrayado del enlace */
     color: #ffffff;
     /* Define el color del enlace en blanco */
 }
 
-.post-it:hover {
+.cuadrados:hover {
     transform: scale(1.05);
     /* Aumenta el tamaño del post-it al pasar el cursor */
     background-color: #FFA500;

@@ -164,31 +164,35 @@ figcaption {
     /* Establece el color del pie de figura */
 }
 
-footer p {
-    margin: 0;
-    /* Elimina el margen por defecto de los párrafos dentro del pie de página */
-    text-align: center;
-    /* Centra el texto dentro del párrafo del pie de página */
+
+
+.piepagina {
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.48);
+        /* Color de fondo semitransparente en negro */
+        color: #f5f5f5;
+        /* Color del texto en un tono blanco claro */
+        text-align: center;
+        /* Centra el texto en el pie de página */
+        padding: 5px;
+        /* Espaciado vertical de 5 píxeles */
+        position: fixed;
+        /* Fija el pie de página en la parte inferior de la pantalla */
+        width: 100%;
+        /* Ancho completo para que ocupe toda la base de la página */
+    }
 }
 
-section footer,
-footer {
-    font-family: Arial, sans-serif;
-    /* Establece la fuente del texto del pie de página */
-    background-color: #002c54;
-    /* Define un color de fondo oscuro */
-    color: white;
-    /* Establece el color del texto en blanco */
-    padding: 10px;
-    /* Espaciado interno en el contenedor del pie de página */
-    text-align: center;
-    /* Centra el texto dentro del pie de página */
-}
-
-.youtube-video {
+.youtube {
     width: 100%;
     max-width: 600px;
     height: 340px;
     display: block;
     margin: 10px auto;
+}
+
+.diseño {
+
+    display: flex;   
 }
