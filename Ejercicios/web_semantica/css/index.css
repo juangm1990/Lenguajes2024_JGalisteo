@@ -135,14 +135,10 @@ p {
 
 .diseño {
     display: flex;
-    gap: 20px;
     align-items: flex-start;
-
-
     justify-content: center;
     padding: 10px;
     position: relative; 
-    
 }
 
 /* TEXTO */
@@ -153,13 +149,11 @@ p {
 
 /* IMAGEN */
 .diseño figure {
-    flex: 1;
     max-width: 500px;
 }
 
 /* VIDEO */
 .diseño aside {
-    flex: 1;
     max-width: 560px;
 }
 
@@ -207,9 +201,9 @@ audio {
 
 /* Pie de página */
 footer p {
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: #a3a3a333;
     /* Color de fondo semitransparente en negro */
-    color: #f5f5f5;
+    color: #FFFFFF;
     /* Color del texto en un tono blanco claro */
     text-align: center;
     /* Centra el texto en el pie de página */
