@@ -13,11 +13,10 @@ body {
     /* Centra el contenido del body */
 }
 
-
 /* ////////////////////////////////////////// */
 
-
 /* Encabezado */
+
 header {
     display: flex;
     align-items: center;
@@ -42,7 +41,10 @@ header h1 {
     text-align: center;
 }
 
+/* ////////////////////////////////////////// */
+
 /* Navegación */
+
 nav {
     background-color: #a5a5a5;
     color: white;
@@ -61,18 +63,50 @@ nav a {
 /* ////////////////////////////////////////// */
 
 /* Contenido principal */
+
 main {
     padding: 20px;
 }
 
 h2 {
-    color: white;
+    color: #FFFFFF;
 }
 
-h3,
-p {
-    color: rgb(0, 0, 0);
+h3 {
+    color: #000000;
 }
+
+p {
+    color: #000000;
+    text-align: justify;
+    /* Ajusta el texto para que esté justificado */
+}
+
+/* ////////////////////////////////////////// */
+
+/* Maquetado de la página */
+
+.diseño {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.diseño article {
+    flex: 1;
+    max-width: 600px;
+}
+
+.diseño figure {
+    flex: 1;
+    max-width: 560px;
+}
+
+.diseño aside{
+    flex: 1;
+    max-width: 560px;
+}
+
 
 /* ////////////////////////////////////////// */
 
@@ -111,33 +145,46 @@ p {
     /* Mantiene la proporción de la imagen o video */
     transition: transform 0.3s ease;
     /* Suaviza el cambio de tamaño */
+    text-align: center;
+    margin-top: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-.diseño {
+.audio {
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    flex-direction: column;
+    /* Alinea el audio y el texto uno encima del otro */
+    align-items: center;
+    /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra verticalmente */
+    text-align: center;
+    margin: 20px 0;
+    /* Ajusta el margen para separar del contenido superior e inferior */
 }
 
-.diseño article {
-    flex: 1;
-    max-width: 600px;
+audio {
+    display: flex;
+    flex-direction: column;
+    /* Alinea el audio y el texto uno encima del otro */
+    align-items: center;
+    /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra verticalmente */
+    text-align: center;
+    margin: 20px 0;
+    /* Ajusta el margen para separar del contenido superior e inferior */
 }
 
-.diseño figure {
-    flex: 1;
-    max-width: 560px;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -152,10 +199,10 @@ p {
 
 /* Pie de página */
 footer {
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: #0000007a;
     color: #f5f5f5;
     text-align: center;
-    padding: 5px;
+    padding: 0px;
     position: fixed;
     width: 100%;
     bottom: 0;
