@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <metan name="author" content="Juan Galisteo">
-
-        <title>Miniweb</title>
+    <title>Miniweb</title>
+    <link rel="stylesheet" href="/Ejercicios/miniweb/css/index.css">
+    <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/icono.png">
 </head>
+<body>
 
-<body style="width:1000px ; margin: auto;">
-    <div>
-        <h1>Miniweb</h1> <!-- Encabezado principal de la página -->
-        <p></p>
+    <!-- Encabezado Principal -->
+    <header>
+        <img src="/Ejercicios/miniweb/imagenes/logoJuan.png" alt="Logotipo JUAN">
+        <h1>Bienvenidos a la Miniweb</h1>
+    </header>
 
-        <img src="../miniweb/imagenes/miniweb.png" alt="miniweb" width="600"><br> <!-- Foto -->
-        <!-- Lista para los enlaces de los archivos -->
+    <!-- Navegación -->
+    <nav>
         <ul>
-            <li><a href="../miniweb/contenido/archivo_1.html">Ir al archivo 1</a></li><br>
-            <li><a href="../miniweb/contenido/archivo_2.html">Ir al archivo 2</a></li><br>
-            <li><a href="../miniweb/contenido/archivo_3.html">Ir al archivo 3</a></li><br>
-            <li><a href="archivo_A.html">Ir al archivo A</a></li><br>
+            <li><a href="/Ejercicios/index.html">Inicio</a></li>
         </ul>
-    </div>
-    <div>
-        <a href="../index.html">VOLVER AL INICIO</a> <!-- Botón volver -->
-    </div>
-</body>
+    </nav>
 
+    <!-- Contenido Principal -->
+    <main>
+        <section class="content">
+            <div class="post-it">
+                <a href="/Ejercicios/miniweb/contenido/archivo_1.html">Ir al Archivo 1</a>
+            </div>
+            <div class="post-it">
+                <a href="/Ejercicios/miniweb/contenido/archivo_2.html">Ir al Archivo 2</a>
+            </div>
+            <div class="post-it">
+                <a href="/Ejercicios/miniweb/contenido/archivo_3.html">Ir al Archivo 3</a>
+            </div>
+            <div class="post-it">
+                <a href="/Ejercicios/miniweb/archivo_A.html">Ir al archivo A</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+
+</body>
 </html>
