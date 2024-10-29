@@ -123,7 +123,6 @@ p {
 }
 
 .imagen {
-
     width: 100%;
     /* Ajusta el ancho al 100% del contenedor */
     max-width: 800px;
@@ -200,7 +199,7 @@ audio {
 /* Pie de página */
 footer {
     background-color: #0000007a;
-    color: #f5f5f5;
+    color: #ffffff;
     text-align: center;
     padding: 0px;
     position: fixed;
