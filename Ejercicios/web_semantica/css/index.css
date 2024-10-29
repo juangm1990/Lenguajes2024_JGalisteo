@@ -6,8 +6,10 @@ body {
     padding: 0;
     /* Elimina el relleno por defecto del navegador */
     line-height: 1.6;
-    /* Aumenta el espacio entre líneas para mejorar la legibilidad */
-    width: 1000px;
+    /* Aumenta el interlineado del texto para mejorar la legibilidad */
+    /* ////////////////////////////////////
+    /* Requisitos obligatorios de la web */
+    width: 1200px;
     /* Define el ancho del cuerpo */
     margin: auto;
     /* Centra el contenido del body */
@@ -19,12 +21,10 @@ body {
 
 header {
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: #002c54;
     padding: 10px;
-    position: relative;
-    margin-bottom: 0;
+    position: relative; 
 }
 
 header img {
@@ -41,23 +41,57 @@ header h1 {
     text-align: center;
 }
 
+.logo {
+    position: absolute;
+    left: 50px;
+    width: 70px; /* Aumenta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
 /* ////////////////////////////////////////// */
 
-/* Navegación */
+/* Navegación principal*/
 
 nav {
     background-color: #a5a5a5;
-    color: white;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
     margin: 10px;
     text-decoration: none;
     padding: 10px;
-    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    /* Cambia el fondo cuando el cursor pase sobre el enlace */
+    color: #002c54;
+    /* Cambia el color del texto cuando el cursor pase sobre el enlace */
+}
+
+/* Navegación secundaria*/
+
+.menu nav {
+    background-color: #FFA500;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu nav a {
+    color: #FFFFFF;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu nav a:hover {
+    background-color: #002c54;
+    /* Cambia el fondo cuando el cursor pase sobre el enlace */
+    color: #ffffff;
+    /* Cambia el color del texto cuando el cursor pase sobre el enlace */
 }
 
 /* ////////////////////////////////////////// */
@@ -65,7 +99,12 @@ nav a {
 /* Contenido principal */
 
 main {
-    padding: 20px;
+    padding: 0;
+    width: 100%;
+    /* Asegura que el ancho del main se ajuste al ancho del body */
+    margin: 0 auto;
+    border-top: 45px solid #ffffff;
+    /* Aplica una línea de separación en la parte superior */
 }
 
 h2 {
@@ -81,6 +120,17 @@ p {
     text-align: justify;
     /* Ajusta el texto para que esté justificado */
 }
+
+.cita {
+    color: #000000;
+    text-align: justify;
+    max-width: 915px;
+    /* Define el ancho máximo del texto */
+    margin: 0 auto;
+    /* Centra horizontalmente */
+}
+
+
 
 /* ////////////////////////////////////////// */
 
@@ -102,21 +152,16 @@ p {
     max-width: 560px;
 }
 
-.diseño aside{
+.diseño aside {
     flex: 1;
     max-width: 560px;
 }
 
-
 /* ////////////////////////////////////////// */
-
-
-/* Clase para diseño flex del artículo y el video */
-
 
 .imagen-centro {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
 
@@ -135,6 +180,8 @@ p {
     margin-top: 0;
 }
 
+/* ////////////////////////////////////////// */
+
 .video {
     width: 100%;
     /* Ajusta el ancho al 100% del contenedor */
@@ -147,6 +194,8 @@ p {
     text-align: center;
     margin-top: 0;
 }
+
+/* ////////////////////////////////////////// */
 
 .audio {
     display: flex;
@@ -174,37 +223,26 @@ audio {
     /* Ajusta el margen para separar del contenido superior e inferior */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ////////////////////////////////////////// */
 
-
 /* Pie de página */
-footer {
-    background-color: #0000007a;
-    color: #ffffff;
+footer p {
+    background-color: rgba(0, 0, 0, 0.48);
+    /* Color de fondo semitransparente en negro */
+    color: #f5f5f5;
+    /* Color del texto en un tono blanco claro */
     text-align: center;
-    padding: 0px;
+    /* Centra el texto en el pie de página */
+    padding: 5px;
+    /* Espaciado vertical de 5 píxeles */
     position: fixed;
+    /* Fija el pie de página en la parte inferior de la pantalla */
     width: 100%;
+    /* Ancho completo para que ocupe toda la base de la página */
     bottom: 0;
+    /* Posiciona el pie de página en la parte inferior */
     left: 0;
+    /* Alinea el pie de página con el borde izquierdo */
     margin: 0;
+    /* Elimina el margen externo alrededor del pie de página */
 }

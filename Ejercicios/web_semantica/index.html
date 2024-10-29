@@ -13,8 +13,8 @@
 <body>
 
     <!-- CONFIGURACIÓN de la plantilla del Index -->
-    <header class="inicio">
-        <img src="/Ejercicios/web_semantica/imagenes/logoJuan.png" alt="Logotipo JUAN">
+    <header>
+        <img class="logo" src="/Ejercicios/web_semantica/imagenes/logoJuan.png" alt="Logotipo JUAN">
         <h1>Nikola Tesla (1856 - 1943)</h1>
     </header>
 
@@ -36,10 +36,21 @@
                     <h2>El hombre del futuro</h2>
                 </header>
 
+                <div class="menu">
+                    <nav>
+                        <a href="/Ejercicios/web_semantica/contenido/vida.html">El hombre del futuro</a>
+                        <a href="/Ejercicios/web_semantica/contenido/bobinaTesla.html">El enigma de Tesla</a>
+                        <a href="/Ejercicios/web_semantica/contenido/numeros.html">El código oculto del Universo</a>
+                        <a href="/Ejercicios/web_semantica/contenido/toroide.html">Energía, frecuencia y vibración</a>
+                    </nav>
+                </div>
+
                 <div>
                     <img class="imagen-centro" src="/Ejercicios/web_semantica/imagenes/tesla1.png"
                         alt="Imagen PRIMERA PARTE">
                 </div>
+
+
 
                 <article>
                     <h3>Nikola Tesla (1856 - 1943)</h3>
@@ -239,10 +250,10 @@
                         alt="Museo Tesla Córdoba">
                 </figure>
 
-                <article>
-                    <p>Los secretos del Universo no son misterios inalcanzables sino más bien un rompecabezas para
-                        aquellos dispuestos a profundizar en las corrientes profundas del pensamiento místico: <i><b>El
-                                Universo se encuentra dentro de nuestra mente...</b></i></p>
+                <article class="cita">
+                    <p><i>"Los secretos del Universo no son misterios inalcanzables sino más bien un rompecabezas para
+                        aquellos dispuestos a profundizar en las corrientes profundas del pensamiento místico: <b><u>Todo el
+                                Universo se encuentra dentro de nuestra mente..."</u></b></i></p>
                 </article>
             </section>
         </div>
@@ -250,7 +261,8 @@
 
     </main>
 
-    <footer class="footer">
+    <!-- Pie de Página -->
+    <footer>
         <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
     </footer>
 
