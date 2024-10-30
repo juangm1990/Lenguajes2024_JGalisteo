@@ -2,15 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Elimina el relleno por defecto del navegador */
     line-height: 1.6;
-    /* Aumenta el interlineado del texto para mejorar la legibilidad */
-    /* //////////////////////////////////// */
     /* Requisitos obligatorios de la web */
     width: 1200px;
-    /* Establece un ancho fijo para el cuerpo */
     margin: auto;
-    /* Centra el contenido del body en la pantalla */
 }
 
 /* ////////////////////////////////////////// */
@@ -20,32 +15,31 @@ body {
 header {
     background-color: #002c54;
     display: flex;
-    /* Utiliza Flexbox para la disposición de los elementos */
+    /* Disposición de los elementos */
     justify-content: center;
     /* Centra el contenido horizontalmente */
     padding: 10px;
     /* Espaciado interno del encabezado */
     position: relative;
-    /* Permite la posición absoluta de elementos secundarios */
+    /* Permite colocar el logotipo en el encabezado de la */
 }
 
-header img {
+.logo {
     position: absolute;
-    /* Posiciona la imagen de forma absoluta dentro del encabezado */
+    /* Posición fija para el logo */
     left: 50px;
-    /* Espacio desde la izquierda */
+    /* Movimiento de la imagen */
     width: 70px;
-    /* Aumenta el ancho de la imagen */
+    /* Tamaño de la imagen */
     height: auto;
-    /* Mantiene la proporción de la imagen */
+    /* Mantiene la imagen proporcionada*/
 }
 
 header h1 {
     color: #FFFFFF;
     margin: 0;
-    /* Elimina el margen */
     text-align: center;
-    /* Centra el texto */
+    /* Centra el contenido*/
 }
 
 /* ////////////////////////////////////////// */
@@ -54,19 +48,15 @@ header h1 {
 nav {
     background-color: #a5a5a5;
     padding: 10px;
-    /* Espaciado interno de la navegación */
     text-align: center;
-    /* Centra el contenido de la navegación */
 }
 
 nav a {
     color: #FFFFFF;
     margin: 10px;
-    /* Espaciado alrededor de los enlaces */
+    padding: 10px;
     text-decoration: none;
     /* Elimina el subrayado de los enlaces */
-    padding: 10px;
-    /* Espaciado interno de los enlaces */
 }
 
 nav a:hover {
@@ -79,7 +69,6 @@ nav a:hover {
 /* Contenido principal */
 main {
     padding: 0;
-    /* Sin espaciado interno */
     width: 100%;
     /* Asegura que el ancho del main se ajuste al del body */
     margin: 0 auto;
@@ -101,23 +90,26 @@ p {
     text-align: justify;
 }
 
-/* Centrado de imágenes y videos */
+/* ////////////////////////////////////////// */
+
+/* Diséño de la página */
+
+/* Imágenes */
 .imagen-centro {
     width: 100%;
-    /* Asegura que ocupe el 100% del ancho del contenedor */
     max-width: 1200px;
-    /* Limita el ancho máximo para que coincida con el ancho del body */
+    /* Ajustar manualmente el ancho */
     margin: 0 auto;
     /* Centra el contenedor */
 }
 
 .imagen {
     width: 100%;
-    /* Asegura que la imagen ocupe todo el ancho del contenedor */
     height: auto;
     /* Mantiene la proporción de la imagen */
 }
 
+/* Vídeos */
 .video-centro {
     display: flex;
     flex-direction: column;
@@ -128,14 +120,12 @@ p {
     /* Espacio superior e inferior */
 }
 
-/* Contenedor de los objetos de video */
+/* Diseño de los vídeos */
 .video-objeto {
     display: flex;
-    /* Utiliza Flexbox para la disposición de los elementos */
     gap: 20px;
     /* Espacio entre los elementos */
     justify-content: center;
-    /* Centra los elementos horizontalmente */
     margin-top: 20px;
     /* Espacio superior */
     padding: 20px;
@@ -148,7 +138,7 @@ p {
     /* Sombra para el contenedor */
 }
 
-/* Contenido del video */
+/* Contenido dentro del video */
 .video-contenido {
     width: 280px;
     /* Ancho fijo para el contenido del video */
@@ -163,7 +153,6 @@ p {
     transition: transform 0.3s, box-shadow 0.3s;
     /* Efecto de transición al interactuar */
     text-align: center;
-    /* Centra el texto dentro del contenedor */
 }
 
 .video-contenido:hover {
@@ -175,7 +164,6 @@ p {
 
 .video-contenido video {
     width: 100%;
-    /* Ajusta el ancho al 100% del contenedor */
     height: auto;
     /* Mantiene la proporción del video */
     border-bottom: 1px solid #ddd;
@@ -185,47 +173,47 @@ p {
 /* Información del video */
 .video-info {
     width: 100%;
-    /* Asegura que ocupe todo el ancho */
     height: auto;
-    /* Mantiene la proporción */
     border-bottom: 1px solid #ddd;
     /* Línea de separación inferior */
 }
 
-
 .video-titulo {
     text-align: center;
-    /* Asegura que el texto esté centrado */
     width: 100%;
-    /* Asegura que ocupe todo el ancho */
 }
 
+/* Audios */
 .audio {
     display: flex;
-    flex-direction: column; /* Alinea el audio y el texto uno encima del otro */
     text-align: center;
-    margin: 20px; /* separar del contenido superior e inferior */
+    flex-direction: column; 
+    /* Alinea el audio y el texto uno encima del otro */
+    margin: 20px; 
+    /* separar del contenido superior e inferior */
 }
 
 audio {
-    width: 600px; /* Ajustar manualmente el ancho de la barra de audio */
-    max-width: 100%; /* Ancho del contenedor */
-    margin: 0 auto; /* Centra el contenedor el margen */
+    width: 600px; 
+    max-width: 100%;
+    margin: 0 auto; 
+    /* Centra el contenedor el margen */
 }
 
+/* PDF */
 .informacion {
     text-align: center; 
-    width: 100%; /* Ancho del contenedor */
-    max-width: 600px; /* Ajustar manualmente el ancho */
+    width: 100%; 
+    max-width: 600px; 
     margin: 0 auto; /* Centra el contenedor el margen */
 }
 
 .informacion img {
-    width: 100%; /* Ancho del contenedor */
+    width: 100%; 
     height: auto; /* Mantiene la relación de aspecto de la imagen */
 }
 
-
+/* Nota para las imágenes, vídeos, audios y PDF */
 figcaption {
     text-align: center;
     color: #555;

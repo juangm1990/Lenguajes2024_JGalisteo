@@ -2,15 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Elimina el relleno por defecto del navegador */
     line-height: 1.6;
-    /* Aumenta el interlineado del texto para mejorar la legibilidad */
-    /* //////////////////////////////////// */
     /* Requisitos obligatorios de la web */
     width: 1200px;
-    /* Establece un ancho fijo para el cuerpo */
     margin: auto;
-    /* Centra el contenido del body en la pantalla */
 }
 
 /* ////////////////////////////////////////// */
@@ -29,36 +24,23 @@ header {
     /* Permite la posición absoluta de elementos secundarios */
 }
 
-header img {
+.logo {
     position: absolute;
-    /* Posiciona la imagen de forma absoluta dentro del encabezado */
+    /* Posición fija para el logo */
     left: 50px;
-    /* Espacio desde la izquierda */
-    width: 50px;
-    /* Ancho de la imagen */
+    /* Movimiento de la imagen */
+    width: 70px;
+    /* Tamaño de la imagen */
     height: auto;
-    /* Mantiene la proporción de la imagen */
+    /* Mantiene la imagen proporcionada*/
 }
 
 header h1 {
     color: #FFFFFF;
     margin: 0;
-    /* Elimina el margen */
     width: 100%;
-    /* Ancho completo para el encabezado */
     text-align: center;
-    /* Centra el texto */
-}
-
-.logo {
-    position: absolute;
-    /* Posición absoluta para el logo */
-    left: 50px;
-    /* Espacio desde la izquierda */
-    width: 70px;
-    /* Aumenta el ancho de la imagen */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
+    /* Centra el contenido*/
 }
 
 /* ////////////////////////////////////////// */
@@ -68,19 +50,15 @@ header h1 {
 nav {
     background-color: #a5a5a5;
     padding: 10px;
-    /* Espaciado interno de la navegación */
     text-align: center;
-    /* Centra el contenido de la navegación */
 }
 
 nav a {
     color: #FFFFFF;
     margin: 10px;
-    /* Espaciado alrededor de los enlaces */
+    padding: 10px;
     text-decoration: none;
     /* Elimina el subrayado de los enlaces */
-    padding: 10px;
-    /* Espaciado interno de los enlaces */
 }
 
 nav a:hover {
@@ -93,16 +71,13 @@ nav a:hover {
 .menu nav {
     background-color: #FFA500;
     padding: 10px;
-    /* Espaciado interno de los enlaces */
     text-align: center;
-    /* Centra el contenido de la navegación secundaria */
 }
 
 .menu nav a {
     color: #FFFFFF;
     margin: 10px;
     padding: 10px;
-    /* Espaciado interno de los enlaces */
 }
 
 .menu nav a:hover {
@@ -116,7 +91,6 @@ nav a:hover {
 
 main {
     padding: 0;
-    /* Sin espaciado interno */
     width: 100%;
     /* Asegura que el ancho del main se ajuste al del body */
     margin: 0 auto;
@@ -141,7 +115,6 @@ p {
 .cita {
     color: #000000;
     text-align: justify;
-    /* Justifica el texto de la cita */
     max-width: 915px;
     /* Ancho máximo del texto en citas */
     margin: 0 auto;
@@ -154,18 +127,14 @@ p {
 
 .diseño {
     display: flex;
-    /* Utiliza Flexbox para organizar los elementos */
     align-items: flex-start;
     /* Alinea los elementos al inicio */
     justify-content: center;
-    /* Centra el contenido horizontalmente */
     padding: 10px;
-    /* Espaciado interno del diseño */
     position: relative;
-    /* Permite posicionar elementos secundarios */
 }
 
-/* TEXTO */
+/* Diseño general */
 .diseño article {
     flex: 1;
     /* Permite que el artículo ocupe el espacio disponible */
@@ -173,36 +142,15 @@ p {
     /* Ancho máximo del artículo */
 }
 
-/* IMAGEN */
 .diseño figure {
     max-width: 500px;
-    /* Ancho máximo de las imágenes */
 }
 
-/* VIDEO */
 .diseño aside {
     max-width: 560px;
-    /* Ancho máximo del área de video */
 }
 
-/* ////////////////////////////////////////// */
-
-.imagen-centro {
-    width: 100%;
-    /* Ajusta el ancho al 100% del contenedor */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-}
-
-.imagen {
-    width: 100%;
-    /* Ajusta el ancho al 100% del contenedor */
-    text-align: center;
-    /* Centra el contenido de la imagen */
-    height: auto;
-    /* Mantiene la proporción de la imagen */
-}
-
+/* Diseño de los subtitulos */
 .minititulo {
     color: #333;
     text-align: center;
@@ -214,40 +162,58 @@ p {
 
 /* ////////////////////////////////////////// */
 
+/* Imágenes */
+.imagen-centro {
+    width: 100%;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.imagen {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+/* Vídeos */
 .video {
     display: flex;
-    /* Utiliza Flexbox para la disposición del video */
     height: auto;
     /* Mantiene la proporción de la imagen o video */
     text-align: center;
-    /* Centra el contenido */
     margin: 20px;
     /* Margen para separar del contenido superior e inferior */
     flex-direction: column;
     /* Alinea el audio y el texto uno encima del otro */
 }
 
-/* ////////////////////////////////////////// */
+.video-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra horizontalmente el video */
+    margin: 20px 0;
+    /* Espacio superior e inferior */
+}
 
+/* Audios */
 .audio {
     display: flex;
-    /* Utiliza Flexbox para la disposición del audio */
     flex-direction: column;
     /* Alinea el audio y el texto uno encima del otro */
     text-align: center;
-    /* Centra el contenido */
     margin: 20px;
     /* Margen para separar del contenido superior e inferior */
 }
 
 audio {
     display: flex;
-    /* Permite Flexbox para el audio */
     text-align: center;
-    /* Centra el contenido */
-    width: 400px; /* Ajustar manualmente el ancho de la barra de audio */
+    width: 400px; 
 }
 
+/* Nota para las imágenes, vídeos, audios y PDF */
 figcaption {
     font-style: italic;
     color: #555;
