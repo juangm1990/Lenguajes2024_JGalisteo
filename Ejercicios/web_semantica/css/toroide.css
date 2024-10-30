@@ -123,9 +123,9 @@ figcaption {
 }
 
 /* Pie de página */
-footer p{
-    background-color: #0000007a; /* Color de fondo semitransparente */
-    color: #f5f5f5; /* Color del texto en un tono claro */
+footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
     text-align: center;
     padding: 5px;
     position: fixed;

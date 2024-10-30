@@ -220,22 +220,13 @@ figcaption {
 
 /* Pie de página */
 footer p {
-    background-color: #a3a3a333;
-    /* Color de fondo semitransparente en negro */
+    background-color: #77777733;
     color: #FFFFFF;
-    /* Color del texto en un tono blanco claro */
     text-align: center;
-    /* Centra el texto en el pie de página */
     padding: 5px;
-    /* Espaciado vertical de 5 píxeles */
     position: fixed;
-    /* Fija el pie de página en la parte inferior de la pantalla */
     width: 100%;
-    /* Ancho completo para que ocupe toda la base de la página */
     bottom: 0;
-    /* Posiciona el pie de página en la parte inferior */
     left: 0;
-    /* Alinea el pie de página con el borde izquierdo */
     margin: 0;
-    /* Elimina el margen externo alrededor del pie de página */
 }
