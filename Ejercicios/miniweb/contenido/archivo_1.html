@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniweb</title>
+    <title>Miniweb - Archivo 1</title>
     <link rel="stylesheet" href="/Ejercicios/miniweb/css/archivo_1.css">
     <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/icono.png">
+
+    <!-- Archivo CSS con ID "theme" para cambio de tema -->
+    <link id="theme" rel="stylesheet" type="text/css" href="../css/claro.css" />
+
+    <!-- Script para activar el tema guardado y cambiar el tema -->
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', '../' + temaGuardado);
+            }
+        }
+
+        function cambiatema() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            if (theme.getAttribute('href') === '../css/claro.css') {
+                theme.setAttribute('href', '../css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', '../css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
+        }
+    </script>
 </head>
-<body>
+
+<body onload="tema_activo()">
 
     <!-- Encabezado Principal -->
     <header>
@@ -32,10 +59,10 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer
-        style="background-color: #0000007a; color: #f5f5f5; text-align: center; padding: 5px; position: fixed; width: 100%; bottom: 0; left: 0; margin: 0;">
+    <footer style="background-color: #0000007a; color: #f5f5f5; text-align: center; padding: 5px; position: fixed; width: 100%; bottom: 0; left: 0; margin: 0;">
         <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
     </footer>
 
 </body>
+
 </html>

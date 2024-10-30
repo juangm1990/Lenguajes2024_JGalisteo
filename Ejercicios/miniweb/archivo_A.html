@@ -6,8 +6,20 @@
     <title>Archivo A</title>
     <link rel="stylesheet" href="/Ejercicios/miniweb/css/archivo_A.css">
     <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/icono.png">
+
+    <!-- Archivo CSS con ID "theme" para cambiar el tema -->
+    <link id="theme" rel="stylesheet" type="text/css" href="css/claro.css" />
+
+    <!-- Función para activar el tema guardado -->
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            theme.setAttribute('href', localStorage.getItem("tema"));
+        }
+    </script>
 </head>
-<body>
+
+<body onload="tema_activo()">
 
     <!-- Encabezado Principal -->
     <header>
@@ -24,7 +36,7 @@
 
     <!-- Contenido Principal -->
     <main>
-        <section class="diseño"> <!-- Cambié class="content" a class="diseño" -->
+        <section class="diseño">
             <div class="cuadrados">
                 <a href="/Ejercicios/miniweb/contenido/archivo_3.html">Ir al Archivo 3</a>
             </div>

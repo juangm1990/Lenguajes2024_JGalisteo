@@ -9,112 +9,73 @@ body {
     /* Centra el contenido del body */
 }
 
+/* Cabecera del proyecto */
 header {
     background-color: #002c54;
     display: flex;
-    /* Activa el modelo de caja flexible (flexbox) en el encabezado */
     align-items: center;
-    /* Alinea verticalmente los elementos dentro del encabezado al centro */
-    justify-content: center;
-    /* Centra horizontalmente los elementos dentro del encabezado */
-    padding: 10px;
-    /* Agrega un espaciado interno */
     position: relative;
-    /* Permite que los elementos hijos con posición absoluta se posicionen relativamente */
 }
 
 /* Diseño logotipo */
 header img {
     position: absolute;
-    /* Posiciona la imagen de forma absoluta dentro del encabezado */
     left: 50px;
-    /* Coloca la imagen a 50px desde el borde izquierdo */
     width: 70px;
-    /* Define el ancho de la imagen */
     height: auto;
-    /* Ajusta la altura automáticamente para mantener la proporción */
 }
 
-/* Estilo del título del encabezado */
+/* Diseño letras */
 header h1 {
     color: white;
-    /* Cambia el color del texto del título a blanco */
     width: 100%;
-    /* Ocupa todo el ancho disponible del encabezado */
     text-align: center;
-    /* Centra el texto del título */
 }
 
 /* Navegación */
 nav ul {
     background-color: #a5a5a5;
     display: flex;
-    /* Usa flexbox para organizar los elementos en una fila */
     justify-content: center;
-    /* Centra los enlaces de la lista horizontalmente */
     padding: 10px;
-    /* Agrega espaciado interno para mejorar el diseño */
     list-style: none;
-    /* Elimina los puntos de lista predeterminados */
 }
 
 nav ul li {
     margin: 15px;
-    /* Agrega espacio entre cada enlace de navegación */
 }
 
 /* Estilo de los enlaces de navegación */
 nav ul li a {
     color: white;
-    /* Define el color del texto de los enlaces como blanco */
     text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
     padding: 10px;
-    /* Agrega espacio alrededor del texto del enlace */
-}
-
-nav ul li a:hover {
-    background-color: #666;
-    /* Cambia el color de fondo al pasar el cursor */
-    border-radius: 5px;
-    /* Redondea ligeramente las esquinas del enlace */
-    padding: 20px;
 }
 
 /* Contenido principal */
 main {
     padding: 20px;
-    /* Agrega espaciado interno en el área principal */
     display: flex;
-    /* Usa flexbox para alinear los elementos en el contenido */
     justify-content: center;
-    /* Centra el contenido */
 }
 
-/* Estilo del acceso de los Archivos */
+/* Estilo de los enlaces que dan acceso a los Archivos */
 .cuadrados {
     background-color: #002c54;
     color: #ffffff;
+    font-weight: bold;
+    /* Aplica un grosor de fuente */
+    font-size: 1.2em;
+    /* Aumenta el tamaño de la fuente */
     width: 200px;
-    /* Define el ancho */
     height: 200px;
-    /* Define la altura */
     margin: 20px;
-    /* Agrega espacio alrededor */
     padding: 20px;
-    /* Agrega espacio interno dentro */
     display: flex;
-    /* Usa flexbox para alinear el contenido centrado */
     align-items: center;
     /* Centra verticalmente el texto dentro del cuadro */
     justify-content: center;
     /* Centra horizontalmente el texto dentro del cuadro */
-    text-align: center;
-    /* Centra el texto */
-    font-weight: bold;
-    /* Aplica un grosor de fuente más pronunciado */
-    font-size: 1.2em;
-    /* Aumenta el tamaño de la fuente */
     border-radius: 10px;
     /* Redondea las esquinas del cuadro */
     box-shadow: 2px 2px 10px #000000;
@@ -136,21 +97,16 @@ main {
 /* Pie de página */
 footer {
     background-color: #77777733;
-    /* Color de fondo semi-transparente para el pie de página */
     color: #FFFFFF;
-    /* Color del texto del pie de página */
+    width: 100%;
     text-align: center;
-    /* Centra el texto del pie de página */
     padding: 5px;
-    /* Espaciado interno del pie de página */
     position: fixed;
     /* Fija el pie de página en la parte inferior */
-    width: 100%;
-    /* Ancho completo para el pie de página */
     bottom: 0;
-    /* Posición en la parte inferior */
+    /* Elimina la posición en la parte inferior*/
     left: 0;
-    /* Alineación a la izquierda */
+    /* Elimina la alineación a la izquierda*/
     margin: 0;
     /* Elimina el margen del pie de página */
 }

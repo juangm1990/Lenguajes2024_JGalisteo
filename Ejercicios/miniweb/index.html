@@ -6,9 +6,36 @@
     <title>Miniweb</title>
     <link rel="stylesheet" href="/Ejercicios/miniweb/css/index.css">
     <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/icono.png">
-</head>
-<body>
 
+    <!-- Archivo CSS para cambiar de tema la página de color -->
+    <link id="theme" rel="stylesheet" type="text/css" href="css/claro.css" />
+
+    <!-- CAMBIO DE COLOR -->
+    <script>
+        function cambiatema() {
+            var theme = document.getElementById('theme'); // Corregido para seleccionar por ID
+            if (theme.getAttribute('href') === 'css/claro.css') {
+                theme.setAttribute('href', 'css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', 'css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
+        }
+
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Asegúrate de seleccionar el elemento con ID "theme"
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', temaGuardado);
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="tema_activo()">
+    
     <!-- Encabezado Principal -->
     <header>
         <img src="/Ejercicios/miniweb/imagenes/logoJuan.png" alt="Logotipo JUAN">
@@ -19,6 +46,7 @@
     <nav>
         <ul>
             <li><a href="/Ejercicios/index.html">Inicio</a></li>
+            <li><button id="boton" onclick="cambiatema()">Cambio tema</button></li>
         </ul>
     </nav>
 

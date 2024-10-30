@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> modelo de caja</title>
+<style>
+    body{
+        background-color: blueviolet;
+        font-size: 50px;
+    }
+    .caja {
+        width: 500px;
+        height: 200px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    .amarillo{
+        background-color: yellow;
+        margin-top: 50px;
+    }
+    .verde{
+        background-color: green;
+        margin-top:20px;
+        border: 50px solid white ;
+    }
+    .cajita{
+        background-color: aqua;
+        width: 150px;
+        height: 100px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="caja amarillo">
+        <div class="cajita">Hola</div>
+    </div>      
+    <div class="caja verde">Div 2</div>
+    <span class="amarillo">Span 1</span>
+    <span class="verde">Span 2</span>
+</body>
+</html>

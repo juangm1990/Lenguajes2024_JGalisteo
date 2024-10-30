@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniweb</title>
-    <link rel="stylesheet" href="/Ejercicios/miniweb/css/archivo_2.css">
+    <title>Miniweb - Archivo 2</title>
+    <link id="theme" rel="stylesheet" type="text/css" href="../css/claro.css">
     <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/icono.png">
+
+    <!-- Script para activar el tema guardado -->
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', '../' + temaGuardado);
+            }
+        }
+    </script>
 </head>
-<body>
+
+<body onload="tema_activo()">
 
     <!-- Encabezado Principal -->
     <header>
@@ -32,8 +44,7 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer
-        style="background-color: #0000007a; color: #f5f5f5; text-align: center; padding: 5px; position: fixed; width: 100%; bottom: 0; left: 0; margin: 0;">
+    <footer style="background-color: #0000007a; color: #f5f5f5; text-align: center; padding: 5px; position: fixed; width: 100%; bottom: 0; left: 0; margin: 0;">
         <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
     </footer>
 
