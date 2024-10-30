@@ -2,45 +2,71 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /* Elimina el relleno por defecto del navegador */
     line-height: 1.6;
+    /* Aumenta el interlineado del texto para mejorar la legibilidad */
+    /* //////////////////////////////////// */
+    /* Requisitos obligatorios de la web */
     width: 1200px;
+    /* Establece un ancho fijo para el cuerpo */
     margin: auto;
+    /* Centra el contenido del body en la pantalla */
 }
 
+/* ////////////////////////////////////////// */
+
 /* Encabezado */
+
 header {
-    display: flex;
-    justify-content: center;
     background-color: #002c54;
+    display: flex;
+    /* Utiliza Flexbox para la disposición de los elementos */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
     padding: 10px;
-    position: relative; 
+    /* Espaciado interno del encabezado */
+    position: relative;
+    /* Permite la posición absoluta de elementos secundarios */
 }
 
 header img {
     position: absolute;
+    /* Posiciona la imagen de forma absoluta dentro del encabezado */
     left: 50px;
+    /* Espacio desde la izquierda */
     width: 70px;
+    /* Aumenta el ancho de la imagen */
     height: auto;
+    /* Mantiene la proporción de la imagen */
 }
 
 header h1 {
-    color: white;
+    color: #FFFFFF;
     margin: 0;
+    /* Elimina el margen */
     text-align: center;
+    /* Centra el texto */
 }
+
+/* ////////////////////////////////////////// */
 
 /* Navegación principal */
 nav {
     background-color: #a5a5a5;
     padding: 10px;
+    /* Espaciado interno de la navegación */
     text-align: center;
+    /* Centra el contenido de la navegación */
 }
 
 nav a {
     color: #FFFFFF;
     margin: 10px;
+    /* Espaciado alrededor de los enlaces */
     text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
     padding: 10px;
+    /* Espaciado interno de los enlaces */
 }
 
 nav a:hover {
@@ -48,12 +74,18 @@ nav a:hover {
     color: #002c54;
 }
 
+/* ////////////////////////////////////////// */
+
 /* Contenido principal */
 main {
     padding: 0;
+    /* Sin espaciado interno */
     width: 100%;
+    /* Asegura que el ancho del main se ajuste al del body */
     margin: 0 auto;
+    /* Centra el contenido del main */
     border-top: 45px solid #ffffff;
+    /* Aplica una línea de separación en la parte superior */
 }
 
 h2 {
@@ -76,7 +108,11 @@ p {
     margin: 0 auto;
 }
 
+/* ////////////////////////////////////////// */
+
+/* Diséño de la página */
 /* Centrado de imágenes y videos */
+
 .imagen-centro {
     text-align: center;
 }
@@ -86,20 +122,22 @@ p {
     height: auto;
 }
 
-/* Centrado de videos */
 .video-centro {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente el video */
-    margin: 20px 0; /* Espacio superior e inferior */
+    align-items: center;
+    /* Centra horizontalmente el video */
+    margin: 20px 0;
+    /* Espacio superior e inferior */
 }
 
-/* Estilo para figcaption */
 figcaption {
-    text-align: center; /* Centra el texto del pie de figura */
-    color: #555; /* Color del pie de figura */
-    margin: 15px; /* Margen para separar del contenido superior e inferior */
+    text-align: center;
+    color: #555;
+    margin: 15px;
 }
+
+/* ////////////////////////////////////////// */
 
 /* Pie de página */
 footer p {
@@ -108,8 +146,13 @@ footer p {
     text-align: center;
     padding: 5px;
     position: fixed;
+    /* Fija el pie de página en la parte inferior */
     width: 100%;
+    /* Ancho completo para el pie de página */
     bottom: 0;
+    /* Posición en la parte inferior */
     left: 0;
+    /* Alineación a la izquierda */
     margin: 0;
+    /* Elimina el margen del pie de página */
 }

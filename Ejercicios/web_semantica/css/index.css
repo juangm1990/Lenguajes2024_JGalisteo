@@ -1,18 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    /* Define la fuente principal del documento */
     margin: 0;
-    /* Elimina el margen por defecto del navegador */
     padding: 0;
     /* Elimina el relleno por defecto del navegador */
     line-height: 1.6;
     /* Aumenta el interlineado del texto para mejorar la legibilidad */
-    /* ////////////////////////////////////
+    /* //////////////////////////////////// */
     /* Requisitos obligatorios de la web */
     width: 1200px;
-    /* Define el ancho del cuerpo */
+    /* Establece un ancho fijo para el cuerpo */
     margin: auto;
-    /* Centra el contenido del body */
+    /* Centra el contenido del body en la pantalla */
 }
 
 /* ////////////////////////////////////////// */
@@ -20,77 +18,96 @@ body {
 /* Encabezado */
 
 header {
-    display: flex;
-    justify-content: center;
     background-color: #002c54;
+    display: flex;
+    /* Utiliza Flexbox para la disposición de los elementos */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
     padding: 10px;
-    position: relative; 
+    /* Espaciado interno del encabezado */
+    position: relative;
+    /* Permite la posición absoluta de elementos secundarios */
 }
 
 header img {
     position: absolute;
+    /* Posiciona la imagen de forma absoluta dentro del encabezado */
     left: 50px;
+    /* Espacio desde la izquierda */
     width: 50px;
+    /* Ancho de la imagen */
     height: auto;
+    /* Mantiene la proporción de la imagen */
 }
 
 header h1 {
-    color: white;
+    color: #FFFFFF;
     margin: 0;
+    /* Elimina el margen */
     width: 100%;
+    /* Ancho completo para el encabezado */
     text-align: center;
+    /* Centra el texto */
 }
 
 .logo {
     position: absolute;
+    /* Posición absoluta para el logo */
     left: 50px;
-    width: 70px; /* Aumenta el ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
+    /* Espacio desde la izquierda */
+    width: 70px;
+    /* Aumenta el ancho de la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
 }
 
 /* ////////////////////////////////////////// */
 
-/* Navegación principal*/
+/* Navegación principal */
 
 nav {
     background-color: #a5a5a5;
     padding: 10px;
+    /* Espaciado interno de la navegación */
     text-align: center;
+    /* Centra el contenido de la navegación */
 }
 
 nav a {
     color: #FFFFFF;
     margin: 10px;
+    /* Espaciado alrededor de los enlaces */
     text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
     padding: 10px;
+    /* Espaciado interno de los enlaces */
 }
 
 nav a:hover {
     background-color: #ffffff;
-    /* Cambia el fondo cuando el cursor pase sobre el enlace */
     color: #002c54;
-    /* Cambia el color del texto cuando el cursor pase sobre el enlace */
 }
 
-/* Navegación secundaria*/
+/* Navegación secundaria */
 
 .menu nav {
     background-color: #FFA500;
     padding: 10px;
+    /* Espaciado interno de los enlaces */
     text-align: center;
+    /* Centra el contenido de la navegación secundaria */
 }
 
 .menu nav a {
     color: #FFFFFF;
     margin: 10px;
     padding: 10px;
+    /* Espaciado interno de los enlaces */
 }
 
 .menu nav a:hover {
-    background-color: #002c54;
-    /* Cambia el fondo cuando el cursor pase sobre el enlace */
     color: #ffffff;
-    /* Cambia el color del texto cuando el cursor pase sobre el enlace */
+    background-color: #002c54;
 }
 
 /* ////////////////////////////////////////// */
@@ -99,9 +116,11 @@ nav a:hover {
 
 main {
     padding: 0;
+    /* Sin espaciado interno */
     width: 100%;
-    /* Asegura que el ancho del main se ajuste al ancho del body */
+    /* Asegura que el ancho del main se ajuste al del body */
     margin: 0 auto;
+    /* Centra el contenido del main */
     border-top: 45px solid #ffffff;
     /* Aplica una línea de separación en la parte superior */
 }
@@ -117,76 +136,93 @@ h3 {
 p {
     color: #000000;
     text-align: justify;
-    /* Ajusta el texto para que esté justificado */
 }
 
 .cita {
     color: #000000;
     text-align: justify;
+    /* Justifica el texto de la cita */
     max-width: 915px;
-    /* Define el ancho máximo del texto */
+    /* Ancho máximo del texto en citas */
     margin: 0 auto;
-    /* Centra horizontalmente */
+    /* Centra horizontalmente la cita */
 }
 
 /* ////////////////////////////////////////// */
 
-/* Maquetado de la página */
+/* Diséño de la página */
 
 .diseño {
     display: flex;
+    /* Utiliza Flexbox para organizar los elementos */
     align-items: flex-start;
+    /* Alinea los elementos al inicio */
     justify-content: center;
+    /* Centra el contenido horizontalmente */
     padding: 10px;
-    position: relative; 
+    /* Espaciado interno del diseño */
+    position: relative;
+    /* Permite posicionar elementos secundarios */
 }
 
 /* TEXTO */
 .diseño article {
     flex: 1;
-    max-width: 1000px;
+    /* Permite que el artículo ocupe el espacio disponible */
+    max-width: 1200px;
+    /* Ancho máximo del artículo */
 }
 
 /* IMAGEN */
 .diseño figure {
     max-width: 500px;
+    /* Ancho máximo de las imágenes */
 }
 
 /* VIDEO */
 .diseño aside {
     max-width: 560px;
+    /* Ancho máximo del área de video */
 }
 
 /* ////////////////////////////////////////// */
 
 .imagen-centro {
     width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
     height: auto;
+    /* Mantiene la proporción de la imagen */
 }
 
 .imagen {
     width: 100%;
     /* Ajusta el ancho al 100% del contenedor */
     text-align: center;
+    /* Centra el contenido de la imagen */
     height: auto;
+    /* Mantiene la proporción de la imagen */
 }
 
 .minititulo {
+    color: #333;
     text-align: center;
-    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
-    font-size: 24px; /* Ajusta el tamaño de la fuente */
-    color: #333; /* Color del texto */
+    font-family: 'Poppins', sans-serif;
+    /* Aplica la fuente Poppins */
+    font-size: 24px;
+    /* Tamaño de la fuente para el subtítulo */
 }
 
 /* ////////////////////////////////////////// */
 
 .video {
     display: flex;
+    /* Utiliza Flexbox para la disposición del video */
     height: auto;
     /* Mantiene la proporción de la imagen o video */
     text-align: center;
+    /* Centra el contenido */
     margin: 20px;
-    /* Ajusta el margen para separar del contenido superior e inferior */
+    /* Margen para separar del contenido superior e inferior */
     flex-direction: column;
     /* Alinea el audio y el texto uno encima del otro */
 }
@@ -195,25 +231,26 @@ p {
 
 .audio {
     display: flex;
+    /* Utiliza Flexbox para la disposición del audio */
     flex-direction: column;
     /* Alinea el audio y el texto uno encima del otro */
     text-align: center;
+    /* Centra el contenido */
     margin: 20px;
-    /* Ajusta el margen para separar del contenido superior e inferior */
+    /* Margen para separar del contenido superior e inferior */
 }
 
 audio {
     display: flex;
+    /* Permite Flexbox para el audio */
     text-align: center;
+    /* Centra el contenido */
 }
 
 figcaption {
     font-style: italic;
-    /* Aplica un estilo en cursiva al texto del pie de figura */
     color: #555;
-    /* Establece el color del pie de figura */
     margin: 15px;
-    /* Ajusta el margen para separar del contenido superior e inferior */
 }
 
 /* ////////////////////////////////////////// */
@@ -225,8 +262,13 @@ footer p {
     text-align: center;
     padding: 5px;
     position: fixed;
+    /* Fija el pie de página en la parte inferior */
     width: 100%;
+    /* Ancho completo para el pie de página */
     bottom: 0;
+    /* Posición en la parte inferior */
     left: 0;
+    /* Alineación a la izquierda */
     margin: 0;
+    /* Elimina el margen del pie de página */
 }
