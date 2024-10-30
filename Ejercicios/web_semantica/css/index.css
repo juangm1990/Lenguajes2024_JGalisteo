@@ -245,12 +245,13 @@ audio {
     /* Permite Flexbox para el audio */
     text-align: center;
     /* Centra el contenido */
+    width: 400px; /* Ajustar manualmente el ancho de la barra de audio */
 }
 
 figcaption {
     font-style: italic;
     color: #555;
-    margin: 15px;
+    margin: 5px;
 }
 
 /* ////////////////////////////////////////// */
