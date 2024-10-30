@@ -171,14 +171,24 @@ p {
     height: auto;
 }
 
+.minititulo {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
+    font-size: 24px; /* Ajusta el tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
 /* ////////////////////////////////////////// */
 
 .video {
-    width: 100%;
-    /* Ajusta el ancho al 100% del contenedor */
+    display: flex;
     height: auto;
     /* Mantiene la proporción de la imagen o video */
     text-align: center;
+    margin: 20px;
+    /* Ajusta el margen para separar del contenido superior e inferior */
+    flex-direction: column;
+    /* Alinea el audio y el texto uno encima del otro */
 }
 
 /* ////////////////////////////////////////// */
@@ -195,6 +205,15 @@ p {
 audio {
     display: flex;
     text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    /* Aplica un estilo en cursiva al texto del pie de figura */
+    color: #555;
+    /* Establece el color del pie de figura */
+    margin: 15px;
+    /* Ajusta el margen para separar del contenido superior e inferior */
 }
 
 /* ////////////////////////////////////////// */
