@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    width: 1200px;
+    margin: auto;
+}
+
+/* Encabezado */
+header {
+    background-color: #002c54;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 35px;
+    width: 70px;
+    height: auto;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif; /* Aplicar la tipografía Poppins */
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 30px; /* Tamaño de la fuente */
+}
+
+/* Recuadro naranja */
+.recuadro-naranja {
+    background-color: #FFA500; /* Color naranja */
+    height: 10px; /* Altura del recuadro */
+}
+
+.recuadro-azul {
+    background-color: #002c54; /* Color azul */
+    height: 10px; /* Altura del recuadro */
+}
+
+.iconogithub {
+    width: 75px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Mantiene la proporción */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+/* Navegación principal */
+nav {
+    background-color: #a5a5a5;
+    padding: 10px;
+    text-align: right;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif; /* Aplicar la tipografía Poppins */
+    color: #002c54; /* Color del texto */
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 26px; /* Tamaño de fuente, puedes ajustar según necesites */
+}
+
+nav a:hover {
+    color: #FFFFFF; /* Mantiene el color del texto */
+}
+
+/* Navegación secundaria */
+.menu nav {
+    background-color: #FFA500;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu nav a {
+    color: #FFFFFF;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu nav a:hover {
+    color: #ffffff;
+    background-color: #002c54;
+}
+
+/* Contenido principal */
+main {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.proyectos {
+    font-family: 'Poppins', sans-serif; /* Aplica la tipografía Poppins */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    font-size: 63px; /* Tamaño de fuente */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+h3 {
+    color: #000000;
+}
+
+p {
+    color: #000000;
+    text-align: justify;
+}
+
+/* Imágenes */
+.imagen-centro {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555;
+    margin: 5px;
+}
+
+/* Pie de página */
+footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
