@@ -79,7 +79,8 @@ p {
 /* Centrado de videos */
 .video-centro {
     display: flex;
-    justify-content: center; /* Centra horizontalmente el video */
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el video */
     margin: 20px 0; /* Espacio superior e inferior */
 }
 
