@@ -3,109 +3,154 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    width: 1200px; /* Define el ancho del cuerpo */
-    margin: auto; /* Centra el contenido del body */
+    width: 1200px;
+    /* Define el ancho del cuerpo */
+    margin: auto;
+    /* Centra el contenido del body */
 }
 
 header {
-    display: flex; /* Activa el modelo de caja flexible (flexbox) en el encabezado */
-    align-items: center; /* Alinea verticalmente los elementos dentro del encabezado al centro */
-    justify-content: center; /* Centra horizontalmente los elementos dentro del encabezado */
-    background-color: #002c54; /* Establece el color de fondo del encabezado */
-    padding: 10px; /* Agrega un espaciado interno */
-    position: relative; /* Permite que los elementos hijos con posición absoluta se posicionen relativamente */
+    background-color: #002c54;
+    display: flex;
+    /* Activa el modelo de caja flexible (flexbox) en el encabezado */
+    align-items: center;
+    /* Alinea verticalmente los elementos dentro del encabezado al centro */
+    justify-content: center;
+    /* Centra horizontalmente los elementos dentro del encabezado */
+    padding: 10px;
+    /* Agrega un espaciado interno */
+    position: relative;
+    /* Permite que los elementos hijos con posición absoluta se posicionen relativamente */
 }
 
-/* Mover logotipo */
+/* Diseño logotipo */
 header img {
-    position: absolute; /* Posiciona la imagen de forma absoluta dentro del encabezado */
-    left: 50px; /* Coloca la imagen a 50px desde el borde izquierdo */
-    width: 70px; /* Define el ancho de la imagen */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    position: absolute;
+    /* Posiciona la imagen de forma absoluta dentro del encabezado */
+    left: 50px;
+    /* Coloca la imagen a 50px desde el borde izquierdo */
+    width: 70px;
+    /* Define el ancho de la imagen */
+    height: auto;
+    /* Ajusta la altura automáticamente para mantener la proporción */
 }
 
 /* Estilo del título del encabezado */
 header h1 {
-    color: white; /* Cambia el color del texto del título a blanco */
-    margin: 0; /* Elimina el margen predeterminado del título */
-    width: 100%; /* Ocupa todo el ancho disponible del encabezado */
-    text-align: center; /* Centra el texto del título */
+    color: white;
+    /* Cambia el color del texto del título a blanco */
+    width: 100%;
+    /* Ocupa todo el ancho disponible del encabezado */
+    text-align: center;
+    /* Centra el texto del título */
 }
 
 /* Navegación */
 nav ul {
-    display: flex; /* Usa flexbox para organizar los elementos en una fila */
-    justify-content: center; /* Centra los enlaces de la lista horizontalmente */
-    background-color: #a5a5a5; /* Establece un fondo gris para la barra de navegación */
-    padding: 10px; /* Agrega espaciado interno para mejorar el diseño */
-    list-style: none; /* Elimina los puntos de lista predeterminados */
+    background-color: #a5a5a5;
+    display: flex;
+    /* Usa flexbox para organizar los elementos en una fila */
+    justify-content: center;
+    /* Centra los enlaces de la lista horizontalmente */
+    padding: 10px;
+    /* Agrega espaciado interno para mejorar el diseño */
+    list-style: none;
+    /* Elimina los puntos de lista predeterminados */
 }
 
 nav ul li {
-    margin: 15px; /* Agrega espacio entre cada enlace de navegación */
+    margin: 15px;
+    /* Agrega espacio entre cada enlace de navegación */
 }
 
 /* Estilo de los enlaces de navegación */
 nav ul li a {
-    color: white; /* Define el color del texto de los enlaces como blanco */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    padding: 5px 10px; /* Agrega espacio alrededor del texto del enlace */
-    transition: background-color 0.3s; /* Suaviza el cambio de color de fondo al pasar el cursor */
+    color: white;
+    /* Define el color del texto de los enlaces como blanco */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    padding: 10px;
+    /* Agrega espacio alrededor del texto del enlace */
 }
 
 nav ul li a:hover {
-    background-color: #666; /* Cambia el color de fondo al pasar el cursor */
-    border-radius: 5px; /* Redondea ligeramente las esquinas del enlace */
+    background-color: #666;
+    /* Cambia el color de fondo al pasar el cursor */
+    border-radius: 5px;
+    /* Redondea ligeramente las esquinas del enlace */
+    padding: 20px;
 }
 
 /* Contenido principal */
 main {
-    padding: 20px; /* Agrega espaciado interno en el área principal */
-    display: flex; /* Usa flexbox para alinear los elementos en el contenido */
-    justify-content: center; /* Centra el contenido */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+    padding: 20px;
+    /* Agrega espaciado interno en el área principal */
+    display: flex;
+    /* Usa flexbox para alinear los elementos en el contenido */
+    justify-content: center;
+    /* Centra el contenido */
 }
 
 /* Estilo del acceso de los Archivos */
 .cuadrados {
-    width: 200px; /* Define el ancho */
-    height: 200px; /* Define la altura */
-    background-color: #002c54; /* Color de fondo del cuadro */
-    color: #ffffff; /* Color del texto dentro del cuadro */
-    margin: 20px; /* Agrega espacio alrededor */
-    padding: 20px; /* Agrega espacio interno dentro */
-    display: flex; /* Usa flexbox para alinear el contenido centrado */
-    align-items: center; /* Centra verticalmente el texto dentro del cuadro */
-    justify-content: center; /* Centra horizontalmente el texto dentro del cuadro */
-    text-align: center; /* Centra el texto */
-    font-weight: bold; /* Aplica un grosor de fuente más pronunciado */
-    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
-    border-radius: 10px; /* Redondea las esquinas del cuadro */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un efecto de elevación */
-    transition: transform 0.3s; /* Suaviza el cambio de tamaño al pasar el cursor */
+    background-color: #002c54;
+    color: #ffffff;
+    width: 200px;
+    /* Define el ancho */
+    height: 200px;
+    /* Define la altura */
+    margin: 20px;
+    /* Agrega espacio alrededor */
+    padding: 20px;
+    /* Agrega espacio interno dentro */
+    display: flex;
+    /* Usa flexbox para alinear el contenido centrado */
+    align-items: center;
+    /* Centra verticalmente el texto dentro del cuadro */
+    justify-content: center;
+    /* Centra horizontalmente el texto dentro del cuadro */
+    text-align: center;
+    /* Centra el texto */
+    font-weight: bold;
+    /* Aplica un grosor de fuente más pronunciado */
+    font-size: 1.2em;
+    /* Aumenta el tamaño de la fuente */
+    border-radius: 10px;
+    /* Redondea las esquinas del cuadro */
+    box-shadow: 2px 2px 10px #000000;
+    /* Agrega una sombra para un efecto de elevación */
 }
 
 /* Estilo de los enlaces dentro de los cuadros */
 .cuadrados a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #ffffff; /* Define el color del enlace en blanco */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    color: #ffffff;
 }
 
 .cuadrados:hover {
-    transform: scale(1.05); /* Aumenta el tamaño del cuadro al pasar el cursor */
-    background-color: #FFA500; /* Cambia el color de fondo a amarillo dorado */
-    color: white; /* Mantiene el color del texto en blanco */
+    background-color: #FFA500;
+    color: white;
 }
 
 /* Pie de página */
 footer {
-    background-color: #77777733; /* Color de fondo semi-transparente para el pie de página */
-    color: #FFFFFF; /* Color del texto del pie de página */
-    text-align: center; /* Centra el texto del pie de página */
-    padding: 5px; /* Espaciado interno del pie de página */
-    position: fixed; /* Fija el pie de página en la parte inferior */
-    width: 100%; /* Ancho completo para el pie de página */
-    bottom: 0; /* Posición en la parte inferior */
-    left: 0; /* Alineación a la izquierda */
-    margin: 0; /* Elimina el margen del pie de página */
+    background-color: #77777733;
+    /* Color de fondo semi-transparente para el pie de página */
+    color: #FFFFFF;
+    /* Color del texto del pie de página */
+    text-align: center;
+    /* Centra el texto del pie de página */
+    padding: 5px;
+    /* Espaciado interno del pie de página */
+    position: fixed;
+    /* Fija el pie de página en la parte inferior */
+    width: 100%;
+    /* Ancho completo para el pie de página */
+    bottom: 0;
+    /* Posición en la parte inferior */
+    left: 0;
+    /* Alineación a la izquierda */
+    margin: 0;
+    /* Elimina el margen del pie de página */
 }
