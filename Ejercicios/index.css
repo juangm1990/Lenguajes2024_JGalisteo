@@ -53,14 +53,12 @@ header h1 {
     width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
-
 /* Icono de GitHub */
 .iconogithub {
     width: 75px; /* Ajusta el tamaño del ícono */
     height: auto; /* Mantiene la proporción */
     vertical-align: middle; /* Alinea verticalmente con el texto */
 }
-
 
 /* Navegación principal */
 .menu-principal {
@@ -72,7 +70,6 @@ header h1 {
     width: calc(100% - 20px); /* Ancho completo menos el padding */
     max-width: 1200px; /* Limita el ancho a 1200px */
 }
-
 
 .menu-principal nav a {
     font-family: 'Poppins', sans-serif;
@@ -111,8 +108,7 @@ main {
     width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
-/* Estilo de los cuadros */
-/* Estilo de los cuadros */
+/* Estilo y diseño de los cuadrados */
 .cuadrados {
     background-color: #a5a5a5; /* Color de fondo */
     color: #ffffff; /* Color del texto del enlace */
@@ -128,7 +124,7 @@ main {
     border-radius: 10px; /* Bordes redondeados */
 }
 
-/* Estilo de los enlaces dentro de los cuadros */
+/* Estilo de los enlaces dentro de los cuadrados */
 .cuadrados a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: #000000; /* Color del texto del enlace */
@@ -139,16 +135,15 @@ main {
     line-height: 80px; /* Alinea el texto verticalmente, ajusta según la nueva altura */
 }
 
-/* Estilo para el hover */
+/* Estilo para el cuadrado */
 .cuadrados:hover {
     background-color: #002c54; /* Color de fondo al pasar el mouse */
 }
 
-/* Cambia el color del texto al pasar el mouse */
+/* Cambia el color del texto al pasar el ratón */
 .cuadrados:hover a {
-    color: #FFFFFF; /* Cambia el color del texto a blanco en el hover */
+    color: #FFFFFF; 
 }
-
 
 /* Imágenes */
 .imagen-centro {
