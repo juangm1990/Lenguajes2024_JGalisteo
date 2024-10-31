@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Galisteo">
+    <meta name="description" content="Formulario de contacto básico">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario3.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Formulario de Contacto</h1>
+        <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+
+        <form action="proceso.php" method="post">
+            <label for="nombre">Nombre <span class="asterisco">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+
+            <label for="email">Email <span class="asterisco">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Introduce tu teléfono">
+
+            <label for="sitioweb">Sitio web</label>
+            <input type="text" id="sitioweb" name="sitioweb" placeholder="Escribe la URL de tu sitio web">
+
+            <label for="asunto">Asunto <span class="asterisco">*</span></label>
+            <input type="text" id="asunto" name="asunto" placeholder="Introduce tu asunto" required>
+
+            <label for="mensaje">Mensaje <span class="asterisco">*</span></label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+            <input class="boton" type="submit" value="Enviar">
+            <p class="note">* Los campos son obligatorios.</p>
+        </form>
+
+        <div class="volver-inicio">
+            <a href="../index.html">VOLVER AL INICIO</a>
+        </div>
+    </div>
+</body>
+
+</html>
