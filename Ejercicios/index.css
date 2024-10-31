@@ -68,10 +68,11 @@ header h1 {
     padding: 10px; /* Espaciado interno */
     text-align: right; /* Centra el contenido */
     border-radius: 5px; /* Bordes redondeados */
-    margin: 10px auto; /* Margen automático para centrar */
-    width: 100%; /* Ancho completo */
+    margin: 10px 0; /* Margen arriba y abajo */
+    width: calc(100% - 20px); /* Ancho completo menos el padding */
     max-width: 1200px; /* Limita el ancho a 1200px */
 }
+
 
 .menu-principal nav a {
     font-family: 'Poppins', sans-serif;
@@ -111,9 +112,10 @@ main {
 }
 
 /* Estilo de los cuadros */
+/* Estilo de los cuadros */
 .cuadrados {
-    background-color: #002c54; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
+    background-color: #a5a5a5; /* Color de fondo */
+    color: #ffffff; /* Color del texto del enlace */
     font-weight: bold; /* Aplica un grosor de fuente */
     font-size: 22px; /* Tamaño de fuente, ajusta si es necesario */
     height: 80px; /* Altura del cuadro */
@@ -124,13 +126,12 @@ main {
     align-items: center; /* Centra verticalmente el texto dentro del cuadro */
     justify-content: center; /* Centra horizontalmente el texto dentro del cuadro */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
 }
 
 /* Estilo de los enlaces dentro de los cuadros */
 .cuadrados a {
     text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #ffffff; /* Color del texto del enlace */
+    color: #000000; /* Color del texto del enlace */
     display: block; /* Asegura que el enlace ocupe todo el espacio del cuadro */
     width: 100%; /* Ancho completo */
     height: 100%; /* Altura completa */
@@ -140,9 +141,14 @@ main {
 
 /* Estilo para el hover */
 .cuadrados:hover {
-    background-color: #FFA500; /* Color de fondo al pasar el mouse */
-    color: white; /* Color del texto al pasar el mouse */
+    background-color: #002c54; /* Color de fondo al pasar el mouse */
 }
+
+/* Cambia el color del texto al pasar el mouse */
+.cuadrados:hover a {
+    color: #FFFFFF; /* Cambia el color del texto a blanco en el hover */
+}
+
 
 /* Imágenes */
 .imagen-centro {
