@@ -1,85 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    width: 1200px;
-    margin: auto;
+    font-family: Arial, sans-serif; /* Fuente principal del cuerpo */
+    margin: 0; /* Margen externo del cuerpo */
+    padding: 0; /* Espaciado interno del cuerpo */
+    line-height: 1.6; /* Altura de línea para el texto */
+    
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
 }
 
 /* Encabezado */
 header {
-    background-color: #002c54;
-    display: flex;
-    justify-content: center;
+    background-color: #002c54; /* Color de fondo del encabezado */
+    display: flex; /* Usar flexbox para la organización del contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
     padding: 15px;
     position: relative;
 }
 
-.logo {
-    position: absolute;
-    left: 35px;
-    width: 70px;
-    height: auto;
-}
-
 header h1 {
-    font-family: 'Poppins', sans-serif; /* Aplicar la tipografía Poppins */
+    font-family: 'Poppins', sans-serif; /* Tipografía específica para el encabezado */
     color: #FFFFFF;
     margin: 0;
     font-size: 30px; /* Tamaño de la fuente */
 }
 
-.notas {
-    position: left;
+.logo {
+    position: absolute; /* Fija la posición del logo */
+    left: 35px;
+    width: 70px; /* Ancho del logo */
+    height: auto;
 }
 
-.notas p {
-    font-family: 'Arial', sans-serif; /* Tipografía para el párrafo */
-    font-size: 16px; /* Tamaño de la fuente del párrafo */
-    color: #333; /* Color del texto del párrafo */
-}
-
-/* Recuadro naranja */
+/* Linea principal*/
 .recuadrogris {
-    background-color: #a5a5a5; /* Color naranja */
+    background-color: #a5a5a5; /* Color gris para el recuadro */
     height: 10px; /* Altura del recuadro */
 }
 
-.recuadroazul {
-    background-color: #002c54; /* Color azul */
-    height: 10px; /* Altura del recuadro */
-    margin: 0; /* Elimina el margen para evitar separación */
-    width: 100%; /* Asegura que ocupe el ancho completo */
-}
-
-/* Icono de GitHub */
-.iconogithub {
-    width: 75px; /* Ajusta el tamaño del ícono */
-    height: auto; /* Mantiene la proporción */
-    vertical-align: middle; /* Alinea verticalmente con el texto */
+/*Fotografía de la cabecera*/
+.imagencentro {
+    width: 100%;
+    height: auto;
 }
 
 /* Navegación principal */
 .menuprincipal {
     background-color: #FFA500; /* Fondo naranja */
-    padding: 10px; /* Espaciado interno */
-    text-align: right; /* Centra el contenido */
+    padding: 10px;
+    text-align: right; /* Alinea el contenido a la derecha */
     border-radius: 5px; /* Bordes redondeados */
-    margin-top: 15px; /* Margen arriba y abajo */
+    margin-top: 15px;
 }
 
 .menuprincipal nav a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: #002c54; 
+    color: #002c54;
     margin: 10px; /* Espaciado entre enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    font-size: 33px; /* Tamaño de la letra, ajusta según necesites */
+    text-decoration: none;
+    font-size: 33px;
 }
 
 .menuprincipal nav a:hover {
-    color: #FFFFFF; /* Mantiene el color del texto */
+    color: #FFFFFF;
+}
+
+.iconogithub {
+    width: 75px; /* Ajusta el tamaño del ícono */
+    height: auto;
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+/* Configuración para poner notas de texto */
+.notas {
+    position: left;
+}
+
+.notas p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Tamaño de la fuente del párrafo */
+    color: #333; /* Color del texto del párrafo */
+}
+
+/* Linea secundaria*/
+.recuadroazul {
+    background-color: #002c54;
+    height: 10px;
+    margin: 0; /* Elimina el margen para evitar separación */
+    width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
 /* Contenido principal */
@@ -89,77 +98,66 @@ main {
     margin: 0 auto;
 }
 
+/* Texto */
 .tituloproyectos {
-    font-family: 'Poppins', sans-serif; /* Aplica la tipografía Poppins */
-    color: #000000; /* Color del texto */
-    text-align: center; /* Centra el texto */
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    text-align: center;
     font-size: 63px; /* Tamaño de fuente */
-    margin: 20px 0; /* Espaciado arriba y abajo */
+    margin: 20px 0;
 }
 
-/* Estilo de los enlaces que dan acceso a los Archivos */
+/* Configuración y diseño del contenido y proyectos */
 .menu {
     display: flex; /* Activa flexbox */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
-    justify-content: center; /* Centra los elementos en la página */
-    margin: 20px auto; /* Margen automático para centrar */
-    width: 100%; /* Asegura que ocupe el ancho completo */
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
 }
 
-/* Estilo y diseño de los cuadrados */
 .enlacecuadrados {
     background-color: #a5a5a5; /* Color de fondo */
-    color: #ffffff; /* Color del texto del enlace */
-    font-weight: bold; /* Aplica un grosor de fuente */
-    font-size: 22px; /* Tamaño de fuente, ajusta si es necesario */
-    height: 80px; /* Altura del cuadro */
-    width: calc(25% - 45px); /* Ancho de cada cuadrado, ajustado para cinco columnas */
-    margin: 10px; /* Margen alrededor del cuadro */
-    padding: 10px; /* Espaciado interno */
-    display: flex; /* Usa flexbox para centrar el contenido */
-    align-items: center; /* Centra verticalmente el texto dentro del cuadro */
-    justify-content: center; /* Centra horizontalmente el texto dentro del cuadro */
-    border-radius: 10px; /* Bordes redondeados */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    height: 80px;
+    width: calc(25% - 45px); /* Ancho ajustado para cinco columnas */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
-/* Estilo de los enlaces dentro de los cuadrados */
 .enlacecuadrados a {
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #000000; /* Color del texto del enlace */
-    display: block; /* Asegura que el enlace ocupe todo el espacio del cuadro */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Altura completa */
-    text-align: center; /* Centra el texto */
-    line-height: 80px; /* Alinea el texto verticalmente, ajusta según la nueva altura */
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
 }
 
-/* Estilo para el cuadrado */
 .enlacecuadrados:hover {
     background-color: #002c54; /* Color de fondo al pasar el mouse */
 }
 
-/* Cambia el color del texto al pasar el ratón */
 .enlacecuadrados:hover a {
     color: #FFFFFF; 
 }
 
-/* Imágenes */
-.imagencentro {
-    width: 100%;
-    height: auto;
-}
-
 /* Pie de página */
-footer p {
+footer p{
     background-color: #77777733;
     color: #FFFFFF;
+    width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    margin: 0;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }
-
-
