@@ -31,59 +31,50 @@ header h1 {
 }
 
 /* Recuadro naranja */
-.recuadro-naranja {
-    background-color: #FFA500; /* Color naranja */
+.recuadro-gris {
+    background-color: #a5a5a5; /* Color naranja */
     height: 10px; /* Altura del recuadro */
 }
 
 .recuadro-azul {
     background-color: #002c54; /* Color azul */
     height: 10px; /* Altura del recuadro */
+    margin: 0; /* Elimina el margen para evitar separación */
+    width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
+
+/* Icono de GitHub */
 .iconogithub {
     width: 75px; /* Ajusta el tamaño del ícono */
     height: auto; /* Mantiene la proporción */
     vertical-align: middle; /* Alinea verticalmente con el texto */
 }
 
+
 /* Navegación principal */
-nav {
-    background-color: #a5a5a5;
-    padding: 10px;
-    text-align: right;
+.menu-principal {
+    background-color: #FFA500; /* Fondo naranja */
+    padding: 10px; /* Espaciado interno */
+    text-align: right; /* Centra el contenido */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px; /* Margen arriba y abajo */
 }
 
-nav a {
-    font-family: 'Poppins', sans-serif; /* Aplicar la tipografía Poppins */
-    color: #002c54; /* Color del texto */
-    margin: 10px;
-    padding: 10px;
+.menu-principal nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #002c54; 
+    margin: 10px; /* Espaciado entre enlaces */
     text-decoration: none; /* Elimina el subrayado */
-    font-size: 26px; /* Tamaño de fuente, puedes ajustar según necesites */
+    font-size: 33px; /* Tamaño de la letra, ajusta según necesites */
 }
 
-nav a:hover {
+.menu-principal nav a:hover {
     color: #FFFFFF; /* Mantiene el color del texto */
 }
 
-/* Navegación secundaria */
-.menu nav {
-    background-color: #FFA500;
-    padding: 10px;
-    text-align: center;
-}
 
-.menu nav a {
-    color: #FFFFFF;
-    margin: 10px;
-    padding: 10px;
-}
-
-.menu nav a:hover {
-    color: #ffffff;
-    background-color: #002c54;
-}
 
 /* Contenido principal */
 main {
@@ -100,17 +91,47 @@ main {
     margin: 20px 0; /* Espaciado arriba y abajo */
 }
 
-h2 {
-    color: #FFFFFF;
+/* Estilo de los enlaces que dan acceso a los Archivos */
+.menu {
+    display: flex; /* Activa flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: center; /* Centra los elementos en la página */
+    margin: 20px auto; /* Margen automático para centrar */
+    width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
-h3 {
-    color: #000000;
+/* Estilo de los cuadros */
+.cuadrados {
+    background-color: #002c54; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold; /* Aplica un grosor de fuente */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    height: 100px; /* Altura del cuadro */
+    width: calc(25% - 40px); /* Ancho de cada cuadrado, ajustado para cuatro columnas */
+    margin: 20px; /* Margen alrededor del cuadro */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente el texto dentro del cuadro */
+    justify-content: center; /* Centra horizontalmente el texto dentro del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
 }
 
-p {
-    color: #000000;
-    text-align: justify;
+/* Estilo de los enlaces dentro de los cuadros */
+.cuadrados a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #ffffff; /* Color del texto del enlace */
+    display: block; /* Asegura que el enlace ocupe todo el espacio del cuadro */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    text-align: center; /* Centra el texto */
+    line-height: 60px; /* Alinea el texto verticalmente */
+}
+
+/* Estilo para el hover */
+.cuadrados:hover {
+    background-color: #FFA500; /* Color de fondo al pasar el mouse */
+    color: white; /* Color del texto al pasar el mouse */
 }
 
 /* Imágenes */
@@ -119,11 +140,32 @@ p {
     height: auto;
 }
 
-figcaption {
-    font-style: italic;
-    color: #555;
-    margin: 5px;
+/* Pie de página */
+footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Pie de página */
 footer p {
