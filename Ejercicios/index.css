@@ -66,9 +66,7 @@ header h1 {
     padding: 10px; /* Espaciado interno */
     text-align: right; /* Centra el contenido */
     border-radius: 5px; /* Bordes redondeados */
-    margin: 10px 0; /* Margen arriba y abajo */
-    width: calc(100% - 20px); /* Ancho completo menos el padding */
-    max-width: 1200px; /* Limita el ancho a 1200px */
+    margin-top: 15px; /* Margen arriba y abajo */
 }
 
 .menu-principal nav a {
