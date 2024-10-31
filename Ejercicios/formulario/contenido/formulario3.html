@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Juan Galisteo">
-    <meta name="description" content="Formulario de contacto básico">
-    <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario3.css">
+    <title>Formulario de Ejemplo</title>
+    <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario3.css"> 
 </head>
-
 <body>
-    <div class="form-container">
-        <h1>Formulario de Contacto</h1>
-        <p>Escríbenos y en breve nos pondremos en contacto contigo</p>
+    <div class="formulario">
+        <h1>Formulario de Ejemplo | XAMPP</h1>
+        <form action="procesar.php" method="post">
+            <!-- Campo de texto -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required placeholder="Introduce tu nombre">
 
-        <form action="proceso.php" method="post">
-            <label for="nombre">Nombre <span class="asterisco">*</span></label>
-            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" required placeholder="Introduce tu email">
 
-            <label for="email">Email <span class="asterisco">*</span></label>
-            <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+            <!-- Teléfono -->
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" placeholder="Introduce tu teléfono">
 
-            <label for="telefono">Teléfono</label>
-            <input type="text" id="telefono" name="telefono" placeholder="Introduce tu teléfono">
+            <!-- Selección de color -->
+            <label for="color">Selecciona un color:</label>
+            <input type="color" name="color">
 
-            <label for="sitioweb">Sitio web</label>
-            <input type="text" id="sitioweb" name="sitioweb" placeholder="Escribe la URL de tu sitio web">
+            <!-- Radio buttons -->
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" value="hombre" required> Hombre
+            <input type="radio" name="sexo" value="mujer"> Mujer
 
-            <label for="asunto">Asunto <span class="asterisco">*</span></label>
-            <input type="text" id="asunto" name="asunto" placeholder="Introduce tu asunto" required>
+            <!-- Casillas de verificación -->
+            <label>Frutas que te gustan:</label>
+            <input type="checkbox" name="frutas[]" value="manzana"> Manzana
+            <input type="checkbox" name="frutas[]" value="pera"> Pera
+            <input type="checkbox" name="frutas[]" value="platano"> Plátano
 
-            <label for="mensaje">Mensaje <span class="asterisco">*</span></label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+            <!-- Área de texto -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" cols="30" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
 
-            <input class="boton" type="submit" value="Enviar">
-            <p class="note">* Los campos son obligatorios.</p>
+            <!-- Selector de archivo -->
+            <label for="archivo">Sube un archivo:</label>
+            <input type="file" name="archivo">
+
+            <!-- Enviar -->
+            <input type="submit" value="Enviar">
         </form>
-
-        <div class="volver-inicio">
-            <a href="../index.html">VOLVER AL INICIO</a>
-        </div>
     </div>
 </body>
-
 </html>

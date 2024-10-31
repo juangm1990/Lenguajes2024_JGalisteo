@@ -26,7 +26,7 @@ h1 {
     text-align: center; /* Centrados */
     margin: 15px 0; /* Espaciado arriba y abajo */
     font-weight: 600; /* Negrita para los títulos */
-    color: yellow; /* Color amarillo */
+    color: #FFA500; /* Color amarillo */
 }
 
 /* Contenedor de imágenes */

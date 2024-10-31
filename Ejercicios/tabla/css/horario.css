@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #d3d3d3;
+}
+
+.colorgris {
+    background-color: #f0f0f0;
+}
+
+/* Estilos de color para las asignaturas */
+.naranja {
+    background-color: #e96b00;
+    color: rgb(0, 0, 0);
+}
+
+.amarillo {
+    background-color: #fbc316;
+}
+
+.rosa {
+    background-color: #e8757f;
+    color: rgb(0, 0, 0);
+}
+
+.azul {
+    background-color: #009bdb;
+    color: rgb(0, 0, 0);
+}
+
+.rojo {
+    background-color: #fa4e4e;
+    color: rgb(0, 0, 0);
+}
+
+.morado {
+    background-color: #be74bf;
+    color: rgb(0, 0, 0);
+}
+
+.verdeclaro {
+    background-color: #35aa0e;
+    color: rgb(0, 0, 0);
+}
+
+.verde {
+    background-color: #00913e;
+    color: rgb(0, 0, 0);
+}
+
+/* Enlace */
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}

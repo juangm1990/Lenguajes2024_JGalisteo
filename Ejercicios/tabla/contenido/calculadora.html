@@ -5,98 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Juan Galisteo">
-
     <title>Calculadora</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f5f5f5;
-        }
-
-        /* Configuración letra */
-        h1 {
-            text-align: center;
-        }
-
-        /* Configuración tabla */
-        table {
-            border: 2px solid black;
-            border-collapse: collapse;
-        }
-
-        /* Configuración filas y columnas */
-        th,
-        td {
-            border: 1px solid black;
-            padding: 20px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        /* Configuración primera fila que simula la pantalla */
-        .pantalla {
-            background-color: #e0e0e0;
-            font-size: 24px;
-            height: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="/Ejercicios/tabla/css/calculadora.css"> <!-- Asegúrate de que la ruta sea correcta -->
 </head>
 
-<body style="width:1000px; margin: auto;">
-    <div>
+<body>
+    <div class="form-container">
         <h1>Calculadora</h1> <!-- Título -->
-        <div>
-            <table>
-                <tr>
-                    <td colspan="4" class="pantalla">0</td> <!-- QUITAR LAS CLASS PORQUE SON DE CSS -->
-                    <!-- Fusión de las celdas de la fila 1 para simular la pantalla-->
-                </tr>
-                <tr>
-                    <td>MC</td>
-                    <td>MR</td>
-                    <td>MS</td>
-                    <td>M+</td>
-                </tr>
-                <tr>
-                    <td>←</td>
-                    <td>CE</td>
-                    <td>C</td>
-                    <td>±</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>/</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>*</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>.</td>
-                    <td>=</td>
-                    <td>+</td>
-                </tr>
-        </div>
+        <table class="calculadora">
+            <tr>
+                <td colspan="4" class="pantalla">0</td> <!-- Fusión de las celdas de la fila 1 para simular la pantalla -->
+            </tr>
+            <tr>
+                <td>MC</td>
+                <td>MR</td>
+                <td>MS</td>
+                <td>M+</td>
+            </tr>
+            <tr>
+                <td>←</td>
+                <td>CE</td>
+                <td>C</td>
+                <td>±</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>.</td>
+                <td>=</td>
+                <td>+</td>
+            </tr>
         </table>
-    </div><br><br>
-    <!-- Enlace para volver al inicio -->
-    <div>
-        <a href="../index.html" style="text-align: center;">VOLVER A INICIO </a>
+        <div class="volver-inicio">
+            <a href="../index.html">VOLVER AL INICIO</a> <!-- Botón inicio -->
+        </div>
     </div>
 </body>
 

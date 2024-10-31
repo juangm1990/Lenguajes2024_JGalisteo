@@ -2,51 +2,50 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f5f5f5; /* Color de fondo de la página */
-    font-family: Arial, sans-serif; /* Fuente de la página */
 }
 
-.form-container {
-    width: 500px; /* Ancho del contenedor */
-    margin: auto; /* Centra el contenedor */
-    padding: 20px; /* Espaciado interno */
+.formulario {
+    width: 1200px; /* Ancho del formulario */
+    margin: auto; /* Centra el formulario en la página */
+    padding: 20px; /* Espaciado interno del formulario */
     background-color: white; /* Color de fondo del formulario */
     border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra para un efecto 3D */
 }
 
 h1 {
     text-align: center; /* Centra el título */
-    color: #000000; /* Color del texto del título */
-}
-
-p {
-    text-align: center; /* Centra la descripción */
-    color: #666; /* Color de la descripción */
+    color: #333; /* Color del texto del título */
 }
 
 label {
     display: block; /* Hace que el label ocupe el ancho completo */
     margin: 10px 0 5px; /* Espaciado alrededor de los labels */
-    color: #000000; /* Color de los labels */
+    color: #000; /* Color de los labels */
 }
 
-/* Estilo individual para cada campo de entrada */
 input[type="text"],
 input[type="email"],
-textarea {
+input[type="tel"],
+input[type="color"],
+input[type="file"],
+textarea,
+select {
     width: 95%; /* Ajusta el ancho de todos los campos */
     padding: 10px; /* Espaciado interno de los campos */
     border: 1px solid #ccc; /* Borde de los campos */
-    border-radius: 4px; /* Bordes redondeados */
+    border-radius: 5px; /* Bordes redondeados */
     margin-bottom: 10px; /* Espaciado entre campos */
 }
 
-textarea {
-    height: 100px; /* Aumenta la altura del textarea */
-    resize: none; /* Evita redimensionar el textarea */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; /* Espaciado a la derecha de los checkboxes y radio buttons */
 }
 
-.boton {
+input[type="submit"] {
     width: 100%; /* Ancho completo del botón */
     padding: 10px; /* Espaciado interno del botón */
     background-color: #494949; /* Color de fondo del botón */
@@ -56,17 +55,23 @@ textarea {
     margin-top: 15px; /* Espaciado arriba del botón */
 }
 
-.boton:hover {
-    background-color: #000000; /* Color más oscuro al pasar el cursor por el botón */
+input[type="submit"]:hover {
+    background-color: #333; /* Color más oscuro al pasar el cursor por el botón */
 }
 
-.note {
-    font-size: 12px; /* Tamaño de la fuente de la nota */
-    color: #666; /* Color de la nota */
-    text-align: center; /* Centra la nota */
+/* Estilos del textarea */
+textarea {
+    height: 100px; /* Aumenta la altura del textarea para más espacio */
+    resize: none; /* Evita redimensionar el textarea */
 }
 
-/* Estilos del enlace */
+/* Estilos del contenedor de la página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Enlace */
 .volver-inicio {
     text-align: center; /* Centra el enlace */
     margin-top: 20px; /* Espaciado arriba del enlace */

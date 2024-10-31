@@ -4,73 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <metan name="author" content="Juan Galisteo">
+    <meta name="author" content="Juan Galisteo">
 
-        <title>Horario 1º DAW</title>
-        <style>
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-
-            /* Configuración filas y columnas */
-            th,
-            td {
-                /* Color gris para las columnas */
-                border: 1px solid black;
-                padding: 10px;
-                text-align: center;
-            }
-
-            /* Configuración color primera fila */
-            th {
-                background-color: #d3d3d3;
-            }
-
-            /* Tonalidades alternas de gris para las filas de horas */
-            .colorgris {
-                background-color: #f0f0f0;
-            }
-
-            /* Estilos de color para las asignaturas */
-            .naranja {
-                background-color: #e96b00;
-            }
-
-            .amarillo {
-                background-color: #fbc316;
-            }
-
-            .rosa {
-                background-color: #e8757f;
-            }
-
-            .azul {
-                background-color: #009bdb;
-            }
-
-            .rojo {
-                background-color: #fa4e4e;
-            }
-
-            .morado {
-                background-color: #be74bf;
-            }
-
-            .verdeclaro {
-                background-color: #35aa0e;
-            }
-
-            .verde {
-                background-color: #00913e;
-            }
-        </style>
+    <title>Horario 1º DAW</title>
+    <link rel="stylesheet" href="/Ejercicios/tabla/css/horario.css">
 </head>
 
-<body style="width:1000px ; margin: auto;">
+<body style="width:1000px; margin: auto;">
     <div>
         <h1>Horario de Clases - 1º DAW</h1>
-        <!-- Título para nuestra tabla -->
         <table>
             <tr>
                 <th>Hora</th>
@@ -80,75 +22,61 @@
                 <th>Jueves</th>
                 <th>Viernes</th>
             </tr>
-            <!-- Utilizamos ROWSPAN para combinar filas y COLSPAN para combinar columnas -->
-            <!-- Primera fila, row1: color gris -->
             <tr class="colorgris">
-                <td class="horas">15:00 - 15:30</td>
+                <td>15:00 - 15:30</td>
                 <td class="naranja" rowspan="2">Lenguajes</td>
                 <td class="amarillo" rowspan="2">Sistemas</td>
                 <td class="rosa" rowspan="2">Empleabilidad</td>
                 <td class="rosa" rowspan="4">Empleabilidad</td>
                 <td class="naranja" rowspan="4">Lenguajes</td>
             </tr>
-            <!-- Segunda fila, row2: color por decfecto -->
-            <tr class="colorblanco">
-                <td class="horas">15:30 - 16:00</td>
+            <tr>
+                <td>15:30 - 16:00</td>
             </tr>
-            <!-- Tercera fila, row1: color gris -->
             <tr class="colorgris">
-                <td class="horas">16:00 - 16:30</td>
+                <td>16:00 - 16:30</td>
                 <td class="amarillo" rowspan="2">Sistemas</td>
                 <td class="rojo" rowspan="6">Bases de Datos</td>
                 <td class="morado" rowspan="6">Programación</td>
             </tr>
-            <!-- Cuarta fila, color por decfecto -->
-            <tr class="colorblanco">
-                <td class="horas">16:30 - 17:00</td>
+            <tr>
+                <td>16:30 - 17:00</td>
             </tr>
-            <!-- Quinta fila, row1: color gris -->
             <tr class="colorgris">
-                <td class="horas">17:00 - 17:30</td>
+                <td>17:00 - 17:30</td>
                 <td class="azul" rowspan="4">Entornos</td>
                 <td class="azul" rowspan="4">Entornos</td>
                 <td class="amarillo" rowspan="2">Sistemas</td>
             </tr>
-            <!-- Sexta fila, color por decfecto -->
-            <tr class="colorblanco">
-                <td class="horas">17:30 - 18:00</td>
+            <tr>
+                <td>17:30 - 18:00</td>
             </tr>
-            <!-- Séptima fila, row1: color gris -->
             <tr class="colorgris">
-                <td class="horas">18:00 - 18:30</td>
+                <td>18:00 - 18:30</td>
                 <td class="morado" rowspan="6">Programación</td>
             </tr>
-            <!-- Octava fila, color por decfecto -->
-            <tr class="colorblanco">
-                <td class="horas">18:30 - 19:00</td>
+            <tr>
+                <td>18:30 - 19:00</td>
             </tr>
-            <!-- Novena fila, row1: color gris -->
             <tr class="colorgris">
-                <td class="horas">19:00 - 19:30</td>
+                <td>19:00 - 19:30</td>
                 <td class="verdeclaro" rowspan="2">Sostenibilidad</td>
                 <td class="morado" rowspan="4">Programación</td>
                 <td class="amarillo" rowspan="4">Sistemas</td>
                 <td class="rojo" rowspan="4">Bases de Datos</td>
             </tr>
-            <!-- Décima fila, color por decfecto -->
-            <tr class="colorblanco">
-                <td class="horas">19:30 - 20:00</td>
+            <tr>
+                <td>19:30 - 20:00</td>
             </tr>
-            <!-- Undécima fila, row1: color gris -->
             <tr class="colorgris">
-                <td class="horas">20:00 - 21:00</td>
+                <td>20:00 - 21:00</td>
                 <td class="verde" rowspan="2">Digitalización</td>
             </tr>
-            <!-- Duodécima fila, color por decfecto -->
-            <tr class="colorblanco">
-                <td class="horas">20:30 - 21:00</td>
+            <tr>
+                <td>20:30 - 21:00</td>
             </tr>
         </table>
     </div><br><br>
-    <!-- Enlace para volver al inicio -->
     <div>
         <a href="../index.html">VOLVER A INICIO</a>
     </div>
