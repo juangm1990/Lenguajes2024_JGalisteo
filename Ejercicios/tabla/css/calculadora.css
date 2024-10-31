@@ -10,7 +10,7 @@ body {
 }
 
 /* Contenedor de la calculadora */
-.form-container {
+.diseñotabla {
     width: 500px; /* Ancho del contenedor */
     margin: auto; /* Centra el contenedor */
     padding: 20px; /* Espaciado interno */
@@ -59,18 +59,35 @@ td:hover {
     background-color: #ddd; /* Color más oscuro al pasar el mouse */
 }
 
-/* Estilo para el botón de volver al inicio */
-.volver-inicio {
+/* Boton para regresar al menú principal */
+.volverinicio {
     text-align: center; /* Centra el enlace */
     margin-top: 20px; /* Espaciado superior */
 }
 
-.volver-inicio a {
-    color: #1e90ff; /* Color azul */
+.volverinicio a {
+    color: #000000; /* Color azul */
     text-decoration: none; /* Sin subrayado */
     font-size: 18px; /* Tamaño de fuente */
 }
 
-.volver-inicio a:hover {
+.volverinicio a:hover {
     text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Pie de página */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    /* Fija el pie de página en la parte inferior */
+    bottom: 0;
+    /* Elimina la posición en la parte inferior*/
+    left: 0;
+    /* Elimina la alineación a la izquierda*/
+    margin: 0;
+    /* Elimina el margen del pie de página */
 }

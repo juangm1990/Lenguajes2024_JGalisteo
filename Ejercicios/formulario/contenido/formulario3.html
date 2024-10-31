@@ -3,59 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Juan Galisteo">
-    <meta name="description" content="Formulario de contacto básico">
-    <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario1.css">
-    <link rel="shortcut icon" href="/Ejercicios/formulario/imagenes/iconoWeb.png">
-    <title>Formularios</title> 
+    <meta name="description" content="Formulario de contacto XAMPP">
+    <title>Formulario de Ejemplo | XAMPP</title>
+    <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario3.css">
 </head>
 <body>
-    <div class="formulario">
-        <h1>Formulario de Ejemplo | XAMPP</h1>
-        <form action="proceso.php" method="post">
-            <!-- Campo de texto -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" required placeholder="Introduce tu nombre">
+    <div class="diseño">
+        <div class="formulario">
+            <h1>Formulario de Ejemplo | XAMPP</h1>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre">
 
-            <!-- Email -->
-            <label for="email">Email:</label>
-            <input type="email" name="email" required placeholder="Introduce tu email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email">
 
-            <!-- Teléfono -->
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" name="telefono" placeholder="Introduce tu teléfono">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu teléfono">
 
-            <!-- Selección de color -->
-            <label for="color">Selecciona un color:</label>
-            <input type="color" name="color">
+                <label for="color">Selecciona un color:</label>
+                <input type="color" id="color" name="color" value="#000000">
 
-            <!-- Radio buttons -->
-            <label>Sexo:</label>
-            <input type="radio" name="sexo" value="hombre" required> Hombre
-            <input type="radio" name="sexo" value="mujer"> Mujer
+                <label>Sexo:</label>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label>
 
-            <!-- Casillas de verificación -->
-            <label>Frutas que te gustan:</label>
-            <input type="checkbox" name="frutas[]" value="manzana"> Manzana
-            <input type="checkbox" name="frutas[]" value="pera"> Pera
-            <input type="checkbox" name="frutas[]" value="platano"> Plátano
+                <label>Frutas que te gustan:</label>
+                <input type="checkbox" id="manzana" name="frutas" value="manzana">
+                <label for="manzana">Manzana</label>
+                <input type="checkbox" id="pera" name="frutas" value="pera">
+                <label for="pera">Pera</label>
+                <input type="checkbox" id="platano" name="frutas" value="platano">
+                <label for="platano">Plátano</label>
 
-            <!-- Área de texto -->
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" cols="30" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
 
-            <!-- Selector de archivo -->
-            <label for="archivo">Sube un archivo:</label>
-            <input type="file" name="archivo">
+                <label for="archivo">Sube un archivo:</label>
+                <input type="file" id="archivo" name="archivo">
 
-            <!-- Enviar -->
-            <input type="submit" value="Enviar">
-        </form>
+                <input type="submit" value="Enviar">
+            </form>
+            <div class="volverinicio">
+                <a href="../index.html">VOLVER PÁGINA PRINCIPAL</a>
+            </div>
+        </div>
     </div>
 
-    <div class="volver-inicio">
-        <a href="../index.html">VOLVER PÁGINA PRINCIPAL</a>
-    </div>
-    <br>
-    <br>
+    <footer>
+        <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

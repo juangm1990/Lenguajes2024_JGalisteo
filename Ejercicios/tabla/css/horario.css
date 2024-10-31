@@ -22,7 +22,8 @@ th {
     background-color: #d3d3d3;
 }
 
-.colorgris {
+/* Estilo para el color de fondo de la tabla de las horas */
+.rellenocolorhoras {
     background-color: #f0f0f0;
 }
 
@@ -66,9 +67,36 @@ th {
     color: rgb(0, 0, 0);
 }
 
-/* Enlace */
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+/* Boton para regresar al menú principal */
+
+.volverinicio {
+    text-align: center; /* Centra el enlace */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.volverinicio a {
+    color: #000000; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.volverinicio a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Pie de página */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    /* Fija el pie de página en la parte inferior */
+    bottom: 0;
+    /* Elimina la posición en la parte inferior*/
+    left: 0;
+    /* Elimina la alineación a la izquierda*/
+    margin: 0;
+    /* Elimina el margen del pie de página */
 }

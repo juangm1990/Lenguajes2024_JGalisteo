@@ -60,7 +60,7 @@ main {
 }
 
 /* Estilo de los enlaces que dan acceso a los Archivos */
-.cuadrados {
+.enlacescuadrados {
     background-color: #002c54;
     color: #ffffff;
     font-weight: bold;
@@ -83,18 +83,18 @@ main {
 }
 
 /* Estilo de los enlaces dentro de los cuadros */
-.cuadrados a {
+.enlacescuadrados a {
     text-decoration: none;
     /* Elimina el subrayado del enlace */
     color: #ffffff;
 }
 
-.cuadrados:hover {
+.enlacescuadrados:hover {
     background-color: #FFA500;
     color: white;
 }
 
-.tema {
+.cambiotemacolor {
     background-color: darkblue;
     color: white;
     border: 2px solid white;
@@ -103,7 +103,7 @@ main {
 }
 
 /* Pie de página */
-footer {
+footer p{
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;

@@ -6,9 +6,18 @@ body {
     background-color: #f5f5f5; /* Color de fondo de la página */
 }
 
+/* Contenedor principal */
+.diseño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos del formulario */
 .formulario {
-    width: 1200px; /* Ancho del formulario */
-    margin: auto; /* Centra el formulario en la página */
+    width: 80%; /* Ancho del formulario */
+    max-width: 1200px; /* Ancho máximo del formulario */
     padding: 20px; /* Espaciado interno del formulario */
     background-color: white; /* Color de fondo del formulario */
     border-radius: 10px; /* Bordes redondeados */
@@ -65,23 +74,34 @@ textarea {
     resize: none; /* Evita redimensionar el textarea */
 }
 
-/* Estilos del contenedor de la página */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Enlace */
-.volver-inicio {
+/* Botón para regresar al menú principal */
+.volverinicio {
     text-align: center; /* Centra el enlace */
     margin-top: 20px; /* Espaciado arriba del enlace */
 }
 
-.volver-inicio a {
+.volverinicio a {
     color: #000; /* Color del enlace */
     text-decoration: none; /* Sin subrayado en el enlace */
 }
 
-.volver-inicio a:hover {
+.volverinicio a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Pie de página */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    /* Fija el pie de página en la parte inferior */
+    bottom: 0;
+    /* Elimina la posición en la parte inferior*/
+    left: 0;
+    /* Elimina la alineación a la izquierda*/
+    margin: 0;
+    /* Elimina el margen del pie de página */
 }

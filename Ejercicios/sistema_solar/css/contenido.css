@@ -75,7 +75,25 @@ ul {
 }
 
 /* Estilos para el botón de volver al inicio */
-.volver-inicio {
+.volverinicio {
     text-align: center; /* Centra el texto */
     margin-top: 40px; /* Espaciado superior para separación */
 }
+
+/* Pie de página */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    /* Fija el pie de página en la parte inferior */
+    bottom: 0;
+    /* Elimina la posición en la parte inferior*/
+    left: 0;
+    /* Elimina la alineación a la izquierda*/
+    margin: 0;
+    /* Elimina el margen del pie de página */
+}
+

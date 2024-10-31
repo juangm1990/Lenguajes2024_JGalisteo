@@ -95,7 +95,7 @@ p {
 /* Diséño de la página */
 
 /* Imágenes */
-.imagen-centro {
+.imagencentro {
     width: 100%;
     max-width: 1200px;
     /* Ajustar manualmente el ancho */
@@ -110,7 +110,7 @@ p {
 }
 
 /* Vídeos */
-.video-centro {
+.videocentro {
     display: flex;
     flex-direction: column;
     /* Organiza los elementos en columna */
@@ -121,7 +121,7 @@ p {
 }
 
 /* Diseño de los vídeos */
-.video-objeto {
+.videoobjeto {
     display: flex;
     gap: 20px;
     /* Espacio entre los elementos */
@@ -139,7 +139,7 @@ p {
 }
 
 /* Contenido dentro del video */
-.video-contenido {
+.videocontenido {
     width: 280px;
     /* Ancho fijo para el contenido del video */
     background-color: #ffffff;
@@ -155,14 +155,14 @@ p {
     text-align: center;
 }
 
-.video-contenido:hover {
+.videocontenido:hover {
     transform: translateY(-5px);
     /* Desplaza hacia arriba al pasar el cursor */
     box-shadow: 0px 8px 16px #333333;
     /* Aumenta la sombra al pasar el cursor */
 }
 
-.video-contenido video {
+.videocontenido video {
     width: 100%;
     height: auto;
     /* Mantiene la proporción del video */
@@ -171,14 +171,14 @@ p {
 }
 
 /* Información del video */
-.video-info {
+.videoinfo {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
     /* Línea de separación inferior */
 }
 
-.video-titulo {
+.videotitulo {
     text-align: center;
     width: 100%;
 }
@@ -211,6 +211,17 @@ audio {
 .informacion img {
     width: 100%; 
     height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.imagencentrada {
+    text-align: center;
+}
+
+.imagenajustada {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
 }
 
 /* Nota para las imágenes, vídeos, audios y PDF */

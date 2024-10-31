@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif; /* Fuente de la página */
 }
 
-.diseño {
+.formulario {
     width: 500px; /* Ancho del contenedor */
     margin: auto; /* Centra el contenedor */
     padding: 20px; /* Espaciado interno */
@@ -46,7 +46,11 @@ textarea {
     resize: none; /* Evita redimensionar el textarea */
 }
 
-.boton {
+.campoobligatorio{
+    color: red;
+}
+
+.enviarformulario {
     width: 100%; /* Ancho completo del botón */
     padding: 10px; /* Espaciado interno del botón */
     background-color: #494949; /* Color de fondo del botón */
@@ -56,27 +60,38 @@ textarea {
     margin-top: 15px; /* Espaciado arriba del botón */
 }
 
-.boton:hover {
+.enviarformulario:hover {
     background-color: #000000; /* Color más oscuro al pasar el cursor por el botón */
 }
 
-.note {
-    font-size: 12px; /* Tamaño de la fuente de la nota */
-    color: #666; /* Color de la nota */
-    text-align: center; /* Centra la nota */
-}
-
-/* Estilos del enlace */
-.volver-inicio {
+/* Boton para regresar al menú principal */
+.volverinicio {
     text-align: center; /* Centra el enlace */
     margin-top: 20px; /* Espaciado arriba del enlace */
 }
 
-.volver-inicio a {
+.volverinicio a {
     color: #000; /* Color del enlace */
     text-decoration: none; /* Sin subrayado en el enlace */
 }
 
-.volver-inicio a:hover {
+.volverinicio a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Pie de página */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    /* Fija el pie de página en la parte inferior */
+    bottom: 0;
+    /* Elimina la posición en la parte inferior*/
+    left: 0;
+    /* Elimina la alineación a la izquierda*/
+    margin: 0;
+    /* Elimina el margen del pie de página */
 }

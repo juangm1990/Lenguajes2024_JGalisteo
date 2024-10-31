@@ -41,12 +41,12 @@ header h1 {
 }
 
 /* Recuadro naranja */
-.recuadro-gris {
+.recuadrogris {
     background-color: #a5a5a5; /* Color naranja */
     height: 10px; /* Altura del recuadro */
 }
 
-.recuadro-azul {
+.recuadroazul {
     background-color: #002c54; /* Color azul */
     height: 10px; /* Altura del recuadro */
     margin: 0; /* Elimina el margen para evitar separación */
@@ -61,7 +61,7 @@ header h1 {
 }
 
 /* Navegación principal */
-.menu-principal {
+.menuprincipal {
     background-color: #FFA500; /* Fondo naranja */
     padding: 10px; /* Espaciado interno */
     text-align: right; /* Centra el contenido */
@@ -69,7 +69,7 @@ header h1 {
     margin-top: 15px; /* Margen arriba y abajo */
 }
 
-.menu-principal nav a {
+.menuprincipal nav a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #002c54; 
@@ -78,7 +78,7 @@ header h1 {
     font-size: 33px; /* Tamaño de la letra, ajusta según necesites */
 }
 
-.menu-principal nav a:hover {
+.menuprincipal nav a:hover {
     color: #FFFFFF; /* Mantiene el color del texto */
 }
 
@@ -89,7 +89,7 @@ main {
     margin: 0 auto;
 }
 
-.proyectos {
+.tituloproyectos {
     font-family: 'Poppins', sans-serif; /* Aplica la tipografía Poppins */
     color: #000000; /* Color del texto */
     text-align: center; /* Centra el texto */
@@ -107,7 +107,7 @@ main {
 }
 
 /* Estilo y diseño de los cuadrados */
-.cuadrados {
+.enlacecuadrados {
     background-color: #a5a5a5; /* Color de fondo */
     color: #ffffff; /* Color del texto del enlace */
     font-weight: bold; /* Aplica un grosor de fuente */
@@ -123,7 +123,7 @@ main {
 }
 
 /* Estilo de los enlaces dentro de los cuadrados */
-.cuadrados a {
+.enlacecuadrados a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: #000000; /* Color del texto del enlace */
     display: block; /* Asegura que el enlace ocupe todo el espacio del cuadro */
@@ -134,17 +134,17 @@ main {
 }
 
 /* Estilo para el cuadrado */
-.cuadrados:hover {
+.enlacecuadrados:hover {
     background-color: #002c54; /* Color de fondo al pasar el mouse */
 }
 
 /* Cambia el color del texto al pasar el ratón */
-.cuadrados:hover a {
+.enlacecuadrados:hover a {
     color: #FFFFFF; 
 }
 
 /* Imágenes */
-.imagen-centro {
+.imagencentro {
     width: 100%;
     height: auto;
 }
