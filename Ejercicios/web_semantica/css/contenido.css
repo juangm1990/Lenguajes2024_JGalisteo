@@ -1,15 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    /* Requisitos obligatorios de la web */
-    width: 1200px;
-    margin: auto;
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Margen externo del cuerpo */
+    padding: 0; /* No habrá espacio interno alrededor del contenido */
+    line-height: 1.6; /* Altura de las línea del texto */
+    
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
 }
 
 /* ////////////////////////////////////////// */
-/* Configuración de los encabezados del texto */
+/* /* /* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
 h2 {
     color: #FFFFFF;
 }
@@ -29,37 +30,28 @@ p {
 
 header {
     background-color: #002c54;
-    display: flex;
-    /* Disposición de los elementos */
-    justify-content: center;
-    /* Centra el contenido horizontalmente */
+    display: flex; /* Disposición de los elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
     padding: 10px;
-    /* Espaciado interno del encabezado */
     position: relative;
-    /* Permite colocar el logotipo en el encabezado de la */
 }
 
 .logo {
-    position: absolute;
-    /* Posición fija para el logo */
-    left: 50px;
-    /* Movimiento de la imagen */
-    width: 70px;
-    /* Tamaño de la imagen */
-    height: auto;
-    /* Mantiene la imagen proporcionada*/
+    position: absolute; /* Posición fija para el logo */
+    left: 50px; /* Movimiento de la imagen */
+    width: 70px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la imagen proporcionada*/
 }
 
 header h1 {
     color: #FFFFFF;
     margin: 0;
     text-align: center;
-    /* Centra el contenido*/
 }
 
 /* ////////////////////////////////////////// */
 
-/* Navegación principal */
+/* NAVEGACIÓN PRINCIPAL */
 nav {
     background-color: #a5a5a5;
     padding: 10px;
@@ -70,8 +62,7 @@ nav a {
     color: #FFFFFF;
     margin: 10px;
     padding: 10px;
-    text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
 nav a:hover {
@@ -79,103 +70,76 @@ nav a:hover {
     color: #002c54;
 }
 
-/* ////////////////////////////////////////// */
-
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 main {
     padding: 0;
-    width: 100%;
-    /* Asegura que el ancho del main se ajuste al del body */
-    margin: 0 auto;
-    /* Centra el contenido del main */
-    border-top: 45px solid #ffffff;
-    /* Aplica una línea de separación en la parte superior */
+    width: 100%; /* Asegura que el ancho del main se ajuste al del body */
+    margin: 0 auto; /* Centra el contenido del main */
+    border-top: 45px solid #ffffff; /* Aplica una línea de separación en la parte superior */
 }
 
-/* Diséño de la página */
+/* DISEÑO DE LA PÁGINA */
 
 /* Imágenes */
 .imagencentro {
     width: 100%;
-    max-width: 1200px;
-    /* Ajustar manualmente el ancho */
-    margin: 0 auto;
-    /* Centra el contenedor */
+    max-width: 1200px; /* Ajustar manualmente el ancho */
+    margin: 0 auto; /* Centra el contenedor */
 }
 
 .imagen {
     width: 100%;
-    height: auto;
-    /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
-/* Vídeos */
+/* VÍDEOS */
 .videocentro {
     display: flex;
-    flex-direction: column;
-    /* Organiza los elementos en columna */
-    align-items: center;
-    /* Centra horizontalmente el video */
-    margin: 20px 0;
-    /* Espacio superior e inferior */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente el video */
+    margin: 20px 0; /* Espacio superior e inferior */
 }
 
-/* Diseño de los vídeos */
+/* DISEÑO DE LOS VÍDEOS */
 .videoobjeto {
     display: flex;
-    gap: 20px;
-    /* Espacio entre los elementos */
+    gap: 20px; /* Espacio entre los elementos */
     justify-content: center;
-    margin-top: 20px;
-    /* Espacio superior */
-    padding: 20px;
-    /* Espaciado interno */
-    background-color: #f3f4f6;
-    /* Color de fondo del contenedor */
-    border-radius: 10px;
-    /* Bordes redondeados */
-    box-shadow: 0px 8px 16px #1a1a1a;
-    /* Sombra para el contenedor */
+    margin-top: 20px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f3f4f6; /* Color de fondo del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 8px 16px #1a1a1a; /* Sombra para el contenedor */
 }
 
-/* Contenido dentro del video */
+/* CONTENIDO DENTRO DE LOS VÍDEOS */
+
+/* CCONFIGURACIÓN DE LOS TRES VÍDEOS EN PARALELO*/
 .videocontenido {
-    width: 280px;
-    /* Ancho fijo para el contenido del video */
+    width: 280px; /* Ancho fijo para el contenido del video */
     background-color: #ffffff;
-    /* Color de fondo blanco */
-    border-radius: 10px;
-    /* Bordes redondeados */
-    box-shadow: 0px 4px 8px #262626;
-    /* Sombra para el contenido del video */
-    overflow: hidden;
-    /* Oculta el contenido que sobresale */
-    transition: transform 0.3s, box-shadow 0.3s;
-    /* Efecto de transición al interactuar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px #262626; /* Sombra para el contenido del video */
     text-align: center;
 }
 
 .videocontenido:hover {
-    transform: translateY(-5px);
-    /* Desplaza hacia arriba al pasar el cursor */
-    box-shadow: 0px 8px 16px #333333;
-    /* Aumenta la sombra al pasar el cursor */
+    transform: translateY(-5px); /* Desplaza hacia arriba al pasar el cursor */
+    box-shadow: 0px 8px 16px #333333; /* Aumenta la sombra al pasar el cursor */
 }
 
 .videocontenido video {
     width: 100%;
-    height: auto;
-    /* Mantiene la proporción del video */
-    border-bottom: 1px solid #ddd;
-    /* Línea de separación inferior */
+    height: auto; /* Mantiene la proporción del video */
+    border-bottom: 1px solid #ddd; /* Línea de separación inferior */
 }
 
-/* Información del video */
+/* INFORMACIÓN DE LOS VÍDEOS */
 .videoinfo {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #ddd;
-    /* Línea de separación inferior */
+    border-bottom: 1px solid #ddd; /* Línea de separación inferior */
+    text-align: center;
 }
 
 .videotitulo {
@@ -183,21 +147,18 @@ main {
     width: 100%;
 }
 
-/* Audios */
+/* AUDIOS */
 .audio {
     display: flex;
     text-align: center;
-    flex-direction: column; 
-    /* Alinea el audio y el texto uno encima del otro */
+    flex-direction: column; /* Alinea el audio y el texto uno encima del otro */
     margin: 20px; 
-    /* separar del contenido superior e inferior */
 }
 
 audio {
     width: 600px; 
     max-width: 100%;
-    margin: 0 auto; 
-    /* Centra el contenedor el margen */
+    margin: 0 auto; /* Centra el audio al margen */
 }
 
 /* PDF */
@@ -205,12 +166,12 @@ audio {
     text-align: center; 
     width: 100%; 
     max-width: 600px; 
-    margin: 0 auto; /* Centra el contenedor el margen */
+    margin: 0 auto; /* Centra el pdf al margen */
 }
 
 .informacion img {
     width: 100%; 
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    height: auto; 
 }
 
 .imagencentrada {
@@ -224,7 +185,7 @@ audio {
     margin: auto;
 }
 
-/* Nota para las imágenes, vídeos, audios y PDF */
+/* NOTA PARA LAS IMÁGENES, VÍDEOS, AUDIOS, PDF */
 figcaption {
     text-align: center;
     color: #555;
@@ -234,7 +195,7 @@ figcaption {
 
 /* ////////////////////////////////////////// */
 
-/* Pie de página */
+/* PIE DE PÁGINA */
 footer p {
     background-color: #77777733;
     color: #FFFFFF;

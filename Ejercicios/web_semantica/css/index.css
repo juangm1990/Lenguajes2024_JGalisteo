@@ -10,7 +10,7 @@ body {
 }
 
 /* ////////////////////////////////////////// */
-/* /* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */ 
+/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */  
 h2 {
     color: #FFFFFF;
 }
@@ -26,7 +26,7 @@ p {
 }
 /* ////////////////////////////////////////// */
 
-/* Encabezado */
+/* ENCABEZADO */
 header {
     background-color: #002c54;
     display: flex; /* Utiliza Flexbox para la disposición de los elementos */
@@ -53,10 +53,7 @@ header h1 {
     /* Centra el contenido*/
 }
 
-/* ////////////////////////////////////////// */
-
 /* Navegación principal */
-
 nav {
     background-color: #a5a5a5;
     padding: 10px;
@@ -67,17 +64,15 @@ nav a {
     color: #FFFFFF;
     margin: 10px;
     padding: 10px;
-    text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
 }
 
 nav a:hover {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Cambio de color al pasar el ratón por encima */
     color: #002c54;
 }
 
 /* Navegación secundaria */
-
 .menu nav {
     background-color: #FFA500;
     padding: 10px;
@@ -95,48 +90,36 @@ nav a:hover {
     background-color: #002c54;
 }
 
-/* ////////////////////////////////////////// */
-
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 
 main {
     padding: 0;
-    width: 100%;
-    /* Asegura que el ancho del main se ajuste al del body */
-    margin: 0 auto;
-    /* Centra el contenido del main */
-    border-top: 45px solid #ffffff;
-    /* Aplica una línea de separación en la parte superior */
+    width: 100%; /* Asegura que el ancho del main se ajuste al del body */
+    margin: 0 auto; /* Centra el contenido del main */
+    border-top: 45px solid #ffffff; /* Aplica una línea de separación en la parte superior */
 }
 
 .cita {
     color: #000000;
     text-align: justify;
-    max-width: 930px;
-    /* Ancho máximo del texto en citas */
-    margin: 0 auto;
-    /* Centra horizontalmente la cita */
+    max-width: 930px; /* Ancho máximo del texto en citas */
+    margin: 0 auto; /* Centra horizontalmente la cita */
 }
 
-/* ////////////////////////////////////////// */
-
-/* Diséño de la página */
+/* DISEÑO DE LA PÁGINA */
 
 .diseño {
     display: flex;
-    align-items: flex-start;
-    /* Alinea los elementos al inicio */
+    align-items: flex-start; /* Alinea los elementos al inicio */
     justify-content: center;
     padding: 10px;
     position: relative;
 }
 
-/* Diseño general */
+/* DISEÑO GENERAL */
 .diseño article {
-    flex: 1;
-    /* Permite que el artículo ocupe el espacio disponible */
-    max-width: 1200px;
-    /* Ancho máximo del artículo */
+    flex: 1; /* Permite que el artículo ocupe el espacio disponible */
+    max-width: 1200px; /* Ancho máximo del artículo */
 }
 
 .diseño figure {
@@ -151,19 +134,14 @@ main {
 .minititulo {
     color: #333;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    /* Aplica la fuente Poppins */
-    font-size: 24px;
-    /* Tamaño de la fuente para el subtítulo */
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
+    font-size: 24px; /* Tamaño de la fuente para el subtítulo */
 }
 
-/* ////////////////////////////////////////// */
-
-/* Imágenes */
+/* IMÁGENES */
 .imagencentro {
     width: 100%;
-    height: auto;
-    /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .imagen {
@@ -173,35 +151,28 @@ main {
     /* Mantiene la proporción de la imagen */
 }
 
-/* Vídeos */
+/* VÍDEOS */
 .video {
     display: flex;
-    height: auto;
-    /* Mantiene la proporción de la imagen o video */
+    height: auto; /* Mantiene la proporción de la imagen o video */
     text-align: center;
-    margin: 20px;
-    /* Margen para separar del contenido superior e inferior */
-    flex-direction: column;
-    /* Alinea el audio y el texto uno encima del otro */
+    margin: 20px; /* Margen para separar del contenido superior e inferior */
+    flex-direction: column; /* Alinea el audio y el texto uno encima del otro */
 }
 
 .video-centro {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* Centra horizontalmente el video */
-    margin: 20px 0;
-    /* Espacio superior e inferior */
+    align-items: center; /* Centra horizontalmente el video */
+    margin: 20px 0; /* Espacio superior e inferior */
 }
 
-/* Audios */
+/* AUDIOS */
 .audio {
     display: flex;
-    flex-direction: column;
-    /* Alinea el audio y el texto uno encima del otro */
+    flex-direction: column; /* Alinea el audio y el texto uno encima del otro */
     text-align: center;
-    margin: 20px;
-    /* Margen para separar del contenido superior e inferior */
+    margin: 20px; /* Margen para separar del contenido superior e inferior */
 }
 
 audio {
@@ -210,7 +181,7 @@ audio {
     width: 400px; 
 }
 
-/* Nota para las imágenes, vídeos, audios y PDF */
+/* NOTA PARA LAS IMÁGENES, VIDEOS, AUDIOS Y PDF */
 figcaption {
     font-style: italic;
     color: #555;
@@ -219,20 +190,15 @@ figcaption {
 
 /* ////////////////////////////////////////// */
 
-/* Pie de página */
-footer p {
+/* PIE DE PÁGINA */
+footer p{
     background-color: #77777733;
     color: #FFFFFF;
+    width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    width: 100%;
-    /* Ancho completo para el pie de página */
-    bottom: 0;
-    /* Posición en la parte inferior */
-    left: 0;
-    /* Alineación a la izquierda */
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }
