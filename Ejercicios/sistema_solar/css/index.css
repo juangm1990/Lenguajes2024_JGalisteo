@@ -6,7 +6,7 @@ body {
     background-image: url('/Ejercicios/sistema_solar/imagenes/fondo1.png'); 
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el área */
     background-position: center; /* Centra la imagen de fondo */
-    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    
 }
 
 /* Contenedor principal */

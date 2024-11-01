@@ -2,11 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    width: 1200px;
-    /* Define el ancho del cuerpo */
-    margin: auto;
-    /* Centra el contenido del body */
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
 }
 
 /* Cabecera del proyecto */
@@ -63,29 +62,22 @@ main {
 .enlacescuadrados {
     background-color: #002c54;
     color: #ffffff;
-    font-weight: bold;
-    /* Aplica un grosor de fuente */
-    font-size: 1.2em;
-    /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Aplica un grosor de fuente */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
     width: 200px;
     height: 200px;
     margin: 20px;
     padding: 20px;
     display: flex;
-    align-items: center;
-    /* Centra verticalmente el texto dentro del cuadro */
-    justify-content: center;
-    /* Centra horizontalmente el texto dentro del cuadro */
-    border-radius: 10px;
-    /* Redondea las esquinas del cuadro */
-    box-shadow: 2px 2px 10px #000000;
-    /* Agrega una sombra para un efecto de elevación */
+    align-items: center; /* Centra verticalmente el texto dentro del cuadro */
+    justify-content: center; /* Centra horizontalmente el texto dentro del cuadro */
+    border-radius: 10px; /* Redondea las esquinas del cuadro */
+    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
 }
 
 /* Estilo de los enlaces dentro de los cuadros */
 .enlacescuadrados a {
-    text-decoration: none;
-    /* Elimina el subrayado del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
     color: #ffffff;
 }
 
@@ -97,24 +89,20 @@ main {
 .cambiotemacolor {
     background-color: darkblue;
     color: white;
-    border: 2px solid white;
+    border: 2px solid white; /* Define el borde de la caja */
     padding: 3px;
-    font-size: 16px;
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
 }
 
 /* Pie de página */
-footer p{
+footer p {
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }

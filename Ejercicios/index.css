@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif; /* Fuente principal del cuerpo */
+    font-family: Arial, sans-serif; /* Fuente principal */
     margin: 0; /* Margen externo del cuerpo */
-    padding: 0; /* Espaciado interno del cuerpo */
-    line-height: 1.6; /* Altura de línea para el texto */
+    padding: 0; /* No habrá espacio interno alrededor del contenido */
+    line-height: 1.6; /* Altura de las línea del texto */
     
     /*REQUISITOS OBLIGATORIOS*/
     width: 1200px; /* Ancho máximo del contenido */
@@ -11,55 +11,55 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #002c54; /* Color de fondo del encabezado */
-    display: flex; /* Usar flexbox para la organización del contenido */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    padding: 15px;
-    position: relative;
+    background-color: #002c54; /* Color de fondo */
+    display: flex; /* Usar flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido en el centro */
+    padding: 15px; /* Espaciado */
+    position: relative; /* Para que se pueda mover manualmente */
 }
 
 header h1 {
     font-family: 'Poppins', sans-serif; /* Tipografía específica para el encabezado */
-    color: #FFFFFF;
-    margin: 0;
+    color: #FFFFFF; /* Color del texto */
+    margin: 0; /* Margen */
     font-size: 30px; /* Tamaño de la fuente */
 }
 
 .logo {
-    position: absolute; /* Fija la posición del logo */
-    left: 35px;
-    width: 70px; /* Ancho del logo */
-    height: auto;
+    position: absolute; /* Fija la posición de la imagen */
+    left: 35px; /* Movimiento del logotipo de izquierda a derecha */
+    width: 70px; /* Tamaño del logotipo */
+    height: auto; /* Altura del recuadro se ajustará automáticamente*/
 }
 
 /* Linea principal*/
 .recuadrogris {
-    background-color: #a5a5a5; /* Color gris para el recuadro */
-    height: 10px; /* Altura del recuadro */
+    background-color: #a5a5a5; 
+    height: 10px; /* Establece la altura */
 }
 
 /*Fotografía de la cabecera*/
 .imagencentro {
-    width: 100%;
+    width: 100%; /* El elemento ocupará todo el ancho de la página */
     height: auto;
 }
 
 /* Navegación principal */
 .menuprincipal {
-    background-color: #FFA500; /* Fondo naranja */
+    background-color: #FFA500; 
     padding: 10px;
     text-align: right; /* Alinea el contenido a la derecha */
     border-radius: 5px; /* Bordes redondeados */
-    margin-top: 15px;
+    margin-top: 15px;  /* Establece un margen superior */
 }
 
 .menuprincipal nav a {
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: bold;  /* Negrita */
     color: #002c54;
-    margin: 10px; /* Espaciado entre enlaces */
-    text-decoration: none;
-    font-size: 33px;
+    margin: 10px; 
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 33px;  
 }
 
 .menuprincipal nav a:hover {
@@ -67,20 +67,20 @@ header h1 {
 }
 
 .iconogithub {
-    width: 75px; /* Ajusta el tamaño del ícono */
+    width: 75px; /* Ajusta el tamaño de la imagen */
     height: auto;
-    vertical-align: middle; /* Alinea verticalmente con el texto */
+    vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
 }
 
 /* Configuración para poner notas de texto */
 .notas {
-    position: left;
+    position: left; /* Posición: Derecha - Izquierda - Centro */
 }
 
 .notas p {
     font-family: 'Arial', sans-serif;
     font-size: 16px; /* Tamaño de la fuente del párrafo */
-    color: #333; /* Color del texto del párrafo */
+    color: #333; 
 }
 
 /* Linea secundaria*/
@@ -95,7 +95,7 @@ header h1 {
 main {
     padding: 0;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; /* Centra el elemento horizontalmente */
 }
 
 /* Texto */
@@ -103,21 +103,21 @@ main {
     font-family: 'Poppins', sans-serif;
     color: #000000;
     text-align: center;
-    font-size: 63px; /* Tamaño de fuente */
-    margin: 20px 0;
+    font-size: 63px; 
+    margin: 20px 0; /* Un margen de 20 píxeles arriba y abajo; y 0 píxeles a los dos lados */
 }
 
 /* Configuración y diseño del contenido y proyectos */
 .menu {
     display: flex; /* Activa flexbox */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
-    justify-content: center;
+    justify-content: center; /* Alinea los elementos en el centro */
     margin: 20px auto;
     width: 100%;
 }
 
 .enlacecuadrados {
-    background-color: #a5a5a5; /* Color de fondo */
+    background-color: #a5a5a5; 
     color: #ffffff;
     font-weight: bold;
     font-size: 22px;
@@ -126,8 +126,8 @@ main {
     margin: 10px;
     padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Los elementos se alinea en el centro */
+    justify-content: center; /* El texto se alinea en el centro */
     border-radius: 10px;
 }
 
@@ -142,11 +142,11 @@ main {
 }
 
 .enlacecuadrados:hover {
-    background-color: #002c54; /* Color de fondo al pasar el mouse */
+    background-color: #002c54; /* Cambiar color de fondo al pasar el mouse */
 }
 
 .enlacecuadrados:hover a {
-    color: #FFFFFF; 
+    color: #FFFFFF; /* Cambiar color de la tipografía al pasar el mouse */
 }
 
 /* Pie de página */
