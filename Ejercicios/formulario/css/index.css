@@ -1,98 +1,102 @@
-/* Estilos generales */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Color de fondo de la página */
-    font-family: Arial, sans-serif; /* Fuente de la página */
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
 }
 
-.diseñotitulo {
-    width: 500px; /* Ancho del contenedor */
-    margin: auto; /* Centra el contenedor */
-    padding: 20px; /* Espaciado interno */
-    background-color: white; /* Color de fondo del formulario */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
-    position: relative; /* Para el posicionamiento relativo de la imagen */
+/* ENCABEZADO */
+header {
+    background-color: #4A90E2; 
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-h1 {
-    text-align: center; /* Centra el título */
-    color: #000000; /* Color del texto del título */
+/* DISEÑO LOGOTIPO */
+header img {
+    position: absolute;
+    left: 50px;
+    width: 70px;
+    height: auto;
 }
 
-.iconoformulario {
-    width: 60px; /* Ancho del icono ajustado */
-    height: 75px; /* Alto del icono ajustado */
-    position: absolute; /* Posicionamiento absoluto para colocar al lado del título */
-    right: 10px; /* Espaciado desde la derecha */
-    top: 20px; /* Espaciado desde la parte superior */
+/* DISEÑO LETRAS */
+header h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 
-.formulario {
-    width: 100%; /* Ancho completo de la tabla */
+/* NAVEGACIÓN */
+nav ul {
+    background-color: #7ED321; 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
 }
 
-label {
-    display: block; /* Hace que el label ocupe el ancho completo */
-    margin: 10px 0 5px; /* Espaciado alrededor de los labels */
-    color: #000000; /* Color de los labels */
+nav ul li {
+    margin: 15px;
 }
 
-/* Estilo individual para cada campo de entrada */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-    width: 95%; /* Ajusta el ancho de todos los campos */
-    padding: 10px; /* Espaciado interno de los campos */
-    border: 1px solid #ccc; /* Borde de los campos */
-    border-radius: 4px; /* Bordes redondeados */
-    margin-bottom: 10px; /* Espaciado entre campos */
+/* ESTILO DE LOS ENLACES DE NAVEGACIÓN */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.enviarformulario {
-    width: 100%; /* Ancho completo del botón */
-    padding: 10px; /* Espaciado interno del botón */
-    background-color: #494949; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    font-size: 16px; /* Tamaño de la fuente del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    margin-top: 15px; /* Espaciado arriba del botón */
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.enviarformulario:hover {
-    background-color: #000000; /* Color más oscuro al pasar el cursor por el botón */
+/* ESTILO DE LOS ENLACES QUE DAN ACCESO A LOS ARCHIVOS */
+.enlacescuadrados {
+    background-color: #F5A623; 
+    color: #333333; 
+    font-weight: bold; 
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; /* Hace que el cuadro sea circular */
+    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
 }
 
-/* Boton para regresar al menú principal */
-.volverinicio {
-    text-align: center; /* Centra el enlace */
-    margin-top: 20px; /* Espaciado arriba del enlace */
+/* ESTILO DE LOS ENLACES DENTRO DE LOS CUADROS */
+.enlacescuadrados a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #333333; 
 }
 
-.volverinicio a {
-    color: #000; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado en el enlace */
+.enlacescuadrados:hover {
+    background-color: #D0021B; 
+    color: white;
 }
 
-.volverinicio a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
-}
+/* ////////////////////////////////////////// */
 
-/* Pie de página */
+/* PIE DE PÁGINA */
 footer p{
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }

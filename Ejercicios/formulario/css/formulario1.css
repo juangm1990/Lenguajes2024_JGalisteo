@@ -7,11 +7,11 @@ body {
 }
 
 .diseñotitulo {
-    width: 500px; /* Ancho del contenedor */
-    margin: auto; /* Centra el contenedor */
-    padding: 20px; /* Espaciado interno */
-    background-color: white; /* Color de fondo del formulario */
-    border-radius: 10px; /* Bordes redondeados */
+    width: 500px; 
+    margin: auto; 
+    padding: 20px; 
+    background-color: white; 
+    border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
     position: relative; /* Para el posicionamiento relativo de la imagen */
 }
@@ -30,13 +30,13 @@ h1 {
 }
 
 .formulario {
-    width: 100%; /* Ancho completo de la tabla */
+    width: 100%; 
 }
 
 label {
     display: block; /* Hace que el label ocupe el ancho completo */
     margin: 10px 0 5px; /* Espaciado alrededor de los labels */
-    color: #000000; /* Color de los labels */
+    color: #000000; 
 }
 
 /* Estilo individual para cada campo de entrada */
@@ -52,47 +52,45 @@ select {
 }
 
 .enviarformulario {
-    width: 100%; /* Ancho completo del botón */
-    padding: 10px; /* Espaciado interno del botón */
-    background-color: #494949; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    font-size: 16px; /* Tamaño de la fuente del botón */
+    width: 100%; 
+    padding: 10px; 
+    background-color: #494949; 
+    color: white;
+    font-size: 16px; 
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    margin-top: 15px; /* Espaciado arriba del botón */
+    margin-top: 15px; 
 }
 
 .enviarformulario:hover {
     background-color: #000000; /* Color más oscuro al pasar el cursor por el botón */
 }
 
-/* Boton para regresar al menú principal */
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
 .volverinicio {
-    text-align: center; /* Centra el enlace */
-    margin-top: 20px; /* Espaciado arriba del enlace */
+    text-align: center;
+    margin-top: 20px; 
 }
 
 .volverinicio a {
-    color: #000; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado en el enlace */
+    color: #000; 
+    text-decoration: none;
 }
 
 .volverinicio a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    text-decoration: underline; /* Cambio de color al pasar el cursor */
 }
 
-/* Pie de página */
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
 footer p{
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }

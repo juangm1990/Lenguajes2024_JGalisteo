@@ -1,52 +1,102 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
 }
 
-h1 {
-    text-align: center;
-    font-size: 24px;
+/* ENCABEZADO */
+header {
+    background-color: #5D6D7E; /* Gris azulado */
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-table {
+/* DISEÑO LOGOTIPO */
+header img {
+    position: absolute;
+    left: 50px;
+    width: 70px;
+    height: auto;
+}
+
+/* DISEÑO LETRAS */
+header h1 {
+    color: #FFFFFF; /* Blanco */
     width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 20px;
     text-align: center;
 }
 
-/* Boton para regresar al menú principal */
-.volverinicio {
-    text-align: center; /* Centra el enlace */
-    margin-top: 20px; /* Espaciado superior */
+/* NAVEGACIÓN */
+nav ul {
+    background-color: #2C3E50; /* Azul oscuro */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
 }
 
-.volverinicio a {
-    color: #000000; /* Color azul */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 18px; /* Tamaño de fuente */
+nav ul li {
+    margin: 15px;
 }
 
-.volverinicio a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+/* ESTILO DE LOS ENLACES DE NAVEGACIÓN */
+nav ul li a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+    padding: 10px;
 }
 
-/* Pie de página */
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ESTILO DE LOS ENLACES QUE DAN ACCESO A LOS ARCHIVOS */
+.enlacescuadrados {
+    background-color: #E5E8E8; /* Gris claro */
+    color: #34495E; /* Gris oscuro */
+    font-weight: bold; /* Aplica un grosor de fuente */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    width: 250px; /* Ancho del rectángulo */
+    height: 100px; /* Altura del rectángulo */
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto dentro del rectángulo */
+    justify-content: center; /* Centra horizontalmente el texto dentro del rectángulo */
+    border-radius: 10px; /* Bordes redondeados para suavizar la apariencia */
+    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
+}
+
+/* ESTILO DE LOS ENLACES DENTRO DE LOS RECTÁNGULOS */
+.enlacescuadrados a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #34495E; /* Gris oscuro */
+}
+
+.enlacescuadrados:hover {
+    background-color: #BDC3C7; /* Gris más claro */
+    color: #2C3E50; /* Azul oscuro */
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
 footer p{
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }

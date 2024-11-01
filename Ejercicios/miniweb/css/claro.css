@@ -8,7 +8,7 @@ body {
     margin: auto; /* Centra el contenido */
 }
 
-/* Cabecera del proyecto */
+/* ENCABEZADO */
 header {
     background-color: #002c54;
     display: flex;
@@ -16,7 +16,7 @@ header {
     position: relative;
 }
 
-/* Diseño logotipo */
+/* DISEÑO LOGOTIPO */
 header img {
     position: absolute;
     left: 50px;
@@ -24,14 +24,14 @@ header img {
     height: auto;
 }
 
-/* Diseño letras */
+/* DISEÑO LETRAS */
 header h1 {
     color: white;
     width: 100%;
     text-align: center;
 }
 
-/* Navegación */
+/* NAVEGACIÓN */
 nav ul {
     background-color: #a5a5a5;
     display: flex;
@@ -44,21 +44,21 @@ nav ul li {
     margin: 15px;
 }
 
-/* Estilo de los enlaces de navegación */
+/* ESTILO DE LOS ENLACES DE NAVEGACIÓN */
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
 
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 main {
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-/* Estilo de los enlaces que dan acceso a los Archivos */
+/* ESTILO DE LOS ENLACES QUE DAN ACCESO A LOS ARCHIVOS */
 .enlacescuadrados {
     background-color: #002c54;
     color: #ffffff;
@@ -75,17 +75,18 @@ main {
     box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
 }
 
-/* Estilo de los enlaces dentro de los cuadros */
+/* ESTILO DE LOS ENLACES DENTRO DE LOS CUADROS */
 .enlacescuadrados a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: #ffffff;
 }
 
 .enlacescuadrados:hover {
-    background-color: #FFA500;
+    background-color: #FFA500; /* Cambio de color al pasar el cursor */
     color: white;
 }
 
+/* CAMBIO DE TEMA OSCURO/CLARO */
 .cambiotemacolor {
     background-color: darkblue;
     color: white;
@@ -94,8 +95,10 @@ main {
     font-size: 16px; /* Aumenta el tamaño de la fuente */
 }
 
-/* Pie de página */
-footer p {
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p{
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;

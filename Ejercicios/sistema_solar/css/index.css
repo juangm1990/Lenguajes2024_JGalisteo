@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: #ff6347; /* Cambia el color del enlace */
+    color: #ff6347; /* Cambio de color al pasar el cursor */
     background-color: rgba(255, 255, 255, 0.3); 
 }
 
@@ -79,11 +79,13 @@ a:hover {
     text-align: center; 
 }
 
-/* BOTÓN PARA VOLVER AL INICIO */
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
 .volverinicio {
     text-align: center; 
     margin-top: 40px;
 }
+
+/* ////////////////////////////////////////// */
 
 /* ////////////////////////////////////////// */
 
@@ -94,13 +96,10 @@ footer p{
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }
+
 

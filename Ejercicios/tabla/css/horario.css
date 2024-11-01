@@ -22,12 +22,12 @@ th {
     background-color: #d3d3d3;
 }
 
-/* Estilo para el color de fondo de la tabla de las horas */
+/* ESTILO PARA EL COLOR DE FONDO DE LA TABLA DE LAS HORAS */
 .rellenocolorhoras {
     background-color: #f0f0f0;
 }
 
-/* Estilos de color para las asignaturas */
+/* ESTILOS DE COLOR PARA LAS ASIGNATURAS */
 .naranja {
     background-color: #e96b00;
     color: rgb(0, 0, 0);
@@ -67,7 +67,7 @@ th {
     color: rgb(0, 0, 0);
 }
 
-/* Boton para regresar al menú principal */
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
 
 .volverinicio {
     text-align: center; /* Centra el enlace */
@@ -81,22 +81,20 @@ th {
 }
 
 .volverinicio a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+    text-decoration: underline; /* Cambio de color al pasar el cursor */
 }
 
-/* Pie de página */
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
 footer p{
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }

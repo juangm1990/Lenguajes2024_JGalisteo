@@ -68,7 +68,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ffffff; /* Cambio de color al pasar el ratón por encima */
+    background-color: #ffffff; /* Cambio de color al pasar el cursor */
     color: #002c54;
 }
 
