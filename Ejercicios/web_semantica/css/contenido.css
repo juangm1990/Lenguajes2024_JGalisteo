@@ -9,8 +9,23 @@ body {
 }
 
 /* ////////////////////////////////////////// */
+/* Configuración de los encabezados del texto */
+h2 {
+    color: #FFFFFF;
+}
 
-/* Encabezado */
+h3 {
+    color: #000000;
+}
+
+/* Configuración del texto */
+p {
+    color: #000000;
+    text-align: justify;
+}
+/* ////////////////////////////////////////// */
+
+/* ENCABEZADO */
 
 header {
     background-color: #002c54;
@@ -76,21 +91,6 @@ main {
     border-top: 45px solid #ffffff;
     /* Aplica una línea de separación en la parte superior */
 }
-
-h2 {
-    color: #FFFFFF;
-}
-
-h3 {
-    color: #000000;
-}
-
-p {
-    color: #000000;
-    text-align: justify;
-}
-
-/* ////////////////////////////////////////// */
 
 /* Diséño de la página */
 

@@ -1,83 +1,90 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f8; /* Fondo gris claro */
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente moderna */
-    background-image: url('/Ejercicios/sistema_solar/imagenes/fondo1.png'); 
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el área */
-    background-position: center; /* Centra la imagen de fondo */
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Margen externo del cuerpo */
+    padding: 0; /* No habrá espacio interno alrededor del contenido */
+    line-height: 1.6; /* Altura de las línea del texto */
+    background-image: url('/Ejercicios/sistema_solar/imagenes/fondo1.png'); /* Imagen para el fondo */
     
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
 }
 
-/* Contenedor principal */
+/* Diseño de la página principal para que esté metido  */
 .titulotexto {
     max-width: 800px; /* Ancho máximo */
     margin: 40px auto; /* Centrados con margen superior */
-    padding: 20px; /* Espaciado interno */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.8); 
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
-    color: #f0f0f0; /* Color de texto claro para contraste */
+    color: #f0f0f0; 
 }
 
-/* Títulos */
+/* ////////////////////////////////////////// */
+/* /* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */ 
 h1, h2 {
     text-align: center; /* Centrados */
     margin: 15px 0; /* Espaciado arriba y abajo */
     font-weight: 600; /* Negrita para los títulos */
-    color: #FFA500; /* Color amarillo */
+    color: #FFA500; 
 }
 
-/* Contenedor de imágenes */
-.fotografias {
-    max-width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    margin: 20px auto; /* Centra la imagen y añade márgenes */
-}
-
-/* Enlaces */
-a {
-    color: #1e90ff; /* Azul vibrante */
-    text-decoration: none; /* Sin subrayado */
-    transition: color 0.3s; /* Transición suave */
-    display: inline-block; /* Hace que el enlace ocupe todo el ancho */
-    text-align: center; /* Centra el texto del enlace */
-    margin-top: 5px; /* Espaciado arriba del enlace */
-    padding: 10px; /* Espaciado interno */
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con opacidad */
-    border-radius: 5px; /* Bordes redondeados para los enlaces */
-}
-
-a:hover {
-    color: #ff6347; /* Color tomate al pasar el mouse */
-    background-color: rgba(255, 255, 255, 0.3); /* Cambia el fondo al pasar el mouse */
-}
-
-/* Para el texto centrado */
 p {
     text-align: justify; /* Justificado para mejor lectura */
-    color: #d3d3d3; /* Color del texto claro */
+    color: #d3d3d3;
     margin: 10px 20px; /* Espaciado */
 }
 
-/* Línea horizontal */
+/* DISEÑO PARA LA LÍNEA HORIZONTAL */
 hr {
-    border: 1px solid #ddd; /* Color de la línea */
+    border: 1px solid #ddd;
     margin: 20px 0; /* Espaciado */
 }
 
-/* Estilo para los elementos de lista */
+/* DISEÑO PARA LOS ELEMENTOS DE LISTA */
 ul {
     list-style-type: none; /* Elimina los puntos de la lista */
     padding: 0; /* Elimina el padding por defecto */
 }
+/* ////////////////////////////////////////// */
 
-/* Estilos para el botón de volver al inicio */
-.volverinicio {
-    text-align: center; /* Centra el texto */
-    margin-top: 40px; /* Espaciado superior para separación */
+/* IMAGENES */
+.fotografias {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al 100% de la página */
+    height: auto; 
+    display: block; /* Hace que la imagen ocupe todo el ancho de la página */
+    margin: 20px auto; 
 }
+
+/* ENLACES */
+a {
+    color: #1e90ff; 
+    text-decoration: none; /* Hace que se quite el subrayado de los enlaces*/
+    display: inline-block; /* Hace que el enlace ocupe todo el ancho */
+    text-align: center; /* Centra el texto del enlace */
+    margin-top: 5px; /* Espaciado arriba del enlace */
+    padding: 10px; /* Espaciado */
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+a:hover {
+    color: #ff6347; /* Cambia el color del enlace */
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+/* CLASS PARA QUE PARTES DEL TEXTO ESTÉN CENTRADAS */
+.textocentro {
+    text-align: center; 
+}
+
+/* BOTÓN PARA VOLVER AL INICIO */
+.volverinicio {
+    text-align: center; 
+    margin-top: 40px;
+}
+
 
 /* Pie de página */
 footer p{
