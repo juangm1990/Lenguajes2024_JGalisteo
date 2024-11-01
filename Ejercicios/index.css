@@ -9,7 +9,7 @@ body {
     margin: auto; /* Centra el contenido */
 }
 
-/* Encabezado */
+/* ENCABEZADO */
 header {
     background-color: #002c54; /* Color de fondo */
     display: flex; /* Usar flexbox para organizar el contenido */
@@ -32,19 +32,19 @@ header h1 {
     height: auto; /* Altura del recuadro se ajustará automáticamente*/
 }
 
-/* Linea principal*/
+/* LINEA PRINCIPAL */
 .recuadrogris {
     background-color: #a5a5a5; 
     height: 10px; /* Establece la altura */
 }
 
-/*Fotografía de la cabecera*/
+/* FOTOGRAFÍA DE LA CABECERA */
 .imagencentro {
     width: 100%; /* El elemento ocupará todo el ancho de la página */
     height: auto;
 }
 
-/* Navegación principal */
+/* NAVEGACIÓN PRINCIPAL */
 .menuprincipal {
     background-color: #FFA500; 
     padding: 10px;
@@ -72,7 +72,7 @@ header h1 {
     vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
 }
 
-/* Configuración para poner notas de texto */
+/* CONFIGURACIÓN PARA PONER NOTAS DE TEXTO */
 .notas {
     position: left; /* Posición: Derecha - Izquierda - Centro */
 }
@@ -83,7 +83,7 @@ header h1 {
     color: #333; 
 }
 
-/* Linea secundaria*/
+/* LÍNEA SECUNDARIA */
 .recuadroazul {
     background-color: #002c54;
     height: 10px;
@@ -91,14 +91,14 @@ header h1 {
     width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
-/* Contenido principal */
+/* CONTENIDO PRINCIPAL */
 main {
     padding: 0;
     width: 100%;
     margin: 0 auto; /* Centra el elemento horizontalmente */
 }
 
-/* Texto */
+/* TEXTO */
 .tituloproyectos {
     font-family: 'Poppins', sans-serif;
     color: #000000;
@@ -107,9 +107,9 @@ main {
     margin: 20px 0; /* Un margen de 20 píxeles arriba y abajo; y 0 píxeles a los dos lados */
 }
 
-/* Configuración y diseño del contenido y proyectos */
+/* CONFIGURACIÓN Y DISEÑO DEL CONTENIDO Y PROYECTOS */
 .menu {
-    display: flex; /* Activa flexbox */
+    display: flex; /* Activa flexbox para agrupar elementos */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
     justify-content: center; /* Alinea los elementos en el centro */
     margin: 20px auto;
@@ -149,7 +149,7 @@ main {
     color: #FFFFFF; /* Cambiar color de la tipografía al pasar el mouse */
 }
 
-/* Pie de página */
+/* PIE DE PÁGINA */
 footer p{
     background-color: #77777733;
     color: #FFFFFF;
