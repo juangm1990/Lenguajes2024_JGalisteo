@@ -71,8 +71,19 @@ main {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    border-radius: 50%; /* Hace que el cuadro sea circular */
+    border-radius: 10%; /* Hace que el cuadro sea circular */
     box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
+}
+
+/* ESTILO DE LOS ENLACES DENTRO DE LOS CUADROS */
+.enlacescuadrado a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #333333; 
+}
+
+.enlacescuadrado:hover {
+    background-color: #D0021B; 
+    color: white;
 }
 
 .enlacescirculo {
@@ -92,12 +103,12 @@ main {
 }
 
 /* ESTILO DE LOS ENLACES DENTRO DE LOS CUADROS */
-.enlacescuadrados a {
+.enlacescirculo a {
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: #333333; 
 }
 
-.enlacescuadrados:hover {
+.enlacescirculo:hover {
     background-color: #D0021B; 
     color: white;
 }
