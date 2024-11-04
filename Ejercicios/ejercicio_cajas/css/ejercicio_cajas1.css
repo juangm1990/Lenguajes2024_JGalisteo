@@ -1,17 +1,41 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+h1 {
     text-align: center;
+    font-size: 24px;
 }
 
-table{
-    width: 900px;
-    height: 700px;
+.texto {
+    text-align: center; 
+    height: 100%; 
+    width: 100%;
+    color: darkblue; 
 }
-.caja {
 
-    margin: 20px auto;
-    box-sizing: border-box;
+
+.interrogante {
+    font-size: 90px; 
+    color: darkblue; 
+    font-weight: bold;
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+table {
+    width: 100%; 
+}
+
+td {
+    width: 500px; /* Ancho */
+    height: 300px; /* Altura */   
 }
 
 .caja1 {
@@ -24,58 +48,75 @@ table{
 }
 
 .caja2 {
-    background-color: yellow;
+    background-color: #ffd700;
     border: 5px solid black;
-    border-left-width: 80px;
-    border-top-right-radius: 20px;
+    border-left: 80px solid black;
     border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .caja3 {
-    background-color: lightgreen;
-    border: 5px inset black;
-    border-radius: 10px;
+    background-color: #f28b82;
+    border: 40px groove #ff6658;
+    border-radius: 40px;
 }
 
 .caja4 {
-    background-color: lightgreen;
-    border: 5px inset black;
-    border-radius: 10px;
+    background-color: #a0d995;
+    border: 35px inset #006400;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .caja5 {
-    background-color: #F5A623;
-    color: #333333;
+    background-color: peachpuff;
+    border: 10px dashed orange;
     border-radius: 50%;
+    font-size: 24px;
+    height: 200px; /* Altura del círculo */
+    width: 200px; /* Ancho del círculo */
 }
 
 .caja6 {
-    background-color: antiquewhite;
-    border-color: black;
-    border-style: dotted;
-    border-width: 5px;
-    padding-top: 10px;
-    padding-left: 10px;
+    background-color: #d1c4e9;
+    border: 35px outset darkblue;
 }
 
 .caja7 {
-    background-color: antiquewhite;
-    border-color: black;
-    border-style: dotted;
-    border-width: 5px;
-    padding-top: 10px;
-    padding-left: 10px;
+    background: linear-gradient(to top, yellow, red);
+    border: 10px solid rgb(255, 0, 0);
 }
 
 .caja8 {
-    background-color: rgb(151, 54, 54);
-    border: 20px outset white;
+    background-color: white;
+    border: 35px solid;
+    border-color: blue red green yellow;
 }
 
 .caja9 {
-    background-color: yellow;
-    border: 20px double white;
+    background-color: white;
+    border: 30px double purple;
+    border-radius: 40px;
 }
+
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; /* Centra el enlace */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.volverinicio a {
+    color: #000000; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.volverinicio a:hover {
+    text-decoration: underline; /* Cambio de color al pasar el cursor */
+}
+
+/* ////////////////////////////////////////// */
 
 /* PIE DE PÁGINA */
 footer p{
