@@ -10,7 +10,7 @@ body {
 
 /* ENCABEZADO */
 header {
-    background-color: #4A90E2; 
+    background-color: #2C3E50; /* Color oscuro elegante */
     display: flex;
     align-items: center;
     position: relative;
@@ -26,14 +26,14 @@ header img {
 
 /* DISEÑO LETRAS */
 header h1 {
-    color: white;
+    color: #ECF0F1; /* Color claro para contraste */
     width: 100%;
     text-align: center;
 }
 
 /* NAVEGACIÓN */
 nav ul {
-    background-color: #7ED321; 
+    background-color: #FFA500; 
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -46,7 +46,7 @@ nav ul li {
 
 /* ESTILO DE LOS ENLACES DE NAVEGACIÓN */
 nav ul li a {
-    color: white;
+    color: #ECF0F1;
     text-decoration: none;
     padding: 10px;
 }
@@ -60,8 +60,8 @@ main {
 
 /* ESTILO DE LOS ENLACES QUE DAN ACCESO A LOS ARCHIVOS */
 .enlacescuadrados {
-    background-color: #F5A623; 
-    color: #333333; 
+    background-color: #1ABC9C; 
+    color: #ffffff; 
     font-weight: bold; 
     font-size: 1.2em; /* Aumenta el tamaño de la fuente */
     width: 200px;
@@ -71,20 +71,21 @@ main {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    border-radius: 50%; /* Hace que el cuadro sea circular */
-    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
+    border-radius: 20%; /* Hace que el cuadro sea circular */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
 /* ESTILO DE LOS ENLACES DENTRO DE LOS CUADROS */
 .enlacescuadrados a {
     text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #333333; 
+    color: #ffffff; 
 }
 
 .enlacescuadrados:hover {
-    background-color: #D0021B; 
+    background-color: #E74C3C; 
     color: white;
 }
+
 
 /* ////////////////////////////////////////// */
 
