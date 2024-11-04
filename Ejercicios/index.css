@@ -7,6 +7,7 @@ body {
     /*REQUISITOS OBLIGATORIOS*/
     width: 1200px; /* Ancho máximo del contenido */
     margin: auto; /* Centra el contenido */
+    box-sizing: border-box; /*Ancho y alto solo se aplican al contenido del elemento.*/
 }
 
 /* ENCABEZADO */
