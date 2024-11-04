@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+table{
+    width: 900px;
+    height: 700px;
+}
+.caja {
+
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.caja1 {
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: dotted;
+    border-width: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.caja2 {
+    background-color: yellow;
+    border: 5px solid black;
+    border-left-width: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.caja3 {
+    background-color: lightgreen;
+    border: 5px inset black;
+    border-radius: 10px;
+}
+
+.caja4 {
+    background-color: lightgreen;
+    border: 5px inset black;
+    border-radius: 10px;
+}
+
+.caja5 {
+    background-color: #F5A623;
+    color: #333333;
+    border-radius: 50%;
+}
+
+.caja6 {
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: dotted;
+    border-width: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.caja7 {
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: dotted;
+    border-width: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.caja8 {
+    background-color: rgb(151, 54, 54);
+    border: 20px outset white;
+}
+
+.caja9 {
+    background-color: yellow;
+    border: 20px double white;
+}
+
+/* PIE DE PÁGINA */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}
+
