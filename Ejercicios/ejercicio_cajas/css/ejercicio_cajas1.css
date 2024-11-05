@@ -21,14 +21,6 @@ h1 {
 }
 
 
-.interrogante {
-    font-size: 90px; 
-    color: darkblue; 
-    font-weight: bold;
-    display: flex; /* Para centrar el contenido */
-    justify-content: center; /* Centra horizontalmente */
-}
-
 table {
     width: 100%; 
 }

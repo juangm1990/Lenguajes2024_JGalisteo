@@ -1,17 +1,33 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+h1 {
     text-align: center;
+    font-size: 24px;
 }
 
-table{
-    width: 900px;
-    height: 700px;
+.texto {
+    text-align: center; 
+    height: 100%; 
+    width: 100%;
+    color: darkblue; 
 }
-.caja {
 
-    margin: 20px auto;
-    box-sizing: border-box;
+table {
+    width: 100%;
+    border-spacing: 0 40px; /* Espacio vertical de 20px entre las filas */ 
+}
+
+td {
+    width: 250px; /* Ancho */
+    height: 400px; /* Altura */ 
 }
 
 .caja1 {
@@ -23,70 +39,171 @@ table{
     padding-left: 10px;
 }
 
-.caja2 {
-    background-color: yellow;
-    border: 5px solid black;
-    border-left-width: 80px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+/*//////////////////////////////////*/
+
+/* CUADRADO */
+
+/*//////////////////////////////////*/
+
+.cuadrado {
+    position: relative;
+    width: 280px; /* Ajusta según necesites */
+    height: 280px; /* Ajusta según necesites */
 }
 
-.caja3 {
-    background-color: lightgreen;
-    border: 5px inset black;
-    border-radius: 10px;
+/* Color rojo */
+.cuadrado .red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa la mitad */
+    height: 100%; /* Ocupa la mitad */
+    background-color: red; /* Color rojo */
+    clip-path: polygon(0 0, 100% 0, 0 100%); /* Triángulo superior izquierdo */
+    z-index: 4; /* Asegura que esté en el frente */
 }
 
-.caja4 {
-    background-color: lightgreen;
-    border: 5px inset black;
-    border-radius: 10px;
+/* Color azul */
+.cuadrado .blue {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Desplazado a la mitad */
+    width: 100%; /* Ocupa la mitad */
+    height: 100%; /* Ocupa la mitad */
+    background-color: blue; /* Color azul */
+    clip-path: polygon(100% 0, 100% 100%, 0 0); /* Triángulo superior derecho */
+    z-index: 3; /* Asegura que esté detrás del rojo */
 }
 
-.caja5 {
-    background-color: #F5A623;
-    color: #333333;
+/* Color amarillo */
+.cuadrado .yellow {
+    position: absolute;
+    top: 50%; /* Desplazado a la mitad inferior */
+    left: 50%; /* Desplazado a la mitad derecha */
+    width: 100%; /* Ocupa la mitad */
+    height: 100%; /* Ocupa la mitad */
+    background-color: yellow; /* Color amarillo */
+    clip-path: polygon(0 100%, 100% 100%, 100% 0); /* Triángulo inferior derecho */
+    z-index: 1; /* Asegura que esté detrás del rojo */
+}
+
+/* Color verde */
+.cuadrado .green {
+    position: absolute;
+    top: 50%; /* Desplazado a la mitad inferior */
+    left: 0; /* Mantiene la posición izquierda */
+    width: 100%; /* Ocupa la mitad */
+    height: 100%; /* Ocupa la mitad */
+    background-color: green; /* Color verde */
+    clip-path: polygon(0 100%, 0 0, 100% 100%); /* Triángulo inferior izquierdo */
+    z-index: 2; /* Asegura que esté detrás del rojo */
+}
+
+/*//////////////////////////////////*/
+
+/*CÍRCULOS*/
+
+/*//////////////////////////////////*/
+
+.circulo1 {
+    background-color: green;
     border-radius: 50%;
+    font-size: 24px;
+    height: 200px; /* Altura del círculo */
+    width: 200px; /* Ancho del círculo */
 }
 
-.caja6 {
-    background-color: antiquewhite;
-    border-color: black;
-    border-style: dotted;
-    border-width: 5px;
-    padding-top: 10px;
-    padding-left: 10px;
+.circulo2 {
+    position: relative; /* Necesario para posicionar los pseudo-elementos */
+    background-color: transparent; /* Hacemos el fondo transparente para ver las mitades */
+    height: 200px; /* Altura del círculo */
+    width: 200px; /* Ancho del círculo */
+    overflow: hidden; /* Asegura que el contenido no sobresalga */
+    border-radius: 50%; /* Hace que sea un círculo perfecto */
 }
 
-.caja7 {
-    background-color: antiquewhite;
-    border-color: black;
-    border-style: dotted;
-    border-width: 5px;
-    padding-top: 10px;
-    padding-left: 10px;
+.circulo2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green; /* Color de la mitad verde */
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); /* Mantiene la mitad izquierda */
 }
 
-.caja8 {
-    background-color: rgb(151, 54, 54);
-    border: 20px outset white;
+.circulo2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; /* Alinea la mitad blanca a la derecha */
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Color de la mitad blanca */
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); /* Mantiene la mitad derecha */
 }
 
-.caja9 {
-    background-color: yellow;
-    border: 20px double white;
+.circulo3 {
+    position: relative; /* Necesario para posicionar los pseudo-elementos */
+    background-color: transparent; /* Hacemos el fondo transparente para ver las mitades */
+    height: 200px; /* Altura del círculo */
+    width: 200px; /* Ancho del círculo */
+    overflow: hidden; /* Asegura que el contenido no sobresalga */
+    border-radius: 50%; /* Hace que sea un círculo perfecto */
 }
+
+.circulo3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Color de la mitad superior */
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); /* Mantiene la mitad superior */
+}
+
+.circulo3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; /* Alinea la mitad verde a la izquierda */
+    width: 100%;
+    height: 100%;
+    background-color: green; /* Color de la mitad inferior */
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); /* Mantiene la mitad inferior */
+}
+
+/*//////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; /* Centra el enlace */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.volverinicio a {
+    color: #000000; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.volverinicio a:hover {
+    text-decoration: underline; /* Cambio de color al pasar el cursor */
+}
+
+/* ////////////////////////////////////////// */
 
 /* PIE DE PÁGINA */
-footer p{
+footer p {
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 5px;
     position: fixed; /* Fija el pie de página en la parte inferior */
-    bottom: 0; /* Elimina la posición en la parte inferior*/
-    left: 0; /* Elimina la alineación a la izquierda*/
+    bottom: 0; /* Elimina la posición en la parte inferior */
+    left: 0; /* Elimina la alineación a la izquierda */
     margin: 0; /* Elimina el margen del pie de página */
 }
-
