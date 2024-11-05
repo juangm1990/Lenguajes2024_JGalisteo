@@ -69,6 +69,13 @@ td {
     width: 200px; /* Ancho del círculo */
 }
 
+.interrogante {
+    color: darkblue; 
+    text-align: center;
+    font-size: 100px; 
+    font-weight: bold; 
+}
+
 .caja6 {
     background-color: #d1c4e9;
     border: 35px outset darkblue;
