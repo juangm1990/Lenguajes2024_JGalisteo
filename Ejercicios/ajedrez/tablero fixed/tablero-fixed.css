@@ -1,0 +1,1046 @@
+header {
+    padding: 50px;
+    
+   text-align: center;
+
+    color: rgba(12, 220, 64, 0.956);
+    font-size: 15px;
+}
+
+nav {
+    overflow: hidden;
+  
+}
+  
+nav a {
+    font-size: 30px;
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+ body{
+    background-image: url(fondo/fondoGatos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    .contenedor{
+       
+        height: 1000px;
+        width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .casilla1{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .casilla2{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -100px;
+        left: 100px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px;
+    
+    }
+    .casilla3{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -200px;
+        left: 200px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    
+    
+    .casilla4{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -300px;
+        left: 300px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla5{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -400px;
+        left: 400px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla6{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -500px;
+        left: 500px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla7{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -600px;
+        left: 600px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    
+    .casilla8{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -700px;
+        left: 700px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    
+    .casilla9{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -800px;
+        left: 800px;   
+        box-sizing: border-box;
+         text-align: center;
+        font-size: 100px
+    }
+    
+    .casilla10{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -900px;
+        left: 900px;
+        box-sizing: border-box;
+    }
+    .casilla11{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    
+
+    
+    .casilla12{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+    .casilla13{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        box-sizing: border-box;
+    }
+    
+    .casilla14{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+    
+    .casilla15{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+    
+    .casilla16{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+    
+    .casilla17{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    
+    .casilla18{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left:700px;
+        box-sizing: border-box;
+    }
+    
+    .casilla19{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+    .casilla20{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 100px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla21{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla22{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+
+    .casilla23{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 200px; 
+        box-sizing: border-box;
+    }
+    .casilla24{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+    .casilla25{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+    .casilla26{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+    .casilla27{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    .casilla28{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 700px;
+        box-sizing: border-box;
+    }
+    .casilla29{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+    .casilla30{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 200px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla31{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla32{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+    
+    .casilla33{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        box-sizing: border-box;
+    }
+    
+    .casilla34{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+    .casilla35{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+    .casilla36{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+    .casilla37{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    .casilla38{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 700px;
+        box-sizing: border-box;
+    }
+    .casilla39{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+    .casilla40{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 300px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla41{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla42{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+    .casilla43{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 200px;
+        box-sizing: border-box;
+    }
+    .casilla44{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+    .casilla45{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+    .casilla46{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+    .casilla47{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    .casilla48{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 700px;
+        box-sizing: border-box;
+    }
+    .casilla49{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+    .casilla50{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla51{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px; 
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla52{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+    .casilla53{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 200px;
+        box-sizing: border-box;
+    }
+    .casilla54{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+    .casilla55{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+    .casilla56{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+    .casilla57{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    .casilla58{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 700px;
+        box-sizing: border-box;
+    }
+    .casilla59{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+    .casilla60{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 500px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla61{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    
+    .casilla62{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+    .casilla63{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 200px;
+        box-sizing: border-box;
+    }
+    .casilla64{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+    .casilla65{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+    .casilla66{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+    .casilla67{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    .casilla68{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 700px;
+        box-sizing: border-box;
+    }
+    .casilla69{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+    .casilla70{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 600px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla71{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla72{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+    .casilla73{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 200px;
+        box-sizing: border-box;
+    }
+    .casilla74{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+    .casilla75{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+    .casilla76{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+    .casilla77{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    .casilla78{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 700px;
+        box-sizing: border-box;
+    }
+    .casilla79{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+    .casilla80{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 700px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+
+    .casilla81{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+
+    .casilla82{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 100px;
+        box-sizing: border-box;
+    }
+    
+    .casilla83{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 200px;
+        box-sizing: border-box;
+    }
+
+    .casilla84{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 300px;
+        box-sizing: border-box;
+    }
+
+    .casilla85{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 400px;
+        box-sizing: border-box;
+    }
+
+    .casilla86{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 500px;
+        box-sizing: border-box;
+    }
+
+    .casilla87{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 600px;
+        box-sizing: border-box;
+    }
+    
+    .casilla88{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 700px;
+        box-sizing: border-box;
+    }
+
+    .casilla89{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 800px;
+        box-sizing: border-box;
+    }
+
+    .casilla90{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 800px;
+        left: 900px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+
+    .casilla91{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        box-sizing: border-box;
+    }
+
+    .casilla92{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 100px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+
+    .casilla93{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 200px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+
+    .casilla94{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 300px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+
+    .casilla95{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 400px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+   
+    .casilla96{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 500px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+
+    .casilla97{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 600px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    
+    .casilla98{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 700px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    
+    .casilla99{
+        background-image: url(fondo/vainilla.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 800px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 100px
+    }
+    .casilla100{
+        background-image: url(fondo/marron.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 900px;
+        left: 900px;
+        box-sizing: border-box;
+    }
+    
+ 
+    #boton{
+        position: sticky;
+        width: 120px;
+        height: 120px;
+        top: 90%;
+        left: 80%;
+        border-radius: 60%;
+        background-size: cover;
+        background-repeat: no-repeat;
+     
+    }
+    
+    img{
+        border-radius: 50%;
+    }

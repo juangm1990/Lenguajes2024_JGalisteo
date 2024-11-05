@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #f0d9b5; /* Color claro similar al tablero de ajedrez */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* DISEÑO LOGOTIPO */
+header img {
+    position: absolute;
+    left: 50px;
+    width: 70px;
+    height: auto;
+}
+
+/* DISEÑO LETRAS */
+header h1 {
+    color: #000000; /* Color negro para el texto */
+    width: 100%;
+    text-align: center;
+}
+
+/* NAVEGACIÓN */
+nav ul {
+    background-color: #8B4513; /* Color marrón para la barra de navegación */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+/* ESTILO DE LOS ENLACES DE NAVEGACIÓN */
+nav ul li a {
+    color: #FFFFFF; /* Color blanco para los enlaces */
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ESTILO DE LOS ENLACES QUE DAN ACCESO A LOS ARCHIVOS */
+.enlacescuadrados {
+    background-color: #f0d9b5; /* Color claro para los rectángulos */
+    color: #2C3E50; 
+    font-weight: bold; 
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    width: 250px; /* Ancho del rectángulo */
+    height: 100px; /* Altura del rectángulo */
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto dentro del rectángulo */
+    justify-content: center; /* Centra horizontalmente el texto dentro del rectángulo */
+    border-radius: 10px; /* Bordes redondeados para suavizar la apariencia */
+    box-shadow: 2px 2px 10px #000000; /* Agrega una sombra para un efecto de elevación */
+}
+
+/* ESTILO DE LOS ENLACES DENTRO DE LOS RECTÁNGULOS */
+.enlacescuadrados a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #2C3E50; /* Color oscuro para el texto de los enlaces */
+}
+
+.enlacescuadrados:hover {
+    background-color: #c2b280; /* Color más oscuro al pasar el cursor */
+    color: #FFFFFF; /* Color blanco al pasar el cursor */
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior */
+    left: 0; /* Elimina la alineación a la izquierda */
+    margin: 0; /* Elimina el margen del pie de página */
+}
