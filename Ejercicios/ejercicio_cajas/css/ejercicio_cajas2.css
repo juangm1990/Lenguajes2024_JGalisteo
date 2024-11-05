@@ -84,66 +84,24 @@ td {
 }
 
 .circulo2 {
-    position: relative; /* Necesario para posicionar los pseudo-elementos */
-    background-color: transparent; /* Hacemos el fondo transparente para ver las mitades */
-    height: 200px; /* Altura del círculo */
-    width: 200px; /* Ancho del círculo */
-    overflow: hidden; /* Asegura que el contenido no sobresalga */
-    border-radius: 50%; /* Hace que sea un círculo perfecto */
-}
-
-.circulo2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: green; /* Color de la mitad verde */
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); /* Mantiene la mitad izquierda */
-}
-
-.circulo2::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0; /* Alinea la mitad blanca a la derecha */
-    width: 100%;
-    height: 100%;
-    background-color: white; /* Color de la mitad blanca */
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); /* Mantiene la mitad derecha */
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    clip-path: inset(0 50% 0 0);
 }
 
 .circulo3 {
-    position: relative; /* Necesario para posicionar los pseudo-elementos */
-    background-color: transparent; /* Hacemos el fondo transparente para ver las mitades */
-    height: 200px; /* Altura del círculo */
-    width: 200px; /* Ancho del círculo */
-    overflow: hidden; /* Asegura que el contenido no sobresalga */
-    border-radius: 50%; /* Hace que sea un círculo perfecto */
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    clip-path: inset(50% 0 0 0);
 }
 
-.circulo3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white; /* Color de la mitad superior */
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); /* Mantiene la mitad superior */
-}
 
-.circulo3::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0; /* Alinea la mitad verde a la izquierda */
-    width: 100%;
-    height: 100%;
-    background-color: green; /* Color de la mitad inferior */
-    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); /* Mantiene la mitad inferior */
-}
+
+
 
 /*//////////////////////////////////*/
 

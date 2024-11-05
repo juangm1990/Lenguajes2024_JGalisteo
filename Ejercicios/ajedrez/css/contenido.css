@@ -20,7 +20,11 @@ h1 {
 /*//////////////////////////////////////*/
 
 img{
-    border-radius: 50%;
+
+    position: relative;
+    margin: auto;
+    height: 100px;
+    width: 100px;
 }
 
 .tabla{
