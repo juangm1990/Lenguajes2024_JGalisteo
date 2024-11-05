@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.texto {
+    text-align: center; 
+    height: 100%; 
+    width: 100%;
+    color: darkblue; 
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 40px; /* Espacio vertical entre filas */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    width: 250px; /* Ancho */
+    height: 400px; /* Altura */ 
+}
+
+.caja1 {
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: dotted;
+    border-width: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/*//////////////////////////////////*/
+
+/* CUADRADO 1 */
+
+.cuadrado1 {
+    position: relative;
+    width: 400px; /* Ajusta según necesites */
+    height: 400px; /* Ajusta según necesites */
+}
+
+/* Color rojo */
+.cuadrado1 .red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Ocupa la mitad */
+    height: 50%; /* Ocupa la mitad */
+    background-color: red; /* Color rojo */
+    z-index: 4; /* Asegura que esté en el frente */
+}
+
+/* Color azul */
+.cuadrado1 .blue {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Desplazado a la mitad */
+    width: 50%; /* Ocupa la mitad */
+    height: 50%; /* Ocupa la mitad */
+    background-color: blue; /* Color azul */
+    z-index: 3; /* Asegura que esté detrás del rojo */
+}
+
+/* Color amarillo */
+.cuadrado1 .yellow {
+    position: absolute;
+    top: 50%; /* Desplazado a la mitad inferior */
+    left: 50%; /* Desplazado a la mitad derecha */
+    width: 50%; /* Ocupa la mitad */
+    height: 50%; /* Ocupa la mitad */
+    background-color: yellow; /* Color amarillo */
+    z-index: 1; /* Asegura que esté detrás del rojo */
+}
+
+/* Color verde */
+.cuadrado1 .green {
+    position: absolute;
+    top: 50%; /* Desplazado a la mitad inferior */
+    left: 0; /* Mantiene la posición izquierda */
+    width: 50%; /* Ocupa la mitad */
+    height: 50%; /* Ocupa la mitad */
+    background-color: green; /* Color verde */
+    z-index: 2; /* Asegura que esté detrás del rojo */
+}
+
+/*//////////////////////////////////*/
+
+/* CUADRADO 2 */
+
+.cuadrado2 {
+    position: relative;
+    width: 400px; 
+    height: 400px;
+}
+
+/* Color rojo */
+.cuadrado2 .red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 50%; 
+    background-color: red; 
+    z-index: 4; 
+}
+
+/* Color azul */
+.cuadrado2 .blue {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    width: 50%; 
+    height: 50%; 
+    background-color: blue; 
+    z-index: 3; 
+}
+
+/* Color amarillo */
+.cuadrado2 .yellow {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    width: 50%; 
+    height: 50%; 
+    background-color: white; 
+    z-index: 1; 
+}
+
+/* Color verde */
+.cuadrado2 .green {
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    width: 50%; 
+    height: 50%; 
+    background-color: green; 
+    z-index: 2;
+}
+
+/*//////////////////////////////////*/
+
+/* CUADRADO 3 */
+
+.cuadrado3 {
+    position: relative;
+    width: 400px; 
+    height: 400px; 
+}
+
+/* Color rojo */
+.cuadrado3 .red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 50%; 
+    background-color: white; 
+    z-index: 4; 
+}
+
+/* Color azul */
+.cuadrado3 .blue {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    width: 50%; 
+    height: 50%; 
+    background-color: blue; 
+    z-index: 3; 
+}
+
+/* Color amarillo */
+.cuadrado3 .yellow {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    width: 50%; 
+    height: 50%; 
+    background-color: white; 
+    z-index: 1; 
+}
+
+/* Color verde */
+.cuadrado3 .green {
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    width: 50%; 
+    height: 50%; 
+    background-color: white; 
+    z-index: 2; 
+}
+
+
+
+/*//////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; /* Centra el enlace */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.volverinicio a {
+    color: #000000; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+.volverinicio a:hover {
+    text-decoration: underline; /* Cambio de color al pasar el cursor */
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior */
+    left: 0; /* Elimina la alineación a la izquierda */
+    margin: 0; /* Elimina el margen del pie de página */
+}
