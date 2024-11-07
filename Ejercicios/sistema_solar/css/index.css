@@ -79,13 +79,34 @@ a:hover {
     text-align: center; 
 }
 
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ////////////////////////////////////////// */
+
 /* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
 .volverinicio {
     text-align: center; 
     margin-top: 40px;
 }
-
-/* ////////////////////////////////////////// */
 
 /* ////////////////////////////////////////// */
 
@@ -101,5 +122,4 @@ footer p{
     left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
 }
-
 

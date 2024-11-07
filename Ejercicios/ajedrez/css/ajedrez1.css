@@ -1151,6 +1151,8 @@ img{
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
 
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
 #boton {
     position: fixed;
     bottom: 20px;
