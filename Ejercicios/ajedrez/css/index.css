@@ -1,17 +1,32 @@
 body {
-    font-family: Arial, sans-serif; /* Fuente principal */
-    margin: 0; /* Margen externo del cuerpo */
-    padding: 0; /* No habrá espacio interno alrededor del contenido */
-    line-height: 1.6; /* Altura de las línea del texto */
-    
+    font-family: Arial, sans-serif;
+    padding: 0;
+
     /*REQUISITOS OBLIGATORIOS*/
     width: 1200px; /* Ancho máximo del contenido */
     margin: auto; /* Centra el contenido */
 }
 
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
 /* ////////////////////////////////////////// */
 /* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */  
+h2 {
+    color: #FFFFFF;
+}
 
+h3 {
+    color: #000000;
+}
+
+/* Configuración del texto */
+p {
+    color: #000000;
+    text-align: justify;
+}
 /* ////////////////////////////////////////// */
 
 /* ENCABEZADO */
@@ -19,7 +34,7 @@ header {
     background-color: #002c54;
     display: flex; /* Utiliza Flexbox para la disposición de los elementos */
     justify-content: center; /* Centra el contenido horizontalmente */
-    padding: 10px;
+    padding: 20px;
     position: relative; /* Permite la posición absoluta de elementos secundarios */
 }
 
@@ -27,21 +42,19 @@ header {
     position: absolute; /* Posición fija para el logo */
     left: 50px;
     /* Movimiento de la imagen */
-    width: 70px;
+    width: 50px;
     /* Tamaño de la imagen */
     height: auto;
     /* Mantiene la imagen proporcionada*/
+    justify-content: center;
 }
 
 header h1 {
     color: #FFFFFF;
     margin: 0;
     width: 100%;
-    text-align: center;
-    /* Centra el contenido*/
+    text-align: center; /* Centra el contenido*/
 }
-
-/* ////////////////////////////////////////// */
 
 /* Navegación principal */
 nav {
@@ -62,6 +75,55 @@ nav a:hover {
     color: #002c54;
 }
 
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+img{
+
+    position: relative;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.tabla{
+       
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: auto;
+}
+  
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 /* ////////////////////////////////////////// */
 
 /* PIE DE PÁGINA */
@@ -76,3 +138,7 @@ footer p{
     left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
 }
+
+
+
+
