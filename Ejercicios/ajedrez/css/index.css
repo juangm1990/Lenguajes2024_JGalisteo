@@ -86,12 +86,34 @@ img{
     width: 100px;
 }
 
-.tabla{
-       
+table {
+
+    margin: auto;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+
+.negro{
     height: 100px;
     width: 100px;
-    position: relative;
-    margin: auto;
+    background-color: #f1d8b2;
+}
+
+.blanco{
+    height: 100px;
+    width: 100px;
+    background-color: #5b3715;
+}
+
+.marco {
+    height: auto;
+    width: 15px;
+    text-align: center;
+    font-size: 10px;
+
 }
   
 
