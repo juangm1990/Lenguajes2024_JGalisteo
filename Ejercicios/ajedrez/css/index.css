@@ -96,13 +96,18 @@ th, td {
     text-align: center;
 }
 
-.negro{
+h2{
+    color: #000000;
+    text-align: center;
+}
+
+.blanco{
     height: 100px;
     width: 100px;
     background-color: #f1d8b2;
 }
 
-.blanco{
+.negro{
     height: 100px;
     width: 100px;
     background-color: #5b3715;
@@ -113,13 +118,14 @@ th, td {
     width: 15px;
     text-align: center;
     font-size: 10px;
+    background-color: #e49953;
 
 }
 
 .sinficha{
     height: 140px;
     width: 100px;
-    background-color: #5b3715;
+    background-color: #ffffff;
 }
   
 
