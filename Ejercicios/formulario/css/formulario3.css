@@ -102,13 +102,43 @@ textarea {
 }
 
 .volverinicio a {
-    color: #000000; /* Color azul */
+    color: #ffffff; /* Color de texto blanco */
+    background-color: #002c54; /* Fondo en color corporativo */
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
     text-decoration: none; /* Sin subrayado */
     font-size: 18px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
 }
 
 .volverinicio a:hover {
-    text-decoration: underline; /* Cambio de color al pasar el cursor */
+    background-color: #ffa500; /* Color de fondo alternativo al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+}
+
+/* ////////////////////////////////////////// */
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.volverinicio a {
+    color: #ffffff; 
+    background-color: #002c54; 
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+.volverinicio a:hover {
+    background-color: #ffa500; 
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
 }
 
 /* ////////////////////////////////////////// */

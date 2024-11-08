@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Juan Galisteo">
@@ -7,10 +8,11 @@
     <title>Formulario de Ejemplo | XAMPP</title>
     <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario3.css">
 </head>
+
 <body>
     <div class="diseño">
         <div class="formulario">
-            <h1>Formulario de Ejemplo | XAMPP</h1>
+            <h1 id="inicioPagina">Formulario de Ejemplo | XAMPP</h1>
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre">
@@ -47,13 +49,22 @@
                 <input type="submit" value="Enviar">
             </form>
             <div class="volverinicio">
-                <a href="../index.html">VOLVER PÁGINA PRINCIPAL</a>
+                <a href="../index.html">IR AL MENÚ PRINCIPAL</a>
             </div>
         </div>
     </div>
 
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+    <br>
+    <br>
+    <br>
+
     <footer>
-        <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
     </footer>
 </body>
+
 </html>
