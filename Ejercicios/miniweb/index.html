@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,18 +33,18 @@
 </head>
 
 <body onload="tema_activo()">
-    
+
     <!-- Encabezado Principal -->
     <header>
         <img src="/Ejercicios/miniweb/imagenes/logoJuan.png" alt="Logotipo JUAN">
-        <h1>Bienvenidos a la Miniweb</h1>
+        <h1 id="inicioPagina">Bienvenidos a la Miniweb</h1>
     </header>
 
     <!-- Navegación -->
     <nav>
         <ul>
             <li><a href="/Ejercicios/index.html">Inicio</a></li>
-            <li><button class="cambiotemacolor"id="boton" onclick="cambiatema()">Modo claro/oscuro</button></li>
+            <li><button class="cambiotemacolor" id="boton" onclick="cambiatema()">Modo claro/oscuro</button></li>
         </ul>
     </nav>
 
@@ -65,10 +66,18 @@
         </section>
     </main>
 
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+    <br>
+    <br>
+
     <!-- Pie de Página -->
     <footer>
         <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
     </footer>
 
 </body>
+
 </html>
