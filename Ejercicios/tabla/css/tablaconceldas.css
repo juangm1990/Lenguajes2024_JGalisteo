@@ -23,23 +23,6 @@ th, td {
     text-align: center;
 }
 
-/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
-.volverinicio {
-    text-align: center; /* Centra el enlace */
-    margin-top: 20px; /* Espaciado superior */
-}
-
-.volverinicio a {
-    color: #000000; 
-    text-decoration: none; /* Sin subrayado */
-    font-size: 18px; /* Tamaño de fuente */
-}
-
-.volverinicio a:hover {
-    text-decoration: underline; /* Cambio de color al pasar el cursor */
-}
-
-/*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
 
 /* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
@@ -64,18 +47,24 @@ th, td {
 
 /* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
 .volverinicio {
-    text-align: center; /* Centra el enlace */
-    margin-top: 20px; /* Espaciado superior */
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 .volverinicio a {
-    color: #000000; /* Color azul */
+    color: #ffffff; 
+    background-color: #002c54; 
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
     text-decoration: none; /* Sin subrayado */
-    font-size: 18px; /* Tamaño de fuente */
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
 }
 
 .volverinicio a:hover {
-    text-decoration: underline; /* Cambio de color al pasar el cursor */
+    background-color: #ffa500; 
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
 }
 
 /* ////////////////////////////////////////// */

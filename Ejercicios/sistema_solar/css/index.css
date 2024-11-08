@@ -5,7 +5,6 @@ body {
     line-height: 1.6; 
     background-image: url('/Ejercicios/sistema_solar/imagenes/fondo1.png');
     
-
     /*REQUISITOS OBLIGATORIOS*/
     width: 1200px; /* Ancho máximo del contenido */
     margin: auto; /* Centra el contenido */
@@ -14,14 +13,11 @@ body {
 /* Diseño de la página principal para que esté metido  */
 .titulotexto {
     max-width: 800px; /* Ancho máximo */
-    margin: 40px auto;
-    /* Centrados con margen superior */
+    margin: 40px auto; /* Centrados con margen superior */
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    /* Bordes redondeados */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
-    /* Sombra para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
     color: #f0f0f0;
 }
 
@@ -29,71 +25,54 @@ body {
 /* /* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
 h1,
 h2 {
-    text-align: center;
-    /* Centrados */
-    margin: 15px 0;
-    /* Espaciado arriba y abajo */
-    font-weight: 600;
-    /* Negrita para los títulos */
+    text-align: center; /* Centrados */
+    margin: 15px 0; /* Espaciado arriba y abajo */
+    font-weight: 600; /* Negrita para los títulos */
     color: #FFA500;
 }
 
 p {
-    text-align: justify;
-    /* Justificado para mejor lectura */
+    text-align: justify; /* Justificado para mejor lectura */
     color: #d3d3d3;
-    margin: 10px 20px;
-    /* Espaciado */
+    margin: 10px 20px; /* Espaciado */
 }
 
 /* DISEÑO PARA LA LÍNEA HORIZONTAL */
 hr {
     border: 1px solid #ddd;
-    margin: 20px 0;
-    /* Espaciado */
+    margin: 20px 0; /* Espaciado */
 }
 
 /* DISEÑO PARA LOS ELEMENTOS DE LISTA */
 ul {
-    list-style-type: none;
-    /* Elimina los puntos de la lista */
-    padding: 0;
-    /* Elimina el padding por defecto */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
 }
 
 /* ////////////////////////////////////////// */
 
 /* IMAGENES */
 .fotografias {
-    max-width: 100%;
-    /* Ajusta el tamaño de la imagen al 100% de la página */
+    max-width: 100%; /* Ajusta el tamaño de la imagen al 100% de la página */
     height: auto;
-    display: block;
-    /* Hace que la imagen ocupe todo el ancho de la página */
+    display: block; /* Hace que la imagen ocupe todo el ancho de la página */
     margin: 20px auto;
 }
 
 /* ENLACES */
 .enlace {
     color: #1e90ff;
-    text-decoration: none;
-    /* Hace que se quite el subrayado de los enlaces*/
-    display: inline-block;
-    /* Hace que el enlace ocupe todo el ancho */
-    text-align: center;
-    /* Centra el texto del enlace */
-    margin-top: 5px;
-    /* Espaciado arriba del enlace */
-    padding: 10px;
-    /* Espaciado */
+    text-decoration: none; /* Hace que se quite el subrayado de los enlaces*/
+    display: inline-block; /* Hace que el enlace ocupe todo el ancho */
+    text-align: center; /* Centra el texto del enlace */
+    margin-top: 5px; /* Espaciado arriba del enlace */
+    padding: 10px; /* Espaciado */
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    /* Bordes redondeados */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .enlace:hover {
-    color: #ff6347;
-    /* Cambio de color al pasar el cursor */
+    color: #ff6347; /* Cambio de color al pasar el cursor */
     background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -140,12 +119,8 @@ footer p {
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }

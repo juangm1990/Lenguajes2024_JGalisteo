@@ -150,6 +150,27 @@ main {
     color: #FFFFFF; /* Cambiar color de la tipografía al pasar el mouse */
 }
 
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
 /* ////////////////////////////////////////// */
 
 /* PIE DE PÁGINA */
@@ -164,3 +185,13 @@ footer p{
     left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
 }
+
+
+
+
+
+
+
+
+
+
