@@ -1,185 +1,178 @@
-<DOCTYPE html>
-    <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Juan Galisteo">
-        <title>Tableros de ajedrez</title>
-        <link rel="stylesheet" href="/Ejercicios/ajedrez/css/index.css">
-        <link rel="shortcut icon" href="/Ejercicios/ajedrez/imagenes/iconoWebAjedrez.png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Galisteo">
+    <title>Tableros de ajedrez</title>
+    <link rel="stylesheet" href="/Ejercicios/ajedrez/css/index.css">
+    <link rel="shortcut icon" href="/Ejercicios/ajedrez/imagenes/iconoWebAjedrez.png">
+</head>
 
-    <body>
-        <!-- CONFIGURACIÓN de la plantilla del Index -->
-        <header>
-            <img class="logo" src="/Ejercicios/imagenes/logoJuan.png" alt="Logotipo JUAN">
-            <h1 id="inicioPagina">Tableros de ajedrez</h1>
-        </header>
+<body>
+    <!-- CONFIGURACIÓN de la plantilla del Index -->
+    <header>
+        <img class="logo" src="/Ejercicios/imagenes/logoJuan.png" alt="Logotipo JUAN">
+        <h1 id="inicioPagina">Tableros de ajedrez</h1>
+    </header>
 
-        <!-- BOTONES >> PANEL DE CONTROL -->
-        <nav>
-            <a href="/Ejercicios/index.html">Inicio</a>
-            <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez 1</a>
-            <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez 2</a>
-            <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez 3</a>
-            <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez 4</a>
-        </nav>
+    <!-- BOTONES >> PANEL DE CONTROL -->
+    <nav>
+        <a href="/Ejercicios/index.html">Inicio</a>
+        <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez "Flex"</a>
+        <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez 2</a>
+        <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez 3</a>
+        <a href="/Ejercicios/ajedrez/contenido/ajedrez1.html">Ajedrez 4</a>
+    </nav>
 
+    <div>
+        <h2>¿Jugamos? Blancas / Negras</h2>
+    </div>
+
+    <table>
+        <tr>
+            <td class="marco"></td>
+            <td class="marco">A</td>
+            <td class="marco">B</td>
+            <td class="marco">C</td>
+            <td class="marco">D</td>
+            <td class="marco">E</td>
+            <td class="marco">F</td>
+            <td class="marco">G</td>
+            <td class="marco">H</td>
+            <td class="marco"></td>
+        </tr>
+        <tr>
+            <td class="marco">8</td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/torrenegra.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/caballonegro.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/alfilnegro.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/reinanegra.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/reynegro.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/alfilnegro.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/caballonegro.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/torrenegra.png"></td>
+            <td class="marco">8</td>
+        </tr>
+        <tr>
+            <td class="marco">7</td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
+            <td class="blancp"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>                      
+            <td class="marco">7</td>
+        </tr>
         <div>
-            <h2>¿Jugamos? Blancas / Negras</h2>
-        </div>
-
-        <table>
-            <tr class="marco">
-                <td></td>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>D</td>
-                <td>E</td>
-                <td>F</td>
-                <td>G</td>
-                <td>H</td>
-                <td></td>
-            </tr>
             <tr>
-                <td class="marco">8</td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/torrenegra.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/caballonegro.png"></td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/alfilnegro.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/reinanegra.png"></td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/reynegro.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/alfilnegro.png"></td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/caballonegro.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/torrenegra.png"></td>
-                <td class="marco">8</td>
+                <td class="marco">6</td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="marco">6</td>   
             </tr>
-            </div>
-            <div>
-                <tr>
-                    <td class="marco">7</td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/negras/peonnegro.png"></td>                    
-                    <td class="marco">7</td>
-                </tr>
-            </div>
-            <div>
-                <tr class="sinficha">
-                    <td class="marco">6</td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="marco">6</td>   
-                </tr>
-            </div>
-            <div>
-                <tr class="sinficha">
-                    <td class="marco">5</td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="marco">5</td>
-                </tr>
-            </div>
-            <div>
-                <tr class="sinficha">
-                    <td class="marco">6</td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="marco">6</td>
-                </tr>
-            </div>
-            <div>
-                <tr class="sinficha">
-                    <td class="marco">5</td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="negro"></td>
-                    <td class="blanco"></td>
-                    <td class="marco">5</td>
-                </tr>
-            </div>
-            <tr>
-                <td class="marco">8</td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/torreblanca.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/caballoblanco.png"></td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/alfilblanco.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/reinablanca.png"></td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/reyblanco.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/alfilblanco.png"></td>
-                <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/caballoblanco.png"></td>
-                <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/torreblanca.png"></td>
-                <td class="marco">8</td>
-            </tr>
-            </div>
-            <div>
-                <tr>
-                    <td class="marco">7</td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
-                    <td class="marco">7</td>
-                </tr>
-            </div>
-            <tr class="marco">
-                <td></td>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>D</td>
-                <td>E</td>
-                <td>F</td>
-                <td>G</td>
-                <td>H</td>
-                <td></td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <br>
-
-        <!-- BOTÓN PARA REGRESAR ARRIBA -->
-        <div id="boton">
-            <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
         </div>
+        <div>
+            <tr>
+                <td class="marco">5</td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="marco">5</td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td class="marco">4</td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="marco">4</td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td class="marco">3</td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="negro"></td>
+                <td class="blanco"></td>
+                <td class="marco">3</td>
+            </tr>
+        </div>
+        <tr>
+            <td class="marco">2</td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/peonblanco.png"></td>                     
+            <td class="marco">2</td>
+        </tr>
+        <tr>
+            <td class="marco">1</td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/torreblanca.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/caballoblanco.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/alfilblanco.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/reinablanca.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/reyblanco.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/alfilblanco.png"></td>
+            <td class="negro"><img src="/Ejercicios/ajedrez/imagenes/blancas/caballoblanco.png"></td>
+            <td class="blanco"><img src="/Ejercicios/ajedrez/imagenes/blancas/torreblanca.png"></td>
+            <td class="marco">1</td>
+        </tr>
+        <tr>
+            <td class="marco"></td>
+            <td class="marco">A</td>
+            <td class="marco">B</td>
+            <td class="marco">C</td>
+            <td class="marco">D</td>
+            <td class="marco">E</td>
+            <td class="marco">F</td>
+            <td class="marco">G</td>
+            <td class="marco">H</td>
+            <td class="marco"></td>
+        </tr>        
+    </table>
+    <br>
+    <br>
 
-        <!-- Pie de Página -->
-        <footer>
-            <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
-        </footer>
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
 
-    </body>
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
 
-    </html>
+</body>
+
+</html>

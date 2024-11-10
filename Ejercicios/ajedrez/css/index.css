@@ -1,31 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     padding: 0;
-
-    /*REQUISITOS OBLIGATORIOS*/
     width: 1200px; /* Ancho máximo del contenido */
-    margin: auto; /* Centra el contenido */
+    margin: auto;
 }
 
-/* ////////////////////////////////////////// */
+/* Contenedor de la tabla centrado */
+.tabla-contenedor {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+}
 
 /* ENCABEZADO */
 header {
     background-color: #002c54;
-    display: flex; /* Utiliza Flexbox para la disposición de los elementos */
-    justify-content: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    justify-content: center;
     padding: 20px;
-    position: relative; /* Permite la posición absoluta de elementos secundarios */
+    position: relative;
 }
 
 .logo {
-    position: absolute; /* Posición fija para el logo */
+    position: absolute;
     left: 50px;
-    /* Movimiento de la imagen */
     width: 50px;
-    /* Tamaño de la imagen */
     height: auto;
-    /* Mantiene la imagen proporcionada*/
     justify-content: center;
 }
 
@@ -33,7 +34,7 @@ header h1 {
     color: #FFFFFF;
     margin: 0;
     width: 100%;
-    text-align: center; /* Centra el contenido*/
+    text-align: center;
 }
 
 /* Navegación principal */
@@ -47,37 +48,25 @@ nav a {
     color: #FFFFFF;
     margin: 10px;
     padding: 10px;
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #ffffff; /* Cambio de color al pasar el cursor */
+    background-color: #ffffff;
     color: #002c54;
 }
-
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-
-/* ////////////////////////////////////////// */
-/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */ 
 
 h1 {
     text-align: center;
     font-size: 24px;
 }
 
-
 h2 {
-    color: #FFFFFF;
-}
-
-p {
     color: #000000;
-    text-align: justify;
+    text-align: center;
 }
 
-img{
-
+img {
     position: relative;
     margin: auto;
     height: 100px;
@@ -85,18 +74,17 @@ img{
 }
 
 table {
-
     margin: auto;
+    text-align: center;
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
 }
 
-th, td {
-    padding: 20px;
-    text-align: center;
-}
-
-h2{
-    color: #000000;
-    text-align: center;
+.marco{
+    color: rgb(0, 0, 0);
+    background-color: #e49953;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 .blanco{
@@ -110,22 +98,6 @@ h2{
     width: 100px;
     background-color: #5b3715;
 }
-
-.marco {
-    height: auto;
-    width: 15px;
-    text-align: center;
-    font-size: 10px;
-    background-color: #e49953;
-
-}
-
-.sinficha{
-    height: 140px;
-    width: 100px;
-    background-color: #ffffff;
-}
-  
 
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
@@ -150,6 +122,30 @@ h2{
 
 /* ////////////////////////////////////////// */
 
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.volverinicio a {
+    color: #ffffff; 
+    background-color: #002c54; 
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+.volverinicio a:hover {
+    background-color: #ffa500; 
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+}
+
+/* ////////////////////////////////////////// */
+
 /* PIE DE PÁGINA */
 footer p{
     background-color: #77777733;
@@ -162,6 +158,5 @@ footer p{
     left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
 }
-
 
 
