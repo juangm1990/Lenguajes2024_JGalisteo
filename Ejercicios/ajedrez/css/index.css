@@ -7,26 +7,6 @@ body {
     margin: auto; /* Centra el contenido */
 }
 
-h1 {
-    text-align: center;
-    font-size: 24px;
-}
-
-/* ////////////////////////////////////////// */
-/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */  
-h2 {
-    color: #FFFFFF;
-}
-
-h3 {
-    color: #000000;
-}
-
-/* Configuración del texto */
-p {
-    color: #000000;
-    text-align: justify;
-}
 /* ////////////////////////////////////////// */
 
 /* ENCABEZADO */
@@ -77,6 +57,24 @@ nav a:hover {
 
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
+
+/* ////////////////////////////////////////// */
+/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */ 
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+h2 {
+    color: #FFFFFF;
+}
+
+p {
+    color: #000000;
+    text-align: justify;
+}
 
 img{
 
