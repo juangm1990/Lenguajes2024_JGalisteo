@@ -70,6 +70,7 @@ nav a:hover {
 /*//////////////////////////////////////*/
 
 img {
+    margin: auto;
     height: 100px;
     width: 100px;
 }
@@ -78,8 +79,6 @@ img {
 
     height: 1000px;
     width: 1000px;
-    position: relative;
-    margin: auto;
 }
 
 .casilla1 {
@@ -106,6 +105,7 @@ img {
     justify-content: center;
     text-align: center;
 }
+
 
 .casilla3 {
     background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/horizontal.png);

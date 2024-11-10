@@ -81,10 +81,8 @@ nav a:hover {
 
 
 img {
-    margin: auto;
     height: 100px;
     width: 100px;
-    position: relative;
 }
 
 .tabla {
@@ -96,7 +94,6 @@ img {
     justify-content: center; /* Centra horizontalmente */
 
 }
-
 
 .casilla1 {
     background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/arribaIzquierda.png);

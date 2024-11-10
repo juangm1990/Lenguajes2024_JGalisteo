@@ -70,10 +70,11 @@ h2 {
 }
 
 img {
-    position: relative;
-    margin: auto;
     height: 100px;
     width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65px 100px;
 }
 
 table {
@@ -82,12 +83,26 @@ table {
     border-collapse: collapse; /* Elimina el espacio entre celdas */
 }
 
-.marco{
+.fila{
     color: rgb(0, 0, 0);
     background-color: #e49953;
     font-size: 20px;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+}
+
+.columna{
+    color: rgb(0, 0, 0);
+    background-color: #e49953;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.esquina{
+    height: 30px;
+    width: 30px;
+    background-color: #e49953;
 }
 
 .blanco{
