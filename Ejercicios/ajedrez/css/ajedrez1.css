@@ -88,7 +88,7 @@ img {
     margin: auto;
 }
 .casilla1 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marcoBlancoNegro.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/arribaIzquierda.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -97,7 +97,7 @@ img {
 
 
 .casilla2 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marcoBlancoNegro.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -105,6 +105,7 @@ img {
     left: 100px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -114,7 +115,7 @@ img {
 
 
 .casilla3 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -122,6 +123,7 @@ img {
     left: 200px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -131,7 +133,7 @@ img {
 
 
 .casilla4 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -139,6 +141,7 @@ img {
     left: 300px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -147,7 +150,7 @@ img {
 }
 
 .casilla5 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -155,6 +158,7 @@ img {
     left: 400px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -163,7 +167,7 @@ img {
 }
 
 .casilla6 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -171,6 +175,7 @@ img {
     left: 500px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -179,7 +184,7 @@ img {
 }
 
 .casilla7 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -187,6 +192,7 @@ img {
     left: 600px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -195,7 +201,7 @@ img {
 }
 
 .casilla8 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -203,6 +209,7 @@ img {
     left: 700px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -211,7 +218,7 @@ img {
 }
 
 .casilla9 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: relative;
@@ -219,6 +226,7 @@ img {
     left: 800px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -227,22 +235,24 @@ img {
 }
 
 .casilla10 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/arribaDerecha.png);
     height: 100px;
     width: 100px;
     position: relative;
     top: -900px;
     left: 900px;
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 .casilla11 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 100px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -323,7 +333,7 @@ img {
 }
 
 .casilla20 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -331,6 +341,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -339,13 +350,14 @@ img {
 }
 
 .casilla21 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 200px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -426,7 +438,7 @@ img {
 }
 
 .casilla30 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -434,6 +446,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -442,13 +455,14 @@ img {
 }
 
 .casilla31 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 300px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -529,7 +543,7 @@ img {
 }
 
 .casilla40 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -537,6 +551,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -545,13 +560,14 @@ img {
 }
 
 .casilla41 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 400px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -632,7 +648,7 @@ img {
 }
 
 .casilla50 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -640,6 +656,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -648,13 +665,14 @@ img {
 }
 
 .casilla51 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 500px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -735,7 +753,7 @@ img {
 }
 
 .casilla60 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -743,6 +761,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -751,13 +770,14 @@ img {
 }
 
 .casilla61 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 600px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -838,7 +858,7 @@ img {
 }
 
 .casilla70 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -846,6 +866,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -854,13 +875,14 @@ img {
 }
 
 .casilla71 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 700px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -941,7 +963,7 @@ img {
 }
 
 .casilla80 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -949,6 +971,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -957,13 +980,14 @@ img {
 }
 
 .casilla81 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 800px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1045,7 +1069,7 @@ img {
 }
 
 .casilla90 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/vertical.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1053,6 +1077,7 @@ img {
     left: 900px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1061,15 +1086,16 @@ img {
 }
 
 .casilla91 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/abajoIzquierda.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 900px;
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 .casilla92 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1077,6 +1103,7 @@ img {
     left: 100px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1085,7 +1112,7 @@ img {
 }
 
 .casilla93 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1093,6 +1120,7 @@ img {
     left: 200px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1101,7 +1129,7 @@ img {
 }
 
 .casilla94 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1109,6 +1137,7 @@ img {
     left: 300px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1117,7 +1146,7 @@ img {
 }
 
 .casilla95 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1125,6 +1154,7 @@ img {
     left: 400px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1133,7 +1163,7 @@ img {
 }
 
 .casilla96 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1141,6 +1171,7 @@ img {
     left: 500px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1149,7 +1180,7 @@ img {
 }
 
 .casilla97 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1157,6 +1188,7 @@ img {
     left: 600px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1165,7 +1197,7 @@ img {
 }
 
 .casilla98 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1173,6 +1205,7 @@ img {
     left: 700px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1181,7 +1214,7 @@ img {
 }
 
 .casilla99 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/horizontal.png);
     height: 100px;
     width: 100px;
     position: absolute;
@@ -1189,6 +1222,7 @@ img {
     left: 800px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
     /*Configuración texto*/
+    color: #e2cbac;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -1197,12 +1231,13 @@ img {
 }
 
 .casilla100 {
-    background-image: url(/Ejercicios/ajedrez/imagenes/marron.png);
+    background-image: url(/Ejercicios/ajedrez/imagenes/tablero/abajoDerecha.png);
     height: 100px;
     width: 100px;
     position: absolute;
     top: 900px;
     left: 900px;
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 /*//////////////////////////////////////*/
@@ -1217,8 +1252,7 @@ img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    overflow: hidden;
-    /* Esto asegura que la imagen se mantenga redonda */
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
 }
 
 #boton img {
@@ -1229,19 +1263,39 @@ img {
 
 /* ////////////////////////////////////////// */
 
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.volverinicio a {
+    color: #ffffff; 
+    background-color: #002c54; 
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+.volverinicio a:hover {
+    background-color: #ffa500; 
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+}
+
+/* ////////////////////////////////////////// */
+
 /* PIE DE PÁGINA */
-footer p {
+footer p{
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 5px;
-    position: fixed;
-    /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    /* Elimina la posición en la parte inferior*/
-    left: 0;
-    /* Elimina la alineación a la izquierda*/
-    margin: 0;
-    /* Elimina el margen del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }
