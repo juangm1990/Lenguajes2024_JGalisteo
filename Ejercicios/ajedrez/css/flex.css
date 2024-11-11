@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;  /* Coloca los elementos en una columna */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* RESETEO DE LA CONFIGURACIÓN BÁSICA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* ENCABEZADO */
+
+header {
+    display: flex;
+    justify-content: center;  /* Centra el título entre el logo y el nav */
+    align-items: center;  /* Centra verticalmente los elementos */
+    background-color: #002c54;
+    padding: 20px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    flex: 1; /* El título ocupa el espacio disponible entre el logo y el nav */
+}
+
+.logo {
+    width: 50px; /* Tamaño del logo */
+    height: auto;
+}
+
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
+
+h2 {
+    padding: 20px 0; /* Espacio arriba y abajo pero sin darselo a los laterales */
+    color: #000000;
+    text-align: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+nav {
+    display: flex;
+    justify-content: center;  /* Centra los enlaces */
+    gap: 20px; /* Añade espacio entre los enlaces */
+    background-color: #a5a5a5; 
+    padding: 10px 0;  /* Altura a la barra */
+}
+
+/* ESTILO DE LOS ELEMENTOS DE NAVEGACIÓN */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #a5a5a5;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* CONTENIDO DE LA PÁGINA WEB */ 
+
+/* Contenedor de la tabla ajustado */
+/* Contenedor de la tabla */
+.tabla-container {
+    display: flex;
+    justify-content: center;  /* Centra la tabla horizontalmente */
+    align-items: flex-start; /* Alinea la tabla al principio */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding-top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
+}
+
+/* Tabla */
+.tabla {
+    display: flex;
+    flex-direction: column;
+    width: 600px;  /* Ancho fijo de la tabla */
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fila de la tabla */
+.fila {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Asegura que las celdas estén centradas dentro de la fila */
+}
+
+/* Estilo de las celdas */
+.celda {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    overflow: hidden; /* Asegura que la imagen se mantenga dentro del círculo */
+    display: flex;  /* Utilizamos Flexbox para centrar el contenido en el botón */
+    justify-content: center;  /* Centra la imagen dentro del botón */
+    align-items: center;  /* Alinea la imagen verticalmente */
+}
+
+#boton img {
+    width: 100%;  /* Asegura que la imagen llene todo el contenedor */
+    height: 100%;  /* Asegura que la imagen llene todo el contenedor */
+    border-radius: 50%; /* Asegura que la imagen también sea redonda */
+}
+
+/*//////////////////////////////////////*/
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #77777733; 
+    color: #FFFFFF;
+    width: 100%;  /* Ocupa todo el ancho */
+    text-align: center;  /* Centra el texto */
+    padding: 7px;
+    margin-top: auto;  /* Asegura que el footer esté siempre al final */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="/Ejercicios/ajedrez/css/flex.css">
+</head>
+<body>
+    <!-- CONFIGURACIÓN CABECERA DE PÁGINA -->
+    <header>
+        <div class="logo">
+            <img class="logo" src="/Ejercicios/imagenes/logoJuan.png" alt="Logotipo JUAN">
+        </div>
+        <h1 id="inicioPagina">Ajedrez "Flex"</h1>
+    </header>
+
+    <!-- BOTONES >> PANEL DE CONTROL -->
+    <nav>
+        <a href="/Ejercicios/ajedrez/index.html">Inicio</a>
+        <a href="1">Ajedrez "Grid"</a>
+        <a href="2">Ajedrez "Fluid"</a>
+        <a href="3">Ajedrez "Fixed"</a>
+    </nav>
+
+    <div>
+        <h2>¿Jugamos? Blancas / Negras</h2>
+    </div>
+
+    <!-- CONTENEDOR DE LA TABLA (nuevo contenedor flex) -->
+    <div class="tabla-container">
+        <!-- CONTENIDO DE LA PÁGINA WEB (tabla) -->
+        <div class="tabla">
+            <div class="fila">
+                <div class="celda">Fila 1, Columna 1</div>
+                <div class="celda">Fila 1, Columna 2</div>
+                <div class="celda">Fila 1, Columna 3</div>
+                <div class="celda">Fila 1, Columna 4</div>
+                <div class="celda">Fila 1, Columna 5</div>
+                <div class="celda">Fila 1, Columna 6</div>
+                <div class="celda">Fila 1, Columna 7</div>
+                <div class="celda">Fila 1, Columna 8</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>    
+
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
