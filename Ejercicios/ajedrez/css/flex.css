@@ -24,7 +24,7 @@ header {
     justify-content: center;  /* Centra el título entre el logo y el nav */
     align-items: center;  /* Centra verticalmente los elementos */
     background-color: #002c54;
-    padding: 20px 20px;
+    padding: 14px 20px;
     color: white;
 }
 
@@ -56,16 +56,15 @@ nav {
     justify-content: center;  /* Centra los enlaces */
     gap: 20px; /* Añade espacio entre los enlaces */
     background-color: #a5a5a5; 
-    padding: 10px 0;  /* Altura a la barra */
+    padding: 5px 0;  /* Altura a la barra */
 }
 
 /* ESTILO DE LOS ELEMENTOS DE NAVEGACIÓN */
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     background-color: #a5a5a5;
-    border-radius: 5px;
 }
 
 nav a:hover {

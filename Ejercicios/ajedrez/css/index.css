@@ -4,8 +4,7 @@ body {
     padding: 0;
 
     /*REQUISITOS OBLIGATORIOS*/
-    width: 1200px; /* Ancho máximo del contenido */
-    margin: auto; /* Centra el contenido */
+    max-width: 100%; /* Ancho máximo del contenido */
 }
 
 /* Contenedor de la tabla centrado */
