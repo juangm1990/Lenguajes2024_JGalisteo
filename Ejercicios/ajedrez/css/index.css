@@ -7,29 +7,16 @@ body {
     max-width: 100%; /* Ancho máximo del contenido */
 }
 
-/* Contenedor de la tabla centrado */
-.tabla-contenedor {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Ajusta la altura según tus necesidades */
-}
-
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
 /* ENCABEZADO */
+
 header {
     background-color: #002c54;
     display: flex;
     justify-content: center;
     padding: 20px;
     position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 50px;
-    width: 50px;
-    height: auto;
-    justify-content: center;
 }
 
 header h1 {
@@ -39,12 +26,35 @@ header h1 {
     text-align: center;
 }
 
-/* Navegación principal */
+.logo {
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    height: auto;
+    justify-content: center;
+}
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
 nav {
     background-color: #a5a5a5;
     padding: 10px;
     text-align: center;
 }
+
+/* ESTILO DE LOS ELEMENTOS DE NAVEGACIÓN */
 
 nav a {
     color: #FFFFFF;
@@ -58,16 +68,6 @@ nav a:hover {
     color: #002c54;
 }
 
-h1 {
-    text-align: center;
-    font-size: 24px;
-}
-
-h2 {
-    color: #000000;
-    text-align: center;
-}
-
 img {
     height: 100px;
     width: 100px;
@@ -75,6 +75,10 @@ img {
     background-position: center;
     background-size: 65px 100px;
 }
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* CONTENIDO DE LA PÁGINA WEB */ 
 
 table {
     margin: auto;
@@ -116,8 +120,9 @@ table {
     background-color: #5b3715;
 }
 
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
+/*/////////////////////////*/
+/* CONFIGURACIÓN ADICIONAL*/
+/*///////////////////////*/
 
 /* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
 
@@ -137,9 +142,8 @@ table {
     border-radius: 50%;
 }
 
-/* ////////////////////////////////////////// */
-
 /* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+
 .volverinicio {
     text-align: center; 
     margin-top: 20px; 
@@ -161,9 +165,8 @@ table {
     text-decoration: none; /* Mantiene el texto sin subrayado */
 }
 
-/* ////////////////////////////////////////// */
-
 /* PIE DE PÁGINA */
+
 footer p{
     background-color: #77777733;
     color: #FFFFFF;

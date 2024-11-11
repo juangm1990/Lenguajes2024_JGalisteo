@@ -75,9 +75,7 @@ nav a:hover {
 /*//////////////////////////////////////*/
 /* CONTENIDO DE LA PÁGINA WEB */ 
 
-/* Contenedor de la tabla ajustado */
-/* Contenedor de la tabla */
-.tabla-container {
+.flex-container {
     display: flex;
     justify-content: center;  /* Centra la tabla horizontalmente */
     align-items: flex-start; /* Alinea la tabla al principio */
@@ -85,7 +83,6 @@ nav a:hover {
     padding-top: 20px; /* Ajusta la distancia desde la parte superior de la ventana */
 }
 
-/* Tabla */
 .tabla {
     display: flex;
     flex-direction: column;
@@ -95,14 +92,12 @@ nav a:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Fila de la tabla */
 .fila {
     display: flex;
     width: 100%;
     justify-content: center; /* Asegura que las celdas estén centradas dentro de la fila */
 }
 
-/* Estilo de las celdas */
 .celda {
     width: 100px;
     height: 100px;
@@ -113,10 +108,10 @@ nav a:hover {
     text-align: center;
 }
 
+/*/////////////////////////*/
+/* CONFIGURACIÓN ADICIONAL*/
+/*///////////////////////*/
 
-
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
 /* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
 
 #boton {
@@ -137,8 +132,6 @@ nav a:hover {
     height: 100%;  /* Asegura que la imagen llene todo el contenedor */
     border-radius: 50%; /* Asegura que la imagen también sea redonda */
 }
-
-/*//////////////////////////////////////*/
 
 /* PIE DE PÁGINA */
 footer {
