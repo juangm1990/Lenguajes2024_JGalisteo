@@ -13,16 +13,12 @@ body {
 
 header {
     background-color: #002c54;
-    display: flex;
-    justify-content: center;
     padding: 20px;
-    position: relative;
 }
 
 header h1 {
     color: #FFFFFF;
     margin: 0;
-    width: 100%;
     text-align: center;
 }
 
@@ -31,14 +27,13 @@ header h1 {
     left: 50px;
     width: 50px;
     height: auto;
-    justify-content: center;
 }
+
 /* ////////////////////////////////////////// */
 /* ////////////////////////////////////////// */
 /* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
 
 h1 {
-    text-align: center;
     font-size: 24px;
 }
 
@@ -70,10 +65,7 @@ nav a:hover {
 
 img {
     height: 100px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 65px 100px;
+    width: 100px;   
 }
 
 /*//////////////////////////////////////*/
@@ -81,7 +73,7 @@ img {
 /* CONTENIDO DE LA PÁGINA WEB */ 
 
 table {
-    margin: auto;
+    margin: auto; /* Centrar tabla en el centro */
     text-align: center;
     border-collapse: collapse; /* Elimina el espacio entre celdas */
 }
@@ -90,34 +82,31 @@ table {
     color: rgb(0, 0, 0);
     background-color: #e49953;
     font-size: 20px;
-    height: 30px;
-    width: 30px;
+    padding: 10px;
 }
 
 .columna{
-    color: rgb(0, 0, 0);
     background-color: #e49953;
+    color: rgb(0, 0, 0);
     font-size: 20px;
-    height: 30px;
-    width: 30px;
+    padding: 10px;
 }
 
 .esquina{
-    height: 30px;
-    width: 30px;
     background-color: #e49953;
+    padding: 10px;
 }
 
 .blanco{
-    height: 100px;
-    width: 100px;
     background-color: #f1d8b2;
+    height: 100px;
+    width: 100px; 
 }
 
 .negro{
+    background-color: #5b3715;
     height: 100px;
     width: 100px;
-    background-color: #5b3715;
 }
 
 /*/////////////////////////*/
@@ -132,37 +121,13 @@ table {
     right: 20px;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
 }
 
 #boton img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
-
-/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
-
-.volverinicio {
-    text-align: center; 
-    margin-top: 20px; 
-}
-
-.volverinicio a {
-    color: #ffffff; 
-    background-color: #002c54; 
-    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
-    border-radius: 8px; /* Bordes redondeados */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 18px; 
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
-}
-
-.volverinicio a:hover {
-    background-color: #ffa500; 
-    transform: scale(1.05); /* Efecto de agrandado suave */
-    text-decoration: none; /* Mantiene el texto sin subrayado */
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
 }
 
 /* PIE DE PÁGINA */
