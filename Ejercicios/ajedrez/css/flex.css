@@ -99,8 +99,16 @@ nav a:hover {
 }
 
 .casilla {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    /*Configuración texto*/
+    text-align: center;
+    font-size: 30px;
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    
 }
 
 .fila {
