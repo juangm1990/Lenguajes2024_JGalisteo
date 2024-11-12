@@ -7,6 +7,12 @@ body {
     max-width: 100%; /* Ancho máximo del contenido */
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
 /* ENCABEZADO */
@@ -40,6 +46,7 @@ h1 {
 h2 {
     color: #000000;
     text-align: center;
+    padding: 20px;
 }
 
 /* BARRA DE NAVEGACIÓN */
@@ -75,7 +82,7 @@ img {
 table {
     margin: auto; /* Centrar tabla en el centro */
     text-align: center;
-    border-collapse: collapse; /* Elimina el espacio entre celdas */
+    /* border-collapse: collapse; Elimina el espacio entre celdas */
 }
 
 .fila{
