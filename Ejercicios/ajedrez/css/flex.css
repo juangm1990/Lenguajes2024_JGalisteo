@@ -75,12 +75,6 @@ nav a:hover {
 /*//////////////////////////////////////*/
 /* CONTENIDO DE LA PÁGINA WEB */ 
 
-
-
-/*/////////////////////////*/
-/* CONFIGURACIÓN ADICIONAL*/
-/*///////////////////////*/
-
 .tablero {
     width: 1000px;
     height: 1000px;
@@ -90,12 +84,10 @@ nav a:hover {
     border-collapse: collapse; /*Elimina el espacio entre celdas */
 }
 
-.blanca {
-    background-color: aquamarine;
-}
-
-.negra {
-    background-color: green;
+.fila {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 
 .casilla {
@@ -108,23 +100,51 @@ nav a:hover {
     text-align: center;
     font-size: 30px;
     background-size: cover; /* Ancho y el alto del elemento ajustado. */
-    
 }
 
-.fila {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
+/*/////////////////////////*/
+/* CONFIGURACIÓN ADICIONAL*/
+/*///////////////////////*/
 
 img{
     width: 100px;
     height: 100px;
 }
 
+.blanca {
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/blanco.png);
+}
 
+.negra {
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/negro.png);
+}
 
+.horizontal{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/horizontal.png);
+}
 
+.vertical{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/vertical.png);
+}
+
+.esquina1{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/arribaIzquierda.png);
+}
+
+.esquina2{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/arribaDerecha.png);
+}
+
+.esquina3{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/abajoIzquierda.png);
+}
+
+.esquina4{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/abajoDerecha.png);
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
 /* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
 
 #boton {
