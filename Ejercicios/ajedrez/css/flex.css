@@ -120,10 +120,12 @@ img{
 }
 
 .horizontal{
+    color: #e2cbac;
     background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/horizontal.png);
 }
 
 .vertical{
+    color: #e2cbac;
     background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/vertical.png);
 }
 
@@ -155,7 +157,6 @@ img{
     height: 60px;
     border-radius: 50%; /* Hace que el botón sea redondo */
     overflow: hidden; /* Asegura que la imagen se mantenga dentro del círculo */
-    display: flex;  /* Utilizamos Flexbox para centrar el contenido en el botón */
     justify-content: center;  /* Centra la imagen dentro del botón */
     align-items: center;  /* Alinea la imagen verticalmente */
 }
