@@ -105,8 +105,7 @@ nav a:hover {
     place-items: center; /* Centra el contenido tanto vertical como horizontal */
     width: 100px;
     height: 100px;
-    text-align: center; 
-    font-size: 30px;
+
     background-size: cover; /* Ajusta el fondo a la celda */
 }
 
@@ -119,15 +118,23 @@ nav a:hover {
 }
 
 .horizontal{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/horizontal.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    /* Configuración texto */
     color: #180e01;
     font-weight: bold;
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/horizontal.png);
+    text-align: center; 
+    font-size: 30px;
 }
 
 .vertical{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/vertical.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    /* Configuración texto */
     color: #180e01;
     font-weight: bold;
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/vertical.png);
+    text-align: center; 
+    font-size: 30px;
 }
 
 .esquina1{

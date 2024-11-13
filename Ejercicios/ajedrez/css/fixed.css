@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;  /* Coloca los elementos en una columna */
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    width: 100%; 
+    height: 100%; 
+    display: flex; /* Usamos Flexbox */
+    flex-direction: column; /* Organiza los elementos en una columna */
 }
 
 /*//////////////////////////////////////*/
@@ -76,30 +77,101 @@ nav a:hover {
 /* CONTENIDO DE LA PÁGINA WEB */ 
 
 .tablero {
-    width: 1000px;
-    height: 1000px;
+    position: relative;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    border-collapse: collapse; /*Elimina el espacio entre celdas */
-}
-
-.fila {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+    width: 1000px; /* 10 casillas de 100px */
+    height: 1000px; /* 10 casillas de 100px */
+    border: 1px solid black;
 }
 
 .casilla {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px; /* Ajusta el tamaño según sea necesario */
-    height: 100px; /* Ajusta el tamaño según sea necesario */
-    /*Configuración texto*/
-    text-align: center;
-    font-size: 30px;
-    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
+
+.fila {
+    top: 0px;
+}
+
+.casilla1 { 
+    left: 0px; 
+}
+
+.casilla2 { 
+    left: 100px; 
+}
+
+.casilla3 { 
+    left: 200px; 
+}
+
+.casilla4 { 
+    left: 300px; 
+}
+
+.casilla5 { 
+    left: 400px; 
+}
+
+.casilla6 { 
+    left: 500px; 
+}
+
+.casilla7 { 
+    left: 600px; 
+}
+
+.casilla8 { 
+    left: 700px; 
+}
+
+.casilla9 { 
+    left: 800px; 
+}
+.casilla10 { 
+    left: 900px; 
+}
+
+.fila1 { 
+    top: 0px; 
+}
+
+.fila2 { 
+    top: 100px; 
+}
+
+.fila3 { 
+    top: 200px; 
+}
+
+.fila4 { 
+    top: 300px; 
+}
+
+.fila5 { 
+    top: 400px; 
+}
+
+.fila6 { 
+    top: 500px; 
+}
+
+.fila7 { 
+    top: 600px; 
+}
+
+.fila8 { 
+    top: 700px; 
+}
+
+.fila9 { 
+    top: 800px; 
+}
+
+.fila10 { 
+    top: 900px; 
 }
 
 /*/////////////////////////*/
@@ -112,38 +184,55 @@ img{
 }
 
 .blanca {
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/blanco.png);
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/blanco.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 .negra {
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/negro.png);
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/negro.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
-.horizontal{
-    color: #e2cbac;
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/horizontal.png);
-
+.horizontal {
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/horizontal.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    /* Configuración texto */
+    color: #180e01;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
 }
 
-.vertical{
-    color: #e2cbac;
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/vertical.png);
+.vertical {
+    color: #180e01;
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/vertical.png);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    /* Configuración texto */
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
 }
 
 .esquina1{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/arribaIzquierda.png);
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/arribaIzquierda.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 .esquina2{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/arribaDerecha.png);
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/arribaDerecha.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 .esquina3{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/abajoIzquierda.png);
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/abajoIzquierda.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 .esquina4{
-    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero1/abajoDerecha.png);
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero4/abajoDerecha.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
 }
 
 /*//////////////////////////////////////*/
@@ -177,3 +266,4 @@ footer {
     padding: 7px;
     margin-top: auto;  /* Asegura que el footer esté siempre al final */
 }
+
