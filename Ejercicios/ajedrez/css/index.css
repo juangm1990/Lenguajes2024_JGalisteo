@@ -81,8 +81,7 @@ img {
 
 table {
     margin: auto; /* Centrar tabla en el centro */
-    text-align: center;
-    /* border-collapse: collapse; Elimina el espacio entre celdas */
+    text-align: center; /* border-collapse: collapse; Elimina el espacio entre celdas */
 }
 
 .fila{
