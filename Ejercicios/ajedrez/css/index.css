@@ -136,6 +136,8 @@ table {
     overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
 }
 
+/*//////////////////////////////////////*/
+
 /* PIE DE PÁGINA */
 
 footer p{
@@ -149,5 +151,4 @@ footer p{
     left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
 }
-
 
