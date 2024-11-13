@@ -8,7 +8,6 @@ body {
     text-align: center;
 }
 
-
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
 /* RESETEO DE LA CONFIGURACIÓN BÁSICA */
@@ -87,13 +86,9 @@ nav a:hover {
     background-color: #666;
 }
 
-
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
 /* CONTENIDO DE LA PÁGINA WEB */
-
-
-
 
 .tablero {
     display: grid;
@@ -103,7 +98,6 @@ nav a:hover {
     margin: auto;
     width: 1000px;
     height: 1000px;
-    border: 1px solid black;
 }
 
 .casilla {
@@ -115,7 +109,6 @@ nav a:hover {
     font-size: 30px;
     background-size: cover; /* Ajusta el fondo a la celda */
 }
-
 
 .blanca {
     background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero2/blanco.png);
