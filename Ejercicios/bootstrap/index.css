@@ -1,12 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     display: grid;
-    grid-template-rows: 1fr auto; /* Ajusta el contenido y el pie de página en filas */
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
     text-align: center;
     padding: 20px;
     line-height: 1.6; /* Altura de las línea del texto */
-
 }
 
 /*//////////////////////////////////////*/
@@ -50,19 +48,32 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(12, 100px); /* 13 columnas de 100px */
-    grid-template-rows: repeat(12, 100px); /* 12 filas de 100px */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     gap: 5px;
-
-    max-width: 1250px; /* Asegura que el ancho máximo sea de 1300px */
-    width: 100%; /* Asegura que ocupe el 100% del contenedor */
     margin: 0 auto; /* Alinea el contenedor horizontalmente */
 }
 
-.diseño {
-    background-color: #4e8df5;
-    color: white;
+.diseñoazul {
     display: grid;
+    background-color: #4e8df5;
+    color: rgb(0, 0, 0);
+    font-weight: bold;   
+    align-items: center;
+    justify-content: center;
+    /*Altura columnas*/
+    height: 100px;
+}
+
+.diseñoblanco {
+    display: grid;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;   
+    align-items: center;
+    justify-content: center;
+    /*Altura columnas*/
+    height: 100px;
 }
 
 /* PRIMERA FILA: TEXTO */
@@ -91,98 +102,55 @@ body {
     justify-content: center;
     font-weight: bold;
     font-size: 24px;
-    /*Altura columnas*/
-    height: 100px;
+    padding: 20px;
 }
 
 /* TERCERA FILA */
 .primerafila {
-    background-color: #7ab8f0;
-    color: black;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    /*Altura columnas*/
-    height: 100px;
-    /*División columnas*/
+
+    /*División filas*/
     grid-column: span 6;
 }
 
 /* CUARTA FILA */
 .segundafila {
-    background-color: #7ab8f0;
-    color: black;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    /*Altura columnas*/
-    height: 100px;
-    /*División columnas*/
+    /*División filas*/
     grid-column: span 4; 
 }
 
 
 /* QUINTA FILA */
 .cuarto {
-    background-color: #a2c9f4;
-    color: white;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    grid-column: span 3; /* Ocupa 3 columnas */
+    /*División filas*/
+    grid-column: span 3; 
 }
 
 /* SEXTA FILA */
 .sexto {
-    background-color: #d1e4fb;
-    color: white;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    height: 50px;
-    grid-column: span 2; /* Ocupa 2 columnas */
+    /*División filas*/
+    grid-column: span 2;
 }
 
+.division1 {
+    /*División filas*/
+    grid-column: span 1; 
+}
 
+.division2 {
+    /*División filas*/
+    grid-column: span 2; 
+}
 
-
-
-
-
-
-.decima {
-    background-color: #d1e4fb;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+.division3 {
+    /*Altura filas*/
     height: 100px;
-
-
-
-    grid-column: span 1; /* Ocupa 2 columnas */
+    /*División filas*/
+    grid-column: span 3; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.division4 {
+    grid-column: span 4; 
+}
 
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
