@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: grid;
@@ -6,30 +12,13 @@ body {
     text-align: center;
     padding: 20px;
     line-height: 1.6; /* Altura de las línea del texto */
-    max-width: 100%;
 }
 
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/* RESETEO DE LA CONFIGURACIÓN BÁSICA */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/* ENCABEZADO */
+/* Encabezado */
 .header {
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* ////////////////////////////////////////// */
-/* ////////////////////////////////////////// */
-/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
 
 .header h1 {
     font-size: 24px;
@@ -43,28 +32,18 @@ body {
     line-height: 1.6;
 }
 
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-/* CONTENIDO DE LA PÁGINA WEB */
-
-
+/* Contenedor del grid */
 .container {
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(12, 100px); /* 12 columnas de 100px */
+    grid-template-rows: repeat(5, 100px); /* 5 filas de 100px */
     gap: 5px;
     padding: 10px;
-    display: grid;
-
+    max-width: 1200px;
+    width: 100%;
 }
 
-.diseño {
-    background-color: #4e8df5;
-    color: white;
-    display: grid;
-
-
-}
-
-/* PRIMERA FILA */
+/* Numeración en la primera fila */
 .numeros {
     background-color: white;
     color: black;
@@ -75,48 +54,49 @@ body {
     font-size: 24px;
 }
 
-/* SEGUNDA FILA */
+/* Mitad - Ocupa 6 columnas */
 .mitad {
-    grid-column: span 6;
-    grid-row: span 1;
+    background-color: #4e8df5;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    grid-column: span 6; /* Ocupa las primeras 6 columnas */
 }
 
-/* TERCERA FILA */
+/* Tercio - Ocupa 4 columnas */
 .tercio {
-    grid-column: span 4;
-    grid-row: span 2;
+    background-color: #7ab8f0;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    grid-column: span 4; /* Ocupa 4 columnas */
 }
 
-/* CUARTA FILA */
+/* Cuarto - Ocupa 3 columnas */
 .cuarto {
-    grid-column: span 3;
-    grid-row: span 3;
+    background-color: #a2c9f4;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    grid-column: span 3; /* Ocupa 3 columnas */
 }
 
-/* QUINTA FILA */
+/* SEXTA FILA */
 .sexto {
-    grid-column: span 2;
-    grid-row: span 4;
+    background-color: #d1e4fb;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    grid-column: span 2; /* Ocupa 2 columnas */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*//////////////////////////////////////*/
 /*//////////////////////////////////////*/
