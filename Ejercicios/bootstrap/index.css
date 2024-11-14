@@ -6,7 +6,7 @@ body {
     text-align: center;
     padding: 20px;
     line-height: 1.6; /* Altura de las línea del texto */
-    max-width: 100%;
+
 }
 
 /*//////////////////////////////////////*/
@@ -49,22 +49,40 @@ body {
 
 
 .container {
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-    gap: 5px;
-    padding: 10px;
     display: grid;
+    grid-template-columns: repeat(12, 100px); /* 13 columnas de 100px */
+    grid-template-rows: repeat(12, 100px); /* 12 filas de 100px */
+    gap: 5px;
 
+    max-width: 1250px; /* Asegura que el ancho máximo sea de 1300px */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    margin: 0 auto; /* Alinea el contenedor horizontalmente */
 }
 
 .diseño {
     background-color: #4e8df5;
     color: white;
     display: grid;
-
-
 }
 
-/* PRIMERA FILA */
+/* PRIMERA FILA: TEXTO */
+.cabecera {
+    font-size: 26px;
+    font-weight: bold;
+    grid-column: span 12;
+    text-align: center;
+    /*Altura columnas*/
+    height: 100px;
+}
+
+.cabecera p {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* SEGUNDA FILA: NÚMEROS */
 .numeros {
     background-color: white;
     color: black;
@@ -73,33 +91,81 @@ body {
     justify-content: center;
     font-weight: bold;
     font-size: 24px;
-}
-
-/* SEGUNDA FILA */
-.mitad {
-    grid-column: span 6;
-    grid-row: span 1;
+    /*Altura columnas*/
+    height: 100px;
 }
 
 /* TERCERA FILA */
-.tercio {
-    grid-column: span 4;
-    grid-row: span 2;
+.primerafila {
+    background-color: #7ab8f0;
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    /*Altura columnas*/
+    height: 100px;
+    /*División columnas*/
+    grid-column: span 6;
 }
 
 /* CUARTA FILA */
-.cuarto {
-    grid-column: span 3;
-    grid-row: span 3;
+.segundafila {
+    background-color: #7ab8f0;
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    /*Altura columnas*/
+    height: 100px;
+    /*División columnas*/
+    grid-column: span 4; 
 }
+
 
 /* QUINTA FILA */
+.cuarto {
+    background-color: #a2c9f4;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    grid-column: span 3; /* Ocupa 3 columnas */
+}
+
+/* SEXTA FILA */
 .sexto {
-    grid-column: span 2;
-    grid-row: span 4;
+    background-color: #d1e4fb;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 50px;
+    grid-column: span 2; /* Ocupa 2 columnas */
 }
 
 
+
+
+
+
+
+
+.decima {
+    background-color: #d1e4fb;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 100px;
+
+
+
+    grid-column: span 1; /* Ocupa 2 columnas */
+}
 
 
 

@@ -55,7 +55,7 @@ body {
 }
 
 /* Mitad - Ocupa 6 columnas */
-.mitad {
+.primerafila {
     background-color: #4e8df5;
     color: white;
     display: grid;
@@ -66,7 +66,7 @@ body {
 }
 
 /* Tercio - Ocupa 4 columnas */
-.tercio {
+.segundafila {
     background-color: #7ab8f0;
     color: white;
     display: grid;
