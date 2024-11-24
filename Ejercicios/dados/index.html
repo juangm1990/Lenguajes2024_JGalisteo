@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Galisteo">
+    <title>Dados</title>
+</head>
+
+<style>
+    body {
+        background-color: white;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        padding: 40px;
+        color: white;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d5dbdb;
+        padding-top: 50px;
+        padding-bottom: 8px;
+    }
+
+    /* Contenedor que utilizaremos para tener 3x3 dados */
+    .contenedor_dados {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        width: 800px;
+        height: 650px;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    /* Configuración de los cuadrados de los 3x3 dados */
+    .dados {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        background-color: white;
+        border: 8px solid gray;
+        padding: 15px;
+        border-radius: 8px;
+        /* Borde redondeado gris*/
+        box-shadow: 0 0 0 3px black;
+        /* Línea fina negra fuera del borde gris */
+    }
+
+    /* Dividiremos el contenedor principal en uno secundario para tener 6 cuadrados y poder insertar los circulos */
+    .cara_dados {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    /* La configuración de los circulos para que tengan el mismo tamaño en proporción */
+    .circulo {
+        width: 45px;
+        height: 45px;
+        background-color: black;
+        border-radius: 50%;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+
+    /* Ocultar los circulos que no nos hagan falta para formar las caras con los 6 números */
+    .oculto {
+        background-color: transparent;
+    }
+
+    .sombra {
+        box-shadow: 5px 5px 5px #aaaaaa;
+    }
+
+    /* La configuración de nuestro pie de página */
+    footer {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer h1 {
+        text-align: center;
+        color: white;
+        padding: 1rem;
+    }
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#botonderecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#botonderecha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* BOTÓN PARA REGRESAR A LA PÁGINA PRINCIPAL */
+#botonizquierda {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posiciona el botón en la esquina inferior izquierda */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#botonizquierda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+</style>
+
+<body>
+    <header class="header">
+        <h1 id="inicioPagina">Ejercicio "Dados"</h1>
+    </header>
+    <main>
+        <div class="contenedor_dados">
+            <div class="dados cara_dados">
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+            </div>
+            <div class="dados cara_dados">
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+            </div>
+            <div class="dados cara_dados">
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+            </div>
+            <div class="dados cara_dados">
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+            </div>
+            <div class="dados cara_dados">
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+            </div>
+            <div class="dados cara_dados">
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo sombra"></div>
+                <div class="circulo oculto"></div>
+                <div class="circulo sombra"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="botonizquierda">
+        <a href="/Ejercicios/index.html"><img src="/Ejercicios/imagenes/botonHome.png" alt="Botón Home"></a>
+    </div>
+    <div id="botonderecha">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón Arriba"></a>
+    </div>
+
+    <footer>
+        <h1>Juan Bautista Galisteo Marqués</h1>
+    </footer>
+
+</body>
