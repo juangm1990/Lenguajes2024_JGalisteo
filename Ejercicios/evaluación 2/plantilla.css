@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: black;
+    color:white;
+    text-align: center;
+    position: fixed;
+    width: 100%; 
+    padding: 20px 0;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+main > div {
+    width: 275px;
+    height: 250px;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction:column;
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid grey;
+    padding: 20px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 0 0;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+
+.bandera{
+    box-sizing: content-box;
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+
