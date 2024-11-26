@@ -64,3 +64,41 @@ footer{
 }
 
 
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#botonderecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+    margin-bottom: 20px;
+}
+
+#botonderecha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* BOTÓN PARA REGRESAR A LA PÁGINA PRINCIPAL */
+#botonizquierda {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posiciona el botón en la esquina inferior izquierda */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#botonizquierda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
