@@ -1,0 +1,218 @@
+ /* BANDERAS HORIZONTALES Y VERTICALES*/
+
+ /* EMIRATES */
+ .emiratesrojo {
+     background-color: red;
+     height: 100%;
+     width: 27%;
+     float: left;
+ }
+
+ .emiratesnegro {
+     background-color: black;
+     height: 35%;
+     width: 73%;
+     float: right;
+ }
+
+ .emiratesverde {
+     background-color: forestgreen;
+     height: 35%;
+     width: 73%;
+     float: right;
+ }
+
+ .emiratesblanco {
+     background-color: white;
+     height: 30%;
+     width: 73%;
+     float: right;
+ }
+
+ /* MADAGASCAR */
+
+ .madagascarblanco {
+     background-color: white;
+     height: 100%;
+     width: 33%;
+     float: left;
+ }
+
+ .madagascarrojo {
+     background-color: red;
+     height: 50%;
+     width: 67%;
+     float: right;
+ }
+
+ .madagascarverde {
+     background-color: green;
+     height: 50%;
+     width: 67%;
+     float: right;
+ }
+
+ /* KHAKASSIA */
+
+ .khakassiaverde {
+     background-color: forestgreen;
+     height: 100%;
+     width: 20%;
+     float: left;
+ }
+
+ .khakassiarojo {
+     background-color: red;
+     height: 35%;
+     width: 80%;
+     float: right;
+ }
+
+ .khakassiaazul {
+     background-color: blue;
+     height: 35%;
+     width: 80%;
+     float: right;
+ }
+
+ .khakassiacentro {
+     background-color: white;
+     height: 30%;
+     width: 80%;
+     float: right;
+ }
+
+ /* MENIN */
+
+ .meninverde {
+     background-color: forestgreen;
+     height: 100%;
+     width: 33%;
+     float: left;
+ }
+
+ .meninamari {
+     background-color: gold;
+     height: 50%;
+     width: 67%;
+     float: right;
+ }
+
+ .meninrojo {
+     background-color: red;
+     height: 50%;
+     width: 67%;
+     float: right;
+ }
+
+ /* GAMBIA */
+
+ .gambiarojo {
+     background-color: red;
+     height: 30%;
+     width: 100%;
+     float: left;
+ }
+
+ .gambiablanca {
+     background-color: white;
+     height: 5%;
+     width: 100%;
+     float: left;
+ }
+
+ .gambiaazul {
+     background-color: blue;
+     height: 30%;
+     width: 100%;
+     float: left;
+ }
+
+ .gambiaverde {
+     background-color: green;
+     height: 30%;
+     width: 100%;
+     float: left;
+ }
+
+ /* MAURICIO */
+
+ .mauriciorojo {
+     background-color: red;
+     height: 25%;
+     width: 100%;
+     float: left;
+ }
+
+ .mauricioazul {
+     background-color: blue;
+     height: 25%;
+     width: 100%;
+     float: left;
+ }
+
+ .mauricioamarillo {
+     background-color: yellow;
+     height: 25%;
+     width: 100%;
+     float: left;
+ }
+
+ .mauricioverde {
+     background-color: green;
+     height: 25%;
+     width: 100%;
+     float: left;
+ }
+
+ /* NORUEGA */
+
+ .noruega {
+     background: linear-gradient(to right, transparent 0% 30%, #dd1832 30% 40%, transparent 40% 100%),
+         linear-gradient(to bottom, transparent 0% 40%, #dd1832 40% 60%, transparent 60% 100%),
+         linear-gradient(to right, transparent 0% 25%, white 25% 45%, transparent 45% 100%),
+         linear-gradient(to bottom, transparent 0% 35%, white 35% 65%, transparent 65% 100%),
+         #00519d;
+ }
+
+ /* SUIZA */
+
+ .suiza {
+     background: linear-gradient(red 20%, transparent 20%, transparent 80%, red 80%),
+         linear-gradient(to right, red 30%, transparent 30%, transparent 45%, white 45%, white 55%, transparent 55%, transparent 70%, red 70%),
+         linear-gradient(red 42%, white 42%, white 58%, red 58%);
+ }
+
+ /* ISLANDIA */
+
+ .islandia{
+    background: linear-gradient(to right,transparent 0% 30%,#001a5b 30% 40%,transparent 40% 100%),
+    linear-gradient(to bottom,transparent 0% 40%,#001a5b 40% 60%,transparent 60% 100%),
+    linear-gradient(to right,transparent 0% 25%,white 25% 45%,transparent 45% 100%),
+    linear-gradient(to bottom,transparent 0% 35%, white 35% 65%,transparent 65% 100%),
+    #bb042b;
+}
+
+ /* FINLANDIA */
+
+ .finlandia{
+    background: linear-gradient(to right,transparent 0% 25%,#002b6c 25% 45%,transparent 45% 100%),
+    linear-gradient(to bottom,transparent 0% 35%, #002b6c 35% 65%,transparent 65% 100%),
+    white;
+}
+
+ /* DINAMARCA */
+
+ .dinamarca{
+    background: linear-gradient(to right,transparent 0% 30%,#ffffff 30% 40%,transparent 40% 100%),
+    linear-gradient(to bottom,transparent 0% 40%, #ffffff 40% 60%,transparent 60% 100%),
+    #c9072a;
+}
+
+ /* INGLATERRA */
+
+ .inglaterra{
+    background: linear-gradient(to right,transparent 0% 45%,#ffffff 45% 55%,transparent 55% 100%),
+    linear-gradient(to bottom,transparent 0% 40%, #ffffff 40% 60%,transparent 60% 100%),
+    #c9072a;
+}

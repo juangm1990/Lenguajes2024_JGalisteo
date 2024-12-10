@@ -1,0 +1,90 @@
+ /* BANDERAS HORIZONTALES Y VERTICALES*/
+
+ /* JAPÓN */
+ .japon {
+   border: 36px solid red;
+   border-radius: 50%;
+   margin-top: 40px;
+   margin-left: 90px;
+   width: 70px;
+   height: 70px;
+ }
+
+ /* COREA DEL SUR */
+ .coreadelsur {
+  position: relative;
+  background: #ffffff; /* Fondo blanco */
+  border: 1px solid #000;
+}
+
+.coreadelsur::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  width: 100px; /* Tamaño del círculo */
+  height: 100px;
+  background: linear-gradient(to bottom, #d52b1e 50%, #0033a0 50%); /* Círculo yin-yang */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+
+ /* PALAU */
+
+ .palau {
+  position: relative;
+  background: #4aadd6; /* Fondo azul claro */
+  border: 1px solid #000;
+}
+
+.palau::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 35%; /* Desplazado hacia la izquierda */
+  width: 100px; /* Tamaño del círculo */
+  height: 100px;
+  background: #ffde00; /* Círculo amarillo */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+
+ /* LAOS */
+
+ .laos {
+  position: relative;
+  background: linear-gradient(to bottom, #d52b1e 33.33%, #0057a6 33.33% 66.66%, #d52b1e 66.66%); /* Franjas rojas y azul */
+  border: 1px solid #000;
+}
+
+.laos::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  width: 80px; /* Tamaño del círculo */
+  height: 80px;
+  background: white; /* Círculo blanco */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+
+ /* GROENLANDIA */
+
+ .groenlandia {
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff 50%, #d52b1e 50%); /* Fondo blanco arriba y rojo abajo */
+  border: 1px solid #000;
+}
+
+.groenlandia .circulo {
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 25%; /* Desplazado hacia la izquierda */
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom, #d52b1e 50%, #ffffff 50%); /* Dividido en blanco y rojo */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+

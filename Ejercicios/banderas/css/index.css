@@ -16,6 +16,7 @@ header{
     position: fixed;
     width: 100%; 
     padding: 20px 0;
+    z-index: 1;
 }
 
 
@@ -56,11 +57,13 @@ footer{
 
 
 .bandera{
+    background-color: white;
     box-sizing: content-box;
     width: 250px;
     height: 150px;
-    border: 1px solid black;
     margin: 0;
+    border: 1px solid black;
+    
 }
 
 
@@ -70,13 +73,12 @@ footer{
 
 #botonderecha {
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     right: 20px;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
-    margin-bottom: 20px;
 }
 
 #botonderecha img {
@@ -88,13 +90,12 @@ footer{
 /* BOTÓN PARA REGRESAR A LA PÁGINA PRINCIPAL */
 #botonizquierda {
     position: fixed;
-    bottom: 30px;
+    bottom: 50px;
     left: 20px; /* Posiciona el botón en la esquina inferior izquierda */
     width: 60px;
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
 }
 
 #botonizquierda img {

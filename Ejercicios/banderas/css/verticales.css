@@ -1,0 +1,81 @@
+ /* BANDERAS VERTICALES */
+
+  /* FRANCIA */
+ .francia{
+    background: linear-gradient(to right, rgb(10, 17, 126) 33.33%, rgb(255, 255, 255) 33.33% 66.66%, rgb(255, 0, 0) 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* ITALIA */
+.italia{
+    background: linear-gradient(to right, #008C45 33.33%, #FFFFFF 33.33% 66.66%, #CD212A 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* IRLANDA */
+.irlanda{
+    background: linear-gradient(to right, #169B62 33.33%, #FFFFFF 33.33% 66.66%, #FF883E 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* BELGICA */
+.belgica{
+    background: linear-gradient(to right, #000000 33.33%, #FFD700 33.33% 66.66%, #EF3340 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* RUMANIA */
+.rumania{
+    background: linear-gradient(to right, #002B7F 33.33%, #FCD116 33.33% 66.66%, #CE1126 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* MEXICO */
+.mexico{
+    background: linear-gradient(to right, #006847 33.33%, #FFFFFF 33.33% 66.66%, #CE1126 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* MALTA */
+.malta{
+    background: linear-gradient(to right, #FFFFFF 50%, #D41C1C 50%);
+
+    width: 250px;
+    height: 150px;
+}
+
+ /* PERU */
+.peru{
+    background: linear-gradient(to right, #D91023 33.33%, #FFFFFF 33.33% 66.66%, #D91023 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* COSTA RICA */
+.costarica{
+    background: linear-gradient(#002B7F 20%, #FFFFFF 20% 40%, #CE1126 40% 60%, #FFFFFF 60% 80%, #002B7F 80%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* VATICANO */
+.vaticano{
+    background: linear-gradient(to right, #FFD700 50%, #FFFFFF 50%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* FRANCIA */
+.francia{
+    background: linear-gradient(to right, rgb(10, 17, 126) 33.33%, rgb(255, 255, 255) 33.33% 66.66%, rgb(255, 0, 0) 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+

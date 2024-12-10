@@ -1,0 +1,76 @@
+ /* BANDERAS HORIZONTALES */
+
+ /* ESPAÑA */
+.españa{
+    background: linear-gradient(rgb(177, 0, 0) 33.33%, rgb(231, 203, 43) 33.33% 66.66%, rgb(177, 0, 0) 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* ANDALUCIA */
+.andalucia{
+    background: linear-gradient(rgb(10, 126, 20) 33.33%, rgb(255, 255, 255) 33.33% 66.66%, rgb(10, 126, 20) 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* ALEMANIA */
+.alemania{
+    background: linear-gradient(rgb(0, 0, 0) 33.33%, rgb(212, 0, 0) 33.33% 66.66%, rgb(231, 203, 43) 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* POLONIA */
+.polonia{
+    background: linear-gradient(#FFFFFF 50%, #DC143C 50%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* RUSIA */
+.rusia{
+    background: linear-gradient(rgb( 255, 255, 255) 33.33%, rgb(10, 17, 126) 33.33% 66.66%, rgb(255, 0, 0) 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* AUSTRIA */
+.austria{
+    background: linear-gradient(#ED2939 33.33%, #FFFFFF 33.33% 66.66%, #ED2939 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* BULGARIA */
+.bulgaria{
+    background: linear-gradient(#FFFFFF 33.33%, #009B77 33.33% 66.66%, #D62612 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* ESTONIA */
+.estonia{
+    background: linear-gradient(#0072CE 33.33%, #FFFFFF 33.33% 66.66%, #000000 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* PAISES BAJOS */
+.paisesbajos{
+    background: linear-gradient(rgb(10, 17, 126) 33.33%, rgb(255, 255, 255) 33.33% 66.66%, rgb(255, 0, 0) 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+ /* GABÓN */
+.gabon{
+    background: linear-gradient(#009639 33.33%, #FCD116 33.33% 66.66%, #3A75C4 66.66%);
+    width: 250px;
+    height: 150px;
+}
+
+
+
+
+

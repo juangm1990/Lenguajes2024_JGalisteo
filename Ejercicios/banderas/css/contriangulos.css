@@ -1,0 +1,392 @@
+ /* BANDERAS CON TRIÁNGULOS*/
+
+  /* REPUBLICA CHECA */
+
+  .republicacheca{
+    background: conic-gradient(at 50% 50%,transparent 0deg 239deg,#08437f 239deg 302deg,transparent 302deg 360deg),
+    linear-gradient(white 50%, #cf0921 50%);
+    }
+
+  /* SUDÁN */
+
+  .sudan {
+    position: relative;
+    background: linear-gradient(to bottom, #ff0000 33.33%, white 33.33% 66.66%, #000000 66.66%);
+    border: 1px solid #000;
+}
+
+.sudan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    background: #008000;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+ /* SUDÁN DEL SUR*/
+
+ .sudandelsur {
+  position: relative;
+  background: 
+      linear-gradient(to bottom, 
+          #000000 20%, /* Franja negra */
+          #ffffff 20% 40%, /* Franja blanca */
+          #d52b1e 40% 60%, /* Franja roja */
+          #ffffff 60% 80%, /* Franja blanca */
+          #007a3d 80% 100% /* Franja verde */
+      );
+  border: 1px solid #000;
+}
+
+.sudandelsur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background: #0033a0; /* Triángulo azul */
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.sudandelsur::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  background: #ffc400; /* Estrella amarilla */
+  clip-path: polygon(
+      50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 
+      50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%
+  );
+  transform: translateY(-50%);
+}
+
+
+  /* CUBA */
+
+  .cuba {
+    position: relative;
+    background: linear-gradient(to bottom, #0050a4 20%, white 20% 40%, #0050a4 40% 60%, white 60% 80%, #0050a4 80% 100%);
+    border: 1px solid #000;
+}
+
+.cuba::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: #cf2027;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.cuba::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    background: white;
+    clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%);
+    transform: translateY(-50%);
+}
+
+  /* JORDANIA */
+
+  .jordania {
+    position: relative;
+    background: linear-gradient(to bottom, #000000 33.33%, #ffffff 33.33% 66.66%, #007a3d 66.66%); /* Franjas negra, blanca y verde */
+    border: 1px solid #000;
+}
+
+.jordania::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    background: #cf2027;
+    clip-path: polygon(0 0, 100% 50%, 0 100%); /* Triángulo rojo */
+}
+
+.jordania::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    width: 25px;
+    height: 25px;
+    background: white;
+    clip-path: polygon(
+        50% 0%, 57% 28%, 85% 28%, 63% 50%, 70% 78%, 
+        50% 62%, 30% 78%, 37% 50%, 15% 28%, 43% 28%
+    ); /* Estrella de 7 puntas */
+    transform: translateY(-50%);
+}
+
+  /* CHILE */
+
+  .chile {
+    position: relative;
+    background: linear-gradient(to bottom, #ffffff 50%, #d52b1e 50%); /* Franjas blanca y roja */
+    border: 1px solid #000;
+}
+
+.chile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 50%;
+    background: #0033a0; /* Rectángulo azul */
+}
+
+.chile::after {
+    content: "";
+    position: absolute;
+    top: 12.5%;
+    left: 11%;
+    width: 25px;
+    height: 25px;
+    background: white;
+    clip-path: polygon(
+        50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 
+        50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%
+    ); /* Estrella de 5 puntas */
+}
+
+  /* SOMALIA */
+
+  .somalia {
+    position: relative;
+    background: #4189dd; /* Fondo azul claro */
+    border: 1px solid #000;
+}
+
+.somalia::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: white; /* Color de la estrella */
+    clip-path: polygon(
+        50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 
+        50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%
+    );
+    transform: translate(-50%, -50%);
+}
+
+  /* VIETNAN */
+
+  .vietnam {
+    position: relative;
+    background: #da251d; /* Fondo rojo */
+    border: 1px solid #000;
+}
+
+.vietnam::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    background: #ffcd00; /* Color de la estrella amarilla */
+    clip-path: polygon(
+        50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 
+        50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%
+    );
+    transform: translate(-50%, -50%);
+}
+
+  /* LIBERIA */
+
+  .liberia {
+    position: relative;
+    background: repeating-linear-gradient(
+        to bottom,
+        #d52b1e, /* Rojo */
+        #d52b1e 20%,
+        #ffffff 20%,
+        #ffffff 40%
+    ); /* Franjas rojas y blancas */
+    border: 1px solid #000;
+}
+
+.liberia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 40%;
+    background: #0033a0; /* Rectángulo azul */
+}
+
+.liberia::after {
+    content: "";
+    position: absolute;
+    top: 20%; /* Centrado verticalmente dentro del rectángulo azul */
+    left: 10%; /* Centrado horizontalmente dentro del rectángulo azul */
+    width: 25px;
+    height: 25px;
+    background: white; /* Estrella blanca */
+    clip-path: polygon(
+        50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 
+        50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%
+    );
+    transform: translate(-50%, -50%);
+}
+
+
+    /* PAKISTAN */
+    .pakistan {
+      position: relative;
+      background: #01411c; /* Fondo verde */
+      border: 1px solid #000;
+  }
+  
+  .pakistan::before {
+      content: "";
+      position: absolute;
+      top: 50%; /* Centrado verticalmente */
+      left: 50%; /* Centrado horizontalmente */
+      width: 100px;
+      height: 100px;
+      background: white; /* Color blanco del creciente lunar */
+      border-radius: 50%; /* Forma circular */
+      transform: translate(-50%, -50%);
+  }
+  
+  .pakistan::after {
+      content: "";
+      position: absolute;
+      top: 50%; /* Centrado verticalmente */
+      left: 58%; /* Ajuste del vacío */
+      width: 70px;
+      height: 70px;
+      background: #01411c; /* Fondo verde para simular el vacío */
+      border-radius: 50%; /* Forma circular */
+      transform: translate(-50%, -50%);
+  }
+
+    /* TEXAS */
+  .texas {
+    position: relative;
+    background: linear-gradient(to bottom, #ffffff 50%, #bf0a30 50%); /* Franjas blanca y roja */
+    border: 1px solid #000;
+}
+
+.texas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33%; /* Franja azul vertical ocupa un tercio */
+    height: 100%;
+    background: #002868; /* Azul */
+}
+
+.texas::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    left: 16.66%; /* Centrado dentro de la franja azul */
+    width: 50px;
+    height: 50px;
+    background: white; /* Estrella blanca */
+    clip-path: polygon(
+        50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 
+        50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%
+    );
+    transform: translate(-50%, -50%);
+}
+
+ /* TURKIA */
+ .turquia {
+  position: relative;
+  background: #da251d; /* Fondo rojo */
+  border: 1px solid #000;
+}
+
+.turquia::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  width: 100px; /* Tamaño externo del creciente */
+  height: 100px;
+  background: white; /* Creciente lunar */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+
+.turquia::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 55%; /* Ajuste del vacío */
+  width: 80px; /* Tamaño del vacío interno */
+  height: 80px; /* Tamaño del vacío interno */
+  background: #da251d; /* Fondo rojo para simular el vacío */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+
+ /* ARGELIA */
+ .argelia {
+  position: relative;
+  background: linear-gradient(to right, #006233 50%, #ffffff 50%); /* Fondo dividido: verde y blanco */
+  border: 1px solid #000;
+}
+
+.argelia::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  width: 100px; /* Tamaño externo del creciente */
+  height: 100px;
+  background: #d52b1e; /* Creciente lunar rojo */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+
+.argelia::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 55%; /* Ajuste del vacío */
+  width: 80px; /* Tamaño del vacío interno */
+  height: 80px; /* Tamaño del vacío interno */
+  background: #ffffff; /* Fondo verde para simular el vacío */
+  border-radius: 50%; /* Forma circular */
+  transform: translate(-50%, -50%);
+}
+
+.estrella {
+  position: absolute;
+  top: 50%; /* Centrado verticalmente */
+  left: 62%; /* Ajuste horizontal para posicionar la estrella */
+  width: 25px;
+  height: 25px;
+  background: #d52b1e; /* Luna roja */
+  clip-path: polygon(
+      50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 
+      50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%
+  );
+  transform: translate(-50%, -50%);
+}
+
