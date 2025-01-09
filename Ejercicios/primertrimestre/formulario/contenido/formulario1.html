@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Galisteo">
+    <meta name="description" content="Formulario de contacto básico">
+    <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario1.css">
+    <link rel="shortcut icon" href="/Ejercicios/formulario/imagenes/iconoWeb.png">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <div class="diseñotitulo">
+        <h1 id="inicioPagina">Formulario de contacto 1</h1>
+        <img src="../imagenes/icono.png" alt="Icono de formulario" class="iconoformulario">
+        <p style="text-align: center; color: red;">(Todos los campos son obligatorios)</p>
+
+        <form action="tabla.php" method="post">
+            <table class="formulario">
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombres" name="nombres" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="infoempresa">Ámbito de la empresa:</label>
+                        <select id="infoempresa" name="infoempresa" required>
+                            <option value="Educación">Educación</option>
+                            <option value="Salud">Salud</option>
+                            <option value="Tecnología">Tecnología</option>
+                            <option value="Finanzas">Finanzas</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cargo">Cargo:</label>
+                        <input type="text" id="cargo" name="cargo" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="usuario">Nombre de usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="repetir_contrasena">Repetir contraseña:</label>
+                        <input type="password" id="repetir_contrasena" name="repetir_contrasena" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="checkbox" id="aceptarterminos" name="aceptarterminos" required>
+                        <label for="terminos">He leído y acepto los términos del sistema</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Enviar formulario" class="enviarformulario">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br>
+
+        <div class="volverinicio">
+            <a href="../index.html">IR AL MENÚ PRINCIPAL</a>
+        </div>
+    </div>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

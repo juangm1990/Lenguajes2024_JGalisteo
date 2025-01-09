@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Galisteo">
+    <meta name="description" content="Formulario de contacto básico">
+    <link rel="stylesheet" href="/Ejercicios/formulario/css/formulario2.css">
+    <link rel="shortcut icon" href="/Ejercicios/formulario/imagenes/iconoWeb.png">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <div class="formulario">
+        <h1 id="inicioPagina">Formulario de contacto 2</h1>
+        <h3>Escríbenos nos pondremos en contacto contigo</h3>
+        <form name="contacto" method="post">
+            <!-- Nombre -->
+            <label for="nombre">Nombre<span>
+                    <span class="campoobligatorio">*</span>
+                </span></label><br>
+            <input type="text" name="nombre" placeholder="Introduzca su nombre" required><br>
+            <!-- Correo electrónico -->
+            <label for="email">Email<span> 
+                <span class="campoobligatorio">*</span>
+            <input type="email" name="email" placeholder="Introduzca su email" required><br>
+            <!-- Teléfono -->
+            <label for="Telefono">Teléfono</label><br>
+            <input type="text" name="Telefono" placeholder="Introduce tu teléfono"><br>
+            <!-- Sitio web -->
+            <label for="sitioweb">Sitio web</label><br>
+            <input type="text" name="sitioweb" placeholder="Escribe la URL de tu sitio web"><br>
+            <!-- Asunto -->
+            <label for="Asunto">Asunto<span>
+                    <span class="campoobligatorio">*</span>
+                </span></label><br>
+            <input type="text" name="asunto" placeholder="Introduce tu asunto" required><br>
+            <!-- Mensaje -->
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" cols="40" rows="10"
+                required></textarea><br><br>
+            <!-- Enviar formulario -->
+            <input class="enviarformulario" type="submit" value="Enviar"><p>
+                <span class="campoobligatorio">* Los campos son obligatorios</span>
+            </p><br>
+        </form>
+        <div class="volverinicio">
+            <a href="../index.html">IR AL MENÚ PRINCIPAL</a>
+        </div>
+    </div>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

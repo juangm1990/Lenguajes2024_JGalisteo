@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniweb</title>
+    <link id="theme" rel="stylesheet" type="text/css" href="css/claro.css" />
+    <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/iconoWeb.png">
+
+    <!-- CAMBIO DE COLOR -->
+    <script>
+        function cambiatema() {
+            var theme = document.getElementById('theme'); // Corregido para seleccionar por ID
+            if (theme.getAttribute('href') === 'css/claro.css') {
+                theme.setAttribute('href', 'css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', 'css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
+        }
+
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Asegúrate de seleccionar el elemento con ID "theme"
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', temaGuardado);
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="tema_activo()">
+
+    <!-- Encabezado Principal -->
+    <header>
+        <img class="logo" src="/Ejercicios/imagenes/logoJuan.png" alt="Logotipo JUAN">
+        <h1 id="inicioPagina">Bienvenidos a la Miniweb</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="/Ejercicios/index.html">Inicio</a></li>
+            <li><button class="cambiotemacolor" id="boton" onclick="cambiatema()">Modo claro/oscuro</button></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section class="diseño"> <!-- Cambié class="content" a class="diseño" -->
+            <div class="enlacescuadrados">
+                <a href="/Ejercicios/miniweb/contenido/archivo_1.html">Ir al Archivo 1</a>
+            </div>
+            <div class="enlacescuadrados">
+                <a href="/Ejercicios/miniweb/contenido/archivo_2.html">Ir al Archivo 2</a>
+            </div>
+            <div class="enlacescuadrados">
+                <a href="/Ejercicios/miniweb/contenido/archivo_3.html">Ir al Archivo 3</a>
+            </div>
+            <div class="enlacescuadrados">
+                <a href="/Ejercicios/miniweb/archivo_A.html">Ir al Archivo A</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+    <br>
+    <br>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

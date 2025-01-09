@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    max-width: 100%; /* Ancho máximo del contenido */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* ENCABEZADO */
+
+header {
+    background-color: #002c54;
+    padding: 20px;
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    height: auto;
+}
+
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+nav {
+    background-color: #a5a5a5;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ESTILO DE LOS ELEMENTOS DE NAVEGACIÓN */
+
+nav a {
+    color: #FFFFFF;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #002c54;
+}
+
+img {
+    height: 100px;
+    width: 100px;   
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* CONTENIDO DE LA PÁGINA WEB */ 
+
+table {
+    margin: auto; /* Centrar tabla en el centro */
+    text-align: center; /* border-collapse: collapse; Elimina el espacio entre celdas */
+}
+
+.fila{
+    color: rgb(0, 0, 0);
+    background-color: #e49953;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.columna{
+    background-color: #e49953;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.esquina{
+    background-color: #e49953;
+    padding: 10px;
+}
+
+.blanco{
+    background-color: #f1d8b2;
+    height: 100px;
+    width: 100px; 
+}
+
+.negro{
+    background-color: #5b3715;
+    height: 100px;
+    width: 100px;
+}
+
+/*/////////////////////////*/
+/* CONFIGURACIÓN ADICIONAL*/
+/*///////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+/*//////////////////////////////////////*/
+
+/* PIE DE PÁGINA */
+
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}
+

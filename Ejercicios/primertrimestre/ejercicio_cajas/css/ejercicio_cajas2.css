@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.texto {
+    text-align: center; 
+    height: 100%; 
+    width: 100%;
+    color: darkblue; 
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 40px; /* Espacio vertical de 20px entre las filas */ 
+}
+
+td {
+    width: 250px; /* Ancho */
+    height: 400px; /* Altura */ 
+}
+
+/*//////////////////////////////////*/
+
+.cuadrado1{
+    content: 0;
+    padding: 0;
+    border: 200px solid red;
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-right-color: yellow;
+    width: 0px; /* Ajusta según necesites */
+    height: 0px; /* Ajusta según necesites */
+}
+
+.cuadrado2{
+    content: 0;
+    padding: 0;
+    border: 200px solid red;
+    border-top-color: blue;
+    border-bottom-color: green;
+    border-right-color: white;
+    width: 0px; /* Ajusta según necesites */
+    height: 0px; /* Ajusta según necesites */
+}
+
+.cuadrado3{
+    content: 0;
+    padding: 0;
+    border: 200px solid white;
+    border-top-color: blue;
+    border-bottom-color: white;
+    border-right-color: white;
+    width: 0px; /* Ajusta según necesites */
+    height: 0px; /* Ajusta según necesites */
+}
+
+/*//////////////////////////////////*/
+
+/*CÍRCULOS*/
+
+/*//////////////////////////////////*/
+
+.circulo1 {
+    background-color: green;
+    border-radius: 50%;
+    font-size: 24px;
+    height: 200px; /* Altura del círculo */
+    width: 200px; /* Ancho del círculo */
+}
+
+.circulo2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    clip-path: inset(0 50% 0 0);
+}
+
+.circulo3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    clip-path: inset(50% 0 0 0);
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ////////////////////////////////////////// */
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.volverinicio a {
+    color: #ffffff; 
+    background-color: #002c54; 
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+.volverinicio a:hover {
+    background-color: #ffa500; 
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}

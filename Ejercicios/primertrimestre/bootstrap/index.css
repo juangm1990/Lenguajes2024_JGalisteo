@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6; /* Altura de las línea del texto */
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* RESETEO DE LA CONFIGURACIÓN BÁSICA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* ENCABEZADO */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
+
+.header h1 {
+    font-size: 24px;
+    color: #002c54;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* CONTENIDO DE LA PÁGINA WEB */
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    margin: 0 auto; /* Alinea el contenedor horizontalmente */
+}
+
+.diseñoazul {
+    display: grid;
+    background-color: #4e8df5;
+    color: rgb(0, 0, 0);
+    font-weight: bold;   
+    align-items: center;
+    justify-content: center;
+    /*Altura columnas*/
+    height: 100px;
+}
+
+.diseñoblanco {
+    display: grid;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;   
+    align-items: center;
+    justify-content: center;
+    /*Altura columnas*/
+    height: 100px;
+}
+
+/* PRIMERA FILA: TEXTO */
+.cabecera {
+    background-color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    grid-column: span 12;
+    text-align: center;
+    /*Altura columnas*/
+    height: 90px;
+}
+
+.cabecera p {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* SEGUNDA FILA: NÚMEROS */
+.numeros {
+    background-color: white;
+    color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+}
+
+/* TERCERA FILA */
+.primerafila {
+    /*División filas*/
+    grid-column: span 6;
+}
+
+/* CUARTA FILA */
+.segundafila {
+    /*División filas*/
+    grid-column: span 4; 
+}
+
+/* QUINTA FILA */
+.cuarto {
+    /*División filas*/
+    grid-column: span 3; 
+}
+
+/* SEXTA FILA */
+.sexto {
+    /*División filas*/
+    grid-column: span 2;
+}
+
+.division1 {
+    /*División filas*/
+    grid-column: span 1; 
+}
+
+.division2 {
+    /*División filas*/
+    grid-column: span 2; 
+}
+
+.division3 {
+    /*Altura filas*/
+    height: 100px;
+    /*División filas*/
+    grid-column: span 3; 
+}
+
+.division4 {
+    grid-column: span 4; 
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#botonderecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#botonderecha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* BOTÓN PARA REGRESAR A LA PÁGINA PRINCIPAL */
+#botonizquierda {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posiciona el botón en la esquina inferior izquierda */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#botonizquierda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

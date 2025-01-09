@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.texto {
+    text-align: center; 
+    height: 100%; 
+    width: 100%;
+    color: darkblue; 
+}
+
+
+table {
+    width: 100%; 
+}
+
+td {
+    width: 500px; /* Ancho */
+    height: 300px; /* Altura */   
+}
+
+.caja1 {
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: dotted;
+    border-width: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.caja2 {
+    background-color: #ffd700;
+    border: 5px solid black;
+    border-left: 80px solid black;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.caja3 {
+    background-color: #f28b82;
+    border: 40px groove #ff6658;
+    border-radius: 40px;
+}
+
+.caja4 {
+    background-color: #a0d995;
+    border: 35px inset #006400;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.caja5 {
+    background-color: peachpuff;
+    border: 10px dashed orange;
+    border-radius: 50%;
+    font-size: 24px;
+    height: 200px; /* Altura del círculo */
+    width: 200px; /* Ancho del círculo */
+}
+
+.interrogante {
+    color: darkblue; 
+    text-align: center;
+    font-size: 100px; 
+    font-weight: bold; 
+}
+
+.caja6 {
+    background-color: #d1c4e9;
+    border: 35px outset darkblue;
+}
+
+.caja7 {
+    background: linear-gradient(to top, yellow, red);
+    border: 10px solid rgb(255, 0, 0);
+}
+
+.caja8 {
+    background-color: white;
+    border: 35px solid;
+    border-color: blue red green yellow;
+}
+
+.caja9 {
+    background-color: white;
+    border: 30px double purple;
+    border-radius: 40px;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ////////////////////////////////////////// */
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.volverinicio a {
+    color: #ffffff; 
+    background-color: #002c54; 
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+.volverinicio a:hover {
+    background-color: #ffa500; 
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}
+

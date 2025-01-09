@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Color de fondo de la página */
+}
+
+/* CONFIGURACIÓN GENERAL */
+.diseño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ESTILOS DEL FORMULARIO */
+.formulario {
+    width: 80%;
+    max-width: 1200px; /* Ancho máximo del formulario */
+    padding: 20px; 
+    background-color: white; 
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra para un efecto 3D */
+}
+
+h1 {
+    text-align: center; 
+    color: #333; 
+}
+
+label {
+    display: block; /* Hace que el label ocupe el ancho completo */
+    margin: 10px 0 5px; /* Espaciado alrededor de los labels */
+    color: #000; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="color"],
+input[type="file"],
+textarea,
+select {
+    width: 95%; /* Ajusta el ancho de todos los campos */
+    padding: 10px; /* Espaciado interno de los campos */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 5px; /* Bordes redondeados de todos los campos */
+    margin-bottom: 10px; /* Espaciado entre todos los campos */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; /* Espaciado a la derecha */
+}
+
+input[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #494949; 
+    color: white; 
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #333; /* Color más oscuro al pasar el cursor por el botón */
+}
+
+textarea {
+    height: 100px; 
+    resize: none; 
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ////////////////////////////////////////// */
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; /* Centra el enlace */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.volverinicio a {
+    color: #ffffff; /* Color de texto blanco */
+    background-color: #002c54; /* Fondo en color corporativo */
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+.volverinicio a:hover {
+    background-color: #ffa500; /* Color de fondo alternativo al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+}
+
+/* ////////////////////////////////////////// */
+
+/* BOTÓN PARA REGRESAR AL MENÚ PRINCIPAL */
+.volverinicio {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.volverinicio a {
+    color: #ffffff; 
+    background-color: #002c54; 
+    padding: 10px 20px; /* Espaciado interno para agrandar el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+}
+
+.volverinicio a:hover {
+    background-color: #ffa500; 
+    transform: scale(1.05); /* Efecto de agrandado suave */
+    text-decoration: none; /* Mantiene el texto sin subrayado */
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}

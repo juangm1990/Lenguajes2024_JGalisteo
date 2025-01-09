@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo A</title>
+    <!-- Archivo CSS con ID "theme" para cambiar el tema -->
+    <link id="theme" rel="stylesheet" type="text/css" href="../css/claro.css">
+    <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/iconoWeb.png">
+
+    <!-- Función para activar el tema guardado -->
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            theme.setAttribute('href', localStorage.getItem("tema"));
+        }
+    </script>
+</head>
+
+<body onload="tema_activo()">
+
+    <!-- Encabezado Principal -->
+    <header>
+        <img class="logo" src="/Ejercicios/imagenes/logoJuan.png" alt="Logotipo JUAN">
+        <h1 id="inicioPagina">Archivo A</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="/Ejercicios/index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section>
+            <div class="enlacescuadrados">
+                <a href="/Ejercicios/miniweb/contenido/archivo_3.html">Ir al Archivo 3</a>
+            </div>
+            <div class="enlacescuadrados">
+                <a href="/Ejercicios/miniweb/index.html">Página principal</a>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,5 +1,3 @@
-/* © Juan Galisteo | Todos los derechos reservados */
-
 body {
     font-family: Arial, sans-serif; /* Fuente principal */
     margin: 0; /* Margen externo del cuerpo */
@@ -26,10 +24,6 @@ header h1 {
     color: #FFFFFF; /* Color del texto */
     margin: 0; /* Margen */
     font-size: 30px; /* Tamaño de la fuente */
-}
-
-.rojo {
-    color: red;
 }
 
 .logo {

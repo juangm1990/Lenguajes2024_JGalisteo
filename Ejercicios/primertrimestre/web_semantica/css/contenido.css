@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Margen externo del cuerpo */
+    padding: 0; /* No habrá espacio interno alrededor del contenido */
+    line-height: 1.6; /* Altura de las línea del texto */
+    
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+}
+
+/* ////////////////////////////////////////// */
+/* /* /* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
+h2 {
+    color: #FFFFFF;
+}
+
+h3 {
+    color: #000000;
+}
+
+/* Configuración del texto */
+p {
+    color: #000000;
+    text-align: justify;
+}
+/* ////////////////////////////////////////// */
+
+/* ENCABEZADO */
+
+header {
+    background-color: #002c54;
+    display: flex; /* Disposición de los elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    position: absolute; /* Posición fija para el logo */
+    left: 50px; /* Movimiento de la imagen */
+    width: 70px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la imagen proporcionada*/
+}
+
+header h1 {
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+}
+
+/* ////////////////////////////////////////// */
+
+/* NAVEGACIÓN PRINCIPAL */
+nav {
+    background-color: #a5a5a5;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #002c54;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 0;
+    width: 100%; /* Asegura que el ancho del main se ajuste al del body */
+    margin: 0 auto; /* Centra el contenido del main */
+    border-top: 45px solid #ffffff; /* Aplica una línea de separación en la parte superior */
+}
+
+/* DISEÑO DE LA PÁGINA */
+
+/* Imágenes */
+.imagencentro {
+    width: 100%;
+    max-width: 1200px; /* Ajustar manualmente el ancho */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.imagen {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* VÍDEOS */
+.videocentro {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente el video */
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+/* DISEÑO DE LOS VÍDEOS */
+.videoobjeto {
+    display: flex;
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: center;
+    margin-top: 20px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f3f4f6; /* Color de fondo del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 8px 16px #1a1a1a; /* Sombra para el contenedor */
+}
+
+/* CONTENIDO DENTRO DE LOS VÍDEOS */
+
+/* CCONFIGURACIÓN DE LOS TRES VÍDEOS EN PARALELO*/
+.videocontenido {
+    width: 280px; /* Ancho fijo para el contenido del video */
+    background-color: #ffffff;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px #262626; /* Sombra para el contenido del video */
+    text-align: center;
+}
+
+.videocontenido:hover {
+    transform: translateY(-5px); /* Desplaza hacia arriba al pasar el cursor */
+    box-shadow: 0px 8px 16px #333333; /* Aumenta la sombra al pasar el cursor */
+}
+
+.videocontenido video {
+    width: 100%;
+    height: auto; /* Mantiene la proporción del video */
+    border-bottom: 1px solid #ddd; /* Línea de separación inferior */
+}
+
+/* INFORMACIÓN DE LOS VÍDEOS */
+.videoinfo {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Línea de separación inferior */
+    text-align: center;
+}
+
+.videotitulo {
+    text-align: center;
+    width: 100%;
+}
+
+/* AUDIOS */
+.audio {
+    display: flex;
+    text-align: center;
+    flex-direction: column; /* Alinea el audio y el texto uno encima del otro */
+    margin: 20px; 
+}
+
+audio {
+    width: 600px; 
+    max-width: 100%;
+    margin: 0 auto; /* Centra el audio al margen */
+}
+
+/* PDF */
+.informacion {
+    text-align: center; 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; /* Centra el pdf al margen */
+}
+
+.informacion img {
+    width: 100%; 
+    height: auto; 
+}
+
+.imagencentrada {
+    text-align: center;
+}
+
+.imagenajustada {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+/* NOTA PARA LAS IMÁGENES, VÍDEOS, AUDIOS, PDF */
+figcaption {
+    text-align: center;
+    color: #555;
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#boton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}

@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* RESETEO DE LA CONFIGURACIÓN BÁSICA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* ENCABEZADO */
+
+header {
+    display: flex;
+    justify-content: center;  /* Centra el título entre el logo y el nav */
+    align-items: center;  /* Centra verticalmente los elementos */
+    background-color: #002c54;
+    padding: 14px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    flex: 1; /* El título ocupa el espacio disponible entre el logo y el nav */
+}
+
+.logo {
+    width: 50px; /* Tamaño del logo */
+    height: auto;
+}
+
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* CONFIGURACIÓN DE LOS TÍTULOS Y EL TEXTO */
+
+h2 {
+    padding: 20px 0; /* Espacio arriba y abajo pero sin darselo a los laterales */
+    color: #000000;
+    text-align: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+nav {
+    display: flex;
+    justify-content: center;  /* Centra los enlaces */
+    gap: 20px; /* Añade espacio entre los enlaces */
+    background-color: #a5a5a5; 
+    padding: 5px 0;  /* Altura a la barra */
+}
+
+/* ESTILO DE LOS ELEMENTOS DE NAVEGACIÓN */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #a5a5a5;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* CONTENIDO DE LA PÁGINA WEB */ 
+
+
+.container {
+    width: 1000px;
+    height: 1010px;
+    margin: auto;
+}
+
+.casilla {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    float: left;
+}
+
+/*/////////////////////////*/
+/* CONFIGURACIÓN ADICIONAL*/
+/*///////////////////////*/
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.blanca {
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/blanco.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.negra {
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/negro.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.horizontal{
+    color: #e2cbac;
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/horizontal.png);
+    background-size: cover;
+    /*Configuración texto*/
+    font-size: 30px;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
+
+}
+
+.vertical{
+    color: #e2cbac;
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/vertical.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+    /*Configuración texto*/
+    font-size: 30px;
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 100px; /* Establece la altura de la línea igual a la altura de la casilla */
+}
+
+.esquina1{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/arribaIzquierda.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.esquina2{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/arribaDerecha.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.esquina3{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/abajoIzquierda.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.esquina4{
+    background-image: url(/Ejercicios/ajedrez/contenido/imagenes/tablero3/abajoDerecha.png);
+    background-size: cover; /* Ancho y el alto del elemento ajustado. */
+}
+
+.clear {
+    clear: left;
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    overflow: hidden; /* Asegura que la imagen se mantenga dentro del círculo */
+    justify-content: center;  /* Centra la imagen dentro del botón */
+    align-items: center;  /* Alinea la imagen verticalmente */
+}
+
+#boton img {
+    width: 100%;  /* Asegura que la imagen llene todo el contenedor */
+    height: 100%;  /* Asegura que la imagen llene todo el contenedor */
+    border-radius: 50%; /* Asegura que la imagen también sea redonda */
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #77777733; 
+    color: #FFFFFF;
+    width: 100%;  /* Ocupa todo el ancho */
+    text-align: center;  /* Centra el texto */
+    padding: 7px;
+    margin-top: auto;  /* Asegura que el footer esté siempre al final */
+}

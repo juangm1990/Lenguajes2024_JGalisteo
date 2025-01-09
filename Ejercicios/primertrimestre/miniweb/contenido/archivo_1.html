@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniweb - Archivo 1</title>
+    <!-- Archivo CSS con ID "theme" para cambiar el tema -->
+    <link id="theme" rel="stylesheet" type="text/css" href="../css/claro.css">
+    <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/iconoWeb.png">
+
+    <!-- Script para activar el tema guardado y cambiar el tema -->
+    <script>
+        function tema_activo() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', '../' + temaGuardado);
+            }
+        }
+
+        function cambiatema() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            if (theme.getAttribute('href') === '../css/claro.css') {
+                theme.setAttribute('href', '../css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', '../css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
+        }
+    </script>
+</head>
+
+<body onload="tema_activo()">
+
+    <!-- Encabezado Principal -->
+    <header>
+        <img class="logo" src="/Ejercicios/imagenes/logoJuan.png" alt="Logotipo JUAN">
+        <h1 id="inicioPagina">Archivo 1</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="/Ejercicios/index.html">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section>
+            <div class="enlacescuadrados">
+                <a href="/Ejercicios/miniweb/index.html">Página principal</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="boton">
+        <a href="#inicioPagina"><img src="/Ejercicios/imagenes/boton.png" alt="Botón de regreso"></a>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+
+
+</body>
+
+</html>
