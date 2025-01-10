@@ -1,0 +1,17 @@
+body {
+    width: 1800px;
+    margin: auto;
+    background-color: white;
+
+}
+
+head{
+    text-align: center;
+    background-color: white;
+}
+
+h1{
+    background-color: white;
+    width: 400px;
+    height: auto;
+}

@@ -4,16 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archivo A</title>
+    <title>Miniweb - Archivo 1</title>
     <!-- Archivo CSS con ID "theme" para cambiar el tema -->
     <link id="theme" rel="stylesheet" type="text/css" href="../css/claro.css">
-    <link rel="shortcut icon" href="/Ejercicios/miniweb/imagenes/iconoWeb.png">
+    <link rel="shortcut icon" href="/miniweb/imagenes/iconoWeb.png">
 
-    <!-- Función para activar el tema guardado -->
+    <!-- Script para activar el tema guardado y cambiar el tema -->
     <script>
         function tema_activo() {
             var theme = document.getElementById('theme'); // Selección por ID
-            theme.setAttribute('href', localStorage.getItem("tema"));
+            var temaGuardado = localStorage.getItem("tema");
+            if (temaGuardado) {
+                theme.setAttribute('href', '../' + temaGuardado);
+            }
+        }
+
+        function cambiatema() {
+            var theme = document.getElementById('theme'); // Selección por ID
+            if (theme.getAttribute('href') === '../css/claro.css') {
+                theme.setAttribute('href', '../css/oscuro.css');
+                localStorage.setItem('tema', 'css/oscuro.css');
+            } else {
+                theme.setAttribute('href', '../css/claro.css');
+                localStorage.setItem('tema', 'css/claro.css');
+            }
         }
     </script>
 </head>
@@ -23,7 +37,7 @@
     <!-- Encabezado Principal -->
     <header>
         <img class="logo" src="/Ejercicios/imagenes/logoJuan.png" alt="Logotipo JUAN">
-        <h1 id="inicioPagina">Archivo A</h1>
+        <h1 id="inicioPagina">Archivo 1</h1>
     </header>
 
     <!-- Navegación -->
@@ -37,15 +51,10 @@
     <main>
         <section>
             <div class="enlacescuadrados">
-                <a href="/Ejercicios/miniweb/contenido/archivo_3.html">Ir al Archivo 3</a>
-            </div>
-            <div class="enlacescuadrados">
                 <a href="/Ejercicios/miniweb/index.html">Página principal</a>
             </div>
         </section>
     </main>
-    <br>
-    <br>
 
     <!-- BOTÓN PARA REGRESAR ARRIBA -->
     <div id="boton">
@@ -56,6 +65,7 @@
     <footer>
         <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
     </footer>
+
 
 </body>
 
