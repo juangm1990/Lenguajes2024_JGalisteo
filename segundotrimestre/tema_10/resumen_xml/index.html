@@ -19,29 +19,362 @@
     </header>
     <br>
     <div>
-        <p><b>¿Qué es XML (Extensible Markup Language)?</b> Es un lenguaje de marcado de propósito general definido por el W3C. <b>El propósito principal del lenguaje es compartir 
-            datos</b> a través de diferentes sistemas, <b>como Internet</b>. Es similar a HTML y no está predefinido: <b>"Las etiquetas se definen y se crean".</b></p>
+        <p><b>¿Qué es XML (Extensible Markup Language)?</b> Es un lenguaje de marcado de propósito general definido por
+            el W3C. <b>El propósito principal del lenguaje es compartir datos</b> a través de diferentes sistemas,
+            <b>como Internet</b>. Es similar a HTML y no está predefinido: <b>"Las etiquetas se definen y se crean".</b>
+        </p>
     </div>
 
-
-    <main class="">
-        <section>
-            
-        </section>
-        <section>
-            <article>
-
-            </article>
-            <aside>
-                <h2></h2>
+    <main>
+        <!-- Primer bloque -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo1">Introducción</h3>
+                <p> XHTML es una versión más estricta de HTML que sigue las reglas de XML.
+                    Aunque fue importante en la evolución de los estándares web, en la práctica
+                    se utiliza HTML5, que es prácticamente igual a HTML. </p>
                 <ul>
-                    <li>
-
-                    </li>
+                    <li>Se trata de un estándar desarrollado por W3C. Es aplicar XML a HTML.</li>
+                    <li>Versión más estricta y modular de HTML. Lo que significa que las etiquetas deben cerrarse
+                        correctamente y los documentos deben estar bien formados.</li>
+                    <li>Sigue las reglas de XML para definir la estructura y el contenido de las páginas web.</li>
+                    <li>Compatible con HTML.</li>
+                    <li>Compatible con CSS.</li>
+                    <li>El mismo uso que HTML.</li>
+                    <li>Su extensión es .xhtml.</li>
                 </ul>
-            </aside>
-        </section>
+                <p><b><u>Web de referencias:</u></b></p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/xml/default.asp" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/es/docs/Web/XML/XML_introduction" target="_blank">MDN Web
+                            Docs</a></li>
+                </ul>
+            </article>
+            <article class="recuadrotexto">
+                <h3 class="minititulo1">XML Extensible Markup Language</h3>
+                <p><b><u>Características de XML:</u></b></p>
+                <ul>
+                    <li>Lenguaje de estructura libre. No está predefinido. Las etiquetas se definen.</li>
+                    <li>Consta de dos partes: Prólogo y Cuerpo.</li>
+                    <li>Usa espacios de nombres para evitar ambigüedades.</li>
+                    <li>Su sintaxis es como la de HTML.</li>
+                    <li>Debe cumplir las reglas W3C para estar bien formado.</li>
+                    <li>Utiliza esquemas en forma de árbol con una única raíz.</li>
+                    <li>Los documentos se validan.</li>
+                </ul>
+                <p><b><u>Aclaraciones clave sobre XML:</u></b></p>
+                <ul>
+                    <li>No es un sustituto de HTML (ni lo pretende).</li>
+                    <li>No es un gestor de base de datos.</li>
+                    <li>No es un estándar de comunicación.</li>
+                    <li>No es un lenguaje de programación.</li>
+                </ul>
+            </article>
+        </div>
+        <!-- Segundo bloque -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo2">Estructura de un documento XML </h3>
+                <p><b><u>Prólogo:</u></b></p>
+                <ul>
+                    <li>Declaración XML</li>
+                    <li>Información del documento</li>
+                    <li>Espacio de nombres</li>
+                    <li>Hojas de estilo XSLT</li>
+                    <li>Hojas de estilo CSS</li>
+                </ul>
+                <p><b><u>Cuerpo:</u></b></p>
+                <ul>
+                    <li>Árbol de contenido</li>
+                    <li>Una sola raíz</li>
+                </ul>
+            </article>
+            <article class="recuadrotexto">
+                <h3 class="minititulo2">Sintaxis XML</h3>
+                <p><b><u>Elemento:</u></b></p>
+                <ul>
+                    <li>Es la unidad fundamental</li>
+                    <li>Etiqueta de apertura y cierre</li>
+                    <li>Atributo, valor</li>
+                    <li>Contenido</li>
+                    <li>Elementos vacíos</li>
+                    <li>&lt;elemento/&gt;</li>
+                    <li>&lt;elemento&gt;&lt;/elemento&gt;</li>
+                </ul>
+                <p><b><u>Cuerpo:</u></b></p>
+                <ul>
+                    <li>Árbol de contenido</li>
+                    <li>Una sola raíz</li>
+                </ul>
+            </article>
+        </div>
+        <!-- Tercer bloque -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo3">Alguna observaciones</h3>
+                <ul>
+                    <li>No es como HTML. Si no está bien formado dará error.</li>
+                    <li>Los comentarios son igual que en HTML.</li>
+                    <li>Se distinguen mayúsculas y minúsculas.</li>
+                    <li>No cuentan los espacios en blanco.</li>
+                    <li>Entidades.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th>Entidad</th>
+                        <th>Carácter</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>&lt;</td>
+                        <td>Menor que</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>&gt;</td>
+                        <td>Mayor que</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>&amp;</td>
+                        <td>Ampersand</td>
+                    </tr>
+                    <tr>
+                        <td>&quot;</td>
+                        <td>&quot;</td>
+                        <td>Comilla doble</td>
+                    </tr>
+                    <tr>
+                        <td>&apos;</td>
+                        <td>&apos;</td>
+                        <td>Apóstrofe (o comilla sencilla)</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="recuadrotexto">
+                <h3 class="minititulo3">Documentos bien formados</h3>
+                <p>Cumple las reglas sintácticas definidas por el estándar XML de W3C.</p>
+                <p><b><u>Normas básicas: </u></b></p>
+                <ul>
+                    <li>Prólogo definido. Versión y codificación.</li>
+                    <li>Estructura de árbol. Un único nodo raíz.</li>
+                    <li>Etiquetas emparejadas. Apertura y cierre.</li>
+                    <li>Atributos entre comillas. Simples o dobles.</li>
+                    <li>Distingue mayúsculas de minúsculas.</li>
+                    <li>Nombres de etiquetas. Similares a variables en programación.</li>
+                    <li>Comentarios fuera de etiquetas con: &lt;!-- comentario --&gt;.</li>
+                </ul>
+                <p><b><u>Aplicaciones para trabajar con XML</u></b></p>
+                <ul>
+                    <li><a href="https://xml-copy-editor.sourceforge.io/" target="_blank">XML Copy Editor</a></li>
+                    <li><a href="https://vimeo.com/426940276/eaa732b760" target="_blank">Funcionamiento de XML Copy
+                            Editor</a></li>
+                </ul>
+            </article>
+        </div>
+        <!-- Cuarto bloque -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo4">Validación con DTD</h3>
+                <p><b><u>Un DTD describe la estructura del documento:</u></b></p>
+                <ul>
+                    <li>Elementos</li>
+                    <li>Orden</li>
+                </ul>
+                <p><b><u>Ubicación de DTD:</u></b></p>
+                <ul>
+                    <li>Interno. En el propio documento</li>
+                    <li>Externo. Referenciado por URL</li>
+                    <li>Mixto</li>
+                </ul>
+                <p><b><u>Tipos de elementos que se utilizan en DTD:</u></b></p>
+                <ul>
+                    <li>Elemento &lt;!ELEMENT&gt;</li>
+                    <li>Atributos &lt;!ATTLIST&gt;</li>
+                    <li>Entidades &lt;!ENTITY&gt;</li>
+                </ul>
+            </article>
+            <article class="recuadrotexto">
+                <h3 class="minititulo5">1. Elemento &lt;!ELEMENT&gt;</h3>
+                <ul>
+                    <li>&lt;!ELEMENT elemento (hijo1, hijo2 ..)&gt;</li>
+                    <li>&lt;!ELEMENT elemento (#PCDATA)&gt;</li>
+                </ul>
+                <p><b><u>Cardinalidad:</u></b></p>
+                <ul>
+                    <li>?: El elemento aparece 0 o 1 vez.</li>
+                    <li>*: El elemento aparece 0 a N veces.</li>
+                    <li>+: El elemento aparece 1 a N veces.</li>
+                </ul>
+                <p><b><u>Secuencia:</u></b></p>
+                <ul>
+                    <li>X, Y: Indica que el elemento X tiene que aparecer a continuación de Y.</li>
+                    <li>(X|Y): Indica que aparece el elemento X o el elemento Y, pero no los dos al mismo tiempo.</li>
+                </ul>
+                <p><b><u>Combinación:</u></b></p>
+                <ul>
+                    <li>Se pueden combinar los símbolos de secuencia y los de cardinalidad.</li>
+                </ul>
+            </article>
+        </div>
+        <!-- Quinto bloque -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo5">2. Atributos &lt;!ATTLIST&gt;</h3>
+                <p><b><u>Información adicional de los elementos:</u></b></p>
+                <p>&lt;!ATTLIST elemento atributo tipo valor&gt;. <br> Ejemplo: &lt;!ATTLIST capitulo paginas CDATA
+                    #REQUIRED&gt;</p>
+                <p><b><u>Tipos</u></b></p>
+                <table>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Significado</th>
+                    </tr>
+                    <tr>
+                        <td>CDATA</td>
+                        <td>Cadena de texto. Valor alfanumérico.</td>
+                    </tr>
+                    <tr>
+                        <td>Enumeraciones</td>
+                        <td>Permite indicar varios valores.</td>
+                    </tr>
+                    <tr>
+                        <td>ENTITY</td>
+                        <td>Entidad definida previamente.</td>
+                    </tr>
+                    <tr>
+                        <td>ENTITIES</td>
+                        <td>Conjunto de entidades.</td>
+                    </tr>
+                    <tr>
+                        <td>IDREF</td>
+                        <td>Se referencia el identificador de otro elemento.</td>
+                    </tr>
+                    <tr>
+                        <td>IDREFS</td>
+                        <td>Referencia a un conjunto de identificadores.</td>
+                    </tr>
+                    <tr>
+                        <td>ID</td>
+                        <td>Identificador único para identificar elementos.</td>
+                    </tr>
+                    <tr>
+                        <td>NOTATION</td>
+                        <td>Indica datos que no son XML.</td>
+                    </tr>
+                    <tr>
+                        <td>NMToken</td>
+                        <td>Un nombre sin espacios en blanco.</td>
+                    </tr>
+                    <tr>
+                        <td>NMtokens</td>
+                        <td>Lista de nombres.</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="recuadrotexto"><br>
+                <p><b><u>Valores:</u></b></p>
+                <table>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Significado</th>
+                    </tr>
+                    <tr>
+                        <td>Valor</td>
+                        <td>El valor por defecto del atributo entre comillas.</td>
+                    </tr>
+                    <tr>
+                        <td>#REQUIRED</td>
+                        <td>El atributo es obligatorio.</td>
+                    </tr>
+                    <tr>
+                        <td>#IMPLIED</td>
+                        <td>El atributo es opcional.</td>
+                    </tr>
+                    <tr>
+                        <td>#FIXED valor</td>
+                        <td>El atributo es obligatorio y se le asigna un valor por defecto que es el único valor que
+                            puede tener.</td>
+                    </tr>
+                </table>
+                <p><b><u>Ejemplo DTD:</u></b></p>
+                <ul>
+                    <li>Versión</li>
+                    <li>Codificación</li>
+                    <li>standalone</li>
+                    <li>DTD es externo y privado</li>
+                    <li>Raíz: biblioteca</li>
+                    <li>Elemento libros (puede haber más de uno)</li>
+                    <li>Elemento nombre (solo uno y obligatorio)</li>
+                    <li>Elemento autor (puede haber más de uno)</li>
+                    <li>Elemento Editorial se puede omitir</li>
+                    <li>El precio y precio_con_iva (aparecerá uno de los dos)</li>
+                </ul>
+            </article>
+        </div>
+        <!-- Segundo bloque -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo5">3. Entidades &lt;!ENTITY&gt;</h3>
+                <p><b><u>Entidad declaración de una constante para usar en el documento:</u></b></p>
+                <table>
+                    <tr>
+                        <th>Entidad</th>
+                        <th>Carácter</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>&lt;</td>
+                        <td>Menor que</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>&gt;</td>
+                        <td>Mayor que</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>&amp;</td>
+                        <td>Ampersand</td>
+                    </tr>
+                    <tr>
+                        <td>&quot;</td>
+                        <td>&quot;</td>
+                        <td>Comilla doble</td>
+                    </tr>
+                    <tr>
+                        <td>&apos;</td>
+                        <td>&apos;</td>
+                        <td>Apóstrofe (o comilla sencilla)</td>
+                    </tr>
+                </table>
+                <br>
+                <figure class="imagen">
+                    <img  src="imagenes/xml.png" alt="Descripción de la imagen" />
+                </figure>
+                <figcaption class="imagen">Archivo XML</figcaption><br>                  
+            </article>
+            <article class="recuadrotexto">
+                <h3 class="minititulo6">Sintaxis XML</h3>
+                <p><b><u>¿Qué es el lenguaje XML? Usos y características:</u></b></p>
+                <p>XML es un lenguaje de marcado utilizado para almacenar y transportar datos de manera estructurada. Es
+                    flexible, legible para humanos y máquinas, y se usa para el intercambio de datos entre sistemas.</p>
+
+                <p><b><u>Estructura de un documento XML y sintaxis de un elemento XML:</u></b></p>
+                <p>Un documento XML tiene un prologo, un elemento raíz y elementos con atributos. Ejemplos:<br>&lt;libro
+                    titulo="XML básico"&gt;<br>&lt;autor&gt;Juan Pérez&lt;/autor&gt;<br>&lt;anio&gt;2023&lt;/anio&gt;<br>&lt;/libro&gt;</p>
+                <p><b><u>¿Qué es la validación de un documento XML? ¿Qué formas hay?</u></b></p>
+                <p>La validación asegura que el XML cumple con las reglas definidas. Se puede hacer por DTD o XML
+                    Schema.</p>
+                <p><b><u>Validación DTD:</u></b></p>
+                <p>La validación DTD verifica que el documento cumpla con las reglas definidas en un archivo DTD.</p>
+            </article>
+        </div>
     </main>
+    <br>
+    <br>
 
     <!-- BOTÓN PARA REGRESAR ARRIBA -->
     <div id="botonizquierda">
