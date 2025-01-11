@@ -1,50 +1,73 @@
 /* © Juan Galisteo | Todos los derechos reservados */
 
-/* © Juan Galisteo | Todos los derechos reservados */
 * {
     margin: 0px; 
     display: block;
     box-sizing: border-box; 
 }
 
+/* PÁGINA PRINCIPAL */
+
 biblioteca {
-    background-color: #002E4C; 
+    background-color: #f4f4f9; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    padding: 20px; /* Espacio adicional alrededor del contenido */
 }
 
+/* CONTENIDO */
 libro {
-    background-color: #f1f1f1;
-    opacity: 0.8;
+    background-color: #ffffff; 
+    border-radius: 15px; /* Bordes redondeados */
+    opacity: 0.9;
     width: 40vw;
     height: 30vw;
     margin: 2vw;
-    padding: 1vw;
+    padding: 20px;
     font-size: 1.2em;
     overflow: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Animación suave */
+}
+
+libro:hover {
+    transform: scale(1.05); /* Efecto al pasar el cursor */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra al pasar el cursor */
 }
 
 titulo {
-    font-size: 2em;
+    font-size: 2.3em;
     padding: .1em;
     text-align: center;
+    color: #ffffff; 
+    font-weight: bold; /* Negrita */
+    font-family: Georgia, serif; /* Tipo de letra tipo libro */
 }
 
+
+/* DISEÑO Y MAQUETACIÓN */
 autor {
     display: inline;
-    color: rgb(214, 137, 36);
+    color: rgb(44, 0, 0);
     font-size: 1.3em;
-}
-
-capitulo {
     font-weight: bold;
+    margin-bottom: 1em;
+    display: block;
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Justificar el texto */
 }
 
 resumen {
     font-weight: 100;
-    font-size: .8em;
-    margin: .5em;
+    font-size: 1em;
+    margin: .5em 0;
+    color: #000000; 
+    line-height: 1.6; /* Mejora la legibilidad */
+    text-align: justify; /* Justificar el texto */
 }
 
 portada {
@@ -52,32 +75,47 @@ portada {
     height: 75%;
     float: left;
     margin: .5em;
+    background-size: cover;
+    border-radius: 10px; /* Bordes redondeados */
 }
 
-portada[foto="ciencia"] {
-    background-image: url("imagenes/1984.jpg");
-    background-size: cover;
+/* IMÁGENES */
+portada[foto="kabbalah"] {
+    background-image: url("imagenes/kabbalah.png");
 }
 
-portada[foto="celestina"] {
-    background-image: url("imagenes/1984.jpg");
-    background-size: cover;
+portada[foto="piramide"] {
+    background-image: url("imagenes/piramide.png");
 }
 
-portada[foto="extranjero"] {
-    background-image: url("imagenes/1984.jpg");
-    background-size: cover;
+portada[foto="sabiduria"] {
+    background-image: url("imagenes/sabiduria.png");
 }
 
 portada[foto="1984"] {
-    background-image: url("imagenes/1984.jpg");
-    background-size: cover;
+    background-image: url("imagenes/1984.png");
+}
+
+/* COLORES PARA LOS APARTADOS DE LOS LIBROS */
+libro:nth-child(1) {
+    background-color: #be74bf;
+}
+
+libro:nth-child(2) {
+    background-color: #009bdb;
+}
+
+libro:nth-child(3) {
+    background-color: #35aa0e;
+}
+
+libro:nth-child(4) {
+    background-color: #fa4e4e;
 }
 
 
 /*//////////////////////////////////////*/
 /* PIE DE PÁGINA */
-
 piepagina p {
     background-color: #77777733;
     color: #FFFFFF;
@@ -85,7 +123,7 @@ piepagina p {
     text-align: center;
     padding: 5px;
     position: fixed; /* Fija el pie de página en la parte inferior */
-    bottom: 0;
-    left: 0;
-    margin: 0;
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
 }
