@@ -1,0 +1,91 @@
+/* © Juan Galisteo | Todos los derechos reservados */
+
+/* © Juan Galisteo | Todos los derechos reservados */
+* {
+    margin: 0px; 
+    display: block;
+    box-sizing: border-box; 
+}
+
+biblioteca {
+    background-color: #002E4C; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+libro {
+    background-color: #f1f1f1;
+    opacity: 0.8;
+    width: 40vw;
+    height: 30vw;
+    margin: 2vw;
+    padding: 1vw;
+    font-size: 1.2em;
+    overflow: auto;
+}
+
+titulo {
+    font-size: 2em;
+    padding: .1em;
+    text-align: center;
+}
+
+autor {
+    display: inline;
+    color: rgb(214, 137, 36);
+    font-size: 1.3em;
+}
+
+capitulo {
+    font-weight: bold;
+}
+
+resumen {
+    font-weight: 100;
+    font-size: .8em;
+    margin: .5em;
+}
+
+portada {
+    width: 50%;
+    height: 75%;
+    float: left;
+    margin: .5em;
+}
+
+portada[foto="ciencia"] {
+    background-image: url("imagenes/1984.jpg");
+    background-size: cover;
+}
+
+portada[foto="celestina"] {
+    background-image: url("imagenes/1984.jpg");
+    background-size: cover;
+}
+
+portada[foto="extranjero"] {
+    background-image: url("imagenes/1984.jpg");
+    background-size: cover;
+}
+
+portada[foto="1984"] {
+    background-image: url("imagenes/1984.jpg");
+    background-size: cover;
+}
+
+
+/*//////////////////////////////////////*/
+/* PIE DE PÁGINA */
+
+piepagina p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
