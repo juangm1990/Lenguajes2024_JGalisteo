@@ -7,51 +7,53 @@
 }
 
 /* PÁGINA PRINCIPAL */
-biblioteca {
+movil {
     background-color: #333333; 
-    color: #f1f1f1; 
+    color: #f1f1f1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh; 
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
     padding: 20px;
 }
 
 /* CONTACTO */
 contacto1 {
-    background-color: #4CAF50; 
-    border-radius: 10px; 
+    background-color: #4CAF50;
+    border-radius: 10px;
     opacity: 0.9;
-    width: 90%; 
-    max-width: 400px; 
-    margin: 15px 0; 
+    width: 90%;
+    max-width: 400px;
+    margin: 15px 0;
     padding: 25px;
-    font-size: 1.1em; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    font-size: 1.1em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Efecto */
+    text-align: center; 
 }
 
 contacto1:hover {
-    transform: scale(1.05); /* Efecto  */
+    transform: scale(1.05); /* Efecto */
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Sombra al pasar el cursor */
 }
 
 contacto2 {
-    background-color: #ac8312; 
-    border-radius: 10px; 
+    background-color: #ac8312;
+    border-radius: 10px;
     opacity: 0.9;
-    width: 90%; 
-    max-width: 400px; 
-    margin: 15px 0; 
+    width: 90%;
+    max-width: 400px;
+    margin: 15px 0;
     padding: 25px;
-    font-size: 1.1em; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    font-size: 1.1em;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Efecto */
+    text-align: center; 
 }
 
 contacto2:hover {
-    transform: scale(1.05); /* Efecto  */
+    transform: scale(1.05); /* Efecto */
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Sombra al pasar el cursor */
 }
 
@@ -59,25 +61,13 @@ contacto2:hover {
 nombre {
     font-size: 1.7em;
     font-weight: bold;
-    color: #ffffff; 
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
-telefono {
+telefono, email, direccion {
     font-size: 1.1em;
-    color: #e0e0e0; 
-    margin-top: 5px;
-}
-
-email {
-    font-size: 1.1em;
-    color: #e0e0e0; 
-    margin-top: 5px;
-}
-
-direccion {
-    font-size: 1.1em;
-    color: #e0e0e0; 
+    color: #e0e0e0;
     margin-top: 5px;
 }
 
@@ -90,8 +80,7 @@ piepagina p {
     text-align: center;
     padding: 5px;
     position: fixed; /* Fija el pie de página en la parte inferior */
-    bottom: 0; /* Elimina la posición en la parte inferior*/
-    left: 0; /* Elimina la alineación a la izquierda*/
+    bottom: 0; /* Elimina la posición en la parte inferior */
+    left: 0; /* Elimina la alineación a la izquierda */
     margin: 0; /* Elimina el margen del pie de página */
 }
-
