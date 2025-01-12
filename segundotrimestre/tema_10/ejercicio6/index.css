@@ -1,0 +1,117 @@
+/* © Juan Galisteo | Todos los derechos reservados */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* PÁGINA PRINCIPAL */
+fichatecnica {
+    background-image: url('imagenes/fondo.png');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* EQUIPOS F1 */
+equipo {
+    background-color: #ffffffda;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+equipo:hover {
+    transform: scale(1.02);
+}
+
+/* DETALLES EQUIPO */
+equipo nombre {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+equipo modelo {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+equipo piloto {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+equipo fecha {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+equipo potencia {
+    font-size: 1.1em;
+    color: #c23b22;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+equipo imagen {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* IMÁGENES */
+equipo:nth-child(1) imagen {
+    background-image: url('imagenes/redbull.png');
+}
+
+equipo:nth-child(2) imagen {
+    background-image: url('imagenes/ferrari.png');
+}
+
+equipo:nth-child(3) imagen {
+    background-image: url('imagenes/mercedes.png');
+}
+
+equipo:nth-child(4) imagen {
+    background-image: url('imagenes/astonmartin.png');
+}
+
+equipo:nth-child(5) imagen {
+    background-image: url('imagenes/mclaren.png');
+}
+
+equipo:nth-child(6) imagen {
+    background-image: url('imagenes/williams.png');
+}
+
+/*//////////////////////////////////////*/
+/* PIE DE PÁGINA */
+piepagina p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}
