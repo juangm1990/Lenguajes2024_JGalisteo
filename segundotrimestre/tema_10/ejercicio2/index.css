@@ -5,81 +5,96 @@
     box-sizing: border-box;
 }
 
-/* Estilo general del DNI */
-dni {
-    background-color: #f0f0f0; /* Fondo gris claro para la tarjeta */
-    width: 500px; /* Ancho de la tarjeta */
-    height: 700px; /* Alto de la tarjeta */
-    border-radius: 20px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 20px; /* Espaciado interno */
+/* PÁGINA PRINCIPAL */
+movil {
+    background-color: #333333; 
+    color: #f1f1f1; 
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+    min-height: 100vh; 
+    padding: 20px;
 }
 
-/* Fotografía del DNI */
-fotografia {
-    width: 120px;
-    height: 160px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #000;
+/* CONTACTO */
+contacto1 {
+    background-color: #4CAF50; 
+    border-radius: 10px; 
+    opacity: 0.9;
+    width: 100%; 
+    max-width: 600px; /* Aumentado para hacer el recuadro más grande */
+    margin: 15px 0; 
+    padding: 40px; /* Aumentado para dar más espacio dentro del recuadro */
+    font-size: 1.3em; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Efecto */
+    display: block;
+    margin-bottom: 10px; /* Espacio entre los elementos */
 }
 
-/* Títulos y texto del DNI */
-nombre, apellidos, fecha_nacimiento, nacionalidad {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 10px 0;
+contacto1:hover {
+    transform: scale(1.05); /* Efecto  */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Sombra al pasar el cursor */
 }
 
+
+contacto2 {
+    background-color: #ac8312; 
+    border-radius: 10px; 
+    opacity: 0.9;
+    width: 90%; 
+    max-width: 600px; /* Aumentado para hacer el recuadro más grande */
+    margin: 15px 0; 
+    padding: 40px; /* Aumentado para dar más espacio dentro del recuadro */
+    font-size: 1.3em; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Efecto */
+    display: block;
+    margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+contacto2:hover {
+    transform: scale(1.05); /* Efecto  */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Sombra al pasar el cursor */
+}
+
+/* DETALLES PARA CADA CONTACTO */
 nombre {
-    font-size: 1.5em;
-    color: #0044cc; /* Color para el nombre */
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 10px;
 }
 
-apellidos {
-    font-size: 1.2em;
-    color: #444;
+telefono {
+    font-size: 1.1em;
+    color: #e0e0e0; 
+    margin-top: 5px;
 }
 
-fecha_nacimiento, nacionalidad {
-    font-size: 1em;
-    color: #666;
+email {
+    font-size: 1.1em;
+    color: #e0e0e0; 
+    margin-top: 5px;
 }
 
+direccion {
+    font-size: 1.1em;
+    color: #e0e0e0; 
+    margin-top: 5px;
+}
+
+/*//////////////////////////////////////*/
 /* PIE DE PÁGINA */
 piepagina p {
     background-color: #77777733;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
-    padding: 20px; /* Aumento el padding para hacerlo más grande */
+    padding: 5px;
     position: fixed; /* Fija el pie de página en la parte inferior */
-    bottom: 0; /* Mantiene el pie de página en la parte inferior */
-    left: 0; /* Alineación izquierda */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
-    font-size: 1.5em; /* Aumento el tamaño de la fuente */
-    font-weight: bold; /* Añade negrita */
-}
-
-/* Ajustes para que el pie de página siempre esté en la parte inferior */
-dni {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* Ajuste para la imagen de la portada */
-portada {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
