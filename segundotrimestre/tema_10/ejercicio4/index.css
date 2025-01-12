@@ -12,7 +12,10 @@ documento {
     background-image: url("imagenes/fondo.jpg");
     background-size: cover; /* Ajusta la imagen para cubrir el área */
     background-position: center; /* Centra la imagen */
-    border-radius: 20px; /* Bordes más redondeados */
+    font-family: 'Arial', sans-serif; /* Tipo de letra más moderna */
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,12 +24,11 @@ documento {
     background-color: #fafafa;
     padding: 20px;
 }
-
 /* CONTENIDO */
 datos {
     background-image: url("imagenes/imagendni.png");
     background-size: cover; /* Ajusta la imagen para cubrir el área */
-    background-position: center; /* Centra la imagen */
+    background-position: 800px; /* Centra la imagen */
     border-radius: 20px; /* Bordes más redondeados */
     width: 80vw;
     max-width: 800px;
@@ -43,16 +45,16 @@ datos:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Efecto sombra más grande */
 }
 
-/* Títulos */
+/* DATOS */
 titulo {
-    font-size: 2.5em;
-    color: #2c3e50; /* Color oscuro para mejor contraste */
+    font-size: 2em;
+    color: #2c3e50; 
     text-align: center;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-/* Texto de los campos */
+
 nombre, dni, fechanacimiento, direccion, ciudad, sexo {
     font-size: 1.3em;
     color: #333;

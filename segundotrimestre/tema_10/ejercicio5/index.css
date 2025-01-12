@@ -1,0 +1,95 @@
+/* © Juan Galisteo | Todos los derechos reservados */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* PÁGINA PRINCIPAL */
+documento {
+    background-image: url("imagenes/fondo.jpg");
+    background-size: cover; /* Ajusta la imagen para cubrir el área */
+    background-position: center; /* Centra la imagen */
+    font-family: 'Arial', sans-serif; /* Tipo de letra más moderna */
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+/* CONTENIDO */
+datos {
+    background-image: url("imagenes/imagendni.png");
+    background-size: cover; /* Ajusta la imagen para cubrir el área */
+    background-position: 800px; /* Centra la imagen */
+    border-radius: 20px; /* Bordes más redondeados */
+    width: 80vw;
+    max-width: 800px;
+    height: auto;
+    padding: 30px;
+    font-size: 1.2em;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+datos:hover {
+    transform: scale(1.05); /* Efecto al pasar el cursor */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Efecto sombra más grande */
+}
+
+/* DATOS TARJETA */
+titulo {
+    font-size: 2em;
+    color: #ffffff; 
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+nombre, numero, validez, credito {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+/* DISEÑO DE LA IMAGEN */
+imagen {
+    width: 200px;
+    height: 225px;
+    margin: 10px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra sutil en la imagen */
+}
+
+
+/* IMAGEN DEL DNI */
+imagen[foto="fotodni"] {
+    background-image: url("imagenes/fototarjeta.png");
+}
+
+/*//////////////////////////////////////*/
+/* PIE DE PÁGINA */
+piepagina p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}

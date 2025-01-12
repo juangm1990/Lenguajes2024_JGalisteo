@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<!DOCTYPE documento [
+  <!ELEMENT documento (datos, piepagina)>
+  <!ELEMENT datos (titulo, imagen, resumen)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT imagen (#PCDATA)>
+  <!ELEMENT resumen (nombre, numero, validez, credito)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT numero (#PCDATA)>
+  <!ELEMENT validez (#PCDATA)>
+  <!ELEMENT credito (#PCDATA)>
+
+  <!-- Definición para el pie de página -->
+  <!ELEMENT piepagina (p)>
+  <!ELEMENT p (#PCDATA)>
+]>
+
+<documento>
+  <!-- DNI -->
+  <datos>
+    <titulo>Tarjeta de credito</titulo>
+    <imagen foto="fotodni"></imagen>
+    <resumen>
+      <nombre>Juan Bautista Galisteo Marqués</nombre>
+      <numero>1033 3691 1963 1247</numero>
+      <validez>Valido hasta: 12/25</validez>
+      <credito>Debit</credito>
+    </resumen>
+  </datos>
+
+  <!-- PIE DE PÁGINA -->
+  <piepagina>
+    <p>© Juan Galisteo | Trabajo de clase: Lenguajes de marcas - DAW</p>
+  </piepagina>
+</documento>
