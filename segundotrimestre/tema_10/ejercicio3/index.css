@@ -1,0 +1,101 @@
+/* © Juan Galisteo | Todos los derechos reservados */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* PÁGINA PRINCIPAL */
+menu {
+    background-image: url('imagenes/fondo.png'); 
+    background-size: cover;  /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen en el fondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+/* PRODUCTO */
+producto {
+    background-color: #ffffffda;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 20px;
+    width: 60%;
+    height: 800px; /* Ajusta esta propiedad para aumentar la altura */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+producto:hover {
+    transform: scale(1.02);
+}
+
+/* DETALLES PARA CADA PRODUCTO */
+
+producto nombre {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+producto descripcion {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+producto precio {
+    font-size: 1.3em;
+    color: #c23b22;
+    font-weight: bold;
+}
+
+producto imagen {
+    display: block;
+    width: 800px;
+    height: 650px;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 45px;
+    margin-left: auto;  /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+/* IMÁGENES */
+producto:nth-child(1) imagen {
+    background-image: url('imagenes/cesar.png');
+}
+
+producto:nth-child(2) imagen {
+    background-image: url('imagenes/pizza.png');
+}
+
+producto:nth-child(3) imagen {
+    background-image: url('imagenes/burger.png');
+}
+
+producto:nth-child(4) imagen {
+    background-image: url('imagenes/carbonara.png');
+}
+
+/*//////////////////////////////////////*/
+/* PIE DE PÁGINA */
+piepagina p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}

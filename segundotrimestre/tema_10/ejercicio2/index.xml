@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<!DOCTYPE movil [
+  <!ELEMENT movil (contacto+, piepagina)>
+  <!ELEMENT contacto (nombre, telefono, email, direccion)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT telefono (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT direccion (#PCDATA)>
+  
+  <!-- Definición para el pie de página -->
+  <!ELEMENT piepagina (p)>
+  <!ELEMENT p (#PCDATA)>
+]>
+
+<movil>
+  <!-- CONTACTO 1 -->
+  <contacto1>
+    <nombre>Juan Galisteo</nombre>
+    <telefono>+34 666 331 133</telefono>
+    <email>juangalisteomarques@gmail.com</email>
+    <direccion>Calle San Francisco de Sales 7, Córdoba</direccion>
+  </contacto1>
+
+  <!-- CONTACTO 2 -->
+  <contacto2>
+    <nombre>Juanma Casado</nombre>
+    <telefono>+34 633 666 999</telefono>
+    <email>juanmacasado@gmail.com</email>
+    <direccion>Calle sin nombre 123, Córdoba</direccion>
+  </contacto2>
+
+  <!-- CONTACTO 3 -->
+  <contacto1>
+    <nombre>Carlos Garcia</nombre>
+    <telefono>+34 733 121 131</telefono>
+    <email>carlosgarcia@gmail.com</email>
+    <direccion>Calle del Sol 33, Sevilla</direccion>
+  </contacto1>
+
+  <!-- CONTACTO 4 -->
+  <contacto2>
+    <nombre>Inmaculada Galisteo</nombre>
+    <telefono>+34 639 331 133</telefono>
+    <email>inmaculadagalisteo@gmail.com</email>
+    <direccion>Calle de la prosperidad 55, Córdoba</direccion>
+  </contacto2>
+
+  <!-- PIE DE PÁGINA -->
+  <piepagina>
+    <p>© Juan Galisteo | Trabajo de clase: XML para Agenda de Contactos - DAW</p>
+  </piepagina>
+</movil>
