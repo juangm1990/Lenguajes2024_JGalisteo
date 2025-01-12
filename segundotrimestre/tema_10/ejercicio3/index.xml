@@ -16,6 +16,7 @@
   <!ELEMENT p (#PCDATA)>
 ]>
 
+  <!-- MENÚ -->
 <menu>
     <producto>
         <nombre>Ensalada César</nombre>

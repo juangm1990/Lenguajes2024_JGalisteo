@@ -18,8 +18,9 @@
   <!ELEMENT p (#PCDATA)>
 ]>
 
+  <!-- BIBLIOTECA DE LIBROS -->
 <biblioteca>
-  <!-- GEOMETRÍA SAGRADA DE LA GRAN PIRÁMIDE -->
+  <!-- PRIMER LIBRO -->
   <libro paginas="250">
     <titulo>Geometría Sangrada de la Gran Pirámide</titulo>
     <portada foto="piramide"></portada>
@@ -33,7 +34,7 @@
     </resumen>
   </libro>
 
-  <!-- El Significado Universal de la Cábala -->
+  <!-- SEGUNDO LIBRO -->
   <libro paginas="300">
     <titulo>El Significado de la Cábala</titulo>
     <portada foto="kabbalah"></portada>
@@ -47,7 +48,7 @@
     </resumen>
   </libro>
 
-    <!-- Libro de la Sabiduría Vol. II -->
+  <!-- TERCER LIBRO -->
   <libro paginas="500">
     <titulo>Libro de la Sabiduría Vol. II</titulo>
     <portada foto="sabiduria"></portada>
@@ -59,7 +60,7 @@
     </resumen>
   </libro>
 
-  <!-- 1984 -->
+  <!-- CUARTO LIBRO -->
   <libro paginas="342">
     <titulo>1984</titulo>
     <portada foto="1984"></portada>

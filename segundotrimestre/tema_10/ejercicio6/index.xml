@@ -18,6 +18,7 @@
   <!ELEMENT p (#PCDATA)>
 ]>
 
+  <!-- COCHES -->
 <fichatecnica>
     <equipo>
         <nombre>Red Bull</nombre>

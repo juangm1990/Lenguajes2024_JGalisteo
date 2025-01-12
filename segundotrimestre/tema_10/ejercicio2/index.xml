@@ -16,6 +16,7 @@
   <!ELEMENT p (#PCDATA)>
 ]>
 
+  <!-- AGENDA -->
 <movil>
   <!-- CONTACTO 1 -->
   <contacto1>
