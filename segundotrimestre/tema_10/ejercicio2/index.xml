@@ -5,15 +5,15 @@
 
 <!DOCTYPE movil [
   <!ELEMENT movil (contacto+, piepagina)>
-  <!ELEMENT contacto (nombre, telefono, email, direccion)>
-  <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT telefono (#PCDATA)>
-  <!ELEMENT email (#PCDATA)>
-  <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT contacto (nombre, telefono, email, direccion)>
+      <!ELEMENT nombre (#PCDATA)>
+      <!ELEMENT telefono (#PCDATA)>
+      <!ELEMENT email (#PCDATA)>
+      <!ELEMENT direccion (#PCDATA)>
   
-  <!-- Definición para el pie de página -->
-  <!ELEMENT piepagina (p)>
-  <!ELEMENT p (#PCDATA)>
+    <!-- Definición para el pie de página -->
+    <!ELEMENT piepagina (p)>
+      <!ELEMENT p (#PCDATA)>
 ]>
 
   <!-- AGENDA -->
