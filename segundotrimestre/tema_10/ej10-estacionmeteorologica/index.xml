@@ -13,9 +13,10 @@
   <!ELEMENT presion (#PCDATA)>
   <!ELEMENT viento (#PCDATA)>
   <!ELEMENT lluvia (#PCDATA)>
-  <!ATTLIST lluvia unidad CDATA #REQUIERED>
 
-  <!-- DTD PIE DE PÁGINA -->
+   <!-- <!ATTLIST lluvia unidad CDATA #REQUIERED>  -->
+
+  
   <!ELEMENT piepagina (p)>
   <!ELEMENT p (#PCDATA)>
 ]>
