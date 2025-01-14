@@ -18,7 +18,7 @@ movil {
 }
 
 /* CONTACTO */
-contacto1 {
+contacto {
     background-color: #4CAF50; 
     border-radius: 10px; 
     opacity: 0.9;
@@ -33,28 +33,7 @@ contacto1 {
     margin-bottom: 10px; /* Espacio entre los elementos */
 }
 
-contacto1:hover {
-    transform: scale(1.05); /* Efecto  */
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Sombra al pasar el cursor */
-}
-
-
-contacto2 {
-    background-color: #ac8312; 
-    border-radius: 10px; 
-    opacity: 0.9;
-    width: 90%; 
-    max-width: 600px; /* Aumentado para hacer el recuadro más grande */
-    margin: 15px 0; 
-    padding: 40px; /* Aumentado para dar más espacio dentro del recuadro */
-    font-size: 1.3em; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Efecto */
-    display: block;
-    margin-bottom: 10px; /* Espacio entre los elementos */
-}
-
-contacto2:hover {
+contacto:hover {
     transform: scale(1.05); /* Efecto  */
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Sombra al pasar el cursor */
 }
