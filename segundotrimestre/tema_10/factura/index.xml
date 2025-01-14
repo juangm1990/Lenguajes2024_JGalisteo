@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE factura [
+  <!ELEMENT factura (datosemisor, datoscliente, detallefactura, importe)>
+  <!ELEMENT datosemisor (nombre, cif, direccion, telefono, correo, horario)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT cif (#PCDATA)>
+  <!ELEMENT direccion (#PCDATA)>
+  <!ELEMENT telefono (#PCDATA)>
+  <!ELEMENT correo (#PCDATA)>
+  <!ELEMENT horario (lunes, martes, miercoles, jueves, viernes, sabado, domingo)>
+  <!ELEMENT lunes (#PCDATA)>
+  <!ELEMENT martes (#PCDATA)>
+  <!ELEMENT miercoles (#PCDATA)>
+  <!ELEMENT jueves (#PCDATA)>
+  <!ELEMENT viernes (#PCDATA)>
+  <!ELEMENT sabado (#PCDATA)>
+  <!ELEMENT domingo (#PCDATA)>
+  <!ELEMENT datoscliente (nombre, cif, telefono)>
+  <!ELEMENT detallefactura (articulo+)>
+  <!ELEMENT articulo (codigoarticulo, tipo, descripcion, cantidad, oferta, pvp)>
+  <!ELEMENT codigoarticulo (#PCDATA)>
+  <!ELEMENT tipo (#PCDATA)>
+  <!ELEMENT descripcion (#PCDATA)>
+  <!ELEMENT cantidad (#PCDATA)>
+  <!ELEMENT oferta (#PCDATA)>
+  <!ELEMENT pvp (#PCDATA)>
+  <!ELEMENT importe (#PCDATA)>
+
+  <!-- DTD PIE DE PÁGINA -->
+  <!ELEMENT piepagina (p)>
+  <!ELEMENT p (#PCDATA)>
+]>
+
+<factura>
+    <!-- Datos del emisor -->
+    <datosemisor>
+        <nombre>Librería Luque</nombre>
+        <cif>B14874697</cif>
+        <direccion>Calle Fray Luis de Granada, 11, 14008 Córdoba</direccion>
+        <telefono>+34 957 49 83 33</telefono>
+        <correo>librerialuque@librerialuque.es</correo>
+        <horario>
+            <lunes>09:45 a 13:30 / 17:00 a 20:30</lunes>
+            <martes>09:45 a 13:30 / 17:00 a 20:30</martes>
+            <miercoles>09:45 a 13:30 / 17:00 a 20:30</miercoles>
+            <jueves>09:45 a 13:30 / 17:00 a 20:30</jueves>
+            <viernes>09:45 a 13:30 / 17:00 a 20:30</viernes>
+            <sabado>10:00 a 13:45 / Tardes cerrado</sabado>
+            <domingo>Cerrado</domingo>
+        </horario>
+    </datosemisor>
+
+    <!-- DATOS CLIENTE -->
+    <datoscliente>
+        <nombre>Juan Galisteo</nombre>
+        <cif>333111222A</cif>
+        <telefono>+34 666 333 999</telefono>
+    </datoscliente>
+
+    <!-- FACTURA -->
+    <detallefactura>
+        <articulo>
+            <codigoarticulo>AVT</codigoarticulo>
+            <tipo>Libro</tipo>
+            <descripcion>Geometría Sagrada de la Gran Pirámide</descripcion>
+            <cantidad>1</cantidad>
+            <oferta>SI</oferta>
+            <pvp>33€</pvp>
+        </articulo>
+        <articulo>
+            <codigoarticulo>CP5</codigoarticulo>
+            <tipo>Curso</tipo>
+            <descripcion>Curso de Numerología y Metafísica</descripcion>
+            <cantidad>1</cantidad>
+            <oferta>NO</oferta>
+            <pvp>369€</pvp>
+        </articulo>
+    </detallefactura>
+
+    <!-- IMPORTE TOTAL -->
+    <importe>402€</importe>
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</factura>
