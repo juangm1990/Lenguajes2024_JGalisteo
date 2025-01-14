@@ -13,7 +13,7 @@
   <!ATTLIST libro paginas CDATA #REQUIRED>
   <!ATTLIST portada foto CDATA #REQUIRED>
 
-  <!-- Definición para el pie de página -->
+  <!-- DTD PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>
   <!ELEMENT p (#PCDATA)>
 ]>

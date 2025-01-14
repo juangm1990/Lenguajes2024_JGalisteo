@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<!DOCTYPE estacionmeteorologica [
+  <!ELEMENT estacionMeteorologica (ubicacion, fecha, hora, temperatura, humedad, presion, viento, lluvia)>
+  
+  <!-- DTD ESTACIÓN METEOROLÓGICA -->
+  <!ELEMENT ubicacion (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT hora (#PCDATA)>
+  <!ELEMENT temperatura (#PCDATA)>
+  <!ELEMENT humedad (#PCDATA)>
+  <!ELEMENT presion (#PCDATA)>
+  <!ELEMENT viento (#PCDATA)>
+  <!ELEMENT lluvia (#PCDATA)>
+
+  <!-- DTD PIE DE PÁGINA -->
+  <!ELEMENT piepagina (p)>
+  <!ELEMENT p (#PCDATA)>
+]>
+
+<estacionmeteorologica>
+    <ubicacion>Córdoba, España</ubicacion>
+    <fecha>2025-01-14</fecha>
+    <hora>18:33</hora>
+    <temperatura>33.5°C</temperatura>
+    <humedad>65%</humedad>
+    <presion>1015 hPa</presion>
+    <viento>33 km/h</viento>
+    <lluvia>0 mm</lluvia>
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</estacionmeteorologica>

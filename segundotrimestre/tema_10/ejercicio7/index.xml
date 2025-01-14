@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<!DOCTYPE configuracion [
+  <!ELEMENT configuracion (informaciongeneral, basedatos, usuario, parametrosaplicacion)>
+  
+  <!-- DTD APLICACIÓN -->
+  <!ELEMENT informaciongeneral (nombre, version, autor)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT version (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  
+  <!-- DTD BASE DE DATOS -->
+  <!ELEMENT basedatos (host, puerto, usuario, password, nombrebasedatos)>
+  <!ELEMENT host (#PCDATA)>
+  <!ELEMENT puerto (#PCDATA)>
+  <!ELEMENT usuario (#PCDATA)>
+  <!ELEMENT password (#PCDATA)>
+  <!ELEMENT nombrebasedatos (#PCDATA)>
+  
+  <!-- DTD USUARIO -->
+  <!ELEMENT usuario (tema, idioma, preferencias)>
+  <!ELEMENT tema (#PCDATA)>
+  <!ELEMENT idioma (#PCDATA)>
+  <!ELEMENT preferencias (#PCDATA)>
+  
+  <!-- DTD PARÁMETROS DE LA APLICACIÓN -->
+  <!ELEMENT parametrosaplicacion (parametro+)>
+  <!ELEMENT parametro (nombre, valor)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT valor (#PCDATA)>
+
+  <!-- DTD PIE DE PÁGINA -->
+  <!ELEMENT piepagina (p)>
+  <!ELEMENT p (#PCDATA)>
+]>
+
+<configuracion>
+    <!-- APLICACIÓN -->
+    <informaciongeneral>
+        <nombre>Educación ¡Mola!</nombre>
+        <version>1.0.0</version>
+        <autor>Juan Galisteo</autor>
+    </informaciongeneral>
+    <!-- BASE DE DATOS -->
+    <basedatos>
+        <host>localhost</host>
+        <puerto>5432</puerto>
+        <usuario>admin</usuario>
+        <password>1234</password>
+        <nombrebasedatos>educacionmola_bd</nombrebasedatos>
+    </basedatos>
+    <!-- USUARIO -->
+    <usuario>
+        <tema>Oscuro</tema>
+        <idioma>Es</idioma>
+        <preferencias>Notificaciones</preferencias>
+    </usuario>
+    <!-- PARÁMETROS DE LA APLICACIÓN -->
+    <parametrosaplicacion>
+        <parametro>
+            <nombre>Máximo de conexiones</nombre>
+            <valor>100</valor>
+        </parametro>
+        <parametro>
+            <nombre>Tiempo de inactividad</nombre>
+            <valor>300</valor>
+        </parametro>
+        <parametro>
+            <nombre>Login</nombre>
+            <valor>true</valor>
+        </parametro>
+    </parametrosaplicacion>
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</configuracion>
+

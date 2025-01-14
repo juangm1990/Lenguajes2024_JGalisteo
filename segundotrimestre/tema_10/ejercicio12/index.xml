@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<!DOCTYPE gestionescolar [
+  <!ELEMENT gestionescolar (alumno+, curso+, profesor+, calificacion+)>
+
+  <!-- DTD ALUMNO -->
+  <!ELEMENT alumno (nombre, apellido, dni, fechaNacimiento, correo, telefono)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT apellido (#PCDATA)>
+  <!ELEMENT dni (#PCDATA)>
+  <!ELEMENT fechanacimiento (#PCDATA)>
+  <!ELEMENT correo (#PCDATA)>
+  <!ELEMENT telefono (#PCDATA)>
+
+  <!-- DTD CURSO -->
+  <!ELEMENT curso (codigo, nombre, profesor, estudiantes)>
+  <!ELEMENT codigo (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT profesor (#PCDATA)>
+  <!ELEMENT estudiantes (estudiante+)>
+
+  <!-- DTD PROFESOR -->
+  <!ELEMENT profesor (nombre, apellido, dni, asignaturas)>
+  <!ELEMENT asignaturas (asignatura+)>
+  <!ELEMENT asignatura (#PCDATA)>
+
+  <!-- DTD CALIFICACIONES -->
+  <!ELEMENT calificacion (alumno, curso, nota)>
+  <!ELEMENT alumno (#PCDATA)>
+  <!ELEMENT curso (#PCDATA)>
+  <!ELEMENT nota (#PCDATA)>
+  
+  <!-- DTD PIE DE PÁGINA -->
+  <!ELEMENT piepagina (p)>
+  <!ELEMENT p (#PCDATA)>
+]>
+
+<gestionescolar>
+    <!-- ALUMNOS -->
+    <alumno>
+        <nombre>Santiago</nombre>
+        <apellido>Torrents</apellido>
+        <dni>33344455A</dni>
+        <fechanacimiento>2002-05-11</fechanacimiento>
+        <correo>santiagotorrents@gmail.com</correo>
+        <telefono>600111222</telefono>
+    </alumno>
+    <alumno>
+        <nombre>Rafael</nombre>
+        <apellido>de la Fuente</apellido>
+        <dni>44455566B</dni>
+        <fechanacimiento>2002-06-03</fechanacimiento>
+        <correo>rafaeldelafuente@gmail.com</correo>
+        <telefono>600654321</telefono>
+    </alumno>
+
+    <!-- CURSOS -->
+    <curso>
+        <codigo>EDUCACIÓN-101</codigo>
+        <nombre>Matemática</nombre>
+        <profesor>Juan Galisteo</profesor>
+        <estudiantes>
+            <estudiante>Santiago Torrents</estudiante>
+            <estudiante>Rafael de la Fuentes</estudiante>
+        </estudiantes>
+    </curso>
+
+    <!-- PROFESOR -->
+    <profesor>
+        <nombre>Juan</nombre>
+        <apellido>Galisteo</apellido>
+        <dni>12345678A</dni>
+        <asignaturas>
+            <asignatura>Educación emocional</asignatura>
+        </asignaturas>
+    </profesor>
+
+    <!-- CALIFICACIÓN -->
+    <calificacion>
+        <alumno>Santiago</alumno>
+        <curso>EDUCACIÓN-101</curso>
+        <nota>9.6</nota>
+    </calificacion>
+    <calificacion>
+        <alumno>Rafael</alumno>
+        <curso>EDUCACIÓN-101</curso>
+        <nota>9.8</nota>
+    </calificacion>
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</gestionescolar>

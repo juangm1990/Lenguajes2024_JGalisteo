@@ -14,7 +14,7 @@
   <!ELEMENT validez (#PCDATA)>
   <!ELEMENT credito (#PCDATA)>
 
-  <!-- Definición para el pie de página -->
+  <!-- DTD PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>
   <!ELEMENT p (#PCDATA)>
 ]>

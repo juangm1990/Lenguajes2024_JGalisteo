@@ -11,7 +11,7 @@
   <!ELEMENT precio (#PCDATA)>
   <!ELEMENT imagen (#PCDATA)>
   
-  <!-- Definición para el pie de página -->
+  <!-- DTD PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>
   <!ELEMENT p (#PCDATA)>
 ]>
