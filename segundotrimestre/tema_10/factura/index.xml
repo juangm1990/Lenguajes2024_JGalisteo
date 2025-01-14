@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
 <!DOCTYPE factura [
   <!ELEMENT factura (datosemisor, datoscliente, detallefactura, importe)>
   <!ELEMENT datosemisor (nombre, cif, direccion, telefono, correo, horario)>
