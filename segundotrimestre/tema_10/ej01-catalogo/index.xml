@@ -6,10 +6,10 @@
 <!DOCTYPE biblioteca [
   <!ELEMENT biblioteca (libro+, piepagina)>
   <!ELEMENT libro (titulo, portada, autor, resumen)>
-  <!ELEMENT titulo (#PCDATA)>
-  <!ELEMENT portada (#PCDATA)>
-  <!ELEMENT autor (#PCDATA)>
-  <!ELEMENT resumen (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT portada (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT resumen (#PCDATA)>
   <!ATTLIST libro paginas CDATA #REQUIRED>
   <!ATTLIST portada foto CDATA #REQUIRED>
 

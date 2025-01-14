@@ -13,6 +13,7 @@
   <!ELEMENT presion (#PCDATA)>
   <!ELEMENT viento (#PCDATA)>
   <!ELEMENT lluvia (#PCDATA)>
+  <!ATTLIST lluvia unidad CDATA #REQUIERED>
 
   <!-- DTD PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>
@@ -23,11 +24,11 @@
     <ubicacion>Córdoba, España</ubicacion>
     <fecha>2025-01-14</fecha>
     <hora>18:33</hora>
-    <temperatura>33.5°C</temperatura>
-    <humedad>65%</humedad>
-    <presion>1015 hPa</presion>
-    <viento>33 km/h</viento>
-    <lluvia>0 mm</lluvia>
+    <temperatura unidad = "33.5° C"></temperatura>
+    <humedad unidad = "65%"></humedad>
+    <presion unidad = "1015 hPa"></presion>
+    <viento unidad = "33 km/h"></viento>
+    <lluvia unidad = "0 mm"></lluvia>
 
     <!-- PIE DE PÁGINA -->
     <piepagina>

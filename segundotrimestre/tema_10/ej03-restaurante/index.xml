@@ -5,15 +5,15 @@
 
 <!DOCTYPE menu [
   <!ELEMENT menu (producto+)>
-  <!ELEMENT producto (nombre, descripcion, precio, imagen)>
-  <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT descripcion (#PCDATA)>
-  <!ELEMENT precio (#PCDATA)>
-  <!ELEMENT imagen (#PCDATA)>
+    <!ELEMENT producto (nombre+, descripcion+, precio+, imagen+)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ELEMENT imagen (#PCDATA)>            
   
-  <!-- DTD PIE DE PÁGINA -->
-  <!ELEMENT piepagina (p)>
-  <!ELEMENT p (#PCDATA)>
+    <!-- DTD PIE DE PÁGINA -->
+    <!ELEMENT piepagina (p)>
+        <!ELEMENT p (#PCDATA)>
 ]>
 
   <!-- MENÚ -->
@@ -48,5 +48,3 @@
         <p>© Juan Galisteo | Trabajo de clase: Lenguajes de marcas - DAW</p>
     </piepagina>
 </menu>
-
-
