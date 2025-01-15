@@ -4,12 +4,13 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE menu [
-  <!ELEMENT menu (producto+)>
+  <!ELEMENT menu (producto+, piedepagina)>
     <!ELEMENT producto (nombre+, descripcion+, precio+, imagen+)>
         <!ELEMENT nombre (#PCDATA)>
         <!ELEMENT descripcion (#PCDATA)>
         <!ELEMENT precio (#PCDATA)>
-        <!ELEMENT imagen (#PCDATA)>            
+        <!ELEMENT imagen (#PCDATA)> 
+    <!ATTLIST imagen foto CDATA #REQUIRED>      
   
     <!-- DTD PIE DE PÁGINA -->
     <!ELEMENT piepagina (p)>
