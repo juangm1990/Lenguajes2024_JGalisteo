@@ -2,7 +2,7 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE configuracion [
-  <!ELEMENT configuracion (informaciongeneral, basedatos, usuario, parametrosaplicacion)>
+  <!ELEMENT configuracion (informaciongeneral+, basedatos+, usuario+, parametrosaplicacion+)>
   
   <!-- DTD APLICACIÓN -->
   <!ELEMENT informaciongeneral (nombre, version, autor)>
@@ -27,7 +27,7 @@
   <!-- DTD PARÁMETROS DE LA APLICACIÓN -->
   <!ELEMENT parametrosaplicacion (parametro+)>
   <!ELEMENT parametro (nombre, valor)>
-  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT nombre+ (#PCDATA)>
   <!ELEMENT valor (#PCDATA)>
 
   <!-- DTD PIE DE PÁGINA -->
@@ -77,4 +77,3 @@
         <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
     </piepagina>
 </configuracion>
-

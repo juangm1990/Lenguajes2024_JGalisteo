@@ -4,7 +4,7 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE menu [
-  <!ELEMENT menu (producto+, piedepagina)>
+  <!ELEMENT menu (producto+, piepagina)>
     <!ELEMENT producto (nombre+, descripcion+, precio+, imagen+)>
         <!ELEMENT nombre (#PCDATA)>
         <!ELEMENT descripcion (#PCDATA)>

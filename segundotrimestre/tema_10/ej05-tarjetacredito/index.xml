@@ -8,6 +8,7 @@
   <!ELEMENT datos (titulo, imagen, resumen)>
   <!ELEMENT titulo (#PCDATA)>
   <!ELEMENT imagen (#PCDATA)>
+  <!ATTLIST imagen foto CDATA #REQUIRED>
   <!ELEMENT resumen (nombre, numero, validez, credito)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT numero (#PCDATA)>

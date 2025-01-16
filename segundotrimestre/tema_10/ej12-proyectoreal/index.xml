@@ -2,10 +2,10 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE gestionescolar [
-  <!ELEMENT gestionescolar (alumno+, curso+, profesor+, calificacion+)>
+  <!ELEMENT gestionescolar (alumno+, curso+, profesor+, calificacion+, piepagina)>
 
   <!-- DTD ALUMNO -->
-  <!ELEMENT alumno (nombre, apellido, dni, fechaNacimiento, correo, telefono)>
+  <!ELEMENT alumno (nombre+, apellido, dni, fechaNacimiento, correo, telefono)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT apellido (#PCDATA)>
   <!ELEMENT dni (#PCDATA)>
@@ -16,12 +16,11 @@
   <!-- DTD CURSO -->
   <!ELEMENT curso (codigo, nombre, profesor, estudiantes)>
   <!ELEMENT codigo (#PCDATA)>
-  <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT profesor (#PCDATA)>
   <!ELEMENT estudiantes (estudiante+)>
 
   <!-- DTD PROFESOR -->
-  <!ELEMENT profesor (nombre, apellido, dni, asignaturas)>
+  <!ELEMENT profesor (nombre, apellido, dni, asignaturas+)>
   <!ELEMENT asignaturas (asignatura+)>
   <!ELEMENT asignatura (#PCDATA)>
 
@@ -58,7 +57,7 @@
     <!-- CURSOS -->
     <curso>
         <codigo>EDUCACIÓN-101</codigo>
-        <nombre>Matemática</nombre>
+        <nombxvbbxCVzre>Matemática</nombre>
         <profesor>Juan Galisteo</profesor>
         <estudiantes>
             <estudiante>Santiago Torrents</estudiante>

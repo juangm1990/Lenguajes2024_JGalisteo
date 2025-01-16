@@ -8,6 +8,7 @@
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT numeroPokedex (#PCDATA)>
   <!ELEMENT imagen (#PCDATA)>
+  
   <!ELEMENT descripcion (#PCDATA)>
   <!ELEMENT tipo (#PCDATA)>
   <!ELEMENT genero (#PCDATA)>
