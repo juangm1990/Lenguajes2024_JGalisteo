@@ -3,18 +3,20 @@
 
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
+
 <!DOCTYPE documento [
   <!ELEMENT documento (datos, piepagina)>
-  <!ELEMENT datos (nombre, imagen, dni, resumen)>
+  <!ELEMENT datos (titulo, resumen)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT resumen (nombre, sexo, fechanacimiento, direccion, ciudad)>
   <!ELEMENT nombre (#PCDATA)>
-  <!ELEMENT imagen (#PCDATA)>
   <!ELEMENT dni (#PCDATA)>
-  <!ELEMENT resumen (nombre, dni, fechanacimiento, direccion, ciudad, sexo)>
   <!ELEMENT fechanacimiento (#PCDATA)>
   <!ELEMENT direccion (#PCDATA)>
   <!ELEMENT ciudad (#PCDATA)>
-  <!ELEMENT validez (#PCDATA)>
   <!ELEMENT sexo (#PCDATA)>
+  <!ELEMENT imagen (#PCDATA)>
+  <!ATTLIST imagen foto CDATA #REQUIRED>
 
   <!-- DTD PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>

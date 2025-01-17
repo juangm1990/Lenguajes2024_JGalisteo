@@ -3,7 +3,11 @@
 
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 <!DOCTYPE menu [
+<<<<<<< HEAD
     <!ELEMENT menu (producto+, piepagina)>
+=======
+  <!ELEMENT menu (producto+, piepagina)>
+>>>>>>> 9245dd0e9802c31df5aa417b8a17ce561d7fd607
     <!ELEMENT producto (nombre+, descripcion+, precio+, imagen+)>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT descripcion (#PCDATA)>

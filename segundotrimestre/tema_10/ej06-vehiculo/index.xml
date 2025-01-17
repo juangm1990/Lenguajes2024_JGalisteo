@@ -12,6 +12,7 @@
   <!ELEMENT fecha (#PCDATA)>
   <!ELEMENT potencia (#PCDATA)>
   <!ELEMENT imagen (#PCDATA)>
+  <!ATTLIST imagen foto CDATA #REQUIRED>
 
   <!-- DTD PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>

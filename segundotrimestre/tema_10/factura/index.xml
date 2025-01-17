@@ -2,7 +2,7 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE factura [
-  <!ELEMENT factura (datosemisor, datoscliente, detallefactura, importe)>
+  <!ELEMENT factura (datosemisor, datoscliente, detallefactura, importe, piepagina)>
   <!ELEMENT datosemisor (nombre, cif, direccion, telefono, correo, horario)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT cif (#PCDATA)>

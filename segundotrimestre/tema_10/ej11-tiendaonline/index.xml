@@ -3,7 +3,7 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE tiendaonline [
-  <!ELEMENT tiendaOnline (producto+)>
+  <!ELEMENT tiendaOnline (producto+, piepagina)>
 
   <!-- DTD PRODUCTO -->
   <!ELEMENT producto (nombre, descripcion, categoria, precio, stock)>
