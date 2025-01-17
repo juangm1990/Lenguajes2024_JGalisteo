@@ -4,7 +4,7 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE fichatecnica [
-  <!ELEMENT fichatecnica (equipo+)>
+  <!ELEMENT fichatecnica (equipo+, piepagina)>
   <!ELEMENT equipo (nombre, modelo, piloto, fecha, potencia, imagen)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT modelo (#PCDATA)>

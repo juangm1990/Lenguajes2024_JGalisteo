@@ -2,18 +2,18 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE gestionnotas [
-  <!ELEMENT gestionNotas (alumno+)>
+  <!ELEMENT gestionNotas (alumno)>
 
   <!-- DTD ALUMNO -->
-  <!ELEMENT alumno (nombre, apellidos, curso, asignaturas)>
+  <!ELEMENT alumno (nombre, apellidos, curso, asignaturas+)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT apellidos (#PCDATA)>
   <!ELEMENT curso (#PCDATA)>
   <!ELEMENT asignaturas (asignatura+)>
 
   <!-- DTD ASIGNATURA -->
-  <!ELEMENT asignatura (nombre, trimestre1, trimestre2, trimestre3)>
-  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT asignatura (titulo, trimestre1, trimestre2, trimestre3)>
+  <!ELEMENT titulo (#PCDATA)>
   <!ELEMENT trimestre1 (#PCDATA)>
   <!ELEMENT trimestre2 (#PCDATA)>
   <!ELEMENT trimestre3 (#PCDATA)>

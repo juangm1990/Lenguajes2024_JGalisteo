@@ -6,9 +6,9 @@
 
 <!DOCTYPE documento [
   <!ELEMENT documento (datos, piepagina)>
-  <!ELEMENT datos (titulo, resumen)>
+  <!ELEMENT datos (titulo, imagen, resumen)>
   <!ELEMENT titulo (#PCDATA)>
-  <!ELEMENT resumen (nombre, sexo, fechanacimiento, direccion, ciudad)>
+  <!ELEMENT resumen (nombre, sexo, fechanacimiento, direccion, ciudad, dni)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT dni (#PCDATA)>
   <!ELEMENT fechanacimiento (#PCDATA)>
