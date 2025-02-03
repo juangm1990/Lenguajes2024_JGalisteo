@@ -2,7 +2,7 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE configuracion [
-  <!ELEMENT configuracion (informaciongeneral, basedatos, usuario+, aplicacionparametros, piepagina)>
+  <!ELEMENT configuracion (informaciongeneral, basedatos, usuarios, aplicacionparametros, piepagina)> 
   
   <!-- DTD APLICACIÓN -->
   <!ELEMENT informaciongeneral (nombre, version, autor)>
@@ -18,15 +18,15 @@
   <!ELEMENT password (#PCDATA)>
   <!ELEMENT nombrebasedatos (#PCDATA)>
   
-  <!-- DTD USUARIO -->
+  <!-- DTD USUARIOS -->
   <!ELEMENT usuarios (tema, idioma, preferencias)>
   <!ELEMENT tema (#PCDATA)>
   <!ELEMENT idioma (#PCDATA)>
   <!ELEMENT preferencias (#PCDATA)>
-  
+
   <!-- DTD PARÁMETROS DE LA APLICACIÓN -->
-  <!ELEMENT aplicacionparametros (parametro+)>
-  <!ELEMENT parametro (titulo+, valor+)>
+  <!ELEMENT aplicacionparametros (parametro+)>  <!-- Un conjunto de parámetros -->
+  <!ELEMENT parametro (titulo, valor)>  <!-- Solo debe haber un título y un valor por parámetro -->
   <!ELEMENT titulo (#PCDATA)>
   <!ELEMENT valor (#PCDATA)>
 
@@ -42,6 +42,7 @@
         <version>1.0.0</version>
         <autor>Juan Galisteo</autor>
     </informaciongeneral>
+
     <!-- BASE DE DATOS -->
     <basedatos>
         <host>localhost</host>
@@ -50,24 +51,26 @@
         <password>1234</password>
         <nombrebasedatos>educacionmola_bd</nombrebasedatos>
     </basedatos>
+
     <!-- USUARIO -->
     <usuarios>
         <tema>Oscuro</tema>
         <idioma>Es</idioma>
         <preferencias>Notificaciones</preferencias>
     </usuarios>
+
     <!-- PARÁMETROS DE LA APLICACIÓN -->
     <aplicacionparametros>
         <parametro>
-            <nombre>Máximo de conexiones</nombre>
+            <titulo>Máximo de conexiones</titulo>  <!-- Corregido: antes estaba como <nombre> -->
             <valor>100</valor>
         </parametro>
         <parametro>
-            <nombre>Tiempo de inactividad</nombre>
+            <titulo>Tiempo de inactividad</titulo> <!-- Corregido: antes estaba como <nombre> -->
             <valor>300</valor>
         </parametro>
         <parametro>
-            <nombre>Login</nombre>
+            <titulo>Login</titulo>  <!-- Corregido: antes estaba como <nombre> -->
             <valor>true</valor>
         </parametro>
     </aplicacionparametros>

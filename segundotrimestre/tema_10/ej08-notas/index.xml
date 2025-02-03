@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
-<!DOCTYPE gestionnotas [
-  <!ELEMENT gestionNotas (alumno)>
+<!DOCTYPE gestionNotas [
+  <!ELEMENT gestionNotas (alumno, piepagina)> 
 
   <!-- DTD ALUMNO -->
-  <!ELEMENT alumno (nombre, apellidos, curso, asignaturas+)>
+  <!ELEMENT alumno (nombre, apellidos, curso, asignatura+)> 
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT apellidos (#PCDATA)>
   <!ELEMENT curso (#PCDATA)>
-  <!ELEMENT asignaturas (asignatura+)>
-
+  
   <!-- DTD ASIGNATURA -->
-  <!ELEMENT asignatura (titulo, trimestre1, trimestre2, trimestre3)>
-  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT asignatura (titulo, trimestre1, trimestre2, trimestre3)> 
+  <!ELEMENT titulo (#PCDATA)> 
   <!ELEMENT trimestre1 (#PCDATA)>
   <!ELEMENT trimestre2 (#PCDATA)>
   <!ELEMENT trimestre3 (#PCDATA)>
@@ -23,65 +22,63 @@
   <!ELEMENT p (#PCDATA)>
 ]>
 
-<gestionnotas>
+<gestionNotas>
     <alumno>
         <nombre>Juan</nombre>
         <apellidos>Galisteo</apellidos>
         <curso>1º DAW</curso>
-        <asignaturas>
-            <asignatura>
-                <nombre>Programación</nombre>
-                <trimestre1>3.0</trimestre1>
-                <trimestre2>5.0</trimestre2>
-                <trimestre3>5.7</trimestre3>
-            </asignatura>
-            <asignatura>
-                <nombre>Base de Datos</nombre>
-                <trimestre1>7.5</trimestre1>
-                <trimestre2>8.0</trimestre2>
-                <trimestre3>7.8</trimestre3>
-            </asignatura>
-            <asignatura>
-                <nombre>Entornos de Desarrollo</nombre>
-                <trimestre1>9.2</trimestre1>
-                <trimestre2>9.3</trimestre2>
-                <trimestre3>9.0</trimestre3>
-            </asignatura>
-            <asignatura>
-                <nombre>Sistemas</nombre>
-                <trimestre1>8.0</trimestre1>
-                <trimestre2>9.6</trimestre2>
-                <trimestre3>9.7</trimestre3>
-            </asignatura>
-            <asignatura>
-                <nombre>Lenguajes</nombre>
-                <trimestre1>9.0</trimestre1>
-                <trimestre2>9.5</trimestre2>
-                <trimestre3>9.3</trimestre3>
-            </asignatura>
-            <asignatura>
-                <nombre>Fol</nombre>
-                <trimestre1>9.0</trimestre1>
-                <trimestre2>9.2</trimestre2>
-                <trimestre3>9.1</trimestre3>
-            </asignatura>
-            <asignatura>
-                <nombre>Digitalización</nombre>
-                <trimestre1>8.4</trimestre1>
-                <trimestre2>8.6</trimestre2>
-                <trimestre3>8.9</trimestre3>
-            </asignatura>
-            <asignatura>
-                <nombre>Sostenibilidad</nombre>
-                <trimestre1>9.3</trimestre1>
-                <trimestre2>9.6</trimestre2>
-                <trimestre3>9.9</trimestre3>
-            </asignatura>             
-        </asignaturas>
+        <asignatura>
+            <titulo>Programación</titulo>
+            <trimestre1>3.0</trimestre1>
+            <trimestre2>5.0</trimestre2>
+            <trimestre3>5.7</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Base de Datos</titulo>
+            <trimestre1>7.5</trimestre1>
+            <trimestre2>8.0</trimestre2>
+            <trimestre3>7.8</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Entornos de Desarrollo</titulo>
+            <trimestre1>9.2</trimestre1>
+            <trimestre2>9.3</trimestre2>
+            <trimestre3>9.0</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Sistemas</titulo>
+            <trimestre1>8.0</trimestre1>
+            <trimestre2>9.6</trimestre2>
+            <trimestre3>9.7</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Lenguajes</titulo>
+            <trimestre1>9.0</trimestre1>
+            <trimestre2>9.5</trimestre2>
+            <trimestre3>9.3</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Fol</titulo>
+            <trimestre1>9.0</trimestre1>
+            <trimestre2>9.2</trimestre2>
+            <trimestre3>9.1</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Digitalización</titulo>
+            <trimestre1>8.4</trimestre1>
+            <trimestre2>8.6</trimestre2>
+            <trimestre3>8.9</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Sostenibilidad</titulo>
+            <trimestre1>9.3</trimestre1>
+            <trimestre2>9.6</trimestre2>
+            <trimestre3>9.9</trimestre3>
+        </asignatura>             
     </alumno>
 
     <!-- PIE DE PÁGINA -->
     <piepagina>
         <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
     </piepagina>
-</gestionnotas>
+</gestionNotas>

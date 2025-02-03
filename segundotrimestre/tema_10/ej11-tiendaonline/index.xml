@@ -2,15 +2,16 @@
 
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
-<!DOCTYPE tiendaonline [
-  <!ELEMENT tiendaOnline (producto+, piepagina)>
+<!DOCTYPE tiendaOnline [
+  <!ELEMENT tiendaOnline (producto+, piepagina)>  
 
   <!-- DTD PRODUCTO -->
   <!ELEMENT producto (nombre, descripcion, categoria, precio, stock)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT descripcion (#PCDATA)>
   <!ELEMENT categoria (#PCDATA)>
-  <!ELEMENT precio (#PCDATA)>
+  <!ELEMENT precio (#PCDATA)>  
+  <!ATTLIST precio moneda CDATA #REQUIRED> 
   <!ELEMENT stock (#PCDATA)>
 
   <!-- DTD PIE DE PÁGINA -->
@@ -18,33 +19,34 @@
   <!ELEMENT p (#PCDATA)>
 ]>
 
-<tiendaonline>
+<tiendaOnline>  
+
     <producto>
         <nombre>iPhone 15 Pro</nombre>
         <descripcion>Smartphone de última generación con chip A17 Pro, cámara de 48 MP y pantalla Super Retina XDR.</descripcion>
         <categoria>Electrónica</categoria>
-        <precio>1199.99 EUR</precio>
+        <precio moneda="EUR">1199.99</precio>
         <stock>85</stock>
     </producto>
     <producto>
         <nombre>MacBook Air M2</nombre>
         <descripcion>Portátil ultradelgado con chip M2, pantalla Retina de 13.6 pulgadas y hasta 18 horas de autonomía.</descripcion>
         <categoria>Electrónica</categoria>
-        <precio>1499.99 EUR</precio>
+        <precio moneda="EUR">1499.99</precio>
         <stock>45</stock>
     </producto>
     <producto>
         <nombre>Ordenador Gaming MSI GE76 Raider</nombre>
         <descripcion>Portátil gaming con pantalla 17.3" 4K, procesador Intel Core i9, tarjeta gráfica NVIDIA RTX 3080, y 32 GB de RAM.</descripcion>
         <categoria>Videojuegos</categoria>
-        <precio>2399.99 EUR</precio>
+        <precio moneda="EUR">2399.99</precio>
         <stock>30</stock>
     </producto>
     <producto>
         <nombre>Alfombrilla Gaming Razer Goliathus Extended Chroma</nombre>
         <descripcion>Alfombrilla gaming con retroiluminación RGB personalizable, superficie de tela suave para mayor precisión.</descripcion>
         <categoria>Accesorios</categoria>
-        <precio>59.99 EUR</precio>
+        <precio moneda="EUR">59.99</precio>
         <stock>120</stock>
     </producto>
 
@@ -52,4 +54,4 @@
     <piepagina>
         <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
     </piepagina>
-</tiendaonline>
+</tiendaOnline>

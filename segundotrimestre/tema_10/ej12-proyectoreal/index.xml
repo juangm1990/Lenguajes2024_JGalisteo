@@ -1,94 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
-<!DOCTYPE gestionescolar [
-  <!ELEMENT gestionescolar (alumno+, curso+, profesor+, calificacion+, piepagina)>
+<!DOCTYPE colegio [
+  <!ELEMENT colegio (estudiante+, profesor+, curso+, piepagina)>
 
-  <!-- DTD ALUMNO -->
-  <!ELEMENT alumno (nombre+, apellido, dni, fechaNacimiento, correo, telefono)>
+  <!-- ESTUDIANTE -->
+  <!ELEMENT estudiante (nombre, apellido, fechaNacimiento, direccion, telefono)>
+  <!ATTLIST estudiante id CDATA #REQUIRED>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT apellido (#PCDATA)>
-  <!ELEMENT dni (#PCDATA)>
-  <!ELEMENT fechanacimiento (#PCDATA)>
-  <!ELEMENT correo (#PCDATA)>
+  <!ELEMENT fechaNacimiento (#PCDATA)>
+  <!ELEMENT direccion (#PCDATA)>
   <!ELEMENT telefono (#PCDATA)>
 
-  <!-- DTD CURSO -->
-  <!ELEMENT curso (codigo, nombre, profesor, estudiantes)>
-  <!ELEMENT codigo (#PCDATA)>
-  <!ELEMENT profesor (#PCDATA)>
-  <!ELEMENT estudiantes (estudiante+)>
+  <!-- PROFESOR -->
+  <!ELEMENT profesor (nombre, apellido, especialidad, email)>
+  <!ATTLIST profesor id ID #REQUIRED>
+  <!ELEMENT especialidad (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
 
-  <!-- DTD PROFESOR -->
-  <!ELEMENT profesor (nombre, apellido, dni, asignaturas+)>
-  <!ELEMENT asignaturas (asignatura+)>
-  <!ELEMENT asignatura (#PCDATA)>
+  <!-- CURSO -->
+  <!ELEMENT curso (nombre, nivel)>
+  <!ATTLIST curso id CDATA #REQUIRED>
+  <!ATTLIST curso profesor IDREF #REQUIRED>
+  <!ELEMENT nivel (#PCDATA)>
 
-  <!-- DTD CALIFICACIONES -->
-  <!ELEMENT calificacion (alumno, curso, nota)>
-  <!ELEMENT alumno (#PCDATA)>
-  <!ELEMENT curso (#PCDATA)>
-  <!ELEMENT nota (#PCDATA)>
-  
-  <!-- DTD PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>
   <!ELEMENT p (#PCDATA)>
 ]>
 
-<gestionescolar>
-    <!-- ALUMNOS -->
-    <alumno>
-        <nombre>Santiago</nombre>
-        <apellido>Torrents</apellido>
-        <dni>33344455A</dni>
-        <fechanacimiento>2002-05-11</fechanacimiento>
-        <correo>santiagotorrents@gmail.com</correo>
-        <telefono>600111222</telefono>
-    </alumno>
-    <alumno>
-        <nombre>Rafael</nombre>
-        <apellido>de la Fuente</apellido>
-        <dni>44455566B</dni>
-        <fechanacimiento>2002-06-03</fechanacimiento>
-        <correo>rafaeldelafuente@gmail.com</correo>
-        <telefono>600654321</telefono>
-    </alumno>
+<colegio>
+    <!-- ESTUDIANTES -->
+    <estudiante id="E01">
+        <nombre>Carlos</nombre>
+        <apellido>Garcia</apellido>
+        <fechaNacimiento>17/02/1990</fechaNacimiento>
+        <direccion>Calle sin nombre 123, Córdoba</direccion>
+        <telefono>+34 600111222</telefono>
+    </estudiante>
+    <estudiante id="E02">
+        <nombre>Juanma</nombre>
+        <apellido>Casado</apellido>
+        <fechaNacimiento>01/02/1991</fechaNacimiento>
+        <direccion>El chimeneón 45, Córdoba</direccion>
+        <telefono>+34 600333999</telefono>
+    </estudiante>
 
-    <!-- CURSOS -->
-    <curso>
-        <codigo>EDUCACIÓN-101</codigo>
-        <nombxvbbxCVzre>Matemática</nombre>
-        <profesor>Juan Galisteo</profesor>
-        <estudiantes>
-            <estudiante>Santiago Torrents</estudiante>
-            <estudiante>Rafael de la Fuentes</estudiante>
-        </estudiantes>
-    </curso>
-
-    <!-- PROFESOR -->
-    <profesor>
+    <!-- PROFESORES -->
+    <profesor id="P01">
         <nombre>Juan</nombre>
         <apellido>Galisteo</apellido>
-        <dni>12345678A</dni>
-        <asignaturas>
-            <asignatura>Educación emocional</asignatura>
-        </asignaturas>
+        <especialidad>Educación Física</especialidad>
+        <email>juangalisteo@educacion.com</email>
+    </profesor>
+    <profesor id="P02">
+        <nombre>Inmaculada</nombre>
+        <apellido>Galisteo</apellido>
+        <especialidad>Itinerario personal para la empleabilidad</especialidad>
+        <email>inmaculadagalisteo@educacion.com</email>
     </profesor>
 
-    <!-- CALIFICACIÓN -->
-    <calificacion>
-        <alumno>Santiago</alumno>
-        <curso>EDUCACIÓN-101</curso>
-        <nota>9.6</nota>
-    </calificacion>
-    <calificacion>
-        <alumno>Rafael</alumno>
-        <curso>EDUCACIÓN-101</curso>
-        <nota>9.8</nota>
-    </calificacion>
+    <!-- CURSOS -->
+    <curso id="01" profesor="P01">
+        <nombre>Matemáticas</nombre>
+        <nivel>Primaria</nivel>
+    </curso>
+    <curso id="02" profesor="P02"> 
+        <nombre>Lengua castellana y literatura</nombre>
+        <nivel>Secundaria</nivel>
+    </curso>    
 
     <!-- PIE DE PÁGINA -->
     <piepagina>
-        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+        <p>© Juan Galisteo | Colegio Digital</p>
     </piepagina>
-</gestionescolar>
+</colegio>

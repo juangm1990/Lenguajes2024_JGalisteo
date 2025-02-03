@@ -2,19 +2,19 @@
 <!-- © Juan Galisteo | Todos los derechos reservados -->
 
 <!DOCTYPE pokeDAW [
-  <!ELEMENT pokeDAW (nombre, numeroPokedex, imagen, descripcion, tipo, genero, estado)>
-  
+  <!ELEMENT pokeDAW (nombre, numeroPokedex, imagen, descripcion, tipo, genero, estado, piepagina)>  
+
   <!-- DTD POKÉMON -->
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT numeroPokedex (#PCDATA)>
   <!ELEMENT imagen (#PCDATA)>
-  
+  <!ATTLIST imagen foto CDATA #REQUIRED>  
   <!ELEMENT descripcion (#PCDATA)>
   <!ELEMENT tipo (#PCDATA)>
   <!ELEMENT genero (#PCDATA)>
-  
+
   <!-- DTD ESTADO -->
-  <!ELEMENT estado (habilidades, destreza, nivel, fuerza, faseEvolucion?, puntosVida?)>
+  <!ELEMENT estado (habilidades, destreza, nivel, fuerza, faseEvolucion, puntosVida)>
   <!ELEMENT habilidades (#PCDATA)>
   <!ELEMENT destreza (#PCDATA)>
   <!ELEMENT nivel (#PCDATA)>
@@ -22,10 +22,11 @@
   <!ELEMENT faseEvolucion (#PCDATA)>
   <!ELEMENT puntosVida (#PCDATA)>
 
-  <!-- DTD PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA -->
   <!ELEMENT piepagina (p)>
   <!ELEMENT p (#PCDATA)>
 ]>
+
 
 <pokeDAW>
     <nombre>PokeDAW</nombre>
