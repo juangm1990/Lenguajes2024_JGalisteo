@@ -1,0 +1,193 @@
+/* © Juan Galisteo | Todos los derechos reservados */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6; 
+    
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px;
+    margin: auto; 
+    box-sizing: border-box; /*Ancho y alto solo se aplican al contenido del elemento.*/
+    background-color: rgb(230, 230, 255);
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #002c54; 
+    display: flex;
+    justify-content: center; 
+    padding: 15px; 
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif; 
+    color: #ffffff;
+    margin: 0; 
+    font-size: 30px; 
+}
+
+head{
+    text-align: center;
+    background-color: white;
+}
+
+main{
+    background-color: #ffffff; 
+}
+
+/*//////////////////////////////////////*/
+/* DISEÑO PÁGINA */
+
+.diseño {
+    display: flex;
+    justify-content: space-between; /* Para distribuir los bloques de manera equitativa */
+    padding: 20px;
+    position: relative;
+    gap: 20px; /* Espacio entre los bloques */
+}
+
+.recuadrotexto {
+    width: 48%; /* Tamaño de cada bloque */
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: justify; 
+}
+
+.minititulo1 {
+    background-color: #009bdb;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.minititulo2 {
+    background-color: #fa4e4e;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.minititulo3 {
+    background-color: #ffa500;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.minititulo4 {
+    background-color: orangered;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.minititulo5 {
+    background-color: #35aa0e;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.minititulo6 {
+    background-color: #be74bf;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+    text-align: justify; 
+}
+
+.imagen {
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+
+
+/*//////////////////////////////////////*/
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+
+#botonderecha {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
+}
+
+#botonderecha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* BOTÓN PARA REGRESAR A LA PÁGINA PRINCIPAL */
+#botonizquierda {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posiciona el botón en la esquina inferior izquierda */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#botonizquierda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ////////////////////////////////////////// */
+
+/* PIE DE PÁGINA */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}
+

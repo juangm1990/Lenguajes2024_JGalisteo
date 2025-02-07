@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Galisteo">
+    <title>Juan Galisteo | DAW</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imagenes/iconoWeb.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="inicioPagina">Resumen Tema 12: Conversión y adaptación de documentos XML.</h1>
+    </header>
+    <br>
+    <div>
+        <p>XML es un formato de datos estructurado utilizado para almacenar y compartir información de manera jerárquica. 
+            Para modificar y transformar documentos XML, se emplean lenguajes como XSLT, que permite convertirlos en otros 
+            formatos, y XPath, que facilita la selección de elementos dentro del árbol XML. Además, existen otros formatos 
+            de intercambio de datos como JSON, CSV y YAML, cada uno con características específicas según su uso.</p>
+    </div>
+    
+
+    <main>
+        <!-- Primero -->
+        <div class="diseño">
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo1">Lenguajes de Transformación XSL</h3>
+                <p>XSL (eXtended Stylesheet Language) es un conjunto de tecnologías para transformar y dar formato a documentos XML. Su uso permite manipular la estructura del contenido de manera similar a cómo CSS estiliza documentos HTML.</p>
+                <ul>
+                    <li><b>XPath:</b> Permite evaluar expresiones y localizar elementos dentro de un documento XML.</li>
+                    <li><b>XSLT:</b> Facilita la transformación de documentos XML en otros formatos, como HTML o XML con diferente estructura.</li>
+                    <li><b>XSL-FO:</b> Se emplea para generar documentos en otros formatos, como PDF, aplicando reglas de formato avanzadas.</li>
+                </ul>
+            </article>            
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo1">¿Para qué sirve XPath?</h3>
+                <p>XPath es un lenguaje que permite navegar y seleccionar nodos dentro de un documento XML. Es ampliamente utilizado en procesos de transformación y extracción de datos.</p>
+                <ul>
+                    <li><b>Acceso a los nodos:</b> Permite identificar y recorrer los elementos de un XML.</li>
+                    <li><b>Extracción de datos:</b> Facilita la recuperación de información específica dentro del documento.</li>
+                    <li><b>Visualización de elementos:</b> Ayuda a estructurar y presentar el contenido de un XML.</li>
+                    <li><b>Hacer cálculos:</b> Posibilita realizar operaciones sobre los valores extraídos.</li>
+                </ul>
+                <figure>
+                    <img src="ruta-de-la-imagen.jpg" alt="Estructura del árbol XML">
+                    <figcaption>Ejemplo de estructura de un árbol XML con nodos.</figcaption>
+                </figure>
+            </article>            
+        </div>
+        <!-- Segundo -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo3">Asociación del esquema (XSD) al archivo XML</h3>
+                <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+                <p>&lt;concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</p>
+                <p> xsi:noNamespaceSchemaLocation="concesionario.xsd"&gt;</p>
+                <p> &nbsp;&nbsp;&lt;coche precio="10000"&gt;</p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;marca&gt;&lt;/marca&gt;</p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;modelo&gt;&lt;/modelo&gt;</p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;matricula&gt;&lt;/matricula&gt;</p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;combustible&gt;&lt;/combustible&gt;</p>
+                <p> &nbsp;&nbsp;&lt;/coche&gt;</p>
+                <p>&lt;/concesionario&gt;</p>
+                <hr>
+                <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+                <p>&lt;?xml-model href="concesionario.xsd"?&gt;</p>
+                <p>&lt;concesionario&gt;</p>
+                <p>&nbsp;&nbsp;&lt;coche precio="10000"&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;marca&gt;&lt;/marca&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;modelo&gt;&lt;/modelo&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;matricula&gt;&lt;/matricula&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;combustible&gt;&lt;/combustible&gt;</p>
+                <p>&nbsp;&nbsp;&lt;/coche&gt;</p>
+                <p>&lt;/concesionario&gt;</p>
+            </article>
+            <article class="recuadrotexto">
+                <h3 class="minititulo4">Estructura de un esquema XML (XSD)</h3>
+                <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+                <p>&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;</p>
+                <p>&lt;xs:element name="concesionario"&gt;</p>
+                <p>&lt;xs:complexType&gt;</p>
+                <p>&lt;xs:sequence&gt;</p>
+                <p>&lt;xs:element name="coche"&gt;</p>
+                <p>&lt;xs:complexType&gt;</p>
+                <p>&lt;xs:sequence&gt;</p>
+                <p>&lt;xs:element name="marca" /&gt;</p>
+                <p>&lt;xs:element name="modelo" /&gt;</p>
+                <p>&lt;xs:element ref="matricula" /&gt;</p>
+                <p>&lt;xs:element name="combustible" /&gt;</p>
+                <p>&lt;/xs:sequence&gt;</p>
+                <p>&lt;xs:attribute name="precio" type="xs:integer" use="required" /&gt;</p>
+                <p>&lt;/xs:complexType&gt;</p>
+                <p>&lt;/xs:element&gt;</p>
+                <p>&lt;/xs:sequence&gt;</p>
+                <p>&lt;/xs:complexType&gt;</p>
+                <p>&lt;/xs:element&gt;</p>
+                <p>&lt;xs:element name="matricula" type="xs:string"/&gt;</p>
+                <p>&lt;/xs:schema&gt;</p>
+            </article>
+        </div>
+        <!-- Tercero -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo5">Definición de elementos en XML Schema (XSD)</h3>
+                <h3 class="minititulo5">Elementos Simples</h3>
+                <p>Los elementos simples en XML Schema contienen datos pero no otros elementos o atributos.</p>
+                <p><b>Ejemplo:</b></p>
+                <p>&lt;xs:element name=”ejemplo” type=”tipo” minOccurs= “valor”<br>
+                    maxOccurs = “valor” fixed = ”valor” default = ”valor”/&gt;
+                </p>
+                <h3 class="minititulo5">Elemento personalizado-Complejos</h3>
+                <p>Los elementos complejos pueden contener otros elementos y atributos, permitiendo estructuras más elaboradas.</p>
+                <p><b>Ejemplo:</b></p>
+                <p>&lt;xs:element name="ejemplo"&gt;<br>
+                    &nbsp;&nbsp;&lt;xs:complexType&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt; … &lt;/xs:sequence&gt;<br>
+                    &nbsp;&nbsp;&lt;/xs:complexType&gt;<br>
+                    &lt;/xs:element&gt;
+                </p>
+                <h3 class="minititulo5">Elemento personalizado-simples</i></h3>
+                <p>Los elementos personalizados simples permiten aplicar restricciones sobre el tipo de dato definido.</p>
+                <p><b>Ejemplo:</b></p>
+                <p>&lt;xs:element name="ejemplo"&gt;<br>
+                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction&gt; … &lt;/xs:restriction&gt;<br>
+                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
+                    &lt;/xs:element&gt;
+                </p>
+            </article>
+            <article class="recuadrotexto">
+                <h3 class="minititulo6">Tipos de datos para elemento personalizado-Complejos</h3>
+                <p>Los elementos personalizados complejos permiten definir estructuras de datos más avanzadas en XML Schema.</p>
+                <p>Se pueden usar diferentes modelos de contenido como <b>sequence</b>, <b>choice</b> y <b>all</b> para organizar los elementos dentro de una estructura compleja.</p>  
+                <h3 class="minititulo6">Ejemplo de elemento complejo con <code>xs:sequence</code> y <code>xs:choice</code></h3>
+                <p>En este ejemplo, el elemento <code>ejemplo</code> contiene una secuencia de elementos, donde hay una elección obligatoria entre dos opciones (<code>precio</code> y <code>precioiva</code>).</p>
+                <p><b>Ejemplo de código XML Schema:</b></p>
+                <p>&lt;xs:element name="ejemplo"&gt;<br>
+                    &nbsp;&nbsp;&lt;xs:complexType&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—--Elementos—-<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:choice&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—elementos a elegir– (ej: precio y precioiva)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:choice&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—--más elementos—-<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br>
+                    &nbsp;&nbsp;&lt;/xs:complexType&gt;<br>
+                    &lt;/xs:element&gt;
+                </p>
+            </article>
+        </div>
+        <!-- Tercero -->
+        <div class="diseño">
+            <article class="recuadrotexto">
+                <h3 class="minititulo2">Enumerados y Listas en XML Schema (XSD)</h3>
+                <p>En XML Schema, los tipos de datos personalizados simples permiten definir restricciones sobre los valores de un elemento.</p>
+                <h3 class="minititulo2">Enumerados (Personalizados simples)</h3>
+                <p>Los enumerados restringen un elemento a un conjunto específico de valores permitidos.</p>
+                <p><b>Ejemplo de código:</b></p>
+                <p>&lt;xs:element name="color"&gt;<br>
+                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction base="xs:string"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="rojo"/&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="verde"/&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="azul"/&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:restriction&gt;<br>
+                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
+                    &lt;/xs:element&gt;
+                </p>
+                <h3 class="minititulo2">Listas (Personalizados simples)</h3>
+                <p>Las listas permiten definir un elemento que puede contener múltiples valores separados por espacios.</p>
+                <p><b>Ejemplo de código:</b></p>
+                <p>&lt;xs:element name="colores"&gt;<br>
+                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:list itemType="xs:string"/&gt;<br>
+                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
+                    &lt;/xs:element&gt;
+                </p>
+            </article>            
+            <article class="recuadrotexto">
+                <h3 class="minititulo1">Atributos en XML Schema (XSD)</h3>
+                <p>Los atributos en XML Schema se utilizan para proporcionar información adicional sobre los elementos.</p>
+                <p>Se definen dentro de los elementos y pueden tener restricciones, valores predeterminados o ser obligatorios.</p>
+                <h3 class="minititulo1">Ejemplo de Atributo Básico</h3>
+                <p>Definición de un atributo con nombre, tipo y reglas de uso.</p>
+                <p><b>Ejemplo de código:</b></p>
+                <p>&lt;xs:attribute name=”nombre” type=”tipo” use= “valor”<br>default= “valor” fixed = ”valor” /&gt;</p>           
+                <h3 class="minititulo1">Ejemplo de Atributo sin Tipo Específico</h3>
+                <p>Un atributo sin restricciones adicionales.</p> 
+                <p><b>Ejemplo de código:</b></p>
+                <p> &lt;xs:attribute name="editorial" /&gt; </p>      
+                <h3 class="minititulo1">Ejemplo de Atributo con Restricciones (Enumerados)</h3>
+                <p>Un atributo que solo acepta ciertos valores predefinidos (baja, media, alta).</p>
+                <p><b>Ejemplo de código:</b></p>
+                <p>&lt;xs:attribute name="demanda"&gt;<br>
+                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction base="xs:string"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="baja"/&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="media"/&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="alta"/&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:restriction&gt;<br>
+                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
+                    &lt;/xs:attribute&gt;
+                </p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Juan Galisteo | Trabajo de clase: Lenguajes de Marcas - DAW</p>
+    </footer>
+</body>
+
+</html>
