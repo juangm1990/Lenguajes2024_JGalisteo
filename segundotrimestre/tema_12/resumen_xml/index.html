@@ -53,159 +53,183 @@
         </div>
         <!-- Segundo -->
         <div class="diseño">
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo1">Árbol del documento XML: Tipos de nodos</h3>
+                <p>En un documento XML, la estructura se organiza en forma de árbol con diferentes tipos de nodos:</p>
+                <ul>
+                    <li><b>Raíz:</b> Es el nodo principal del documento y representa el nivel más alto. Siempre se indica con <code>/</code>.</li>
+                    <li><b>Elemento:</b> Contiene la información estructurada dentro del XML.</li>
+                    <li><b>Atributo:</b> Proporciona detalles adicionales sobre un elemento.</li>
+                    <li><b>Texto (contenido):</b> Representa el valor contenido en un elemento.</li>
+                </ul>
+            
+                <p>Ejemplo de estructura XML:</p>
+                <p>&lt;concesionario&gt;<br>
+                    &nbsp;&nbsp;&lt;coche matricula="6732KPC"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;marca&gt;Seat Ateca&lt;/marca&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;combustible&gt;Gasolina&lt;/combustible&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;precio&gt;23000&lt;/precio&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;precio_con_iva tipo="16%"&gt;26680&lt;/precio_con_iva&gt;<br>
+                    &nbsp;&nbsp;&lt;/coche&gt;<br>
+                    &nbsp;&nbsp;&lt;coche matricula="8280KWT"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;marca&gt;Volkswagen Golf&lt;/marca&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;combustible&gt;Diesel&lt;/combustible&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;precio&gt;25000&lt;/precio&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;precio_con_iva tipo="16%"&gt;29000&lt;/precio_con_iva&gt;<br>
+                    &nbsp;&nbsp;&lt;/coche&gt;<br>
+                    &lt;/concesionario&gt;
+                </p>
+            </article>
+            
             <article class="recuadrotexto">
-                <h3 class="minititulo3">Asociación del esquema (XSD) al archivo XML</h3>
-                <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
-                <p>&lt;concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</p>
-                <p> xsi:noNamespaceSchemaLocation="concesionario.xsd"&gt;</p>
-                <p> &nbsp;&nbsp;&lt;coche precio="10000"&gt;</p>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;marca&gt;&lt;/marca&gt;</p>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;modelo&gt;&lt;/modelo&gt;</p>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;matricula&gt;&lt;/matricula&gt;</p>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&lt;combustible&gt;&lt;/combustible&gt;</p>
-                <p> &nbsp;&nbsp;&lt;/coche&gt;</p>
-                <p>&lt;/concesionario&gt;</p>
+                <h3 class="minititulo4">Ejemplo de árbol XML</h3>
+                <figure>
+                    <img src="" alt="Ejemplo de árbol XML">
+                    <figcaption>Ejemplo de estructura de un documento XML.</figcaption>
+                </figure>
+            </article>
+        </div>
+        <!-- Tercero -->
+        <div class="diseño">
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo1">Sintaxis XPath</h3>
+                <p>Una expresión XPath es una cadena de texto utilizada para localizar nodos dentro de un árbol XML. Su estructura consta de:</p>
+                <ul>
+                    <li><b>Eje:</b> Permite seleccionar elementos o atributos dentro del documento.</li>
+                    <li><b>Predicado:</b> Aplica condiciones a la selección para afinar la búsqueda.</li>
+                    <li><b>Selección de nodos:</b> Define el resultado final de la consulta.</li>
+                </ul>
+                <p>Ejemplo de sintaxis:</p>
+                <p><code>/etiqueta1/etiqueta2/[@atributo="valor"]/etiqueta3</code></p>
                 <hr>
-                <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
-                <p>&lt;?xml-model href="concesionario.xsd"?&gt;</p>
-                <p>&lt;concesionario&gt;</p>
-                <p>&nbsp;&nbsp;&lt;coche precio="10000"&gt;</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;marca&gt;&lt;/marca&gt;</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;modelo&gt;&lt;/modelo&gt;</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;matricula&gt;&lt;/matricula&gt;</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;combustible&gt;&lt;/combustible&gt;</p>
-                <p>&nbsp;&nbsp;&lt;/coche&gt;</p>
-                <p>&lt;/concesionario&gt;</p>
-            </article>
-            <article class="recuadrotexto">
-                <h3 class="minititulo4">Estructura de un esquema XML (XSD)</h3>
-                <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
-                <p>&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;</p>
-                <p>&lt;xs:element name="concesionario"&gt;</p>
-                <p>&lt;xs:complexType&gt;</p>
-                <p>&lt;xs:sequence&gt;</p>
-                <p>&lt;xs:element name="coche"&gt;</p>
-                <p>&lt;xs:complexType&gt;</p>
-                <p>&lt;xs:sequence&gt;</p>
-                <p>&lt;xs:element name="marca" /&gt;</p>
-                <p>&lt;xs:element name="modelo" /&gt;</p>
-                <p>&lt;xs:element ref="matricula" /&gt;</p>
-                <p>&lt;xs:element name="combustible" /&gt;</p>
-                <p>&lt;/xs:sequence&gt;</p>
-                <p>&lt;xs:attribute name="precio" type="xs:integer" use="required" /&gt;</p>
-                <p>&lt;/xs:complexType&gt;</p>
-                <p>&lt;/xs:element&gt;</p>
-                <p>&lt;/xs:sequence&gt;</p>
-                <p>&lt;/xs:complexType&gt;</p>
-                <p>&lt;/xs:element&gt;</p>
-                <p>&lt;xs:element name="matricula" type="xs:string"/&gt;</p>
-                <p>&lt;/xs:schema&gt;</p>
-            </article>
-        </div>
-        <!-- Tercero -->
-        <div class="diseño">
-            <article class="recuadrotexto">
-                <h3 class="minititulo5">Definición de elementos en XML Schema (XSD)</h3>
-                <h3 class="minititulo5">Elementos Simples</h3>
-                <p>Los elementos simples en XML Schema contienen datos pero no otros elementos o atributos.</p>
-                <p><b>Ejemplo:</b></p>
-                <p>&lt;xs:element name=”ejemplo” type=”tipo” minOccurs= “valor”<br>
-                    maxOccurs = “valor” fixed = ”valor” default = ”valor”/&gt;
-                </p>
-                <h3 class="minititulo5">Elemento personalizado-Complejos</h3>
-                <p>Los elementos complejos pueden contener otros elementos y atributos, permitiendo estructuras más elaboradas.</p>
-                <p><b>Ejemplo:</b></p>
-                <p>&lt;xs:element name="ejemplo"&gt;<br>
-                    &nbsp;&nbsp;&lt;xs:complexType&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt; … &lt;/xs:sequence&gt;<br>
-                    &nbsp;&nbsp;&lt;/xs:complexType&gt;<br>
-                    &lt;/xs:element&gt;
-                </p>
-                <h3 class="minititulo5">Elemento personalizado-simples</i></h3>
-                <p>Los elementos personalizados simples permiten aplicar restricciones sobre el tipo de dato definido.</p>
-                <p><b>Ejemplo:</b></p>
-                <p>&lt;xs:element name="ejemplo"&gt;<br>
-                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction&gt; … &lt;/xs:restriction&gt;<br>
-                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
-                    &lt;/xs:element&gt;
-                </p>
-            </article>
-            <article class="recuadrotexto">
-                <h3 class="minititulo6">Tipos de datos para elemento personalizado-Complejos</h3>
-                <p>Los elementos personalizados complejos permiten definir estructuras de datos más avanzadas en XML Schema.</p>
-                <p>Se pueden usar diferentes modelos de contenido como <b>sequence</b>, <b>choice</b> y <b>all</b> para organizar los elementos dentro de una estructura compleja.</p>  
-                <h3 class="minititulo6">Ejemplo de elemento complejo con <code>xs:sequence</code> y <code>xs:choice</code></h3>
-                <p>En este ejemplo, el elemento <code>ejemplo</code> contiene una secuencia de elementos, donde hay una elección obligatoria entre dos opciones (<code>precio</code> y <code>precioiva</code>).</p>
-                <p><b>Ejemplo de código XML Schema:</b></p>
-                <p>&lt;xs:element name="ejemplo"&gt;<br>
-                    &nbsp;&nbsp;&lt;xs:complexType&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—--Elementos—-<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:choice&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—elementos a elegir– (ej: precio y precioiva)<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:choice&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—--más elementos—-<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br>
-                    &nbsp;&nbsp;&lt;/xs:complexType&gt;<br>
-                    &lt;/xs:element&gt;
-                </p>
-            </article>
-        </div>
-        <!-- Tercero -->
-        <div class="diseño">
-            <article class="recuadrotexto">
-                <h3 class="minititulo2">Enumerados y Listas en XML Schema (XSD)</h3>
-                <p>En XML Schema, los tipos de datos personalizados simples permiten definir restricciones sobre los valores de un elemento.</p>
-                <h3 class="minititulo2">Enumerados (Personalizados simples)</h3>
-                <p>Los enumerados restringen un elemento a un conjunto específico de valores permitidos.</p>
-                <p><b>Ejemplo de código:</b></p>
-                <p>&lt;xs:element name="color"&gt;<br>
-                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction base="xs:string"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="rojo"/&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="verde"/&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="azul"/&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:restriction&gt;<br>
-                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
-                    &lt;/xs:element&gt;
-                </p>
-                <h3 class="minititulo2">Listas (Personalizados simples)</h3>
-                <p>Las listas permiten definir un elemento que puede contener múltiples valores separados por espacios.</p>
-                <p><b>Ejemplo de código:</b></p>
-                <p>&lt;xs:element name="colores"&gt;<br>
-                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:list itemType="xs:string"/&gt;<br>
-                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
-                    &lt;/xs:element&gt;
-                </p>
+                <p>Ejemplo aplicado:</p>
+                <p><code>/concesionario/coche[@matricula="8280KWT"]/color/text()</code></p>
+                <ul>
+                    <li><b>Eje:</b> <code>/concesionario/coche</code></li>
+                    <li><b>Predicado:</b> <code>[@matricula="8280KWT"]</code></li>
+                    <li><b>Selección de nodos:</b> <code>/color/text()</code></li>
+                </ul>
             </article>            
-            <article class="recuadrotexto">
-                <h3 class="minititulo1">Atributos en XML Schema (XSD)</h3>
-                <p>Los atributos en XML Schema se utilizan para proporcionar información adicional sobre los elementos.</p>
-                <p>Se definen dentro de los elementos y pueden tener restricciones, valores predeterminados o ser obligatorios.</p>
-                <h3 class="minititulo1">Ejemplo de Atributo Básico</h3>
-                <p>Definición de un atributo con nombre, tipo y reglas de uso.</p>
-                <p><b>Ejemplo de código:</b></p>
-                <p>&lt;xs:attribute name=”nombre” type=”tipo” use= “valor”<br>default= “valor” fixed = ”valor” /&gt;</p>           
-                <h3 class="minititulo1">Ejemplo de Atributo sin Tipo Específico</h3>
-                <p>Un atributo sin restricciones adicionales.</p> 
-                <p><b>Ejemplo de código:</b></p>
-                <p> &lt;xs:attribute name="editorial" /&gt; </p>      
-                <h3 class="minititulo1">Ejemplo de Atributo con Restricciones (Enumerados)</h3>
-                <p>Un atributo que solo acepta ciertos valores predefinidos (baja, media, alta).</p>
-                <p><b>Ejemplo de código:</b></p>
-                <p>&lt;xs:attribute name="demanda"&gt;<br>
-                    &nbsp;&nbsp;&lt;xs:simpleType&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction base="xs:string"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="baja"/&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="media"/&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value="alta"/&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:restriction&gt;<br>
-                    &nbsp;&nbsp;&lt;/xs:simpleType&gt;<br>
-                    &lt;/xs:attribute&gt;
-                </p>
             </article>
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo1">Notas sobre el eje XPath</h3>
+                <p>XPath permite navegar por un documento XML seleccionando nodos en función de su ubicación y relaciones dentro del árbol. Existen diferentes tipos de ejes que ayudan a recorrer los elementos y atributos de manera eficiente.</p>
+            
+                <table>
+                    <tr>
+                        <th>SINTAXIS</th>
+                        <th>DESCRIPCIÓN</th>
+                    </tr>
+                    <tr>
+                        <td><code>nombre_nodo</code></td>
+                        <td>Selecciona todos los nodos con ese nombre.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/</code></td>
+                        <td>Selección de nodos desde el nodo raíz.</td>
+                    </tr>
+                    <tr>
+                        <td><code>//</code></td>
+                        <td>Selecciona nodos desde el nodo actual sin importar dónde se encuentren.</td>
+                    </tr>
+                    <tr>
+                        <td><code>.</code></td>
+                        <td>Selecciona el nodo actual.</td>
+                    </tr>
+                    <tr>
+                        <td><code>..</code></td>
+                        <td>Selecciona el padre del nodo actual.</td>
+                    </tr>
+                    <tr>
+                        <td><code>@</code></td>
+                        <td>Selecciona atributos.</td>
+                    </tr>
+                    <tr>
+                        <td><code>|</code></td>
+                        <td>Permite indicar varios caminos.</td>
+                    </tr>
+                </table>
+            </article>
+            
+        </div>
+        <!-- Tercero -->
+        <div class="diseño">
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo1">Notas sobre el predicado XPath</h3>
+                <p>En XPath, los predicados se utilizan para filtrar nodos dentro de una selección. Se colocan entre 
+                    corchetes <code>[ ]</code> y permiten restringir los resultados con condiciones específicas.</p>   
+                <table>
+                    <tr>
+                        <th>RESTRICCIÓN</th>
+                        <th>DESCRIPCIÓN</th>
+                    </tr>
+                    <tr>
+                        <td><b>número</b></td>
+                        <td>Cuando se obtiene varios nodos, se muestra el indicado con el número.</td>
+                    </tr>
+                    <tr>
+                        <td><code>@atributo</code></td>
+                        <td>Selecciona los nodos que tienen el atributo especificado.</td>
+                    </tr>
+                    <tr>
+                        <td><b>función</b></td>
+                        <td>
+                            Funciones que se pueden aplicar a los nodos obtenidos. Existen funciones de:<br>
+                            - Manipulación de datos: <code>position()</code>, <code>last()</code>, etc.<br>
+                            - Cadenas de caracteres: <code>concat()</code>, <code>substring()</code>, etc.<br>
+                            - Operaciones numéricas: <code>sum()</code>, <code>count()</code>, etc.<br>
+                            - Funciones booleanas: <code>not()</code>, etc.<br>
+                            - Funciones de fecha: <code>current-date()</code>, etc.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>condición</b></td>
+                        <td>
+                            Selecciona los nodos que cumplen una condición. La condición se puede aplicar sobre atributos o valores de los elementos.<br>
+                            Se pueden utilizar operadores lógicos (<code>and</code>, <code>or</code>, <code>not</code>), aritméticos (<code>+</code>, <code>-</code>, <code>*</code>, <code>div</code>, <code>mod</code>) y de comparación (<code>=</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>).
+                        </td>
+                    </tr>
+                </table>
+            </article>             
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo1">Notas sobre selección de nodos</h3>
+                <p>XPath permite seleccionar diferentes tipos de nodos en un documento XML. La selección puede aplicarse a elementos, atributos o contenido de texto dentro del árbol XML.</p>
+                <table>
+                    <tr>
+                        <th>SELECCIÓN</th>
+                        <th>DESCRIPCIÓN</th>
+                    </tr>
+                    <tr>
+                        <td><code>node()</code></td>
+                        <td>Selecciona todos los hijos (elementos o texto).</td>
+                    </tr>
+                    <tr>
+                        <td><code>text()</code></td>
+                        <td>Selecciona únicamente el texto contenido y no muestra las etiquetas.</td>
+                    </tr>
+                    <tr>
+                        <td><code>*</code></td>
+                        <td>Selecciona todos los hijos (solo elementos).</td>
+                    </tr>
+                    <tr>
+                        <td><code>@*</code></td>
+                        <td>Selecciona todos los atributos del nodo.</td>
+                    </tr>
+                </table>
+                
+                <h3 class="minititulo1">Resumen XPath</h3>
+                    <ul>
+                        <li><b>Selecciona nodos:</b> Permite navegar y seleccionar nodos.</li>
+                        <li><b>Sintaxis jerárquica:</b> Usa rutas (<code>/</code> y <code>//</code>).</li>
+                        <li><b>Filtros avanzados:</b> Soporta condiciones con predicados (<code>[]</code>).</li>
+                        <li><b>Búsqueda flexible:</b> Puede buscar por etiquetas, atributos (<code>@atributo</code>).</li>
+                        <li><b>Funciones integradas:</b> <code>contains()</code>, <code>starts-with()</code> y <code>text()</code>.</li>
+                        <li><b>Rutas absolutas y relativas:</b> Admite rutas desde la raíz o el nodo .</li>
+                        <li><b>Compatibilidad con herramientas:</b> Usado en navegadores.</li>
+                        <li><b>Escalable:</b> Documentos XML/HTML de cualquier tamaño.</li>
+                        <li><b>Universal:</b> Es un estándar del W3C, múltiples tecnologías.</li>
+                    </ul>
+            </article>            
         </div>
     </main>
     <footer>
