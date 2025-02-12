@@ -100,7 +100,7 @@ header h1 {
 
 /* LÍNEA CLASES */
 .recuadrocolor {
-    background-color: orangered;
+    background-color: #35aa0e;
     height: 10px;
     margin: 0; /* Elimina el margen para evitar separación */
     width: 100%; /* Asegura que ocupe el ancho completo */
@@ -156,7 +156,7 @@ main {
 }
 
 .enlacecuadrados:hover {
-    background-color: #ffa500; /* Cambiar color de fondo al pasar el mouse */
+    background-color: #35aa0e; /* Cambiar color de fondo al pasar el mouse */
 }
 
 .enlacecuadrados:hover a {

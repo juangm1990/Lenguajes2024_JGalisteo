@@ -156,7 +156,7 @@ main {
 }
 
 .enlacecuadrados:hover {
-    background-color: #ffa500; /* Cambiar color de fondo al pasar el mouse */
+    background-color: orangered; /* Cambiar color de fondo al pasar el mouse */
 }
 
 .enlacecuadrados:hover a {
