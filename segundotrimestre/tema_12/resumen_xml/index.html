@@ -45,16 +45,12 @@
                     <li><b>Visualización de elementos:</b> Ayuda a estructurar y presentar el contenido de un XML.</li>
                     <li><b>Hacer cálculos:</b> Posibilita realizar operaciones sobre los valores extraídos.</li>
                 </ul>
-                <figure>
-                    <img src="ruta-de-la-imagen.jpg" alt="Estructura del árbol XML">
-                    <figcaption>Ejemplo de estructura de un árbol XML con nodos.</figcaption>
-                </figure>
             </article>            
         </div>
         <!-- Segundo -->
         <div class="diseño">
             <article class="recuadrotexto"> 
-                <h3 class="minititulo1">Árbol del documento XML: Tipos de nodos</h3>
+                <h3 class="minititulo2">Árbol del documento XML: Tipos de nodos</h3>
                 <p>En un documento XML, la estructura se organiza en forma de árbol con diferentes tipos de nodos:</p>
                 <ul>
                     <li><b>Raíz:</b> Es el nodo principal del documento y representa el nivel más alto. Siempre se indica con <code>/</code>.</li>
@@ -82,17 +78,30 @@
             </article>
             
             <article class="recuadrotexto">
-                <h3 class="minititulo4">Ejemplo de árbol XML</h3>
+                <h3 class="minititulo2">Ejemplo de árbol XML</h3>
                 <figure>
-                    <img src="" alt="Ejemplo de árbol XML">
-                    <figcaption>Ejemplo de estructura de un documento XML.</figcaption>
+                    <img class="imagen" src="imagenes/arbol_XML.png" alt="Estructura árbol XML" />
+                    <figcaption class="imagen">Ejemplo de estructura de un documento XML.</figcaption>
                 </figure>
+                <h3 class="minititulo2">XSL - eXtended Sheet Language</h3>
+                <figure>
+                    <img class="imagen" src="imagenes/xsl.png" alt="Estructura árbol XML" />
+                    <figcaption class="imagen">Ilustración del logitotipo: XSL.</figcaption>
+                </figure>
+                <p>XSL (eXtended Stylesheet Language) es un lenguaje utilizado para transformar y 
+                    presentar documentos XML. Se compone de tres partes principales: XSLT (para 
+                    transformación de documentos XML), XPath (para navegar por los elementos de XML) 
+                    y XSL-FO (para formateo y presentación de contenido). Su propósito principal es 
+                    convertir documentos XML en formatos visualmente presentables, como HTML o PDF.</p>
+
+
+               
             </article>
         </div>
         <!-- Tercero -->
         <div class="diseño">
             <article class="recuadrotexto"> 
-                <h3 class="minititulo1">Sintaxis XPath</h3>
+                <h3 class="minititulo3">Sintaxis XPath</h3>
                 <p>Una expresión XPath es una cadena de texto utilizada para localizar nodos dentro de un árbol XML. Su estructura consta de:</p>
                 <ul>
                     <li><b>Eje:</b> Permite seleccionar elementos o atributos dentro del documento.</li>
@@ -112,7 +121,7 @@
             </article>            
             </article>
             <article class="recuadrotexto"> 
-                <h3 class="minititulo1">Notas sobre el eje XPath</h3>
+                <h3 class="minititulo4">Notas sobre el eje XPath</h3>
                 <p>XPath permite navegar por un documento XML seleccionando nodos en función de su ubicación y relaciones dentro del árbol. Existen diferentes tipos de ejes que ayudan a recorrer los elementos y atributos de manera eficiente.</p>
             
                 <table>
@@ -155,7 +164,7 @@
         <!-- Tercero -->
         <div class="diseño">
             <article class="recuadrotexto"> 
-                <h3 class="minititulo1">Notas sobre el predicado XPath</h3>
+                <h3 class="minititulo4">Notas sobre el predicado XPath</h3>
                 <p>En XPath, los predicados se utilizan para filtrar nodos dentro de una selección. Se colocan entre 
                     corchetes <code>[ ]</code> y permiten restringir los resultados con condiciones específicas.</p>   
                 <table>
@@ -192,7 +201,7 @@
                 </table>
             </article>             
             <article class="recuadrotexto"> 
-                <h3 class="minititulo1">Notas sobre selección de nodos</h3>
+                <h3 class="minititulo4">Notas sobre selección de nodos</h3>
                 <p>XPath permite seleccionar diferentes tipos de nodos en un documento XML. La selección puede aplicarse a elementos, atributos o contenido de texto dentro del árbol XML.</p>
                 <table>
                     <tr>
@@ -217,7 +226,7 @@
                     </tr>
                 </table>
                 
-                <h3 class="minititulo1">Resumen XPath</h3>
+                <h3 class="minititulo5">Resumen XPath</h3>
                     <ul>
                         <li><b>Selecciona nodos:</b> Permite navegar y seleccionar nodos.</li>
                         <li><b>Sintaxis jerárquica:</b> Usa rutas (<code>/</code> y <code>//</code>).</li>
@@ -230,6 +239,91 @@
                         <li><b>Universal:</b> Es un estándar del W3C, múltiples tecnologías.</li>
                     </ul>
             </article>            
+        </div>
+        <!-- Cuarto -->
+        <div class="diseño">
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo6">JSON: JavaScript Object Notation</h3>
+                <ul>
+                    <li>Formato ligero para el intercambio de datos.</li>
+                    <li>Basado en pares clave-valor y arrays.</li>
+                    <li>La extensión es: .json</li>
+                    <li>Legible por humanos y fácil de procesar en máquinas.</li>
+                    <li>Compatible con la mayoría de lenguajes de programación.</li>
+                    <li>Sencillo: Estructura clara y compacta.</li>
+                    <li>Interoperable: Ampliamente soportado en APIs y sistemas.</li>
+                    <li>Independiente del lenguaje.</li>
+                </ul>
+                <figure>
+                    <img class="imagen" src="imagenes/json.png" alt="Estructura árbol XML" />
+                    <figcaption class="imagen">Ilustración del logitotipo: Json.</figcaption>
+                </figure>            
+            </article>           
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo6">CSV: Comma-Separated Values</h3>
+                <ul>
+                    <li>Formato tabular donde los datos están separados por comas.</li>
+                    <li>Extensión .csv</li>
+                    <li>Usado para almacenar datos simples en texto plano.</li>
+                    <li>Compatible con h Excel, Google Sheets y bases de datos.</li>
+                    <li>La coma es el delimitador más utilizado. </li>
+                    <li>Estructura: Cada línea representa una fila y las comas separan las columnas.</li>
+                    <li>Limitación: No soporta jerarquías ni tipos complejos de datos.</li>
+                </ul>
+                <figure>
+                    <img class="imagen" src="imagenes/csv.png" alt="Estructura árbol XML" />
+                    <figcaption class="imagen">Ilustración del logitotipo: Csv.</figcaption>
+                </figure>            
+            </article> 
+        </div>
+        <!-- Quinto -->
+        <div class="diseño">
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo6">YAML: YAML Ain't Markup Language</h3>
+                <ul>
+                    <li>Utiliza indentación para organizar los datos jerárquicamente.</li>
+                    <li>Comúnmente usado en configuración de infraestructura como código y aplicaciones serverless.</li>
+                    <li>La extensión de los archivos YAML es: .yml o .yaml</li>
+                    <li>Más fácil de leer y escribir que XML o JSON.</li>
+                    <li>Flexible: Permite representar estructuras de datos complejas.</li>
+                    <li>Compatible: Utilizado en herramientas como Docker, Kubernetes, AWS CloudFormation, y más.</li>
+                    <li>Soporta comentarios: Los comentarios se escriben con #.</li>
+                </ul>
+                <figure>
+                    <img class="imagen" src="imagenes/yaml.png" alt="Estructura árbol XML" />
+                    <figcaption class="imagen">Ilustración del logitotipo: Yaml.</figcaption>
+                </figure>            
+            </article>           
+            <article class="recuadrotexto"> 
+                <h3 class="minititulo6">Comparativa</h3>
+                <table>
+                    <tr>
+                      <td>Formato</td>
+                      <td>Características</td>
+                      <td>Usos Comunes</td>
+                    </tr>
+                    <tr>
+                      <td>XML (Extensible Markup Language)</td>
+                      <td>- Basado en etiquetas.<br>- Jerárquico y extensible.<br>- Verboso, pero flexible.<br>- Soporte para validación (XSD).</td>
+                      <td>- Integración de sistemas.<br>- Documentos jerárquicos.</td>
+                    </tr>
+                    <tr>
+                      <td>JSON (JavaScript Object Notation)</td>
+                      <td>- Ligero y legible.<br>- Basado en pares clave-valor.<br>- Eficiente en aplicaciones web.</td>
+                      <td>- APIs REST.<br>- Configuración de aplicaciones.</td>
+                    </tr>
+                    <tr>
+                      <td>CSV (Comma-Separated Values)</td>
+                      <td>- Tabular y simple.<br>- Delimitado por comas o punto y coma.<br>- Fácil de procesar.<br>- Hojas de cálculo.</td>
+                      <td>- Datos simples.<br>- Importación/exportación en hojas de cálculo.</td>
+                    </tr>
+                    <tr>
+                      <td>YAML (YAML Ain't Markup Language)</td>
+                      <td>- Legible por humanos.<br>- Usa indentación para anidación.<br>- Menos verboso que JSON o XML.</td>
+                      <td>- Archivos de configuración.<br>- Despliegue en sistemas como Kubernetes.<br>- AWS.</td>
+                    </tr>
+                  </table>                          
+            </article> 
         </div>
     </main>
     <footer>
