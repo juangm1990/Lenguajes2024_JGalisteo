@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<?xml-stylesheet href="concesionario.xslt" type="text/xsl"?> 
+<?xml-model href="concesionario.xslt"?>
+<concesionario>
+  <coche matricula="6732KPC">
+    <marca>Seat Ateca</marca>
+    <combustible>Gasolina</combustible>
+    <color metalizado="N">Verde</color>
+    <precio>23000</precio>
+    <precio_con_iva tipo="16%">26680</precio_con_iva>
+  </coche>
+  <coche matricula="8280KWT">
+    <marca>Volkswagen Golf</marca>
+    <combustible>Diesel</combustible>
+    <color metalizado="N">Azul</color>
+    <precio>25000</precio>
+    <precio_con_iva tipo="16%">29000</precio_con_iva>
+  </coche>
+  <coche matricula="3245BWX">
+    <marca>Renault Megane</marca>
+    <combustible>Diesel</combustible>
+    <color metalizado="S">Azul</color>
+    <precio>21000</precio>
+    <precio_con_iva tipo="16%">24360</precio_con_iva>
+  </coche>
+  <coche matricula="33895KWX">
+    <marca>Audi A4</marca>
+    <color metalizado="S">Azul</color>
+    <precio>11000</precio>
+    <precio_con_iva tipo="16%">29000</precio_con_iva>
+  </coche>
+  <coche matricula="3245BWX">
+    <marca>Peugeot 2008</marca>
+    <combustible>Gasolina</combustible>
+    <color metalizado="S">Blanco</color>
+    <precio>21000</precio>
+    <precio_con_iva tipo="16%">24000</precio_con_iva>
+  </coche>
+  <coche matricula="3245BWX">
+    <marca>Mercedes 21</marca>
+    <combustible>Electrico</combustible>
+    <color metalizado="N">Blanco</color>
+    <precio>21000</precio>
+    <precio_con_iva tipo="16%">24360</precio_con_iva>
+  </coche>
+</concesionario>
