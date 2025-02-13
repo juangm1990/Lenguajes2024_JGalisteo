@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+  <!-- AGENDA -->
+<movil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+  <!-- CONTACTO 1 -->
+  <contacto>
+    <nombre>Juan Galisteo</nombre>
+    <telefono>+34 666 331 133</telefono>
+    <email>juangalisteomarques@gmail.com</email>
+    <direccion>Calle San Francisco de Sales 7, Córdoba</direccion>
+  </contacto>
+
+  <!-- CONTACTO 2 -->
+  <contacto>
+    <nombre>Juanma Casado</nombre>
+    <telefono>+34 633 666 999</telefono>
+    <email>juanmacasado@gmail.com</email>
+    <direccion>Calle sin nombre 123, Córdoba</direccion>
+  </contacto>
+
+  <!-- CONTACTO 3 -->
+  <contacto>
+    <nombre>Carlos Garcia</nombre>
+    <telefono>+34 733 121 131</telefono>
+    <email>carlosgarcia@gmail.com</email>
+    <direccion>Calle del Sol 33, Sevilla</direccion>
+  </contacto>
+
+  <!-- CONTACTO 4 -->
+  <contacto>
+    <nombre>Inmaculada Galisteo</nombre>
+    <telefono>+34 639 331 133</telefono>
+    <email>inmaculadagalisteo@gmail.com</email>
+    <direccion>Calle de la prosperidad 55, Córdoba</direccion>
+  </contacto>
+
+  <!-- PIE DE PÁGINA -->
+  <piepagina>
+    <p>© Juan Galisteo | Trabajo de clase: XML para Agenda de Contactos - DAW</p>
+  </piepagina>
+</movil>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<configuracion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+    <!-- APLICACIÓN -->
+    <informaciongeneral>
+        <nombre>Educación ¡Mola!</nombre>
+        <version>1.0.0</version>
+        <autor>Juan Galisteo</autor>
+    </informaciongeneral>
+
+    <!-- BASE DE DATOS -->
+    <basedatos>
+        <host>localhost</host>
+        <puerto>5432</puerto>
+        <usuario>admin</usuario>
+        <password>1234</password>
+        <nombrebasedatos>educacionmola_bd</nombrebasedatos>
+    </basedatos>
+
+    <!-- USUARIO -->
+    <usuarios>
+        <tema>Oscuro</tema>
+        <idioma>Es</idioma>
+        <preferencias>Notificaciones</preferencias>
+    </usuarios>
+
+    <!-- PARÁMETROS DE LA APLICACIÓN -->
+    <aplicacionparametros>
+        <parametro>
+            <titulo>Máximo de conexiones</titulo>  <!-- Corregido: antes estaba como <nombre> -->
+            <valor>100</valor>
+        </parametro>
+        <parametro>
+            <titulo>Tiempo de inactividad</titulo> <!-- Corregido: antes estaba como <nombre> -->
+            <valor>300</valor>
+        </parametro>
+        <parametro>
+            <titulo>Login</titulo>  <!-- Corregido: antes estaba como <nombre> -->
+            <valor>true</valor>
+        </parametro>
+    </aplicacionparametros>
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</configuracion>

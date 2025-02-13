@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="configuracion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="informaciongeneral">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="version" type="xs:string" />
+                            <xs:element name="autor" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="basedatos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="host" type="xs:string" />
+                            <xs:element name="puerto" type="xs:string" />
+                            <xs:element name="usuario" type="xs:string" />
+                            <xs:element name="password" type="xs:string" />
+                            <xs:element name="nombrebasedatos" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="usuarios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tema" type="xs:string" />
+                            <xs:element name="idioma" type="xs:string" />
+                            <xs:element name="preferencias" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="aplicacionparametros">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="parametro" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titulo" type="xs:string" />
+                                        <xs:element name="valor" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="piepagina">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="p" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

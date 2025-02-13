@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" type="xs:string" />
+                            <xs:element name="portada">
+                                <xs:complexType>
+                                    <xs:attribute name="foto" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="autor" type="xs:string" />
+                            <xs:element name="resumen" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="paginas" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="piepagina">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="p" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="colegio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="estudiante" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="apellido" type="xs:string" />
+                            <xs:element name="fechaNacimiento" type="xs:string" />
+                            <xs:element name="direccion" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="profesor" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="apellido" type="xs:string" />
+                            <xs:element name="especialidad" type="xs:string" />
+                            <xs:element name="email" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="curso" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="nivel" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required" />
+                        <xs:attribute name="profesor" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="piepagina">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="p" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

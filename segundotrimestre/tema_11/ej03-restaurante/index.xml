@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<!-- MENÚ -->
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+    <producto>
+        <nombre>Ensalada César</nombre>
+        <descripcion>Lechuga, pollo a la parrilla, aderezo César, croutons y queso parmesano.</descripcion>
+        <precio>12.33€</precio>
+        <imagen foto="cesar"></imagen>
+    </producto>
+    <producto>
+        <nombre>Pizza Margarita</nombre>
+        <descripcion>Salsa de tomate, mozzarella, albahaca fresca y aceite de oliva.</descripcion>
+        <precio>15.11€</precio>
+        <imagen foto="pizza"></imagen>
+    </producto>
+    <producto>
+        <nombre>Hamburguesa Gourmet</nombre>
+        <descripcion>Carne de res de primera, queso cheddar, lechuga, tomate y mayonesa casera.</descripcion>
+        <precio>18.44€</precio>
+        <imagen foto="burger"></imagen>
+    </producto>
+    <producto>
+        <nombre>Spaghetti Carbonara</nombre>
+        <descripcion>Pasta con salsa cremosa de huevo, panceta y queso parmesano.</descripcion>
+        <precio>14.55€</precio>
+        <imagen foto="carbonara"></imagen>
+    </producto>
+
+        <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Lenguajes de marcas - DAW</p>
+    </piepagina>
+</menu>

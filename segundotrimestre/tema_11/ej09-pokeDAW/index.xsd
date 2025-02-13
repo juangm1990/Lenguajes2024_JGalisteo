@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pokeDAW">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="numeroPokedex" type="xs:string" />
+                <xs:element name="imagen">
+                    <xs:complexType>
+                        <xs:attribute name="foto" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="descripcion" type="xs:string" />
+                <xs:element name="tipo" type="xs:string" />
+                <xs:element name="genero" type="xs:string" />
+                <xs:element name="estado">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="habilidades" type="xs:string" />
+                            <xs:element name="destreza" type="xs:string" />
+                            <xs:element name="nivel" type="xs:string" />
+                            <xs:element name="fuerza" type="xs:string" />
+                            <xs:element name="faseEvolucion" type="xs:string" />
+                            <xs:element name="puntosVida" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="piepagina">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="p" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

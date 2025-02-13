@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+  <!-- COCHES -->
+<fichatecnica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+    <equipo>
+        <nombre>Red Bull</nombre>
+        <modelo>RB19</modelo>
+        <piloto>Max Verstappen</piloto>
+        <fecha>2024</fecha>
+        <potencia>1050 CV</potencia>
+        <imagen foto="redbull"></imagen>
+    </equipo>
+    <equipo>
+        <nombre>Ferrari</nombre>
+        <modelo>SF-23</modelo>
+        <piloto>Charles Leclerc</piloto>
+        <fecha>2024</fecha>
+        <potencia>950 CV</potencia>
+        <imagen foto="ferrari"></imagen>
+    </equipo>
+    <equipo>
+        <nombre>Mercedes</nombre>
+        <modelo>W14</modelo>
+        <piloto>Lewis Hamilton</piloto>
+        <fecha>2024</fecha>
+        <potencia>1000 CV</potencia>
+        <imagen foto="mercedes"></imagen>
+    </equipo>
+    <equipo>
+        <nombre>Aston Martin</nombre>
+        <modelo>AMR24</modelo>
+        <piloto>Fernando Alonso</piloto>
+        <fecha>2024</fecha>
+        <potencia>950 CV</potencia>
+        <imagen foto="astonmartin"></imagen>
+    </equipo>
+    <equipo>
+        <nombre>McLaren</nombre>
+        <modelo>MCL60</modelo>
+        <piloto>Lando Norris</piloto>
+        <fecha>2024</fecha>
+        <potencia>900 CV</potencia>
+        <imagen foto="mclaren"></imagen>
+    </equipo>
+    <equipo>
+        <nombre>Williams</nombre>
+        <modelo>FW46</modelo>
+        <piloto>Alex Albon</piloto>
+        <fecha>2024</fecha>
+        <potencia>850 CV</potencia>
+        <imagen foto="williams"></imagen>
+    </equipo>
+    
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Fórmula 1 - DAW</p>
+    </piepagina>
+</fichatecnica>

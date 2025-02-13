@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<colegio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+    <!-- ESTUDIANTES -->
+    <estudiante id="E01">
+        <nombre>Carlos</nombre>
+        <apellido>Garcia</apellido>
+        <fechaNacimiento>17/02/1990</fechaNacimiento>
+        <direccion>Calle sin nombre 123, Córdoba</direccion>
+        <telefono>+34 600111222</telefono>
+    </estudiante>
+    <estudiante id="E02">
+        <nombre>Juanma</nombre>
+        <apellido>Casado</apellido>
+        <fechaNacimiento>01/02/1991</fechaNacimiento>
+        <direccion>El chimeneón 45, Córdoba</direccion>
+        <telefono>+34 600333999</telefono>
+    </estudiante>
+
+    <!-- PROFESORES -->
+    <profesor id="P01">
+        <nombre>Juan</nombre>
+        <apellido>Galisteo</apellido>
+        <especialidad>Educación Física</especialidad>
+        <email>juangalisteo@educacion.com</email>
+    </profesor>
+    <profesor id="P02">
+        <nombre>Inmaculada</nombre>
+        <apellido>Galisteo</apellido>
+        <especialidad>Itinerario personal para la empleabilidad</especialidad>
+        <email>inmaculadagalisteo@educacion.com</email>
+    </profesor>
+
+    <!-- CURSOS -->
+    <curso id="01" profesor="P01">
+        <nombre>Matemáticas</nombre>
+        <nivel>Primaria</nivel>
+    </curso>
+    <curso id="02" profesor="P02"> 
+        <nombre>Lengua castellana y literatura</nombre>
+        <nivel>Secundaria</nivel>
+    </curso>    
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Colegio Digital</p>
+    </piepagina>
+</colegio>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<documento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+  <!-- DNI -->
+  <datos>
+    <titulo>Documento Nacional de Identidad</titulo>
+    <imagen foto="fotodni"></imagen>
+    <resumen>
+      <nombre>Juan Bautista Galisteo Marqués</nombre>
+      <sexo>Sexo: M  -  Nacionalidad: ESP</sexo>
+      <fechanacimiento>01/07/1990</fechanacimiento>
+      <direccion>San Francisco de Sales - 7</direccion>
+      <ciudad>Córdoba, España</ciudad>
+      <dni>12345678A</dni>
+    </resumen>
+  </datos>
+
+  <!-- PIE DE PÁGINA -->
+  <piepagina>
+    <p>© Juan Galisteo | Trabajo de clase: Lenguajes de marcas - DAW</p>
+  </piepagina>
+</documento>

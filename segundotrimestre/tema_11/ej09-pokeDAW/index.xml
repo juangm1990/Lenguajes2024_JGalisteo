@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<pokeDAW xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+    <nombre>PokeDAW</nombre>
+    <numeroPokedex>369</numeroPokedex>
+    <imagen foto="pokedaw"></imagen>
+    <descripcion>El Pokémon legendario y más fuerte de todos los tiempos.</descripcion>
+    <tipo>psíquico</tipo>
+    <genero>masculino</genero>
+
+    <estado>
+        <habilidades>Inteligencia, Sabiduría, Velocidad, Resistencia, Autodeterminación</habilidades>
+        <destreza>33</destreza>
+        <nivel>100</nivel>
+        <fuerza>69</fuerza>
+        <faseEvolucion>3</faseEvolucion>
+        <puntosVida>127</puntosVida>
+    </estado>
+
+        <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</pokeDAW>

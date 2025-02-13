@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datosemisor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="cif" type="xs:string" />
+                            <xs:element name="direccion" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                            <xs:element name="correo" type="xs:string" />
+                            <xs:element name="horario">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="lunes" type="xs:string" />
+                                        <xs:element name="martes" type="xs:string" />
+                                        <xs:element name="miercoles" type="xs:string" />
+                                        <xs:element name="jueves" type="xs:string" />
+                                        <xs:element name="viernes" type="xs:string" />
+                                        <xs:element name="sabado" type="xs:string" />
+                                        <xs:element name="domingo" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="datoscliente">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="cif" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="detallefactura">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="articulo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="codigoarticulo" type="xs:string" />
+                                        <xs:element name="tipo" type="xs:string" />
+                                        <xs:element name="descripcion" type="xs:string" />
+                                        <xs:element name="cantidad" type="xs:string" />
+                                        <xs:element name="oferta" type="xs:string" />
+                                        <xs:element name="pvp">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="moneda" use="required" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="importe">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="moneda" use="required" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="piepagina">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="p" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

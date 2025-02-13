@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+  <!-- BIBLIOTECA DE LIBROS -->
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+  <!-- PRIMER LIBRO -->
+  <libro paginas="250">
+    <titulo>Geometría Sangrada de la Gran Pirámide</titulo>
+    <portada foto="piramide"></portada>
+    <autor>Iván Paino</autor>
+    <resumen>
+      "Geometría Sagrada de la Gran Pirámide" es un análisis detallado de la relación entre la geometría y la pirámide de Giza. Iván Paino explora cómo la construcción de esta antigua maravilla del mundo refleja principios matemáticos y geométricos que van más allá de la simple ingeniería. A través de su investigación, Paino revela patrones geométricos sagrados que fueron utilizados por las civilizaciones antiguas para comprender y conectar con el cosmos.
+
+      La obra aborda cómo la estructura de la Gran Pirámide sigue una serie de proporciones matemáticas, como el número áureo y las leyes de la simetría, que son clave en la comprensión del diseño universal. Además, se analiza cómo estos principios geométricos se aplican en otras estructuras antiguas y cómo la geometría sagrada está presente en la naturaleza, las matemáticas y la física. El autor también explora la relación entre las pirámides y la conciencia humana, proponiendo que estas estructuras fueron construidas no solo con fines arquitectónicos, sino también con un propósito espiritual.
+
+      Paino utiliza la geometría para dar sentido a los misterios de la Gran Pirámide, sugiriendo que esta maravilla no solo fue una tumba para los faraones, sino un centro de sabiduría esotérica que tenía el poder de influir en la conciencia y el entendimiento humano. El libro invita al lector a reconsiderar las antiguas construcciones de la humanidad bajo una nueva luz, donde las matemáticas y la espiritualidad se entrelazan.
+    </resumen>
+  </libro>
+
+  <!-- SEGUNDO LIBRO -->
+  <libro paginas="300">
+    <titulo>El Significado de la Cábala</titulo>
+    <portada foto="kabbalah"></portada>
+    <autor>Leo Schaya</autor>
+    <resumen>
+      "El Significado Universal de la Cábala" es una obra esencial para quienes buscan entender las enseñanzas profundas y espirituales que se encuentran en la Cábala, un sistema místico y filosófico que ha influenciado profundamente tanto a la religión judía como a otras tradiciones espirituales. Leo Schaya presenta una visión integral de la Cábala, explicando sus conceptos clave y su aplicación en la vida cotidiana.
+
+      El libro examina la estructura del Árbol de la Vida, un diagrama simbólico que representa las fuerzas divinas que actúan en el mundo y en el alma humana. Schaya explica cómo la Cábala no solo es una doctrina religiosa, sino también un sistema filosófico que busca la comprensión de la relación entre el hombre y lo divino. A través de una serie de meditaciones y estudios simbólicos, el autor ayuda al lector a entender cómo las enseñanzas cabalísticas pueden ser aplicadas para alcanzar un mayor entendimiento de uno mismo y del universo.
+
+      La obra también incluye un análisis de los principales textos cabalísticos, como el Zohar, y presenta la Cábala como una vía de conocimiento directo que permite al individuo trascender la realidad material y conectar con la fuente divina. Schaya aborda cómo la Cábala ha influenciado no solo la espiritualidad judía, sino también a figuras clave del pensamiento occidental, desde los filósofos hasta los místicos.
+    </resumen>
+  </libro>
+
+  <!-- TERCER LIBRO -->
+  <libro paginas="500">
+    <titulo>Libro de la Sabiduría Vol. II</titulo>
+    <portada foto="sabiduria"></portada>
+    <autor>Revival of Wisdom</autor>
+    <resumen>
+      El "Libro de la Sabiduría Vol. II" es una obra esotérica que profundiza en los misterios espirituales universales, ofreciendo una comprensión profunda sobre la conexión entre la conciencia humana y el cosmos. Este volumen continúa el legado de sabiduría ancestral, basado en enseñanzas de antiguos místicos, filósofos y sabios que han transmitido conocimientos ocultos a lo largo de los siglos.
+
+      A través de sus páginas, se exploran conceptos fundamentales como la energía universal, el propósito de la vida, la meditación y la trascendencia del ser humano hacia un estado de conciencia superior. Los capítulos abordan la ciencia espiritual, las leyes cósmicas y la evolución del alma, brindando herramientas prácticas y ejercicios para la expansión de la conciencia, la transformación interior y el acceso a una comprensión más profunda del universo. Además, el autor ofrece una visión sobre la sabiduría oculta presente en las culturas antiguas, con el objetivo de conectar al lector con su sabiduría interior y alcanzar un nivel de entendimiento trascendental.
+    </resumen>
+  </libro>
+
+  <!-- CUARTO LIBRO -->
+  <libro paginas="342">
+    <titulo>1984</titulo>
+    <portada foto="1984"></portada>
+    <autor>George Orwell</autor>
+    <resumen>
+      "1984" es una obra maestra de la literatura distópica que describe un futuro totalitario y opresivo donde el gobierno, conocido como el Partido, controla cada aspecto de la vida de los ciudadanos. En la sociedad descrita en el libro, el concepto de "libertad" ha desaparecido, y la vigilancia constante a través de dispositivos como el "telepantalla" es la norma.
+
+      El protagonista, Winston Smith, es un miembro del Partido que trabaja en el Ministerio de la Verdad, donde se encarga de reescribir la historia para que coincida con la narrativa oficial del régimen. A medida que Winston se rebela internamente contra la opresión, busca la verdad y se enamora de Julia, su compañera en la resistencia. Sin embargo, el Partido tiene el control total sobre la mente humana, y la "doble verdad" y la "neolengua" son herramientas utilizadas para manipular el pensamiento.
+
+      La novela examina temas como la represión, la vigilancia, la manipulación de la verdad y la importancia de la privacidad en una sociedad libre. "1984" es una crítica mordaz a los regímenes totalitarios y una reflexión profunda sobre los peligros de perder la autonomía en un mundo cada vez más controlado.
+    </resumen>
+  </libro>
+
+  <!-- PIE DE PÁGINA -->
+  <piepagina>
+    <p>© Juan Galisteo | Trabajo de clase: Lenguajes de marcas - DAW</p>
+  </piepagina>
+</biblioteca>

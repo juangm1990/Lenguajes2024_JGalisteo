@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<estacionMeteorologica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+    <ubicacion>Córdoba, España</ubicacion>
+    <fecha>2025-01-14</fecha>
+    <hora>18:33</hora>
+    <temperatura unidad="°C">33.5</temperatura>
+    <humedad unidad="%">65</humedad>
+    <presion unidad="hPa">1015</presion>
+    <viento unidad="km/h">33</viento>
+    <lluvia unidad="mm">0</lluvia>
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</estacionMeteorologica>

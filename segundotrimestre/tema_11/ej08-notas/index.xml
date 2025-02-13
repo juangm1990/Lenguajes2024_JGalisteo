@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- © Juan Galisteo | Todos los derechos reservados -->
+
+<gestionNotas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="index.xsd">
+    <alumno>
+        <nombre>Juan</nombre>
+        <apellidos>Galisteo</apellidos>
+        <curso>1º DAW</curso>
+        <asignatura>
+            <titulo>Programación</titulo>
+            <trimestre1>3.0</trimestre1>
+            <trimestre2>5.0</trimestre2>
+            <trimestre3>5.7</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Base de Datos</titulo>
+            <trimestre1>7.5</trimestre1>
+            <trimestre2>8.0</trimestre2>
+            <trimestre3>7.8</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Entornos de Desarrollo</titulo>
+            <trimestre1>9.2</trimestre1>
+            <trimestre2>9.3</trimestre2>
+            <trimestre3>9.0</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Sistemas</titulo>
+            <trimestre1>8.0</trimestre1>
+            <trimestre2>9.6</trimestre2>
+            <trimestre3>9.7</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Lenguajes</titulo>
+            <trimestre1>9.0</trimestre1>
+            <trimestre2>9.5</trimestre2>
+            <trimestre3>9.3</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Fol</titulo>
+            <trimestre1>9.0</trimestre1>
+            <trimestre2>9.2</trimestre2>
+            <trimestre3>9.1</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Digitalización</titulo>
+            <trimestre1>8.4</trimestre1>
+            <trimestre2>8.6</trimestre2>
+            <trimestre3>8.9</trimestre3>
+        </asignatura>
+        <asignatura>
+            <titulo>Sostenibilidad</titulo>
+            <trimestre1>9.3</trimestre1>
+            <trimestre2>9.6</trimestre2>
+            <trimestre3>9.9</trimestre3>
+        </asignatura>             
+    </alumno>
+
+    <!-- PIE DE PÁGINA -->
+    <piepagina>
+        <p>© Juan Galisteo | Trabajo de clase: Configuración de Aplicación - DAW</p>
+    </piepagina>
+</gestionNotas>
