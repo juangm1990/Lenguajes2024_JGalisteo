@@ -1,0 +1,94 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #002c54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: orange;
+}
+
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #be74bf;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002c54;
+}
+
+#resultado {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+#botonizquierda, #botonderecha {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden; /* Asegura que las imágenes sean redondas */
+}
+
+#botonizquierda {
+    left: 20px; /* Fija el botón a la izquierda */
+}
+
+#botonderecha {
+    right: 20px; /* Fija el botón a la derecha */
+}
+
+#botonizquierda img, #botonderecha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* PIE DE PÁGINA */
+footer p{
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    bottom: 0; /* Elimina la posición en la parte inferior*/
+    left: 0; /* Elimina la alineación a la izquierda*/
+    margin: 0; /* Elimina el margen del pie de página */
+}

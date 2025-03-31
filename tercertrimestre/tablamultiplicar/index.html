@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tablas de Multiplicar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+        <p class="subtitulo">Tabla de multiplicar</p>
+    </header>
+
+    <section class="contenido" id="inicioPagina">
+        <h2>Generador de tablas de multiplicar</h2>
+        <p>Crear con HTML y Javascript una página que genere tablas de multiplicar según la entrada que le demos.</p>
+        <label for="numero">Número de tablas de multiplicar a generar:</label>
+        <input type="number" id="numero" min="1" value="3">
+        <button onclick="generarTablas()">Calcular</button>
+        
+        <div id="resultado"></div>
+    </section>
+    
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="botonizquierda">
+        <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+    </div>
+    <div id="botonderecha">
+        <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
