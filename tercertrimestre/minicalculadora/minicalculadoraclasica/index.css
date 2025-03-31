@@ -38,17 +38,35 @@ h2 {
     font-weight: normal;
     color: #333;
 }
+
+/* Ajuste del ancho de los elementos input y button */
 input, button {
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 16px;
     margin-top: 20px;
+    border-radius: 5px;
+    width: 5%; /* Cambié el ancho al 40% para que sea más corto */
+    box-sizing: border-box; /* Asegura que el padding no agrande el tamaño del input */
 }
 
+/* Estilo para los campos de entrada */
+input {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Ajuste del ancho del botón "Calcular" */
 button {
     background-color: #be74bf;
     color: white;
+    padding: 12px 20px;
+    font-size: 18px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 20%; 
+    margin-top: 20px;
 }
 
 button:hover {
@@ -57,13 +75,12 @@ button:hover {
 
 #resultado {
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50; /* Color verde para los resultados */
 }
 
-/*//////////////////////////////////////*/
-/*//////////////////////////////////////*/
-
-/* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
+/* BOTÓN PARA REGRESAR ARRIBA DE LA PÁGINA PRINCIPAL */
 #botonizquierda, #botonderecha {
     position: fixed;
     bottom: 20px;
@@ -87,8 +104,6 @@ button:hover {
     border-radius: 50%;
 }
 
-/* ////////////////////////////////////////// */
-
 /* PIE DE PÁGINA */
 footer p{
     background-color: #77777733;
@@ -100,4 +115,6 @@ footer p{
     bottom: 0; /* Elimina la posición en la parte inferior*/
     left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Añadido sombra para el pie de página */
 }

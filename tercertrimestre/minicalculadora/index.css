@@ -1,84 +1,183 @@
-/* Estilo básico */
+/* © Juan Galisteo | Todos los derechos reservados */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Fuente principal */
+    margin: 0; /* Margen externo del cuerpo */
+    padding: 0; /* No habrá espacio interno alrededor del contenido */
+    line-height: 1.6; /* Altura de las línea del texto */
+    
+    /*REQUISITOS OBLIGATORIOS*/
+    width: 1200px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra el contenido */
+    box-sizing: border-box; /*Ancho y alto solo se aplican al contenido del elemento.*/
 }
 
+/* ENCABEZADO */
 header {
-    background-color: #002c54;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #002c54; /* Color de fondo */
+    display: flex; /* Usar flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido en el centro */
+    padding: 15px; /* Espaciado */
+    position: relative; /* Para que se pueda mover manualmente */
 }
 
-h1 {
-    margin: 0;
-    font-size: 32px;
+header h1 {
+    font-family: 'Poppins', sans-serif; /* Tipografía específica para el encabezado */
+    color: #FFFFFF; /* Color del texto */
+    margin: 0; /* Margen */
+    font-size: 30px; /* Tamaño de la fuente */
 }
 
-.subtitulo {
-    font-size: 20px;
-    color: orange;
+.rojo {
+    color: red;
 }
 
-.contenido {
-    padding: 20px;
-    text-align: center;
+.logo {
+    position: absolute; /* Fija la posición de la imagen */
+    left: 35px; /* Movimiento del logotipo de izquierda a derecha */
+    width: 70px; /* Tamaño del logotipo */
+    height: auto; /* Altura del recuadro se ajustará automáticamente*/
 }
 
-h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
+/* LINEA PRINCIPAL */
+.recuadrogris {
+    background-color: #a5a5a5; 
+    height: 10px; /* Establece la altura */
 }
 
-input, button {
+/* FOTOGRAFÍA DE LA CABECERA */
+.imagencentro {
+    width: 100%; /* El elemento ocupará todo el ancho de la página */
+    height: auto;
+}
+
+/* NAVEGACIÓN PRINCIPAL */
+.menuprincipal {
+    background-color: #be74bf; 
     padding: 10px;
-    font-size: 16px;
-    margin-top: 20px;
+    text-align: right; /* Alinea el contenido a la derecha */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 15px;  /* Establece un margen superior */
 }
 
-button {
-    background-color: #be74bf;
-    color: white;
-    border: none;
-    cursor: pointer;
+.menuprincipal nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;  /* Negrita */
+    color: #002c54;
+    margin: 10px; 
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 33px;  
 }
 
-button:hover {
+.menuprincipal nav a:hover {
+    color: #FFFFFF;
+}
+
+.iconogithub {
+    width: 75px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    vertical-align: middle; /* Alinea la imagen verticalmente con el texto */
+}
+
+/* CONFIGURACIÓN PARA PONER NOTAS DE TEXTO */
+.notas {
+    position: left; /* Posición: Derecha - Izquierda - Centro */
+}
+
+.notas p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Tamaño de la fuente del párrafo */
+    color: #333; 
+}
+
+/* LÍNEA SECUNDARIA */
+.recuadroazul {
     background-color: #002c54;
+    height: 10px;
+    margin: 0; /* Elimina el margen para evitar separación */
+    width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
-#resultado {
-    margin-top: 30px;
-    font-size: 18px;
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto; /* Centra el elemento horizontalmente */
 }
+
+/* TEXTO */
+.tituloproyectos {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 63px; 
+    margin: 20px 0; /* Un margen de 20 píxeles arriba y abajo; y 0 píxeles a los dos lados */
+}
+
+/* CONFIGURACIÓN Y DISEÑO DEL CONTENIDO Y PROYECTOS */
+.menu {
+    display: flex; /* Activa flexbox para agrupar elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: center; /* Alinea los elementos en el centro */
+    margin: 20px auto;
+    width: 100%;
+}
+
+.enlacecuadrados {
+    background-color: #a5a5a5; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    height: 80px;
+    width: calc(35% - 55px); /* Ancho ajustado para cinco columnas */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Los elementos se alinea en el centro */
+    justify-content: center; /* El texto se alinea en el centro */
+    border-radius: 10px;
+}
+
+.enlacecuadrados a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 80px;
+}
+
+.enlacecuadrados:hover {
+    background-color: #002c54; /* Cambiar color de fondo al pasar el mouse */
+}
+
+.enlacecuadrados:hover a {
+    color: #FFFFFF; /* Cambiar color de la tipografía al pasar el mouse */
+}
+
+/*//////////////////////////////////////*/
+/*//////////////////////////////////////*/
 
 /* BOTÓN PARA REGRESAR AL SUBIR ARRIBA DE LA PÁGINA PRINCIPAL */
-#botonizquierda, #botonderecha {
+
+#boton {
     position: fixed;
     bottom: 20px;
-    width: 50px;
-    height: 50px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    overflow: hidden; /* Asegura que las imágenes sean redondas */
+    overflow: hidden; /* Esto asegura que la imagen se mantenga redonda */
 }
 
-#botonizquierda {
-    left: 20px; /* Fija el botón a la izquierda */
-}
-
-#botonderecha {
-    right: 20px; /* Fija el botón a la derecha */
-}
-
-#botonizquierda img, #botonderecha img {
+#boton img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
+
+/* ////////////////////////////////////////// */
 
 /* PIE DE PÁGINA */
 footer p{
@@ -92,3 +191,7 @@ footer p{
     left: 0; /* Elimina la alineación a la izquierda*/
     margin: 0; /* Elimina el margen del pie de página */
 }
+
+
+
+

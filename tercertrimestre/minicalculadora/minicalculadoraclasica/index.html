@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Se define el conjunto de caracteres y la vista para dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Minicalculadora</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Título principal -->
+        <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+        <!-- Subtítulo de la página -->
+        <p class="subtitulo">Minicalculadora</p>
+    </header>
+
+    <!-- Sección principal donde se encuentran los campos para ingresar los números y los resultados -->
+    <section class="contenido">
+        <!-- Título para la sección de la calculadora -->
+        <h2>Introduce dos números</h2>
+        
+        <!-- Etiqueta y campo de entrada para el primer número -->
+        <label for="numero1">Primer número:</label>
+        <input type="number" id="numero1" required><br>
+        
+        <!-- Etiqueta y campo de entrada para el segundo número -->
+        <label for="numero2">Segundo número:</label>
+        <input type="number" id="numero2" required><br>
+        
+        <!-- Botón que ejecuta la función calcular() al hacer clic -->
+        <button onclick="calcular()">Calcular</button>
+
+        <!-- Divs donde se mostrarán los resultados de la operación -->
+        <div>
+            <h3>Resultados</h3>
+            <!-- Muestra la suma -->
+            <div>La suma es: <span id="suma"></span></div>
+            <!-- Muestra el producto -->
+            <div>El producto es: <span id="producto"></span></div>
+            <!-- Muestra el número mayor -->
+            <div>El número mayor es: <span id="mayor"></span></div>
+        </div>
+    </section>
+
+    <!-- BOTÓN PARA REGRESAR ARRIBA -->
+    <div id="botonizquierda">
+        <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+    </div>
+    <div id="botonderecha">
+        <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
