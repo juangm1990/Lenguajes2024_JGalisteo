@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Se define el conjunto de caracteres y la vista para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título que aparece en la pestaña del navegador -->
-    <title>Minicalculadora</title>
+    <title>Calculadora Funcional</title>
     <!-- Enlace al archivo CSS para los estilos -->
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <!-- Encabezado de la página -->
     <header>
-        <!-- Título principal -->
         <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
-        <!-- Subtítulo de la página -->
-        <p class="subtitulo">Minicalculadora</p>
+        <p class="subtitulo">Minicalculadora clásica</p>
     </header>
 
-    <!-- Sección principal donde se encuentran los campos para ingresar los números y los resultados -->
-    <section class="contenido">
-        <!-- Título para la sección de la calculadora -->
-        <h2>Introduce dos números</h2>
-        
-        <!-- Etiqueta y campo de entrada para el primer número -->
-        <label for="numero1">Primer número:</label>
-        <input type="number" id="numero1" required><br>
-        
-        <!-- Etiqueta y campo de entrada para el segundo número -->
-        <label for="numero2">Segundo número:</label>
-        <input type="number" id="numero2" required><br>
-        
-        <!-- Botón que ejecuta la función calcular() al hacer clic -->
-        <button onclick="calcular()">Calcular</button>
+    <!-- Etiquetas y campos de entrada para los dos números -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    
+    <!-- Botón que ejecuta la función calcular() al hacer clic -->
+    <button onclick="calcular()">Calcular</button><br>
+    
+    <!-- Divs donde se mostrarán los resultados de las operaciones -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
 
-        <!-- Divs donde se mostrarán los resultados de la operación -->
-        <div>
-            <h3>Resultados</h3>
-            <!-- Muestra la suma -->
-            <div>La suma es: <span id="suma"></span></div>
-            <!-- Muestra el producto -->
-            <div>El producto es: <span id="producto"></span></div>
-            <!-- Muestra el número mayor -->
-            <div>El número mayor es: <span id="mayor"></span></div>
-        </div>
-    </section>
+    <script>
+        // Función que se ejecuta al hacer clic en el botón
+        function calcular() {
+            // Obtiene los valores de los inputs y los convierte a número
+            const numero1 = Number(document.getElementById("numero1").value);
+            const numero2 = Number(document.getElementById("numero2").value);
 
-    <!-- BOTÓN PARA REGRESAR ARRIBA -->
-    <div id="botonizquierda">
-        <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
-    </div>
-    <div id="botonderecha">
-        <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
-    </div>
+            // Realiza las operaciones
+            const suma = numero1 + numero2;
+            const producto = numero1 * numero2;
+            let mayor;
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
-    </footer>
+            // Determina cuál de los dos números es mayor o si son iguales
+            if (numero1 > numero2) {
+                mayor = numero1;
+            } else if (numero2 > numero1) {
+                mayor = numero2;
+            } else {
+                mayor = "Los números son iguales";
+            }
 
-    <script src="index.js"></script>
+            // Muestra los resultados de las operaciones en la página
+            document.getElementById("suma").textContent = suma;
+            document.getElementById("producto").textContent = producto;
+            document.getElementById("mayor").textContent = mayor;
+        }
+    </script>
 </body>
+
+
+<!-- BOTÓN PARA REGRESAR ARRIBA -->
+<div id="botonizquierda">
+    <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+</div>
+<div id="botonderecha">
+    <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+</div>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+</footer>
+
 </html>

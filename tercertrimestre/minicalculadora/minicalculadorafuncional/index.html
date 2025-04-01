@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Se define el conjunto de caracteres y la vista para dispositivos móviles -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Calculadora Funcional</title>
+</head>
+<body>
+    <!-- Etiqueta y campo de entrada para el primer número -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    
+    <!-- Etiqueta y campo de entrada para el segundo número -->
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    
+    <!-- Botón que ejecuta la función de calcular cuando es presionado -->
+    <button id="calcularBtn">Calcular</button><br>
+    
+    <!-- Divs donde se mostrarán los resultados de las operaciones -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Función que obtiene el número de un input y lo convierte a número
+        const getNumber = (id) => Number(document.getElementById(id).value);
+
+        // Función que establece el texto de un elemento en el DOM
+        const setText = (id, value) => document.getElementById(id).textContent = value;
+        
+        // Función principal de cálculo
+        const calcular = () => {
+            // Usamos destructuración para obtener los dos números de los inputs
+            const [numero1, numero2] = [getNumber("numero1"), getNumber("numero2")];
+            
+            // Definimos las operaciones como funciones dentro de un objeto
+            const operaciones = {
+                suma: (a, b) => a + b, // Función que suma los dos números
+                producto: (a, b) => a * b, // Función que multiplica los dos números
+                mayor: (a, b) => (a === b ? "Los números son iguales" : Math.max(a, b)) // Función que encuentra el mayor de los dos números
+            };
+            
+            // Llamamos a cada operación y mostramos los resultados en la página
+            setText("suma", operaciones.suma(numero1, numero2)); // Muestra la suma
+            setText("producto", operaciones.producto(numero1, numero2)); // Muestra el producto
+            setText("mayor", operaciones.mayor(numero1, numero2)); // Muestra el número mayor o si son iguales
+        };
+        
+        // Añadimos un evento al botón "Calcular" que ejecuta la función calcular al hacer clic
+        document.getElementById("calcularBtn").addEventListener("click", calcular);
+    </script>
+</body>
+</html>
