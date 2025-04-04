@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Se define el conjunto de caracteres y la vista para dispositivos móviles -->
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título que aparece en la pestaña del navegador -->
     <title>Minicalculadora</title>
+    <link rel="stylesheet" href="calculadoramoderna.css">
 </head>
+
 <body>
+    <header>
+        <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+        <p class="subtitulo">Minicalculadora funcional</p>
+    </header>
     <!-- Etiqueta y campo de entrada para el primer número -->
     <label>Primer número: <input type="number" id="numero1"></label><br>
-    
+
     <!-- Etiqueta y campo de entrada para el segundo número -->
     <label>Segundo número: <input type="number" id="numero2"></label><br>
-    
+
     <!-- Botón que ejecuta la función de calcular cuando es presionado -->
     <button id="calcularBtn">Calcular</button><br>
-    
+
     <!-- Divs donde se mostrarán los resultados de las operaciones -->
     <div>La suma es: <span id="suma"></span></div>
     <div>El producto es: <span id="producto"></span></div>
@@ -28,12 +35,12 @@
             // Obtener los valores de los inputs y convertirlos a números
             const numero1 = Number(document.getElementById("numero1").value);
             const numero2 = Number(document.getElementById("numero2").value);
-            
+
             // Realizar las operaciones matemáticas
             const suma = numero1 + numero2;
             const producto = numero1 * numero2;
             const mayor = numero1 === numero2 ? "Los números son iguales" : Math.max(numero1, numero2);
-            
+
             // Mostrar los resultados de las operaciones en la página
             document.getElementById("suma").textContent = suma;
             document.getElementById("producto").textContent = producto;
@@ -41,4 +48,18 @@
         });
     </script>
 </body>
+
+<!-- BOTÓN PARA REGRESAR ARRIBA -->
+<div id="botonizquierda">
+    <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+</div>
+<div id="botonderecha">
+    <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+</div>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+</footer>
+
 </html>
