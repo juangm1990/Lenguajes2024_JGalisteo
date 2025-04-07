@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tabla multiplicar</title>
   <link rel="stylesheet" href="generadortablamultiplicar.css" />
 </head>
 
 <body id="inicioPagina">
-  <h2>Tablas de multiplicar</h2>
+  <header>
+    <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+    <p class="subtitulo">Minicalculadora clases</p>
+  </header>
 
-  <label>Número: <input type="number" id="numero" /></label><br />
-  <button onclick="calcular()">Calcular</button>
-  <div id="resultado"></div>
+  <div class="contenido">
+    <h2>Tablas de multiplicar</h2>
+
+    <label>Número: <input type="number" id="numero" /></label><br />
+    <button onclick="calcular()">Calcular</button>
+    <div id="resultado"></div>
+  </div>
 
   <script>
     function calcular() {
       const numero = Number(document.getElementById("numero").value);
       const resultado = document.getElementById("resultado");
-
-      // Limpia las tablas anteriores
       resultado.innerHTML = "";
 
       for (let j = 1; j <= numero; j++) {
@@ -33,7 +38,6 @@
     }
   </script>
 
-  <!-- BOTONES DE NAVEGACIÓN -->
   <div id="botonizquierda">
     <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
   </div>
@@ -41,10 +45,11 @@
     <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
   </div>
 
-  <!-- PIE DE PÁGINA -->
   <footer>
     <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
   </footer>
 </body>
+</html>
+
 
 </html>

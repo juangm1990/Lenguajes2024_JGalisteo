@@ -1,92 +1,129 @@
-/* ESTILOS PARA LA PÁGINA DE TABLAS DE MULTIPLICAR */
 /* © Juan Galisteo | Todos los derechos reservados */
 
+/* Estilo básico */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    width: 1200px;
-    margin: auto;
-    box-sizing: border-box;
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* TÍTULO PRINCIPAL */
-h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+/* Encabezado */
+header {
+    background-color: #002c54;
+    color: white;
+    padding: 20px;
     text-align: center;
-    color: #002c54;
-    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ETIQUETA Y CAMPO DE NÚMERO */
-label {
-    font-size: 22px;
+h1 {
+    margin: 0;
+    font-size: 36px;
     font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    display: block;
-    text-align: center;
-    margin: 20px 0;
-    color: #000;
 }
 
-input[type="number"] {
+.subtitulo {
     font-size: 20px;
-    padding: 5px;
-    width: 100px;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid #002c54;
+    color: orange;
+    margin-top: 5px;
 }
 
-/* BOTÓN CALCULAR */
+/* Contenido centrado */
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    min-height: calc(100vh - 140px); /* Altura completa menos header y footer */
+    box-sizing: border-box;
+}
+
+/* Etiquetas */
+.contenido label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #333;
+}
+
+/* Inputs */
+input {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 200px;
+}
+
+/* Botón */
 button {
-    display: block;
-    margin: 10px auto 30px auto;
-    padding: 10px 20px;
-    font-size: 22px;
     background-color: #be74bf;
     color: white;
+    padding: 12px 20px;
+    font-size: 18px;
     border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+    width: 220px;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #002c54;
 }
 
-/* RESULTADO */
+/* Contenedor de resultados */
 #resultado {
-    text-align: center;
-    margin-bottom: 100px; /* Espacio para que el footer no tape contenido */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
+/* Estilo para cada tabla generada */
 .tabla {
-    display: inline-block;
-    background-color: #a5a5a5;
-    color: #ffffff;
-    margin: 15px;
+    background-color: white;
+    border: 2px solid #002c54;
+    border-radius: 8px;
     padding: 15px;
-    border-radius: 10px;
-    width: 160px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     font-size: 18px;
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-/* BOTONES LATERALES */
-#botonizquierda,
-#botonderecha {
+/* Resultados individuales */
+#suma, #producto, #mayor {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Botones fijos laterales */
+#botonizquierda, #botonderecha {
     position: fixed;
-    bottom: 90px;
-    width: 60px;
-    height: 60px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 #botonizquierda {
@@ -97,14 +134,13 @@ button:hover {
     right: 20px;
 }
 
-#botonizquierda img,
-#botonderecha img {
+#botonizquierda img, #botonderecha img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-/* PIE DE PÁGINA */
+/* Pie de página */
 footer p {
     background-color: #77777733;
     color: #FFFFFF;
@@ -115,6 +151,6 @@ footer p {
     bottom: 0;
     left: 0;
     margin: 0;
-    font-family: 'Arial', sans-serif;
     font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
