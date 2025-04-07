@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+    
+  header {
+    background-color: #0090d3;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 36px; 
+  }
+    
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cronometro {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: #002c54;
+  }
+  
+  .cronometro div p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .botones button {
+    background-color: #0090d3;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .botones button:hover {
+    background-color: #006fa1;
+  }
+  
+  footer p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #0090d3;
+
+  }
+  
+  /* Estilo del enlace dentro del footer */
+  footer a {
+    color: black;
+    text-decoration: none;
+ 
+  }
+  
+  footer a:hover {
+    color: #ffffff; /* Amarillo al pasar el ratón */
+  }

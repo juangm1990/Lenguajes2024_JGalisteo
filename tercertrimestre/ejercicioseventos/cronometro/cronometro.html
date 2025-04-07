@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cronómetro JavaScript</title>
+  <link rel="stylesheet" href="cronometro.css" />
+</head>
+<body>
+  <header>Cronómetro JavaScript</header>
+
+  <main>
+    <div class="cronometro">
+      <div>
+        <p>Minutos</p>
+        <span id="minutos">00</span>
+      </div>
+      <div>
+        <p>Segundos</p>
+        <span id="segundos">00</span>
+      </div>
+      <div>
+        <p>Milisegundos</p>
+        <span id="milisegundos">000</span>
+      </div>
+    </div>
+
+    <div class="botones">
+      <button onclick="iniciar()">Iniciar</button>
+      <button onclick="detener()">Detener</button>
+      <button onclick="reiniciar()">Reiniciar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; Juan Bautista Galisteo Marqués |
+      <a href="../index.html">Volver a página inicial</a>
+    </p>
+  </footer>
+  
+
+  <script src="cronometro.js"></script>
+</body>
+</html>
