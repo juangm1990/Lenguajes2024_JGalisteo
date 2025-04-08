@@ -7,8 +7,8 @@ body {
     line-height: 1.6; /* Altura de las línea del texto */
     
     /*REQUISITOS OBLIGATORIOS*/
-    width: 1200px; /* Ancho máximo del contenido */
-    margin: auto; /* Centra el contenido */
+    /*width: 1200px; /* Ancho máximo del contenido */
+    /*margin: auto; /* Centra el contenido */
     box-sizing: border-box; /*Ancho y alto solo se aplican al contenido del elemento.*/
 }
 
