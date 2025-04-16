@@ -1,43 +1,23 @@
-const unicornio = document.getElementById("unicornio");
-const destinos = document.querySelectorAll(".destino");
-const mensaje = document.getElementById("mensaje");
-const zonaUnicornio = document.getElementById("zona-unicornio");
-const volverBtn = document.getElementById("volverBtn");
+// Seleccionamos el contenedor donde se va a mostrar la letra
+const zonaLetra = document.getElementById("zona-letra");
 
-// Efecto de brillo al arrastrar
-unicornio.addEventListener("dragstart", () => {
-  unicornio.classList.add("brillo");
-});
+// Evento keydown: cuando se presiona una tecla
+document.addEventListener("keydown", function (event) {
+  // Convertimos la tecla a mayúscula
+  const letra = event.key.toUpperCase();
 
-// Quitar brillo cuando se suelta
-unicornio.addEventListener("dragend", () => {
-  unicornio.classList.remove("brillo");
-});
-
-// Preparar cada destino para aceptar el unicornio
-destinos.forEach(destino => {
-  destino.addEventListener("dragover", (e) => {
-    e.preventDefault(); // Permite soltar
-  });
-
-  destino.addEventListener("drop", () => {
-    destino.appendChild(unicornio);
-    const lugar = destino.dataset.destino;
-    mensaje.textContent = `¡Me voy a ${lugar}!`;
-  });
-});
-
-// Si se suelta fuera de los destinos, vuelve al origen
-document.addEventListener("drop", (e) => {
-  if (!e.target.classList.contains("destino") && !e.target.closest(".destino")) {
-    zonaUnicornio.appendChild(unicornio);
-    mensaje.textContent = "Me voy de vacaciones...";
+  // Verificamos si es una letra del alfabeto (A-Z)
+  if (/^[A-Z]$/.test(letra)) {
+    // Si es una letra, la mostramos en la zona
+    zonaLetra.textContent = letra;
+  } else {
+    // Si no es una letra, dejamos el cuadro en blanco
+    zonaLetra.textContent = "";
   }
 });
 
-// Botón "Volver al origen"
-volverBtn.addEventListener("click", () => {
-  zonaUnicornio.appendChild(unicornio);
-  mensaje.textContent = "Me voy de vacaciones...";
+// Evento keyup: cuando se suelta la tecla
+document.addEventListener("keyup", function () {
+  // Al soltar cualquier tecla, se limpia el contenido
+  zonaLetra.textContent = "";
 });
-
