@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De vacaciones</title>
+  <link rel="stylesheet" href="vacaciones.css" />
+</head>
+
+<body id="inicioPagina">
+  <header>
+    <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+    <p class="subtitulo">Ejercicio eventos: Vacaciones</p>
+  </header>
+
+  <div class="contenido">
+    <h2>Destino Vacacional</h2>
+    <p id="mensaje">¿A dónde me voy de vacaciones?</p>
+    <button id="volverBtn">Inicio</button>
+
+    <!-- Zona inicial del unicornio -->
+    <div id="zona-unicornio">
+      <div id="unicornio" draggable="true">
+        <img src="imagenes/unicornio.png" alt="Unicornio" />
+      </div>
+    </div>
+
+    <!-- Destinos -->
+    <div class="destinos">
+      <div class="destino" data-destino="la playa">
+        <img src="imagenes/1.png" alt="Playa" />
+      </div>
+      <div class="destino" data-destino="el lago">
+        <img src="imagenes/2.png" alt="Lago" />
+      </div>
+      <div class="destino" data-destino="el bosque">
+        <img src="imagenes/3.png" alt="Bosque" />
+      </div>
+      <div class="destino" data-destino="la ciudad">
+        <img src="imagenes/4.png" alt="Ciudad" />
+      </div>
+    </div>
+  </div>
+
+  <div id="botonizquierda">
+    <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+  </div>
+  <div id="botonderecha">
+    <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+  </div>
+
+  <footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="vacaciones.js"></script>
+</body>
+</html>

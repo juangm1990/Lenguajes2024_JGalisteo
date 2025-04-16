@@ -1,19 +1,43 @@
-// Guardamos el cuadro central en una variable
-var cuadro = document.getElementById("cuadro");
+const unicornio = document.getElementById("unicornio");
+const destinos = document.querySelectorAll(".destino");
+const mensaje = document.getElementById("mensaje");
+const zonaUnicornio = document.getElementById("zona-unicornio");
+const volverBtn = document.getElementById("volverBtn");
 
-// Cuando pulsamos una tecla
-document.addEventListener("keydown", function(evento) {
-  var letra = evento.key; // Esto es para obtenemos la tecla pulsada
+// Efecto de brillo al arrastrar
+unicornio.addEventListener("dragstart", () => {
+  unicornio.classList.add("brillo");
+});
 
-  // Si es una letra entre a y z 
-  if ((letra >= "a" && letra <= "z") || (letra >= "A" && letra <= "Z")) {
-    // Convertimos las letras a mayúscula para mejor visibilidad y lo mostramos en el cuadro
-    cuadro.textContent = letra.toUpperCase();
+// Quitar brillo cuando se suelta
+unicornio.addEventListener("dragend", () => {
+  unicornio.classList.remove("brillo");
+});
+
+// Preparar cada destino para aceptar el unicornio
+destinos.forEach(destino => {
+  destino.addEventListener("dragover", (e) => {
+    e.preventDefault(); // Permite soltar
+  });
+
+  destino.addEventListener("drop", () => {
+    destino.appendChild(unicornio);
+    const lugar = destino.dataset.destino;
+    mensaje.textContent = `¡Me voy a ${lugar}!`;
+  });
+});
+
+// Si se suelta fuera de los destinos, vuelve al origen
+document.addEventListener("drop", (e) => {
+  if (!e.target.classList.contains("destino") && !e.target.closest(".destino")) {
+    zonaUnicornio.appendChild(unicornio);
+    mensaje.textContent = "Me voy de vacaciones...";
   }
 });
 
-// Cuando soltamos la tecla
-document.addEventListener("keyup", function() {
-  // Borramos el contenido del cuadro para que no aparezca nada
-  cuadro.textContent = "";
+// Botón "Volver al origen"
+volverBtn.addEventListener("click", () => {
+  zonaUnicornio.appendChild(unicornio);
+  mensaje.textContent = "Me voy de vacaciones...";
 });
+
