@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manipulación del DOM</title>
+  <link rel="stylesheet" href="dom.css" />
+</head>
+
+<body id="inicioPagina">
+  <header>
+    <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+    <p class="subtitulo">Manipulación del DOM</p>
+  </header>
+
+  <div class="contenido">
+    <h2>Contar DIVs en la Página</h2>
+    <div class="zona-divs">
+      <div class="caja">Yo</div>
+      <div class="caja"></div>
+      <div class="caja">soy</div>
+      <div class="caja">Juan</div>
+    </div>
+
+    <button onclick="contarDivs()">Contar DIVs</button>
+
+    <div class="resultado" id="resultadoDivs"></div>
+
+    <h2>Modificar Clases del DOM</h2>
+
+    <div class="botones">
+      <button onclick="cambiarFondo()">Color Fondo</button>
+      <button onclick="bordesPunteados()">Bordes Punteados</button>
+      <button onclick="bordesRedondeados()">Bordes Redondeados</button>
+      <button onclick="agrandar()">Agrandar</button>
+      <button onclick="desaparecer()">Desaparecer</button>
+      <button onclick="tamanoGrande()">Tamaño Grande</button>
+      <button onclick="tamanoChico()">Tamaño Chico</button>
+    </div>
+
+    <div class="card" id="tarjeta">Modifica la tarjeta</div>
+  </div>
+
+  <div id="botonizquierda">
+    <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+  </div>
+  <div id="botonderecha">
+    <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+  </div>
+
+  <footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presupuestos para Cajas</title>
+  <link rel="stylesheet" href="cajas.css" />
+</head>
+
+<body id="inicioPagina">
+  <header>
+    <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+    <p class="subtitulo">Presupuesto de cajas personalizadas</p>
+  </header>
+
+  <div class="contenido">
+    <h2>Presupuestos para cajas</h2>
+
+    <div class="grid">
+      <!-- Sección de Cálculo -->
+      <div class="calculo">
+        <h3>Sección de Cálculo</h3>
+        <label>Ancho (cm): <input type="number" id="ancho" /></label>
+        <label>Alto (cm): <input type="number" id="alto" /></label>
+        <label>Profundidad (cm): <input type="number" id="profundidad" /></label>
+        <label>Material:
+          <select id="material">
+            <option value="plastico">Plástico</option>
+            <option value="carton">Cartón</option>
+            <option value="madera">Madera</option>
+          </select>
+        </label>
+        <button onclick="calcular()">Calcular</button>
+      </div>
+
+      <!-- Sección de Configuración -->
+      <div class="configuracion">
+        <h3>Sección de Configuración</h3>
+        <label>Precio base por m³: <input type="number" id="precioBase" value="20" /></label>
+        <label>Incremento (%) para Plástico: <input type="number" id="incPlastico" value="10" /></label>
+        <label>Incremento (%) para Cartón: <input type="number" id="incCarton" value="5" /></label>
+        <label>Incremento (%) para Madera: <input type="number" id="incMadera" value="15" /></label>
+        <label>IVA (%): <input type="number" id="iva" value="21" /></label>
+      </div>
+    </div>
+
+    <!-- Resultado -->
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <div id="botonizquierda">
+    <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+  </div>
+  <div id="botonderecha">
+    <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+  </div>
+
+  <footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="cajas.js"></script>
+</body>
+</html>
