@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos: stopPropagation y preventDefault</title>
+  <link rel="stylesheet" href="eventos.css" />
+</head>
+
+<body id="inicioPagina">
+  <header>
+    <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+    <p class="subtitulo">Ejercicio eventos: Propagación y Prevención</p>
+  </header>
+
+  <div class="contenido">
+    <h2>Demostración de <code>stopPropagation()</code></h2>
+    <div class="padre" id="padre">
+      Padre
+      <div class="hijo" id="hijo1">Hijo 1 (con stopPropagation)</div>
+      <div class="hijo" id="hijo2">Hijo 2 (sin stopPropagation)</div>
+    </div>
+
+    <h2>Demostración de <code>preventDefault()</code></h2>
+    <button id="botonToggle">Desactivar/activar Enlace</button><br /><br />
+    <a href="https://www.w3schools.com" target="_blank" id="enlace">Ir a W3Schools</a>
+
+    <p id="mensaje"></p>
+  </div>
+
+  <div id="botonizquierda">
+    <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home"></a>
+  </div>
+  <div id="botonderecha">
+    <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba"></a>
+  </div>
+
+  <footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="eventos.js"></script>
+</body>
+</html>

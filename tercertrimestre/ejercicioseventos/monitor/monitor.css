@@ -1,0 +1,187 @@
+/* © Juan Galisteo | Todos los derechos reservados */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #002c54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .subtitulo {
+    font-size: 20px;
+    color: orange;
+    margin-top: 5px;
+  }
+  
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  .monitor-layout {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  /* Zona interactiva */
+  #zona-interactiva {
+    width: 60%;
+    min-width: 300px;
+    height: 300px;
+    border: 3px dashed #aaa;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  #zona-interactiva p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #limpiar {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #limpiar:hover {
+    background-color: #002c54;
+  }
+  
+  /* Historial de eventos */
+  #historial {
+    width: 30%;
+    min-width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #historial h3 {
+    margin-top: 0;
+    color: #002c54;
+    text-align: center;
+  }
+  
+  #lista-eventos {
+    list-style-type: none;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  
+  #lista-eventos li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+  }
+  
+  /* Círculo draggable */
+  #circulo {
+    width: 80px;
+    height: 80px;
+    background-color: #be74bf;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    cursor: grab;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #circulo:active {
+    cursor: grabbing;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Animación de rebote */
+  @keyframes rebote {
+    0%   { transform: scale(1); background-color: #be74bf; }
+    50%  { transform: scale(1.3); background-color: red; }
+    100% { transform: scale(1); background-color: #be74bf; }
+  }
+  
+  .rebote {
+    animation: rebote 0.5s ease;
+  }
+  
+  /* Botones fijos laterales */
+  #botonizquierda, #botonderecha {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  #botonizquierda {
+    left: 20px;
+  }
+  
+  #botonderecha {
+    right: 20px;
+  }
+  
+  #botonizquierda img, #botonderecha img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Pie de página */
+  footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

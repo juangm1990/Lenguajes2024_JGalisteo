@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitor de Eventos</title>
+  <link rel="stylesheet" href="monitor.css" />
+</head>
+
+<body id="inicioPagina">
+  <header>
+    <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
+    <p class="subtitulo">Ejercicio eventos: Monitor</p>
+  </header>
+
+  <div class="contenido">
+    <h2>Monitor de Eventos</h2>
+
+    <main class="monitor-layout">
+      <section id="zona-interactiva">
+        <p>Interactúa aquí</p>
+        <div id="circulo" draggable="true"></div>
+        <button id="limpiar">Limpiar Historial</button>
+      </section>
+
+      <aside id="historial">
+        <h3>Registro:</h3>
+        <ul id="lista-eventos"></ul>
+      </aside>
+    </main>
+  </div>
+
+  <div id="botonizquierda">
+    <a href="../index.html"><img src="../imagenes/botonHome.png" alt="Botón Home" /></a>
+  </div>
+  <div id="botonderecha">
+    <a href="#inicioPagina"><img src="../imagenes/boton.png" alt="Botón Arriba" /></a>
+  </div>
+
+  <footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="monitor.js"></script>
+</body>
+</html>
