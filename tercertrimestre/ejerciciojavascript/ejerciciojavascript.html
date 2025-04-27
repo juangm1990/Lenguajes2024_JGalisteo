@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Trileros</title>
+  <link rel="stylesheet" href="ejerciciojavascript.css">
+</head>
+<body>
+  <div id="contenedor">
+    <h1>Juego de Trileros</h1>
+    <div id="juego">
+      <div class="vaso" id="vaso1">
+        <img src="imagenes/vaso.png" alt="Vaso 1" class="imagen-vaso">
+      </div>
+      <div class="vaso" id="vaso2">
+        <img src="imagenes/vaso.png" alt="Vaso 2" class="imagen-vaso">
+      </div>
+      <div class="vaso" id="vaso3">
+        <img src="imagenes/vaso.png" alt="Vaso 3" class="imagen-vaso">
+      </div>
+    </div>
+    <button id="botonElegir" onclick="iniciarJuego()">Elige un Vaso</button>
+    <button id="botonReiniciar" onclick="reiniciarJuego()" style="display:none;">Reiniciar Juego</button>
+  </div>
+  <script src="ejerciciojavascript.js"></script>
+</body>
+</html>
