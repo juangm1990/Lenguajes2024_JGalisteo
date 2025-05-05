@@ -1,0 +1,99 @@
+/* © Juan Galisteo | Todos los derechos reservados */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #002c54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: calc(100vh - 140px);
+    box-sizing: border-box;
+}
+
+/* Input */
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+button {
+    background-color: #be74bf;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 220px;
+    margin: 10px 0 30px;
+}
+
+button:hover {
+    background-color: #002c54;
+}
+
+/* Resultados */
+.resultados {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.resultados p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.resultados strong {
+    color: #002c54;
+}
+
+/* Pie de página */
+footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

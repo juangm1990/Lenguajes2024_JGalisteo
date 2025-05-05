@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página con TinyMCE y html2pdf</title>
+  <script src="https://cdn.tiny.cloud/1/0cw8f7xtw5bl0bpgyojrn9jq8ipb28qtpm2liax6d3gyu28z/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <header>
+    <h1>Página con TinyMCE y html2pdf</h1>
+  </header>
+
+  <main class="contenido">
+    <!-- Editor -->
+    <textarea id="editorTexto">Esto es un editor de texto</textarea>
+
+    <!-- Botones -->
+    <div class="botones">
+      <button onclick="pasarADiv()">Pasar texto a div</button>
+      <button onclick="generarPDF()">Generar PDF</button>
+    </div>
+
+    <!-- Área de salida -->
+    <div id="salida" class="caja">
+      Esto es un editor de texto
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; Juan Bautista Galisteo Marqués |
+      <a href="../index.html">Volver a página inicial</a>
+    </p>
+  </footer>
+
+  <script src="editor.js"></script>
+</body>
+</html>
