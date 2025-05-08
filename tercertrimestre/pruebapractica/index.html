@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Juan Galisteo">
+  <title>Tic-Tac-Toe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #002c54;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .contenedor {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .tablero {
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .casilla {
+      background-color: #eee;
+      border: 1px solid #999;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .casilla-ganadora {
+      background-color: yellow !important;
+    }
+
+    .jugador1 {
+      background-image: url('jugador1.png');
+    }
+
+    .jugador2 {
+      background-image: url('jugador2.png');
+    }
+
+    .panel-controles {
+      margin-top: 20px;
+    }
+
+    .panel-controles button {
+      background-color: #be74bf;
+      color: white;
+      padding: 10px 15px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .panel-controles button:hover {
+      background-color: #002c54;
+    }
+
+    .marcador {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-contenido {
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #000;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .modal button {
+      margin-top: 10px;
+      padding: 5px 15px;
+      font-weight: bold;
+      background-color: #be74bf;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal button:hover {
+      background-color: #002c54;
+    }
+
+    .oculto {
+      display: none !important;
+    }
+
+    footer p {
+    background-color: #77777733;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Tic-Tac-Toe</h1>
+  </header>
+
+  <main>
+    <div class="contenedor">
+      <p id="mensajeTurno">Turno de: Jugador 1</p>
+      <div class="tablero" id="tablero"></div>
+
+      <div class="panel-controles">
+        <button id="btnReset">Reset</button>
+        <button id="btnOtra">Otra</button>
+        <div class="marcador">
+          <span>J1: <span id="puntosJ1">0</span></span>
+          <span>J2: <span id="puntosJ2">0</span></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal oculto">
+    <div class="modal-contenido">
+      <p id="mensajeVentana">Mensaje aquí</p>
+      <button id="botonAceptar">Aceptar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      &copy; Juan Bautista Galisteo Marqués |
+      <a href="../index.html">Volver a página inicial</a>
+    </p>
+  </footer>
+
+  <script>
+    let jugador = 1;
+    let tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+    let ganador = false;
+    let puntosJ1 = 0;
+    let puntosJ2 = 0;
+    let casillas;
+
+    const mensajeTurno = document.getElementById("mensajeTurno");
+    const mensajeVentana = document.getElementById("mensajeVentana");
+    const modal = document.getElementById("modal");
+    const marcadorJ1 = document.getElementById("puntosJ1");
+    const marcadorJ2 = document.getElementById("puntosJ2");
+    const tableroHTML = document.getElementById("tablero");
+
+    for (let i = 1; i <= 9; i++) {
+      const casilla = document.createElement("div");
+      casilla.classList.add("casilla");
+      casilla.addEventListener("click", () => jugada(i));
+      tableroHTML.appendChild(casilla);
+    }
+
+    casillas = document.querySelectorAll(".casilla");
+
+    function jugada(num) {
+      if (!ganador && tablero[num - 1] === 0) {
+        tablero[num - 1] = jugador;
+        casillas[num - 1].classList.add("jugador" + jugador);
+        if (comprobarGanador()) {
+          mensajeVentana.textContent = "¡Gana jugador " + jugador + "!";
+          modal.classList.remove("oculto");
+          if (jugador === 1) {
+            puntosJ1++;
+            marcadorJ1.textContent = puntosJ1;
+          } else {
+            puntosJ2++;
+            marcadorJ2.textContent = puntosJ2;
+          }
+          ganador = true;
+        } else if (comprobarEmpate()) {
+          mensajeVentana.textContent = "Empate";
+          modal.classList.remove("oculto");
+          ganador = true;
+        } else {
+          cambiarJugador();
+        }
+      }
+    }
+
+    function cambiarJugador() {
+      jugador = jugador === 1 ? 2 : 1;
+      mensajeTurno.textContent = `Turno de: Jugador ${jugador}`;
+    }
+
+    function comprobarGanador() {
+      const combinaciones = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+      ];
+      for (let i = 0; i < combinaciones.length; i++) {
+        const combinacion = combinaciones[i];
+        let gana = true;
+        for (let j = 0; j < combinacion.length; j++) {
+          if (tablero[combinacion[j]] !== jugador) {
+            gana = false;
+            break;
+          }
+        }
+        if (gana) {
+          combinacion.forEach(idx => casillas[idx].classList.add("casilla-ganadora"));
+          return true;
+        }
+      }
+      return false;
+    }
+
+    function comprobarEmpate() {
+      return !tablero.includes(0);
+    }
+
+    function cerrarModal() {
+      modal.classList.add("oculto");
+    }
+
+    function nuevaPartida() {
+      tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+      casillas.forEach(c => {
+        c.classList.remove("jugador1", "jugador2", "casilla-ganadora");
+      });
+      ganador = false;
+      jugador = 1;
+      mensajeTurno.textContent = "Turno de: Jugador 1";
+      modal.classList.add("oculto");
+    }
+
+    function resetearTodo() {
+      puntosJ1 = 0;
+      puntosJ2 = 0;
+      marcadorJ1.textContent = "0";
+      marcadorJ2.textContent = "0";
+      nuevaPartida();
+    }
+
+    document.getElementById("botonAceptar").addEventListener("click", cerrarModal);
+    document.getElementById("btnReset").addEventListener("click", resetearTodo);
+    document.getElementById("btnOtra").addEventListener("click", nuevaPartida);
+  </script>
+</body>
+
+</html>

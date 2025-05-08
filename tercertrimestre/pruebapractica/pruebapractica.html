@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Galisteo">
+    <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="pruebapractica.css">
+</head>
+
+<body>
+  <div class="titulo">
+    <h2>Tic-Tac-Toe</h2>
+    <p id="mensajeTurno">Turno de: Jugador 1</p>
+  </div>
+
+  <div class="tablero">
+    <div id="modal" class="modal oculto">
+      <div class="modal-contenido">
+        <p id="mensajeVentana">Mensaje aquí</p>
+        <button id="cerrarModal">Aceptar</button>
+      </div>
+    </div>
+    <div class="casilla" onclick="jugada(1)"></div>
+    <div class="casilla" onclick="jugada(2)"></div>
+    <div class="casilla" onclick="jugada(3)"></div>
+    <div class="casilla" onclick="jugada(4)"></div>
+    <div class="casilla" onclick="jugada(5)"></div>
+    <div class="casilla" onclick="jugada(6)"></div>
+    <div class="casilla" onclick="jugada(7)"></div>
+    <div class="casilla" onclick="jugada(8)"></div>
+    <div class="casilla" onclick="jugada(9)"></div>
+  </div>
+
+  <div class="botones">
+    <button id="btnReset">Reset</button>
+    <button id="btnOtra">Otra</button>
+  </div>
+
+  <div class="marcador">
+    <span class="j1">J1: <span id="puntosJ1">0</span></span>
+    <span class="j2">J2: <span id="puntosJ2">0</span></span>
+  </div>
+
+  <script src="pruebapractica.js"></script>
+</body>
+
+</html>

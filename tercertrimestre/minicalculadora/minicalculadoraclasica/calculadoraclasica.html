@@ -2,30 +2,24 @@
 <html lang="es">
 
 <head>
-    <!-- Se define el conjunto de caracteres y la vista para dispositivos móviles -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título que aparece en la pestaña del navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Juan Galisteo">
     <title>Minicalculadora</title>
-    <!-- Enlace al archivo CSS para los estilos -->
     <link rel="stylesheet" href="calculadoraclasica.css">
 </head>
 
 <body>
-    <!-- Encabezado de la página -->
     <header>
         <h1>LMSGI: T18 y T19 | Javascript I y II</h1>
         <p class="subtitulo">Minicalculadora clásica</p>
     </header>
 
-    <!-- Etiquetas y campos de entrada para los dos números -->
     <label>Primer número: <input type="number" id="numero1"></label><br>
     <label>Segundo número: <input type="number" id="numero2"></label><br>
 
-    <!-- Botón que ejecuta la función calcular() al hacer clic -->
     <button onclick="calcular()">Calcular</button><br>
 
-    <!-- Divs donde se mostrarán los resultados de las operaciones -->
     <div>La suma es: <span id="suma"></span></div>
     <div>El producto es: <span id="producto"></span></div>
     <div>El número mayor es: <span id="mayor"></span></div>
