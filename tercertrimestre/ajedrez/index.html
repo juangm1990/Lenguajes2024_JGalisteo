@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajedrez con IA</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 20px; }
+    #board { width: 400px; margin: 20px auto; }
+    button { margin-top: 10px; padding: 10px 20px; }
+  </style>
+
+  <!-- CSS Chessboard
+  img/chesspieces/wikipedia/wK.png 
+  -->
+  <link rel="stylesheet" href="chessboard-0.3.0.min.css" />
+</head>
+<body>
+
+  <div id="board"></div>
+  <p id="status">Tu turno (Blancas)</p>
+  <button id="restartBtn">Reiniciar</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Librerías -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="./chessboard-0.3.0.min.js"></script>
+
+
+  <!-- Stockfish debe estar en tu carpeta local -->
+  <script>
+    let board, game, stockfish;
+
+    function init() {
+      game = new Chess();
+      stockfish = new Worker('stockfish.js'); // Asegúrate de tener este archivo en la misma carpeta
+
+      board = ChessBoard('board', {
+        draggable: true,
+        position: 'start',
+        onDrop: onDrop
+      });
+
+      document.getElementById('restartBtn').addEventListener('click', startGame);
+      updateStatus();
+    }
+
+    function onDrop(source, target) {
+      const move = game.move({ from: source, to: target, promotion: 'q' });
+      if (move === null) return 'snapback';
+      updateStatus();
+      setTimeout(makeAIMove, 300);
+    }
+
+    function makeAIMove() {
+      stockfish.postMessage('position fen ' + game.fen());
+      stockfish.postMessage('go depth 12');
+
+      stockfish.onmessage = function(event) {
+        if (event.data.startsWith('bestmove')) {
+          const move = event.data.split(' ')[1];
+          if (!move || move === '(none)') return;
+
+          const from = move.slice(0, 2);
+          const to = move.slice(2, 4);
+
+          game.move({ from, to, promotion: 'q' });
+          board.position(game.fen());
+          updateStatus();
+        }
+      };
+    }
+
+    function updateStatus() {
+      const statusEl = document.getElementById('status');
+      if (game.in_checkmate()) {
+        statusEl.textContent = '¡Jaque mate!';
+      } else if (game.in_draw()) {
+        statusEl.textContent = 'Empate.';
+      } else {
+        statusEl.textContent = `Turno de ${game.turn() === 'w' ? 'Blancas' : 'Negras'}`;
+      }
+    }
+
+    function startGame() {
+      game.reset();
+      board.start();
+      updateStatus();
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>
