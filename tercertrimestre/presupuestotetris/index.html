@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Juan Galisteo" />
+  <title>Presupuesto Tetris</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body id="iniciopagina">
+
+  <!-- CABECERA -->
+  <header>
+    <h1>Presupuesto Tetris</h1>
+  </header>
+
+  <!-- FILA SUPERIOR: PIEZAS + CONTROLES -->
+  <section class="filasuperior">
+    <div class="zonapiezas" id="zonapiezas">
+      <!-- Las piezas se generan por JS -->
+    </div>
+
+    <div class="controlesuperior">
+      <button id="borrar">Borrar Presupuesto</button>
+      <label>Margen (%) <input type="number" id="margen" min="0" max="100" step="1"></label>
+      <label>IVA (%) <input type="number" id="iva" min="0" max="100" step="1"></label>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL: 2 COLUMNAS -->
+  <main class="contenedordoble">
+
+    <!-- COLUMNA IZQUIERDA: INFORMACIÓN -->
+    <div class="informacion">
+      <h2>Información</h2>
+      <ul id="listaprecios">
+        <!-- Lista generada por JS -->
+      </ul>
+      <button id="actualizarprecios">Actualizar Precios</button>
+    </div>
+
+    <!-- COLUMNA DERECHA: PRESUPUESTO -->
+    <div class="presupuesto">
+      <h2>Presupuesto</h2>
+      <table id="tabla">
+        <tr>
+          <th>Pieza</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+        </tr>
+        <tbody id="tablacuerpo"></tbody>
+        <tr>
+          <td colspan="2">Total Bruto</td>
+          <td id="totalbruto">€0.00</td>
+        </tr>
+        <tr>
+          <td colspan="2">Total con margen</td>
+          <td id="totalmargen">€0.00</td>
+        </tr>
+        <tr>
+          <td colspan="2">Total con IVA</td>
+          <td id="totaliva">€0.00</td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- JS -->
+  <script src="index.js"></script>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
