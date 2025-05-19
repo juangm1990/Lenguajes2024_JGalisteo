@@ -9,16 +9,13 @@
 </head>
 <body id="iniciopagina">
 
-  <!-- CABECERA -->
   <header>
     <h1>Presupuesto Tetris</h1>
+    <p class="subtitulo">Simulador interactivo</p>
   </header>
 
-  <!-- FILA SUPERIOR: PIEZAS + CONTROLES -->
   <section class="filasuperior">
-    <div class="zonapiezas" id="zonapiezas">
-      <!-- Las piezas se generan por JS -->
-    </div>
+    <div class="zonapiezas" id="zonapiezas"></div>
 
     <div class="controlesuperior">
       <button id="borrar">Borrar Presupuesto</button>
@@ -27,19 +24,14 @@
     </div>
   </section>
 
-  <!-- CONTENIDO PRINCIPAL: 2 COLUMNAS -->
   <main class="contenedordoble">
 
-    <!-- COLUMNA IZQUIERDA: INFORMACIÓN -->
     <div class="informacion">
       <h2>Información</h2>
-      <ul id="listaprecios">
-        <!-- Lista generada por JS -->
-      </ul>
+      <ul id="listaprecios"></ul>
       <button id="actualizarprecios">Actualizar Precios</button>
     </div>
 
-    <!-- COLUMNA DERECHA: PRESUPUESTO -->
     <div class="presupuesto">
       <h2>Presupuesto</h2>
       <table id="tabla">
@@ -62,14 +54,15 @@
           <td id="totaliva">€0.00</td>
         </tr>
       </table>
+      <button id="descargarpdf">Descargar PDF</button>
     </div>
 
   </main>
 
   <!-- JS -->
   <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-  <!-- PIE DE PÁGINA -->
   <footer>
     <p>&copy; Juan Galisteo | Todos los derechos reservados</p>
   </footer>

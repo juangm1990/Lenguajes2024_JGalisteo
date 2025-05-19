@@ -117,20 +117,45 @@ function cargarValoresLocales() {
   if (iva) ivaInput.value = iva;
 }
 
-// Eventos
+// Generar PDF con jsPDF
+document.getElementById("descargarpdf").addEventListener("click", () => {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+
+  doc.setFontSize(16);
+  doc.text("Presupuesto Tetris", 20, 20);
+  doc.setFontSize(12);
+  doc.text("Pieza        Cantidad       Total", 20, 30);
+
+  let y = 40;
+  for (let color in presupuesto) {
+    const cantidad = presupuesto[color];
+    const total = (cantidad * piezas[color]).toFixed(2);
+    doc.text(`${color}             ${cantidad}               €${total}`, 20, y);
+    y += 10;
+  }
+
+  y += 10;
+  doc.text(`Total Bruto: ${totalbruto.textContent}`, 20, y);
+  y += 10;
+  doc.text(`Total con margen: ${totalmargen.textContent}`, 20, y);
+  y += 10;
+  doc.text(`Total con IVA: ${totaliva.textContent}`, 20, y);
+
+  doc.save("presupuesto_tetris.pdf");
+});
+
+// Eventos principales
 document.getElementById("borrar").addEventListener("click", () => {
   presupuesto = {};
   actualizarTabla();
 });
 
-document.getElementById("actualizarprecios").addEventListener("click", () => {
-  cargarPrecios();
-});
-
+document.getElementById("actualizarprecios").addEventListener("click", cargarPrecios);
 margenInput.addEventListener("input", actualizarTabla);
 ivaInput.addEventListener("input", actualizarTabla);
 
 // Inicialización
-mostrarPiezas();         // Solo carga fichas
-cargarValoresLocales();  // Solo carga IVA y margen
-actualizarTabla();       // Deja tabla en blanco hasta que pulses el botón
+mostrarPiezas();
+cargarValoresLocales();
+actualizarTabla();
